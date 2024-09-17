@@ -1,0 +1,60 @@
+.card .aboutImg {
+    border-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+.border-color{
+    border-color: var(--nav-color) !important;
+}
+.play-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.play-icon {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    background-color: #fff;
+    color: var(--accent-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.play-icon::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 0, 0, 0.3);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+    animation: pulsate-play-btn 1.5s infinite ease-in-out;
+}
+
+.play-icon::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+}
+@keyframes pulsate-play-btn{
+    0% {
+        transform: scale(0.6, 0.6);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,38 @@
+.dot{
+    transform: 0.3s;
+    width: fit-content;
+    z-index: 1;
+}
+.dot::after{
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    right: -5px;
+    top: 30px;
+    
+}
+.nav-color {
+    color: var(--nav-color);
+    transition: 0.3s;
+    overflow: hidden;
+}
+.nav-color::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color: var(--accent-color);
+    height: 2px;
+    top: 35px;
+    left: -100%;
+    transition: 0.3s;
+
+}
+.nav-color:hover::before,
+.nav-color.active::before {
+    left: 0;
+}
+
+

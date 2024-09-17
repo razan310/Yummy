@@ -1,0 +1,30 @@
+:root {
+    --background-color: #ffffff;
+    --default-color: #212529;
+    --heading-color: #37373f;
+    --nav-color: #7f7f90;
+    --accent-color: #ce1212;
+    --bg-hero:#f2f2f2;
+    --font-heading:"Amatic SC", sans-serif;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+.lg-color{
+    color: var(--heading-color);
+}
+.lg-color:hover{
+    color: var(--heading-color);
+}
+.bg-btn{
+    background-color: var(--accent-color) !important;
+}
+.accent-color{
+    color: var(--accent-color);
+}
+.text-color{
+    color: 
+    color-mix(in srgb, var(--default-color), transparent 50%);
+}
+

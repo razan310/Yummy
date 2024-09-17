@@ -1,0 +1,22 @@
+.title{
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 0px;
+    margin-top: 3rem;
+    color: 
+    color-mix(in srgb, var(--default-color), transparent 50%);
+    display: inline-block;
+    text-transform: uppercase;
+    
+}
+.section-title{
+    color: var(--heading-color);
+    margin:0px 0px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: var(--font-heading);
+}
+.section-title-color{
+    color: var(--accent-color);
+}
