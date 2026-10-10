@@ -24,7 +24,7 @@ const ICONS = {
   mic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg>',
 };
 const NAV = [['today', 'Today'], ['plan', 'Plan'], ['practice', 'Practice'], ['words', 'Words'], ['progress', 'Progress']];
-const NAV_OF = { readingRun: 'practice', listeningRun: 'practice', writingRun: 'practice', speakingRun: 'practice', grammarRun: 'practice', reading: 'practice', listening: 'practice', writing: 'practice', speaking: 'practice', grammar: 'practice', mock: 'practice', journal: 'practice', attempt: 'practice', placement: 'today', mockRun: 'practice', settings: '' };
+const NAV_OF = { readingRun: 'practice', listeningRun: 'practice', writingRun: 'practice', speakingRun: 'practice', grammarRun: 'practice', reading: 'practice', listening: 'practice', writing: 'practice', speaking: 'practice', grammar: 'practice', mock: 'practice', journal: 'practice', attempt: 'practice', placement: 'today', mockRun: 'practice', settings: '', account: '' };
 
 function shellHtml() {
   const tabs = (cls) => NAV.map(([k, label]) => `<button class="tab" data-act="nav" data-to="${k}" data-nav="${k}">${ICONS[k]}<span>${label}</span></button>`).join('');
@@ -32,7 +32,7 @@ function shellHtml() {
       <button class="brand" data-act="nav" data-to="today" aria-label="Band Seven home"><span class="brand-cell">7.0</span><span class="brand-name">Band Seven</span></button>
       <nav class="tabs-top" aria-label="Main">${tabs()}</nav>
       <div class="topbar-spacer"></div>
-      <span id="sync" class="sync"><span>…</span></span>
+      <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
       <span class="chip-exam" id="exam-chip"></span>
       <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
       <button class="icon-btn" data-act="nav" data-to="settings" aria-label="Settings">${ICONS.gear}</button>
@@ -106,14 +106,21 @@ function toast(msg) {
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { root.innerHTML = ''; }, 2600);
 }
 let MODAL = null;
-function confirmModal({ title, body, ok = 'OK', cancel = 'Cancel', danger = false, onOk }) {
-  MODAL = { onOk };
-  $('#modal-root').innerHTML = `<div class="modal-back" data-act="modalClose"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-t" data-stop="1">
+/* onCancel runs for the Cancel button; onDismiss (defaults to onCancel) for the backdrop and Escape. */
+function confirmModal({ title, body, ok = 'OK', cancel = 'Cancel', danger = false, onOk, onCancel, onDismiss }) {
+  MODAL = { onOk, onCancel, onDismiss: onDismiss || onCancel };
+  $('#modal-root').innerHTML = `<div class="modal-back" data-act="modalDismiss"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-t" data-stop="1">
       <h2 id="modal-t">${esc(title)}</h2><div class="muted">${body}</div>
       <div class="btn-row" style="justify-content:flex-end"><button class="btn ghost" data-act="modalClose">${esc(cancel)}</button><button class="btn ${danger ? 'danger' : ''}" data-act="modalOk">${esc(ok)}</button></div></div></div>`;
   $('#modal-root [data-act="modalOk"]').focus();
 }
-ACT.modalClose = (el, e) => { if (e.target.closest('[data-stop]') && el.classList.contains('modal-back')) return; $('#modal-root').innerHTML = ''; MODAL = null; };
+function closeModal(kind) {
+  const m = MODAL; $('#modal-root').innerHTML = ''; MODAL = null;
+  const fn = m && (kind === 'cancel' ? m.onCancel : m.onDismiss);
+  if (fn) fn();
+}
+ACT.modalClose = () => closeModal('cancel');
+ACT.modalDismiss = (el, e) => { if (e.target.closest('[data-stop]')) return; closeModal('dismiss'); };
 ACT.modalOk = () => { const m = MODAL; $('#modal-root').innerHTML = ''; MODAL = null; if (m && m.onOk) m.onOk(); };
 
 /* ---------- countdown timer (tap to pause; runs into overtime) ---------- */
@@ -252,6 +259,6 @@ function bindEvents() {
   };
   document.addEventListener('input', onField);
   document.addEventListener('change', onField);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) { $('#modal-root').innerHTML = ''; MODAL = null; } });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) closeModal('dismiss'); });
   window.addEventListener('beforeunload', () => { save(); });
 }

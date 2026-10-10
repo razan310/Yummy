@@ -48,7 +48,7 @@ VIEWS.today = {
         <div class="card"><div class="row-between"><div><div class="eyebrow">Flashcards</div><div><b class="mono">${due}</b> due · <b class="mono">${fresh}</b> new today</div></div><button class="btn ghost small" data-act="nav" data-to="words">Review</button></div></div>
         <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streakNow()}</b> ${streakNow() === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
       </div></div>`;
-    return `${head}${placementCard}${body}${side}`;
+    return `${head}${accountBanner()}${placementCard}${body}${side}`;
   },
 };
 function taskRow(t) {
@@ -217,7 +217,9 @@ VIEWS.settings = {
     const p = S.profile;
     const dayOpts = (sel) => DOW_NAMES.map((d, i) => `<option value="${i}" ${i === sel ? 'selected' : ''}>${d}</option>`).join('');
     const aiLine = { ready: 'Available: essays and speaking are graded by Claude.', loading: 'Connecting…', denied: 'Declined for this visit. Reload the page to be asked again.', disabled: 'Not available for this account.', absent: 'Not available here. Open this page inside Claude to get AI grading.' }[AI.state];
-    const storeLine = Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only. Open the page inside Claude while signed in to keep it in your account.';
+    const storeLine = Cloud.kind === 'server'
+      ? (Cloud.user ? `Saved to your account (${Cloud.user.email}). Sign in with it on any device.` : 'Saved in this browser only. Create an account or sign in to keep it on every device.')
+      : Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only.';
     return `<div class="page-head">${backBtn('today', 'Today')}<h1>Settings</h1></div>
       <div class="card"><h2>Exam and plan</h2>
         <div class="grid-2">
@@ -244,6 +246,7 @@ VIEWS.settings = {
       <div class="card"><h2>Claude and your data</h2>
         <p class="small"><b>AI grading:</b> ${esc(aiLine)}</p>
         <p class="small"><b>Progress:</b> ${esc(storeLine)}</p>
+        ${Cloud.kind === 'server' ? `<div><button class="btn ghost small" data-act="nav" data-to="account">${Cloud.user ? 'Account and sign out' : 'Create account or sign in'}</button></div>` : ''}
         ${Cloud.error ? `<div class="note warn">${esc(Cloud.error)}</div>` : ''}
         <div class="btn-row"><button class="btn ghost small" data-act="exportData">Copy a backup</button><button class="btn ghost small" data-act="importOpen">Restore from a backup</button><button class="btn quiet small" data-act="resetAll">Reset everything</button></div>
         <div id="import-box" hidden><div class="field"><label for="import-text">Paste a backup copied from this page</label><textarea class="input" id="import-text" rows="4"></textarea></div><div><button class="btn small" data-act="importRun">Restore</button></div></div>
@@ -283,7 +286,7 @@ ACT.importRun = () => {
   if (!d || d.app !== 'band-seven' || !d.S) { toast('That is not a backup from this page.'); return; }
   confirmModal({
     title: 'Restore this backup?', body: 'Your current progress on this page is replaced by the backup.', ok: 'Restore', danger: true,
-    onOk: () => { S = mergeDefaults(defaultState(), d.S); SRS = d.SRS || { updatedAt: 0, cards: {} }; save(); saveSrs(); toast('Backup restored'); go('today'); },
+    onOk: () => { const account = S.account; S = mergeDefaults(defaultState(), d.S); S.account = account; SRS = d.SRS || { updatedAt: 0, cards: {} }; save(); saveSrs(); toast('Backup restored'); go('today'); },
   });
 };
 ACT.resetAll = () => {
@@ -291,7 +294,9 @@ ACT.resetAll = () => {
     title: 'Reset everything?', body: 'This deletes your placement results, scores, plan history, flashcard progress and saved essays from this page. It cannot be undone.', ok: 'Delete my progress', danger: true,
     onOk: () => {
       S.journal.forEach((j) => deleteDoc(j.id));
+      const account = S.account;
       S = defaultState(); SRS = { updatedAt: 0, cards: {} };
+      S.account = account;
       save(); saveSrs(); toast('Progress reset'); go('today');
     },
   });

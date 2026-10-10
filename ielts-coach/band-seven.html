@@ -200,7 +200,8 @@ a { color: var(--accent-text); }
 }
 .icon-btn:hover { color: var(--ink); border-color: var(--rule-strong); }
 .icon-btn svg { width: 18px; height: 18px; }
-.sync { font-size: var(--t-xs); color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.sync { font-size: var(--t-xs); color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; border: 0; background: none; padding: 6px 4px; cursor: pointer; border-radius: 6px; }
+.sync:hover { color: var(--ink); }
 .sync::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ink-3); }
 .sync.cloud::before { background: var(--good); }
 .sync.local::before { background: var(--warn); }
@@ -227,7 +228,7 @@ a { color: var(--accent-text); }
   .tabs-bottom { display: none; }
   .brand-name { display: none; }
 }
-@media (max-width: 420px) { .sync span { display: none; } }
+@media (max-width: 420px) { .sync span { display: none; } .sync.out span { display: inline; font-weight: 700; color: var(--accent-text); } }
 
 main {
   max-width: 880px;
@@ -658,9 +659,9 @@ function isRightText(given, answer) {
 }
 
 /* ---------- state + persistence ----------
-   The whole study record lives in S. It is cached in localStorage for instant load and,
-   when the page runs inside Claude, saved to the learner's private db subtree
-   (data/users/<id>/...), which survives devices and republishes. */
+   The whole study record lives in S. It is cached in localStorage for instant load and saved
+   remotely: inside Claude to the learner's private db subtree, and on the hosted site to the
+   learner's account through this site's API. */
 const LS = {
   get(k) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : null; } catch { return null; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
@@ -701,6 +702,7 @@ function defaultState() {
     grammar: {},               // g01 -> {score, total, date}
     mocks: {},                 // week -> mock record
     gen: [],                   // summaries of AI-generated practice items
+    account: '',               // the hosted-site account this copy belongs to
   };
 }
 
@@ -724,14 +726,48 @@ function loadLocal() {
   LOADED_AT = { core: S.updatedAt || 0, srs: SRS.updatedAt || 0 };
 }
 
-/* ---------- cloud (Claude db) ---------- */
-const Cloud = { db: null, uid: null, status: 'connecting', error: '' };
+/* ---------- remote storage ----------
+   Two backends share one sync path:
+   - 'claude': inside Claude, the artifact's private db subtree for this viewer.
+   - 'server': on the hosted site (Vercel), this site's own API, after the learner signs in.
+   Reads may happen before reconciling; writes start only once Cloud.ready is true, so a fresh
+   device never overwrites progress saved elsewhere. */
+const Cloud = { kind: null, db: null, uid: null, user: null, ready: false, status: 'connecting', error: '' };
 const writers = {};
 
 function cloudPath(id) { return `data/users/${Cloud.uid}/${id}`; }
+function api(path, opts = {}) {
+  return fetch(path, { credentials: 'same-origin', cache: 'no-store', ...opts, headers: { 'content-type': 'application/json', 'x-band-seven': '1', ...(opts.headers || {}) } });
+}
+const Remote = {
+  async get(id) {
+    if (Cloud.kind === 'claude') { const snap = await Cloud.db.doc(cloudPath(id)).get(); return snap.exists ? clone(snap.data()) : null; }
+    if (Cloud.kind === 'server') {
+      const r = await api(`/api/data?doc=${encodeURIComponent(id)}`);
+      if (r.status === 404) return null;
+      if (!r.ok) throw { code: r.status === 401 ? 'signed_out' : 'unavailable' };
+      return r.json();
+    }
+    return null;
+  },
+  async set(id, data) {
+    if (Cloud.kind === 'claude') return Cloud.db.doc(cloudPath(id)).set(data);
+    if (Cloud.kind === 'server') {
+      const body = JSON.stringify(data);
+      const r = await api(`/api/data?doc=${encodeURIComponent(id)}`, { method: 'PUT', body, keepalive: body.length < 60000 });
+      if (!r.ok) throw { code: r.status === 401 ? 'signed_out' : r.status === 413 ? 'invalid_argument' : 'unavailable' };
+    }
+    return undefined;
+  },
+  async del(id) {
+    if (Cloud.kind === 'claude') return Cloud.db.doc(cloudPath(id)).delete();
+    if (Cloud.kind === 'server') await api(`/api/data?doc=${encodeURIComponent(id)}`, { method: 'DELETE' });
+    return undefined;
+  },
+};
 
 function cloudWrite(id, getData) {
-  if (!Cloud.db || !Cloud.uid) return;
+  if (!Cloud.ready) return;
   const w = writers[id] || (writers[id] = { busy: false, dirty: false, get: null });
   w.get = getData;
   if (w.busy) { w.dirty = true; return; }
@@ -740,14 +776,15 @@ function cloudWrite(id, getData) {
     let attempt = 0;
     for (;;) {
       try {
-        await Cloud.db.doc(cloudPath(id)).set(w.get());
+        await Remote.set(id, w.get());
         Cloud.error = '';
         break;
       } catch (e) {
         if (e?.code === 'unavailable' && attempt++ < 1) { await sleep(800 + Math.random() * 1200); continue; }
-        if (e?.code === 'quota_exceeded') Cloud.error = 'Your saved data is full. Delete old attempts in Settings.';
+        if (e?.code === 'signed_out') { Cloud.ready = false; Cloud.user = null; Cloud.status = 'signed-out'; Cloud.error = 'You were signed out. Sign in again to keep saving to your account.'; }
+        else if (e?.code === 'quota_exceeded') Cloud.error = 'Your saved data is full. Delete old attempts in Settings.';
         else if (e?.code === 'invalid_argument') Cloud.error = 'This record could not be saved (too large).';
-        else Cloud.error = 'Saving to your Claude account failed; your progress is kept on this device.';
+        else Cloud.error = 'Saving to your account failed; your progress is kept on this device and will be saved again later.';
         updateSyncBadge();
         break;
       }
@@ -757,9 +794,21 @@ function cloudWrite(id, getData) {
   };
   run();
 }
+async function waitForWrites(ms = 4000) {
+  const end = Date.now() + ms;
+  while (Object.values(writers).some((w) => w.busy || w.dirty) && Date.now() < end) await sleep(100);
+}
 
-const pushCore = debounce(() => cloudWrite('core', () => ({ type: 'core', ...clone(S) })), 1200);
-const pushSrs = debounce(() => cloudWrite('srs', () => ({ type: 'srs', ...clone(SRS) })), 1500);
+/* Debounce with flush(): the hosted site batches writes more (each write costs a storage operation). */
+function debounced(fn, msFn) {
+  let t = null;
+  const d = () => { clearTimeout(t); t = setTimeout(() => { t = null; fn(); }, msFn()); };
+  d.flush = () => { if (t) { clearTimeout(t); t = null; fn(); } };
+  return d;
+}
+const pushCore = debounced(() => cloudWrite('core', () => ({ type: 'core', ...clone(S) })), () => (Cloud.kind === 'server' ? 4000 : 1200));
+const pushSrs = debounced(() => cloudWrite('srs', () => ({ type: 'srs', ...clone(SRS) })), () => (Cloud.kind === 'server' ? 6000 : 1500));
+function flushWrites() { pushCore.flush(); pushSrs.flush(); }
 
 function save({ cloud = true } = {}) {
   S.updatedAt = Date.now();
@@ -773,17 +822,17 @@ function saveSrs() {
 }
 function saveDoc(id, data) {
   DOCS[id] = data;
-  LS.set(LS_DOC + id, Cloud.db ? { ...data, synced: true } : data);
+  LS.set(LS_DOC + id, Cloud.ready ? { ...data, synced: true } : data);
   cloudWrite(id, () => ({ ...clone(data), type: data.type || 'att' }));
 }
 async function loadDoc(id) {
   if (DOCS[id]) return DOCS[id];
   const local = LS.get(LS_DOC + id);
   if (local) { DOCS[id] = local; return local; }
-  if (Cloud.db) {
+  if (Cloud.kind) {
     try {
-      const snap = await Cloud.db.doc(cloudPath(id)).get();
-      if (snap.exists) { DOCS[id] = clone(snap.data()); LS.set(LS_DOC + id, DOCS[id]); return DOCS[id]; }
+      const d = await Remote.get(id);
+      if (d) { DOCS[id] = d; LS.set(LS_DOC + id, d); return d; }
     } catch { /* fall through */ }
   }
   return null;
@@ -791,57 +840,119 @@ async function loadDoc(id) {
 function deleteDoc(id) {
   delete DOCS[id];
   LS.del(LS_DOC + id);
-  if (Cloud.db) Cloud.db.doc(cloudPath(id)).delete().catch(() => {});
+  if (Cloud.ready) Remote.del(id).catch(() => {});
+}
+
+/* Merge what the account holds with this device's copy. The newer side wins; the device's copy
+   counts as newer only if it changed before this page opened (so a fresh device never wins). */
+function reconcile(core, srs) {
+  let changed = false;
+  if (core) {
+    delete core.type;
+    if ((core.updatedAt || 0) > LOADED_AT.core) { S = mergeDefaults(defaultState(), core); LS.set(LS_CORE, S); changed = true; }
+    else if ((S.updatedAt || 0) > (core.updatedAt || 0)) pushCore();
+  } else if (S.updatedAt) pushCore();
+  if (srs) {
+    delete srs.type;
+    if ((srs.updatedAt || 0) > LOADED_AT.srs) { SRS = { updatedAt: srs.updatedAt, cards: srs.cards || {} }; LS.set(LS_SRS, SRS); changed = true; }
+    else if ((SRS.updatedAt || 0) > (srs.updatedAt || 0)) pushSrs();
+  } else if (SRS.updatedAt) pushSrs();
+  // Attempts saved on this device before the account connected.
+  S.journal.forEach((j) => { const d = LS.get(LS_DOC + j.id); if (d && !d.synced) { d.synced = true; LS.set(LS_DOC + j.id, d); cloudWrite(j.id, () => ({ ...d, type: 'att' })); } });
+  return changed;
 }
 
 async function cloudInit() {
-  if (!window.claude?.use) { Cloud.status = 'local'; updateSyncBadge(); return; }
+  if (window.claude?.use) return claudeInit();
+  if (/^https?:$/.test(location.protocol)) return serverInit();
+  Cloud.status = 'local'; updateSyncBadge();
+  return undefined;
+}
+async function claudeInit() {
   try {
     const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
     const id = user ? await user.id() : null;
     if (!db || !id) { Cloud.status = 'local'; updateSyncBadge(); return; }
+    Cloud.kind = 'claude'; Cloud.db = db; Cloud.uid = id;
     const base = `data/users/${id}`;
-    // Read before enabling writes, so nothing created on this device in the first moments
-    // (such as today's task list) can overwrite progress saved from another device.
     const [core, srs, gens] = await Promise.all([
-      db.doc(`${base}/core`).get(),
-      db.doc(`${base}/srs`).get(),
+      Remote.get('core'), Remote.get('srs'),
       db.collection(base).where('type', '==', 'gen').get().catch(() => null),
     ]);
-    Cloud.db = db; Cloud.uid = id;
-    let changed = false;
-    if (core.exists) {
-      const remote = clone(core.data());
-      delete remote.type;
-      if ((remote.updatedAt || 0) > LOADED_AT.core) { S = mergeDefaults(defaultState(), remote); LS.set(LS_CORE, S); changed = true; }
-      else if ((S.updatedAt || 0) > (remote.updatedAt || 0)) pushCore();
-    } else if (S.updatedAt) pushCore();
-    if (srs.exists) {
-      const remote = clone(srs.data());
-      delete remote.type;
-      if ((remote.updatedAt || 0) > LOADED_AT.srs) { SRS = { updatedAt: remote.updatedAt, cards: remote.cards || {} }; LS.set(LS_SRS, SRS); changed = true; }
-      else if ((SRS.updatedAt || 0) > (remote.updatedAt || 0)) pushSrs();
-    } else if (SRS.updatedAt) pushSrs();
-    // Attempts saved on this device before the account connected.
-    S.journal.forEach((j) => { const d = LS.get(LS_DOC + j.id); if (d && !d.synced) { d.synced = true; LS.set(LS_DOC + j.id, d); cloudWrite(j.id, () => ({ ...d, type: 'att' })); } });
+    Cloud.ready = true;
+    const changed = reconcile(core, srs);
     if (gens && !gens.empty) gens.docs.forEach((d) => { if (!DOCS[d.id]) { DOCS[d.id] = clone(d.data()); LS.set(LS_DOC + d.id, DOCS[d.id]); } });
     Cloud.status = 'cloud';
     updateSyncBadge();
     if (changed) onDataReplaced();
   } catch (e) {
+    Cloud.kind = null; Cloud.ready = false;
     Cloud.status = 'local';
     Cloud.error = e?.code === 'revoked' ? '' : 'Could not reach your Claude account; saving on this device.';
     updateSyncBadge();
   }
 }
+async function serverInit() {
+  let r;
+  try { r = await api('/api/auth'); } catch { Cloud.status = 'local'; updateSyncBadge(); return; }
+  if (r.status === 401) { Cloud.kind = 'server'; Cloud.status = 'signed-out'; updateSyncBadge(); rerenderIfIdle(); return; }
+  const data = r.ok ? await r.json().catch(() => null) : null;
+  if (!data || !data.user) { Cloud.status = 'local'; updateSyncBadge(); return; }   // no account API on this host
+  await connectAccount(data.user);
+}
+/* After sign-in or sign-up: load the account's progress and decide what to keep. */
+async function connectAccount(user, { interactive = false } = {}) {
+  Cloud.kind = 'server'; Cloud.user = user; Cloud.status = 'connecting'; updateSyncBadge();
+  let core = null, srs = null;
+  try { [core, srs] = await Promise.all([Remote.get('core'), Remote.get('srs')]); }
+  catch { Cloud.status = 'signed-out'; Cloud.user = null; Cloud.error = 'Could not load your account. Try signing in again.'; updateSyncBadge(); return; }
+  const deviceHasOtherProgress = S.account !== user.email && (S.scores.length > 0 || Object.keys(S.done).length > 0 || Object.keys(SRS.cards).length > 0);
+  const finish = (useDevice) => {
+    if (useDevice) { LOADED_AT = { core: Number.MAX_SAFE_INTEGER, srs: Number.MAX_SAFE_INTEGER }; }
+    Cloud.ready = true;
+    const changed = reconcile(core, srs);
+    LOADED_AT = { core: S.updatedAt || 0, srs: SRS.updatedAt || 0 };
+    if (S.account !== user.email) { S.account = user.email; save(); }
+    if (useDevice) { save(); saveSrs(); }
+    Cloud.status = 'cloud'; Cloud.error = '';
+    updateSyncBadge();
+    if (changed || interactive) onDataReplaced();
+  };
+  if (core && deviceHasOtherProgress && interactive) {
+    confirmModal({
+      title: 'Which progress should your account keep?',
+      body: `<p>Your account already has saved progress, and this device also has progress that is not in your account.</p><p style="margin-top:8px">Keep the account’s progress (recommended), or replace it with what is on this device.</p>`,
+      ok: 'Keep my account’s progress', cancel: 'Use this device’s progress',
+      onOk: () => finish(false),
+      onCancel: () => finish(true),
+      onDismiss: () => finish(false),
+    });
+    return;
+  }
+  finish(!core && deviceHasOtherProgress);
+}
+async function signOut() {
+  flushWrites();
+  await waitForWrites();
+  try { await api('/api/auth', { method: 'POST', body: JSON.stringify({ action: 'logout' }) }); } catch { /* cookie is cleared server-side when reachable */ }
+  LS.del(LS_CORE); LS.del(LS_SRS);
+  Object.keys(DOCS).forEach((k) => { delete DOCS[k]; });
+  try { Object.keys(localStorage).filter((k) => k.startsWith(LS_DOC) || k.startsWith('b7.draft')).forEach((k) => localStorage.removeItem(k)); } catch { /* storage blocked */ }
+  S = defaultState(); SRS = { updatedAt: 0, cards: {} };
+  LOADED_AT = { core: 0, srs: 0 };
+  Cloud.user = null; Cloud.ready = false; Cloud.status = 'signed-out'; Cloud.error = '';
+  updateSyncBadge();
+}
 
 function updateSyncBadge() {
   const el = $('#sync');
   if (!el) return;
+  const signedIn = Cloud.kind === 'server' && Cloud.user;
   const map = {
     connecting: ['', 'Connecting…', 'Checking for your saved progress'],
-    cloud: ['cloud', 'Saved', 'Progress is saved privately to your Claude account'],
+    cloud: ['cloud', 'Saved', signedIn ? `Progress is saved to your account (${Cloud.user.email})` : 'Progress is saved privately to your Claude account'],
     local: ['local', 'This device', 'Progress is saved in this browser only'],
+    'signed-out': ['local out', 'Sign in', 'Sign in or create an account to save your progress on every device'],
   };
   const [cls, label, title] = map[Cloud.status] || map.local;
   el.className = `sync ${cls}`;
@@ -863,7 +974,8 @@ function initStudyTimer() {
     S.studySec[d] = (S.studySec[d] || 0) + 15;
     LS.set(LS_CORE, S);
   }, 15000);
-  document.addEventListener('visibilitychange', () => { if (document.hidden) save(); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) { save(); flushWrites(); } });
+  window.addEventListener('pagehide', () => flushWrites());
 }
 
 /* ---------- Claude (sample capability) ---------- */
@@ -1931,7 +2043,7 @@ const ICONS = {
   mic: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg>',
 };
 const NAV = [['today', 'Today'], ['plan', 'Plan'], ['practice', 'Practice'], ['words', 'Words'], ['progress', 'Progress']];
-const NAV_OF = { readingRun: 'practice', listeningRun: 'practice', writingRun: 'practice', speakingRun: 'practice', grammarRun: 'practice', reading: 'practice', listening: 'practice', writing: 'practice', speaking: 'practice', grammar: 'practice', mock: 'practice', journal: 'practice', attempt: 'practice', placement: 'today', mockRun: 'practice', settings: '' };
+const NAV_OF = { readingRun: 'practice', listeningRun: 'practice', writingRun: 'practice', speakingRun: 'practice', grammarRun: 'practice', reading: 'practice', listening: 'practice', writing: 'practice', speaking: 'practice', grammar: 'practice', mock: 'practice', journal: 'practice', attempt: 'practice', placement: 'today', mockRun: 'practice', settings: '', account: '' };
 
 function shellHtml() {
   const tabs = (cls) => NAV.map(([k, label]) => `<button class="tab" data-act="nav" data-to="${k}" data-nav="${k}">${ICONS[k]}<span>${label}</span></button>`).join('');
@@ -1939,7 +2051,7 @@ function shellHtml() {
       <button class="brand" data-act="nav" data-to="today" aria-label="Band Seven home"><span class="brand-cell">7.0</span><span class="brand-name">Band Seven</span></button>
       <nav class="tabs-top" aria-label="Main">${tabs()}</nav>
       <div class="topbar-spacer"></div>
-      <span id="sync" class="sync"><span>…</span></span>
+      <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
       <span class="chip-exam" id="exam-chip"></span>
       <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
       <button class="icon-btn" data-act="nav" data-to="settings" aria-label="Settings">${ICONS.gear}</button>
@@ -2013,14 +2125,21 @@ function toast(msg) {
   clearTimeout(toastTimer); toastTimer = setTimeout(() => { root.innerHTML = ''; }, 2600);
 }
 let MODAL = null;
-function confirmModal({ title, body, ok = 'OK', cancel = 'Cancel', danger = false, onOk }) {
-  MODAL = { onOk };
-  $('#modal-root').innerHTML = `<div class="modal-back" data-act="modalClose"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-t" data-stop="1">
+/* onCancel runs for the Cancel button; onDismiss (defaults to onCancel) for the backdrop and Escape. */
+function confirmModal({ title, body, ok = 'OK', cancel = 'Cancel', danger = false, onOk, onCancel, onDismiss }) {
+  MODAL = { onOk, onCancel, onDismiss: onDismiss || onCancel };
+  $('#modal-root').innerHTML = `<div class="modal-back" data-act="modalDismiss"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-t" data-stop="1">
       <h2 id="modal-t">${esc(title)}</h2><div class="muted">${body}</div>
       <div class="btn-row" style="justify-content:flex-end"><button class="btn ghost" data-act="modalClose">${esc(cancel)}</button><button class="btn ${danger ? 'danger' : ''}" data-act="modalOk">${esc(ok)}</button></div></div></div>`;
   $('#modal-root [data-act="modalOk"]').focus();
 }
-ACT.modalClose = (el, e) => { if (e.target.closest('[data-stop]') && el.classList.contains('modal-back')) return; $('#modal-root').innerHTML = ''; MODAL = null; };
+function closeModal(kind) {
+  const m = MODAL; $('#modal-root').innerHTML = ''; MODAL = null;
+  const fn = m && (kind === 'cancel' ? m.onCancel : m.onDismiss);
+  if (fn) fn();
+}
+ACT.modalClose = () => closeModal('cancel');
+ACT.modalDismiss = (el, e) => { if (e.target.closest('[data-stop]')) return; closeModal('dismiss'); };
 ACT.modalOk = () => { const m = MODAL; $('#modal-root').innerHTML = ''; MODAL = null; if (m && m.onOk) m.onOk(); };
 
 /* ---------- countdown timer (tap to pause; runs into overtime) ---------- */
@@ -2159,7 +2278,7 @@ function bindEvents() {
   };
   document.addEventListener('input', onField);
   document.addEventListener('change', onField);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) { $('#modal-root').innerHTML = ''; MODAL = null; } });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) closeModal('dismiss'); });
   window.addEventListener('beforeunload', () => { save(); });
 }
 
@@ -2213,7 +2332,7 @@ VIEWS.today = {
         <div class="card"><div class="row-between"><div><div class="eyebrow">Flashcards</div><div><b class="mono">${due}</b> due · <b class="mono">${fresh}</b> new today</div></div><button class="btn ghost small" data-act="nav" data-to="words">Review</button></div></div>
         <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streakNow()}</b> ${streakNow() === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
       </div></div>`;
-    return `${head}${placementCard}${body}${side}`;
+    return `${head}${accountBanner()}${placementCard}${body}${side}`;
   },
 };
 function taskRow(t) {
@@ -2382,7 +2501,9 @@ VIEWS.settings = {
     const p = S.profile;
     const dayOpts = (sel) => DOW_NAMES.map((d, i) => `<option value="${i}" ${i === sel ? 'selected' : ''}>${d}</option>`).join('');
     const aiLine = { ready: 'Available: essays and speaking are graded by Claude.', loading: 'Connecting…', denied: 'Declined for this visit. Reload the page to be asked again.', disabled: 'Not available for this account.', absent: 'Not available here. Open this page inside Claude to get AI grading.' }[AI.state];
-    const storeLine = Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only. Open the page inside Claude while signed in to keep it in your account.';
+    const storeLine = Cloud.kind === 'server'
+      ? (Cloud.user ? `Saved to your account (${Cloud.user.email}). Sign in with it on any device.` : 'Saved in this browser only. Create an account or sign in to keep it on every device.')
+      : Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only.';
     return `<div class="page-head">${backBtn('today', 'Today')}<h1>Settings</h1></div>
       <div class="card"><h2>Exam and plan</h2>
         <div class="grid-2">
@@ -2409,6 +2530,7 @@ VIEWS.settings = {
       <div class="card"><h2>Claude and your data</h2>
         <p class="small"><b>AI grading:</b> ${esc(aiLine)}</p>
         <p class="small"><b>Progress:</b> ${esc(storeLine)}</p>
+        ${Cloud.kind === 'server' ? `<div><button class="btn ghost small" data-act="nav" data-to="account">${Cloud.user ? 'Account and sign out' : 'Create account or sign in'}</button></div>` : ''}
         ${Cloud.error ? `<div class="note warn">${esc(Cloud.error)}</div>` : ''}
         <div class="btn-row"><button class="btn ghost small" data-act="exportData">Copy a backup</button><button class="btn ghost small" data-act="importOpen">Restore from a backup</button><button class="btn quiet small" data-act="resetAll">Reset everything</button></div>
         <div id="import-box" hidden><div class="field"><label for="import-text">Paste a backup copied from this page</label><textarea class="input" id="import-text" rows="4"></textarea></div><div><button class="btn small" data-act="importRun">Restore</button></div></div>
@@ -2448,7 +2570,7 @@ ACT.importRun = () => {
   if (!d || d.app !== 'band-seven' || !d.S) { toast('That is not a backup from this page.'); return; }
   confirmModal({
     title: 'Restore this backup?', body: 'Your current progress on this page is replaced by the backup.', ok: 'Restore', danger: true,
-    onOk: () => { S = mergeDefaults(defaultState(), d.S); SRS = d.SRS || { updatedAt: 0, cards: {} }; save(); saveSrs(); toast('Backup restored'); go('today'); },
+    onOk: () => { const account = S.account; S = mergeDefaults(defaultState(), d.S); S.account = account; SRS = d.SRS || { updatedAt: 0, cards: {} }; save(); saveSrs(); toast('Backup restored'); go('today'); },
   });
 };
 ACT.resetAll = () => {
@@ -2456,7 +2578,9 @@ ACT.resetAll = () => {
     title: 'Reset everything?', body: 'This deletes your placement results, scores, plan history, flashcard progress and saved essays from this page. It cannot be undone.', ok: 'Delete my progress', danger: true,
     onOk: () => {
       S.journal.forEach((j) => deleteDoc(j.id));
+      const account = S.account;
       S = defaultState(); SRS = { updatedAt: 0, cards: {} };
+      S.account = account;
       save(); saveSrs(); toast('Progress reset'); go('today');
     },
   });
@@ -3696,6 +3820,82 @@ ACT.mockL = (el) => { const w = +el.dataset.w; go('listeningRun', { ids: S.mocks
 ACT.mockR = (el) => { const w = +el.dataset.w; go('readingRun', { ids: S.mocks[w].content.R, mockWeek: w }); };
 ACT.mockW = (el) => { const w = +el.dataset.w; const c = S.mocks[w].content; go('writingRun', { ids: [c.T1, c.T2], mockWeek: w }); };
 ACT.mockS = (el) => { const w = +el.dataset.w; go('speakingRun', { mode: 'full', mockWeek: w }); };
+
+/* ---------- Account (hosted site) ---------- */
+VIEWS.account = {
+  html({ mode = 'signup' }) {
+    const head = `<div class="page-head">${backBtn('today', 'Today')}<h1>Your account</h1></div>`;
+    if (Cloud.kind === 'claude') {
+      return `${head}<div class="card"><h2>Saved to your Claude account</h2><p class="muted">Inside Claude your progress is saved privately to your Claude account automatically. There is nothing to set up.</p></div>`;
+    }
+    if (Cloud.kind === 'server' && Cloud.user) {
+      return `${head}<div class="card hero">
+          <div class="eyebrow">Signed in</div>
+          <h2>${esc(Cloud.user.name || Cloud.user.email)}</h2>
+          ${Cloud.user.name ? `<p class="muted">${esc(Cloud.user.email)}</p>` : ''}
+          <p>Your plan, scores, flashcards and study time are saved to this account. Sign in with the same email on your phone or computer to continue where you stopped.</p>
+          ${Cloud.error ? `<div class="note warn">${esc(Cloud.error)}</div>` : ''}
+          <div class="btn-row"><button class="btn ghost" data-act="signOut">Sign out</button></div>
+        </div>`;
+    }
+    if (Cloud.kind !== 'server') {
+      return `${head}<div class="card"><h2>Accounts work on the online version</h2><p class="muted">This copy of the app is not connected to a server, so your progress is saved in this browser only. Open the app from its website address to create an account.</p></div>`;
+    }
+    const signup = mode === 'signup';
+    const hasLocal = S.scores.length > 0 || Object.keys(SRS.cards).length > 0;
+    return `${head}
+      <div class="card hero">
+        <div class="seg" role="group" aria-label="Account"><button data-act="accMode" data-m="signup" aria-pressed="${signup}">Create account</button><button data-act="accMode" data-m="signin" aria-pressed="${!signup}">Sign in</button></div>
+        <p class="muted">${signup ? 'Create a free account to keep your plan, scores and flashcards on every device.' : 'Sign in to load your saved progress.'}${hasLocal && signup ? ' The progress already on this device is saved into your new account.' : ''}</p>
+        <form id="acc-form" class="stack" novalidate>
+          ${signup ? '<div class="field"><label for="acc-name">Name (optional)</label><input class="input" id="acc-name" autocomplete="name" maxlength="60"></div>' : ''}
+          <div class="field"><label for="acc-email">Email</label><input class="input" id="acc-email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required></div>
+          <div class="field"><label for="acc-pass">Password</label><input class="input" id="acc-pass" type="password" autocomplete="${signup ? 'new-password' : 'current-password'}" minlength="8" required>${signup ? '<span class="xs faint">At least 8 characters.</span>' : ''}</div>
+          <div id="acc-msg" aria-live="polite"></div>
+          <div class="btn-row"><button class="btn" type="submit" id="acc-submit">${signup ? 'Create account' : 'Sign in'}</button></div>
+        </form>
+      </div>
+      <p class="xs faint">Your password is stored only as a salted hash. Progress is stored privately and is visible only to you when signed in.</p>`;
+  },
+  mount({ mode = 'signup' }) {
+    const form = $('#acc-form');
+    if (!form) return;
+    form.addEventListener('submit', (e) => { e.preventDefault(); submitAccount(mode === 'signup' ? 'register' : 'login'); });
+  },
+};
+ACT.accMode = (el) => go('account', { mode: el.dataset.m });
+async function submitAccount(action) {
+  const msg = $('#acc-msg'); const btn = $('#acc-submit');
+  const email = $('#acc-email').value.trim();
+  const password = $('#acc-pass').value;
+  const name = $('#acc-name') ? $('#acc-name').value.trim() : '';
+  if (!/^\S+@\S+\.\S+$/.test(email)) { msg.innerHTML = '<div class="note bad">Enter a valid email address.</div>'; return; }
+  if (password.length < 8) { msg.innerHTML = '<div class="note bad">Use a password of at least 8 characters.</div>'; return; }
+  btn.disabled = true; msg.innerHTML = '<div class="ai-wait"><span class="spinner"></span>One moment…</div>';
+  try {
+    const r = await api('/api/auth', { method: 'POST', body: JSON.stringify({ action, email, password, name }) });
+    const data = await r.json().catch(() => ({}));
+    if (!r.ok || !data.user) { msg.innerHTML = `<div class="note bad">${esc(data.error || 'Something went wrong. Try again.')}</div>`; btn.disabled = false; return; }
+    msg.innerHTML = '';
+    await connectAccount(data.user, { interactive: true });
+    toast(action === 'register' ? 'Account created. Your progress is saved.' : 'Signed in');
+    go('today', {}, { force: true });
+  } catch {
+    msg.innerHTML = '<div class="note bad">Could not reach the server. Check your connection and try again.</div>';
+    btn.disabled = false;
+  }
+}
+ACT.signOut = () => {
+  confirmModal({
+    title: 'Sign out?', body: 'Your progress stays saved in your account. This device forgets it until you sign in again.', ok: 'Sign out',
+    onOk: async () => { await signOut(); toast('Signed out'); go('account', { mode: 'signin' }, { force: true }); },
+  });
+};
+function accountBanner() {
+  if (Cloud.kind !== 'server' || Cloud.user) return '';
+  return `<div class="card tint"><div class="row-between"><div style="min-width:0"><b>Save your progress</b><div class="small muted">Create a free account so your plan, scores and flashcards are kept on every device.</div></div>
+    <div class="btn-row"><button class="btn small" data-act="nav" data-to="account">Create account</button><button class="btn small ghost" data-act="accMode" data-m="signin">Sign in</button></div></div></div>`;
+}
 
 /* ---------- start ---------- */
 function buildContentIndex() {

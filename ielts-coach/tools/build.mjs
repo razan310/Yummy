@@ -3,7 +3,8 @@
 // Outputs:
 //   band-seven.html  page body for publishing as a Claude artifact (no <html>/<head> skeleton)
 //   index.html       the same app as a standalone HTML document
-import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
+//   public/index.html  copy served by the hosted site (Vercel output directory)
+import { readFileSync, writeFileSync, readdirSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -55,5 +56,8 @@ ${body}
 </html>
 `;
 writeFileSync(join(root, 'index.html'), standalone);
+// Static output for the hosted site (Vercel serves public/ and runs api/ as functions).
+mkdirSync(join(root, 'public'), { recursive: true });
+writeFileSync(join(root, 'public', 'index.html'), standalone);
 if (process.env.CHECK_OUT) writeFileSync(process.env.CHECK_OUT, `${data}\n${js}`);
 console.log(`Built band-seven.html (${(body.length / 1024).toFixed(0)} KB): ${content.reading.length} passages, ${content.listening.length} listening sections, ${content.task1.length + content.task2.length} writing prompts, ${content.speaking.part2.length} cue cards, ${vocab.length} words, ${content.grammar.length} grammar lessons.`);

@@ -1,0 +1,13 @@
+{
+  "name": "band-seven",
+  "private": true,
+  "type": "module",
+  "description": "Band Seven IELTS Academic coach: static app plus account API for Vercel",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "validate": "node tools/validate.mjs content/*.json"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.0"
+  }
+}

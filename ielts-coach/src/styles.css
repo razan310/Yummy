@@ -195,7 +195,8 @@ a { color: var(--accent-text); }
 }
 .icon-btn:hover { color: var(--ink); border-color: var(--rule-strong); }
 .icon-btn svg { width: 18px; height: 18px; }
-.sync { font-size: var(--t-xs); color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.sync { font-size: var(--t-xs); color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; border: 0; background: none; padding: 6px 4px; cursor: pointer; border-radius: 6px; }
+.sync:hover { color: var(--ink); }
 .sync::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--ink-3); }
 .sync.cloud::before { background: var(--good); }
 .sync.local::before { background: var(--warn); }
@@ -222,7 +223,7 @@ a { color: var(--accent-text); }
   .tabs-bottom { display: none; }
   .brand-name { display: none; }
 }
-@media (max-width: 420px) { .sync span { display: none; } }
+@media (max-width: 420px) { .sync span { display: none; } .sync.out span { display: inline; font-weight: 700; color: var(--accent-text); } }
 
 main {
   max-width: 880px;
