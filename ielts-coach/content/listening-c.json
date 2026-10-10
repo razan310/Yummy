@@ -1,0 +1,427 @@
+{
+  "kind": "listening",
+  "items": [
+    {
+      "id": "l09",
+      "section": 1,
+      "title": "Booking a venue for a tech meetup",
+      "topic": "technology",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Tamsin, events coordinator", "accent": "en-AU", "voice": "female" },
+        "B": { "role": "Sanjay, meetup organiser", "accent": "en-IN", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 1. You will hear a telephone conversation between a man who runs a monthly technology meetup and a woman who works at an events venue. First, you have some time to look at questions 1 to 6." },
+        { "pause": 25, "label": "Look at questions 1 to 6" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 6." },
+        { "s": "A", "t": "Good morning, Quayside Exchange events team, Tamsin speaking. How can I help?" },
+        { "s": "B", "t": "Hi, Tamsin. I run a meetup for local web developers, and I'm hoping to book one of your rooms for an evening session, with some food as well." },
+        { "s": "A", "t": "Lovely, we host quite a few tech groups. Can I start with your name?" },
+        { "s": "B", "t": "Sure, it's Sanjay Pillai. That's P, I, double L, A, I." },
+        { "s": "A", "t": "Thanks, Sanjay. And what's the group called?" },
+        { "s": "B", "t": "Brightwater Frontend. We meet once a month to talk about web design and JavaScript." },
+        { "s": "A", "t": "Great. And what date were you thinking of?" },
+        { "s": "B", "t": "A Thursday in November, ideally the fourteenth." },
+        { "s": "A", "t": "Let me check. I'm afraid the fourteenth is fully booked. The following Thursday, the twenty-first, is completely free, though." },
+        { "s": "B", "t": "Our speaker's quite flexible, so the twenty-first should be fine. Let's go with that." },
+        { "s": "A", "t": "Done. And roughly how many people are you expecting?" },
+        { "s": "B", "t": "Normally about fifty come along, but this time we've got a guest speaker from a big design agency, so seventy-two people have registered already. I'd plan for seventy-five, just to be safe." },
+        { "s": "A", "t": "Then the Harbour Room won't work, as it only seats sixty. I'd suggest the Lantern Room. It holds up to a hundred, and it has a built-in projector." },
+        { "s": "B", "t": "The Lantern Room sounds perfect. What's the hire charge?" },
+        { "s": "A", "t": "Our standard rate is sixty pounds an hour, but community and non-profit groups pay forty-five." },
+        { "s": "B", "t": "We're a non-profit, so that's great. We'd need it for three hours, from six until nine. Oh, and do we need to bring a cable for the projector?" },
+        { "s": "A", "t": "No, there's an HDMI cable in the room. But a lot of newer laptops don't have that port, so your speakers will need to bring their own adaptor." },
+        { "s": "B", "t": "Good point. I'll remind them about that." },
+        { "s": "N", "t": "Before you hear the rest of the conversation, you have some time to look at questions 7 to 10." },
+        { "pause": 25, "label": "Look at questions 7 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 7 to 10." },
+        { "s": "A", "t": "Now, catering. Have you had a look at our menu options?" },
+        { "s": "B", "t": "I have. Last time we ordered pizza, but by the time the talk finished, it had all gone cold, so I'd rather avoid that." },
+        { "s": "A", "t": "Understandable. The hot buffet is very popular, but it's eighteen pounds a head." },
+        { "s": "B", "t": "That's more than our sponsor will cover. What about the sandwich platters?" },
+        { "s": "A", "t": "They're fine, but people tend to find them a bit dull for an evening event. Honestly, the mezze sharing platters are better value, and there are plenty of vegetarian choices." },
+        { "s": "B", "t": "Right, let's go for the mezze platters, then." },
+        { "s": "A", "t": "Good choice. The kitchen will need your final numbers in advance. It used to be a full week before the event, but they changed that this year, so now it's just three days before." },
+        { "s": "B", "t": "Three days. That really helps, because people always register at the last minute." },
+        { "s": "A", "t": "And for drinks, tea and coffee are two pounds per person, soft drinks are sold at the bar, and we put jugs of tap water on every table at no extra cost." },
+        { "s": "B", "t": "I think we'll just have the water, then. People can buy anything else at the bar themselves." },
+        { "s": "A", "t": "Finally, we ask for a deposit of fifty pounds to hold the room. Most people pay by card over the phone." },
+        { "s": "B", "t": "Ah, the group's card is with our treasurer, and she's away this week. Could I do a bank transfer instead?" },
+        { "s": "A", "t": "Of course. I'll email you our account details this afternoon, and you'll get a confirmation as soon as the money arrives." },
+        { "s": "B", "t": "Brilliant. Thanks so much for your help, Tamsin." },
+        { "s": "N", "t": "That is the end of section 1." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "title": "Quayside Exchange: event booking notes",
+          "wordLimit": "ONE WORD AND/OR A NUMBER",
+          "questions": [
+            { "n": 1, "prompt": "Organiser: Sanjay ____", "answer": ["Pillai"], "explanation": "Sanjay spells his surname: \"It's Sanjay Pillai. That's P, I, double L, A, I.\" Remember that \"double L\" means you write the letter L twice." },
+            { "n": 2, "prompt": "Date: Thursday ____ November", "answer": ["21st", "21", "twenty-first"], "explanation": "Sanjay first asks for \"the fourteenth\", but Tamsin says it is \"fully booked\" and offers \"the twenty-first\", which he accepts: \"the twenty-first should be fine\". The fourteenth is the distractor." },
+            { "n": 3, "prompt": "Number of guests to plan for: ____", "answer": ["75", "seventy-five"], "explanation": "Sanjay mentions three numbers: \"Normally about fifty\", \"seventy-two people have registered\" and finally \"I'd plan for seventy-five, just to be safe.\" The note asks for the number to plan for." },
+            { "n": 4, "prompt": "Room: the ____ Room", "answer": ["Lantern"], "explanation": "The Harbour Room is rejected because \"it only seats sixty\". Tamsin suggests \"the Lantern Room\" and Sanjay says \"The Lantern Room sounds perfect.\"" },
+            { "n": 5, "prompt": "Room hire: £____ per hour", "answer": ["45", "forty-five", "£45"], "explanation": "The \"standard rate is sixty pounds an hour\", but \"community and non-profit groups pay forty-five\", and Sanjay confirms \"We're a non-profit\". Sixty is the distractor." },
+            { "n": 6, "prompt": "Presenters must bring their own ____", "answer": ["adaptor", "adapter"], "explanation": "Sanjay asks about a cable, but Tamsin says \"there's an HDMI cable in the room\". Instead, \"your speakers will need to bring their own adaptor\", so \"cable\" is wrong." }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "Which catering option does Sanjay choose?",
+              "options": [
+                { "key": "A", "text": "pizza" },
+                { "key": "B", "text": "a hot buffet" },
+                { "key": "C", "text": "sandwich platters" },
+                { "key": "D", "text": "sharing platters" }
+              ],
+              "answer": "D",
+              "explanation": "Pizza \"had all gone cold\" last time, the hot buffet is \"more than our sponsor will cover\", and sandwiches are \"a bit dull\". Sanjay decides: \"let's go for the mezze platters\"."
+            },
+            {
+              "n": 8,
+              "prompt": "When must the final catering numbers be given to the kitchen?",
+              "options": [
+                { "key": "A", "text": "ten days before the event" },
+                { "key": "B", "text": "one week before the event" },
+                { "key": "C", "text": "three days before the event" },
+                { "key": "D", "text": "on the morning of the event" }
+              ],
+              "answer": "C",
+              "explanation": "Tamsin says \"It used to be a full week before the event, but they changed that this year, so now it's just three days before.\" One week was the old rule, so B is a trap."
+            },
+            {
+              "n": 9,
+              "prompt": "Which drinks will the group have at the event?",
+              "options": [
+                { "key": "A", "text": "tea and coffee" },
+                { "key": "B", "text": "soft drinks paid for by the group" },
+                { "key": "C", "text": "water provided free of charge" },
+                { "key": "D", "text": "a mixture of hot and cold drinks" }
+              ],
+              "answer": "C",
+              "explanation": "Tamsin says there are \"jugs of tap water on every table at no extra cost\", and Sanjay replies \"I think we'll just have the water\". Tea and coffee cost \"two pounds per person\" and are not ordered."
+            },
+            {
+              "n": 10,
+              "prompt": "How will Sanjay pay the deposit?",
+              "options": [
+                { "key": "A", "text": "by card over the phone" },
+                { "key": "B", "text": "by bank transfer" },
+                { "key": "C", "text": "in cash on the evening" },
+                { "key": "D", "text": "through the sponsor" }
+              ],
+              "answer": "B",
+              "explanation": "Paying \"by card over the phone\" is mentioned, but the card \"is with our treasurer, and she's away\", so Sanjay asks \"Could I do a bank transfer instead?\" and Tamsin agrees."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l10",
+      "section": 2,
+      "title": "Induction day at a software company",
+      "topic": "work",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "male" },
+        "A": { "role": "Nadia Botha, head of people operations", "accent": "en-ZA", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 2. You will hear the head of people operations at a software company giving an induction talk to new members of staff. First, you have some time to look at questions 1 to 4." },
+        { "pause": 25, "label": "Look at questions 1 to 4" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 4." },
+        { "s": "A", "t": "Good morning, everyone, and welcome to Corvane Software. I'm Nadia Botha, and I lead the people operations team, which some companies still call human resources." },
+        { "s": "A", "t": "I'll give you a quick overview of the company and some practical information, and then my colleagues will take you on a tour of the building." },
+        { "s": "A", "t": "Let me start with a little history. Corvane was set up eleven years ago by two friends working from a flat above a bakery. These days, most people know us for our learning apps for primary schools, so they assume that's how we began." },
+        { "s": "A", "t": "In fact, our very first product was an appointment booking system for dental clinics. The education work only came later, when one of the founders became a parent and saw how poor some school software was." },
+        { "s": "A", "t": "Now, working arrangements. Until last year, we asked everyone to be in the office on Tuesdays and Thursdays. That turned out to suit some teams far better than others." },
+        { "s": "A", "t": "So there's no longer a company-wide rule. Instead, each team agrees its own office days with its team lead, and you'll find out what yours are this afternoon." },
+        { "s": "A", "t": "Next, your laptops. They've been set up for you, but if anything goes wrong, please don't email me, and don't ring the helpdesk number on the noticeboard downstairs, because that line was closed in the spring." },
+        { "s": "A", "t": "Instead, post a message in the IT support channel on our chat app. Someone from the infrastructure team checks it constantly and will normally reply within the hour." },
+        { "s": "A", "t": "Finally, every one of you has been given a buddy. Your buddy isn't your line manager, and they won't be assessing your work during probation. For technical questions, your team lead is still the best person to ask." },
+        { "s": "A", "t": "Your buddy is there for all the small, everyday things nobody writes down, such as how to book leave, where the spare chargers are kept, or which coffee machine actually works." },
+        { "s": "N", "t": "Before you hear the rest of the talk, you have some time to look at questions 5 to 10." },
+        { "pause": 30, "label": "Look at questions 5 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 5 to 10." },
+        { "s": "A", "t": "Before the tour, let me tell you about the meeting rooms on the second floor, because each one has quite a specific purpose. They're all named after birds." },
+        { "s": "A", "t": "The largest is the Kestrel, right by the lifts. Because of its size, people imagine we hold our parties and team celebrations there, but it's actually reserved for meetings with clients. It has the best screen, and it's closest to reception." },
+        { "s": "A", "t": "Next to it is the Heron. That used to be where we interviewed job candidates, but most interviews happen online now, so we've turned it into our device lab." },
+        { "s": "A", "t": "There are shelves of old phones and tablets in there, so you can check how your app looks and runs on each one." },
+        { "s": "A", "t": "Opposite those two is the Wren. It's small and soundproofed, so you might think it's ideal for concentrating, but please don't use it for that. Our learning design team records the tutorial videos that go with our apps in there, and they book it most days." },
+        { "s": "A", "t": "If you need to concentrate, go to the Osprey. We did consider turning it into a games room, but staff voted against that, so it's now a silent space: no calls and no conversations." },
+        { "s": "A", "t": "Then there's the Lark. You might expect your induction sessions to be held there, but we'll be using the canteen for those. The Lark is where our recruitment team meets candidates for the interviews that still take place in person." },
+        { "s": "A", "t": "So if you see a nervous-looking visitor waiting outside, give them a smile." },
+        { "s": "A", "t": "And last, at the end of the corridor, is the Finch. That's our multi-faith room, and anyone can use it for prayer or simply for some quiet reflection. We just ask that you leave your shoes on the rack outside." },
+        { "s": "A", "t": "Right, that's everything from me. Let's head up to the second floor." },
+        { "s": "N", "t": "That is the end of section 2." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What was Corvane Software's first product?",
+              "options": [
+                { "key": "A", "text": "a learning app for primary schools" },
+                { "key": "B", "text": "a booking system for dentists" },
+                { "key": "C", "text": "a website for a local bakery" },
+                { "key": "D", "text": "a game for young children" }
+              ],
+              "answer": "B",
+              "explanation": "People \"assume\" the company began with school apps, but Nadia says \"In fact, our very first product was an appointment booking system for dental clinics.\" The bakery is only where the founders worked."
+            },
+            {
+              "n": 2,
+              "prompt": "What is the company's current policy on office attendance?",
+              "options": [
+                { "key": "A", "text": "Everyone comes in on Tuesdays and Thursdays." },
+                { "key": "B", "text": "Staff may choose any days they like." },
+                { "key": "C", "text": "Each team decides on its own office days." },
+                { "key": "D", "text": "New staff must work in the office every day." }
+              ],
+              "answer": "C",
+              "explanation": "Tuesdays and Thursdays was the rule \"Until last year\". Now \"each team agrees its own office days with its team lead\", so A describes the old policy."
+            },
+            {
+              "n": 3,
+              "prompt": "What should new staff do if they have a problem with their laptop?",
+              "options": [
+                { "key": "A", "text": "email Nadia" },
+                { "key": "B", "text": "phone the helpdesk" },
+                { "key": "C", "text": "write in an online support channel" },
+                { "key": "D", "text": "ask their team lead" }
+              ],
+              "answer": "C",
+              "explanation": "Nadia says \"please don't email me\" and the helpdesk line \"was closed in the spring\". Instead, \"post a message in the IT support channel on our chat app\"."
+            },
+            {
+              "n": 4,
+              "prompt": "What is the main role of each new employee's buddy?",
+              "options": [
+                { "key": "A", "text": "to answer technical questions" },
+                { "key": "B", "text": "to assess work during probation" },
+                { "key": "C", "text": "to help with practical day-to-day matters" },
+                { "key": "D", "text": "to act as a line manager" }
+              ],
+              "answer": "C",
+              "explanation": "The buddy \"isn't your line manager\", \"won't be assessing your work\", and the team lead is best for technical questions. The buddy is for \"the small, everyday things nobody writes down\", such as booking leave."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "What is each meeting room on the second floor used for? Choose SIX answers from the box and write the correct letter, A-H, next to questions 5-10.",
+          "title": "Purposes",
+          "options": [
+            { "key": "A", "text": "meeting external customers" },
+            { "key": "B", "text": "working without interruption" },
+            { "key": "C", "text": "testing products on different hardware" },
+            { "key": "D", "text": "filming instructional material" },
+            { "key": "E", "text": "religious or personal reflection" },
+            { "key": "F", "text": "interviewing job applicants" },
+            { "key": "G", "text": "holding social occasions" },
+            { "key": "H", "text": "running staff induction sessions" }
+          ],
+          "questions": [
+            { "n": 5, "prompt": "the Kestrel", "answer": "A", "explanation": "People imagine \"parties and team celebrations\" happen there (G), \"but it's actually reserved for meetings with clients\"." },
+            { "n": 6, "prompt": "the Heron", "answer": "C", "explanation": "It \"used to be where we interviewed job candidates\" (F), but it is now \"our device lab\" with \"old phones and tablets\" to \"check how your app looks and runs on each one\"." },
+            { "n": 7, "prompt": "the Wren", "answer": "D", "explanation": "\"You might think it's ideal for concentrating, but please don't use it for that.\" The team \"records the tutorial videos\" there, which matches filming instructional material." },
+            { "n": 8, "prompt": "the Osprey", "answer": "B", "explanation": "\"If you need to concentrate, go to the Osprey.\" The games room idea (G) was rejected, and it is \"a silent space: no calls and no conversations\"." },
+            { "n": 9, "prompt": "the Lark", "answer": "F", "explanation": "Induction sessions (H) will be in \"the canteen\", not the Lark. The Lark is \"where our recruitment team meets candidates for the interviews that still take place in person\"." },
+            { "n": 10, "prompt": "the Finch", "answer": "E", "explanation": "The Finch is \"our multi-faith room\" used \"for prayer or simply for some quiet reflection\", which matches religious or personal reflection." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l11",
+      "section": 3,
+      "title": "Dissertation tutorial: remote work and productivity",
+      "topic": "education",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Aoife, student", "accent": "en-IE", "voice": "female" },
+        "B": { "role": "Dr Grant, supervisor", "accent": "en-US", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 3. You will hear a student called Aoife talking to her supervisor, Dr Grant, about her dissertation on productivity in remote work. First, you have some time to look at questions 1 to 5." },
+        { "pause": 30, "label": "Look at questions 1 to 5" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 5." },
+        { "s": "B", "t": "Come in, Aoife. So, how's the dissertation going? Last time we met, you were planning to look at remote workers in general." },
+        { "s": "A", "t": "That's right, but I've narrowed it down to software developers now." },
+        { "s": "B", "t": "Was that because of the gap in the literature you mentioned?" },
+        { "s": "A", "t": "Not really. There's actually quite a lot of research on developers. It's partly because I worked in web development before university, so I know the field. But the main reason is that Tallis Systems agreed to let me survey their staff." },
+        { "s": "B", "t": "Well, access like that is valuable, so that makes sense. Now, in your proposal you said you'd measure productivity by counting each developer's commits, the changes they save to the code." },
+        { "s": "A", "t": "Yes, I thought it would be more objective than just asking people how productive they feel." },
+        { "s": "B", "t": "I understand the appeal, but once people know their commits are being counted, they start splitting their work into lots of tiny ones. You end up measuring habits, not output. I wouldn't even use it alongside the survey." },
+        { "s": "A", "t": "OK, I'll drop it, then. The survey itself has gone quite well. Sixty-three of the ninety staff have completed it, which is more than I expected." },
+        { "s": "B", "t": "That's an excellent response rate. Any problems?" },
+        { "s": "A", "t": "Just one. I asked how many hours a week they spent on deep work, and a lot of people seem to have read that as overtime. So I can't really use those answers." },
+        { "s": "B", "t": "That's a wording issue. Make a note of it in your limitations section. So, what have the results shown so far?" },
+        { "s": "A", "t": "Well, I'd assumed people would work longer hours at home, and they did, so no surprises there. I also predicted that online meetings wouldn't be any shorter than face-to-face ones, and that was right too." },
+        { "s": "A", "t": "But I thought parents of young children would struggle most at home, and in fact they rated themselves as more productive there than in the office. And the group who felt least productive at home was the junior developers, which I really didn't expect." },
+        { "s": "B", "t": "Interesting. Perhaps they miss being able to ask the person sitting next to them. And how are the office days being used?" },
+        { "s": "A", "t": "Mainly for collaboration, as you'd expect." },
+        { "s": "N", "t": "Before you hear the rest of the discussion, you have some time to look at questions 6 to 10." },
+        { "pause": 25, "label": "Look at questions 6 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 6 to 10." },
+        { "s": "B", "t": "So, what's the next step?" },
+        { "s": "A", "t": "I was going to run a couple of focus groups to explore those findings." },
+        { "s": "B", "t": "Hmm. With colleagues in the same room, people rarely admit they struggle to concentrate. I'd do individual video interviews instead. Around eight should be plenty." },
+        { "s": "A", "t": "Right. That's easier to arrange anyway, as half of them are fully remote." },
+        { "s": "B", "t": "But since you'll be recording people, you'll need to send the ethics committee a new consent form. Not a whole new application, just that form." },
+        { "s": "A", "t": "OK. And I was thinking of asking the interviewees to keep a time diary, maybe for two weeks." },
+        { "s": "B", "t": "Good idea, but two weeks is a lot to ask of busy people. One week will give you enough data." },
+        { "s": "B", "t": "Now, your literature review. It's strong on fully remote work, but most companies now use hybrid working, and you've only got a couple of sources on that. You'll need more." },
+        { "s": "A", "t": "I'll look for some recent studies. When would you like the methodology chapter?" },
+        { "s": "B", "t": "Could you manage the end of February?" },
+        { "s": "A", "t": "That's tight, because the interviews won't be finished by then." },
+        { "s": "B", "t": "Fair enough. I'm at a conference in the first week of March, so let's say the fifteenth of March." },
+        { "s": "A", "t": "The fifteenth of March. That's fine. Thanks, Dr Grant." },
+        { "s": "N", "t": "That is the end of section 3." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Why did Aoife decide to focus on software developers?",
+              "options": [
+                { "key": "A", "text": "There was little existing research on them." },
+                { "key": "B", "text": "She had previously worked in the industry." },
+                { "key": "C", "text": "A company offered her access to its employees." },
+                { "key": "D", "text": "Her supervisor recommended it." }
+              ],
+              "answer": "C",
+              "explanation": "Aoife rejects the literature gap (\"There's actually quite a lot of research on developers\") and says her work experience is only \"partly\" the reason: \"the main reason is that Tallis Systems agreed to let me survey their staff\"."
+            },
+            {
+              "n": 2,
+              "prompt": "What is Dr Grant's view of counting commits to measure productivity?",
+              "options": [
+                { "key": "A", "text": "It is more objective than a survey." },
+                { "key": "B", "text": "It should be used together with the survey." },
+                { "key": "C", "text": "It may change the way people behave." },
+                { "key": "D", "text": "It would take too long to analyse." }
+              ],
+              "answer": "C",
+              "explanation": "Dr Grant says \"once people know their commits are being counted, they start splitting their work into lots of tiny ones\". A is Aoife's original idea, and he rejects B: \"I wouldn't even use it alongside the survey.\""
+            },
+            {
+              "n": 3,
+              "prompt": "What problem did Aoife have with her survey?",
+              "options": [
+                { "key": "A", "text": "Fewer people responded than she had hoped." },
+                { "key": "B", "text": "Many people misunderstood one question." },
+                { "key": "C", "text": "Some staff refused to give details of their hours." },
+                { "key": "D", "text": "It took participants too long to complete." }
+              ],
+              "answer": "B",
+              "explanation": "The response was \"more than I expected\", so A is wrong. The problem was that the question on deep work was misread: \"a lot of people seem to have read that as overtime\"."
+            }
+          ]
+        },
+        {
+          "type": "mcq_multi",
+          "instructions": "Choose TWO letters, A-E.",
+          "questions": [
+            {
+              "n": 4,
+              "count": 2,
+              "prompt": "Which TWO findings from the survey surprised Aoife?",
+              "options": [
+                { "key": "A", "text": "Staff worked longer hours at home." },
+                { "key": "B", "text": "Online meetings were no shorter than face-to-face ones." },
+                { "key": "C", "text": "Parents of young children felt more productive at home." },
+                { "key": "D", "text": "Junior developers felt least productive at home." },
+                { "key": "E", "text": "Office days were mainly used for collaboration." }
+              ],
+              "answers": ["C", "D"],
+              "explanation": "She expected parents to \"struggle most at home\", but \"in fact they rated themselves as more productive there\", and the junior developers result was something she \"really didn't expect\". Longer hours were \"no surprises\", meetings were what she \"predicted\", and collaboration was \"as you'd expect\"."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Write NO MORE THAN TWO WORDS AND/OR A NUMBER for each answer.",
+          "title": "Plan for the next stage of the dissertation",
+          "wordLimit": "NO MORE THAN TWO WORDS AND/OR A NUMBER",
+          "questions": [
+            { "n": 6, "prompt": "Replace focus groups with individual ____ (about eight people)", "answer": ["video interviews"], "explanation": "Aoife planned \"focus groups\", but Dr Grant says \"I'd do individual video interviews instead. Around eight should be plenty.\"" },
+            { "n": 7, "prompt": "Send the ethics committee a new ____ form", "answer": ["consent"], "explanation": "\"You'll need to send the ethics committee a new consent form. Not a whole new application, just that form.\" A new application is not needed." },
+            { "n": 8, "prompt": "Interviewees keep a time diary for ____", "answer": ["one week", "1 week", "a week"], "explanation": "Aoife suggests \"maybe for two weeks\", but Dr Grant says \"two weeks is a lot to ask of busy people. One week will give you enough data.\"" },
+            { "n": 9, "prompt": "Literature review: find more sources on ____", "answer": ["hybrid working", "hybrid work"], "explanation": "The review is \"strong on fully remote work\", but \"most companies now use hybrid working, and you've only got a couple of sources on that. You'll need more.\"" },
+            { "n": 10, "prompt": "Deadline for methodology chapter: ____", "answer": ["15 March", "15th March", "March 15", "March 15th"], "explanation": "\"The end of February\" is rejected because the interviews \"won't be finished by then\", and the first week of March is a conference, so Dr Grant says \"let's say the fifteenth of March\"." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l12",
+      "section": 4,
+      "title": "Noise pollution, health and learning",
+      "topic": "health",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Lecturer", "accent": "en-NZ", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 4. You will hear a lecture on noise pollution and its effects on health and learning. First, you have some time to look at questions 1 to 10." },
+        { "pause": 30, "label": "Look at questions 1 to 10" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 10." },
+        { "s": "A", "t": "Good afternoon. In this week's lecture on environmental health, I'm turning to a form of pollution that gets far less attention than dirty air or water, and that's noise." },
+        { "s": "A", "t": "Let's begin with measurement. Noise is measured in decibels, and the first thing to understand is that the decibel scale is logarithmic. That means an increase of ten decibels is heard as roughly a doubling of loudness, not a small step up." },
+        { "s": "A", "t": "So a busy street isn't just a little louder than a quiet office. To our ears, it may be several times as loud." },
+        { "s": "A", "t": "Why has noise been neglected for so long? Partly because it's invisible and leaves no trace. Once a lorry has passed, there's nothing to photograph and nothing to clean up, so it's easy for planners to treat it as a minor nuisance." },
+        { "s": "A", "t": "But the evidence on health is now hard to ignore. The key point is that our bodies respond to noise even when we're asleep. A sudden sound activates the stress response, and hormones such as cortisol are released into the blood." },
+        { "s": "A", "t": "Interestingly, most people don't actually wake up. What happens instead is that their sleep becomes fragmented. They move repeatedly between deeper and lighter stages, so they feel tired the next day without knowing why." },
+        { "s": "A", "t": "Over many years, this repeated stress response seems to take a toll on the heart and blood vessels. Long-term exposure to traffic and aircraft noise has been linked with high blood pressure and, through that, with heart disease." },
+        { "s": "A", "t": "A common objection is that people simply get used to noise, and if you ask residents near a busy road, many will say exactly that." },
+        { "s": "A", "t": "However, when researchers monitor them at night, their pulse still rises each time a heavy vehicle goes by. Their minds may have adapted, but their bodies haven't." },
+        { "s": "A", "t": "Let's move on to learning, where some of the most worrying findings are. Studies of primary schools located under airport flight paths have repeatedly found that the children there are slower to develop reading skills than similar children in quieter schools." },
+        { "s": "A", "t": "One explanation is that noise interferes with working memory. That's the system we use to hold information in mind for a few seconds, for example when we do mental arithmetic or follow a long instruction." },
+        { "s": "A", "t": "Teachers suffer too, of course. They raise their voices, repeat themselves and lose teaching time, although that's a topic for another day." },
+        { "s": "A", "t": "I'd like to mention one small case study from a primary school in the town of Kerrowmore, where acoustic panels were fitted to the ceilings of every classroom." },
+        { "s": "A", "t": "The researchers expected test results to improve, but in the first year the scores hardly changed. What did improve, quite dramatically, was the children's behaviour. Teachers reported fewer arguments and far less shouting, which may lead to better results later." },
+        { "s": "A", "t": "Finally, what can be done? At the source, quieter road surfaces and limits on night flights both help. Many cities also plant trees and hedges along busy roads, and residents generally welcome this." },
+        { "s": "A", "t": "But we should be honest about what greenery achieves. A narrow row of trees reduces noise much less than people imagine. Its main benefit is psychological: when people can't see the traffic, they tend to find it less annoying." },
+        { "s": "A", "t": "That doesn't make it worthless, of course. In the next session, we'll look at how cities map noise, and how those maps are used in planning decisions." },
+        { "s": "N", "t": "That is the end of section 4." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "title": "Noise pollution: effects on health and learning",
+          "wordLimit": "ONE WORD ONLY",
+          "questions": [
+            { "n": 1, "prompt": "Measurement: the decibel scale is ____, so a rise of ten decibels sounds about twice as loud", "answer": ["logarithmic"], "explanation": "The lecturer says \"the decibel scale is logarithmic. That means an increase of ten decibels is heard as roughly a doubling of loudness\"." },
+            { "n": 2, "prompt": "Noise is often neglected because it is ____ and leaves no trace", "answer": ["invisible"], "explanation": "\"Why has noise been neglected for so long? Partly because it's invisible and leaves no trace.\"" },
+            { "n": 3, "prompt": "Health: during sleep, noise causes the release of hormones such as ____", "answer": ["cortisol"], "explanation": "\"A sudden sound activates the stress response, and hormones such as cortisol are released into the blood.\"" },
+            { "n": 4, "prompt": "Most people do not wake up, but their sleep becomes ____", "answer": ["fragmented"], "explanation": "\"Most people don't actually wake up. What happens instead is that their sleep becomes fragmented.\"" },
+            { "n": 5, "prompt": "Long-term exposure is linked to high blood ____ and heart disease", "answer": ["pressure"], "explanation": "Long-term exposure \"has been linked with high blood pressure and, through that, with heart disease\"." },
+            { "n": 6, "prompt": "Residents who say they are used to noise still show a rise in ____ at night", "answer": ["pulse"], "explanation": "People say they \"get used to noise\", but \"their pulse still rises each time a heavy vehicle goes by\"." },
+            { "n": 7, "prompt": "Learning: children at schools under flight paths are slower to develop ____ skills", "answer": ["reading"], "explanation": "Children at schools \"under airport flight paths\" are \"slower to develop reading skills than similar children in quieter schools\"." },
+            { "n": 8, "prompt": "Noise interferes with ____ memory, which is needed for mental arithmetic", "answer": ["working"], "explanation": "\"Noise interferes with working memory\", which we use \"when we do mental arithmetic or follow a long instruction\"." },
+            { "n": 9, "prompt": "Kerrowmore study: after acoustic panels were fitted, the main improvement was in pupils' ____", "answer": ["behaviour", "behavior"], "explanation": "Researchers \"expected test results to improve, but... the scores hardly changed. What did improve, quite dramatically, was the children's behaviour.\" Test results are the distractor." },
+            { "n": 10, "prompt": "Solutions: the main benefit of trees along roads is ____ rather than physical", "answer": ["psychological"], "explanation": "Trees reduce noise \"much less than people imagine. Its main benefit is psychological: when people can't see the traffic, they tend to find it less annoying.\"" }
+          ]
+        }
+      ]
+    }
+  ]
+}

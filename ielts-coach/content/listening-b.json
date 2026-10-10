@@ -1,0 +1,603 @@
+{
+  "kind": "listening",
+  "items": [
+    {
+      "id": "l05",
+      "section": 1,
+      "title": "Renting a flat near the university",
+      "topic": "society",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Callum, letting agent", "accent": "en-NZ", "voice": "male" },
+        "B": { "role": "Priya, student", "accent": "en-IN", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 1. You will hear a telephone conversation between a student who is moving to a new city and an agent at a letting agency. First, you have some time to look at questions 1 to 6." },
+        { "pause": 25, "label": "Look at questions 1 to 6" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 6." },
+        { "s": "A", "t": "Good morning, Brightwater Lettings, Callum speaking. How can I help you?" },
+        { "s": "B", "t": "Hi. I'm starting a postgraduate course at Harlowe University in September, and I'm looking for a flat somewhere near the campus." },
+        { "s": "A", "t": "No problem. I'll just take a few details first. Could I have your name, please?" },
+        { "s": "B", "t": "Yes, it's Priya Vellanki." },
+        { "s": "A", "t": "And how do you spell your surname?" },
+        { "s": "B", "t": "It's V, E, double L, A, N, K, I." },
+        { "s": "A", "t": "Thanks. And what will you be studying? Some of our landlords like to know." },
+        { "s": "B", "t": "Well, my first degree was in computing, but the master's is in robotics. It's a one-year course." },
+        { "s": "A", "t": "Robotics, great. So when would you like to move in?" },
+        { "s": "B", "t": "The course begins on the fifteenth of September, so I was thinking of the tenth. Oh, actually, no. My flight doesn't land until the eleventh, so let's say the twelfth." },
+        { "s": "A", "t": "The twelfth of September. And what's your budget per month?" },
+        { "s": "B", "t": "I was hoping to keep it under six hundred and fifty pounds, but after looking online, that seems unrealistic. I could go up to seven hundred and twenty." },
+        { "s": "A", "t": "Seven hundred and twenty a month. That gives us more options. And how close to the campus do you need to be? There are cheaper flats in Dunmore, which is about thirty minutes away by bus." },
+        { "s": "B", "t": "I'd rather not depend on buses. I'd like to walk. Fifteen minutes would be perfect, but I could accept up to twenty-five." },
+        { "s": "A", "t": "So a maximum of twenty-five minutes on foot. Is there anything else you definitely need? Parking, for example?" },
+        { "s": "B", "t": "No, I don't drive. But I'm bringing my bicycle, so I'll need somewhere safe to keep a bicycle, ideally inside the building." },
+        { "s": "A", "t": "Right. Secure storage for a bicycle. I'll add that." },
+        { "s": "N", "t": "Before you hear the rest of the conversation, you have some time to look at questions 7 to 10." },
+        { "pause": 25, "label": "Look at questions 7 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 7 to 10." },
+        { "s": "A", "t": "OK, I've got two flats that might suit you. The first is on Quarry Lane. It's a one-bedroom flat, about ten minutes' walk from the main campus, and it's six hundred and ninety a month." },
+        { "s": "B", "t": "That sounds ideal. It's not on a main road, is it? I'm a light sleeper." },
+        { "s": "A", "t": "No, it's a quiet side street. The problem is that the current tenant is staying until the end of October, so it won't be free when you arrive." },
+        { "s": "B", "t": "Oh, that's a shame. I can't really stay in a hotel for six weeks." },
+        { "s": "A", "t": "The second is in Linden Court, a newer building about twenty minutes' walk away. It's seven hundred and ten a month, and the rent includes water and internet." },
+        { "s": "A", "t": "Sorry, I'm reading last year's advert. The landlord no longer pays for the internet, so it's water and heating now." },
+        { "s": "B", "t": "Heating's probably more useful in winter anyway. Is there a lift?" },
+        { "s": "A", "t": "There is, and there's a bike room in the basement." },
+        { "s": "B", "t": "Perfect. So how do I reserve it? I'm still overseas." },
+        { "s": "A", "t": "Normally we ask for one week's rent as a holding deposit. But for international students, this landlord will accept a letter from your university confirming your place instead." },
+        { "s": "A", "t": "You'll need your passport too, but only when you sign the contract." },
+        { "s": "B", "t": "I can ask the admissions office for that letter today. Could I see the flat before I agree to anything? My cousin lives in the city, but he's away until next month." },
+        { "s": "A", "t": "I can show you round on a video call. My colleague usually does those on Thursdays, but she's on holiday this week, so I'll do it myself on Friday morning." },
+        { "s": "B", "t": "Friday's fine. Would ten o'clock suit you?" },
+        { "s": "A", "t": "Ten o'clock it is. I'll email you a link." },
+        { "s": "B", "t": "Thanks so much, Callum." },
+        { "s": "N", "t": "That is the end of section 1." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "title": "Brightwater Lettings: tenant enquiry form",
+          "wordLimit": "ONE WORD AND/OR A NUMBER",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Name: Priya ____",
+              "answer": ["Vellanki"],
+              "explanation": "Priya spells her surname: \"V, E, double L, A, N, K, I\". \"Double L\" means the letter L is written twice."
+            },
+            {
+              "n": 2,
+              "prompt": "Course: one-year master's in ____",
+              "answer": ["robotics"],
+              "explanation": "Priya says \"my first degree was in computing, but the master's is in robotics\". Computing is her previous degree, so it is the distractor."
+            },
+            {
+              "n": 3,
+              "prompt": "Move-in date: ____ September",
+              "answer": ["12", "12th", "twelfth"],
+              "explanation": "She first suggests the tenth, then corrects herself: \"My flight doesn't land until the eleventh, so let's say the twelfth.\" The fifteenth is the day her course begins."
+            },
+            {
+              "n": 4,
+              "prompt": "Maximum rent per month: £____",
+              "answer": ["720", "£720"],
+              "explanation": "She hoped to pay under six hundred and fifty pounds but says \"I could go up to seven hundred and twenty\", and Callum repeats the figure."
+            },
+            {
+              "n": 5,
+              "prompt": "Maximum walking time to campus: ____ minutes",
+              "answer": ["25", "twenty-five"],
+              "explanation": "\"Fifteen minutes would be perfect, but I could accept up to twenty-five\", confirmed by Callum: \"a maximum of twenty-five minutes on foot\". Thirty minutes is the bus journey from Dunmore."
+            },
+            {
+              "n": 6,
+              "prompt": "Essential: secure storage for a ____",
+              "answer": ["bicycle", "bike"],
+              "explanation": "Priya rejects parking (\"I don't drive\") but says \"I'll need somewhere safe to keep a bicycle\"."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "Why is the flat on Quarry Lane unsuitable for Priya?",
+              "options": [
+                { "key": "A", "text": "It costs more than she can afford." },
+                { "key": "B", "text": "It is on a noisy road." },
+                { "key": "C", "text": "It will not be available when she arrives." },
+                { "key": "D", "text": "It is too far from the campus." }
+              ],
+              "answer": "C",
+              "explanation": "Callum says \"the current tenant is staying until the end of October, so it won't be free when you arrive\". The rent of £690 is within her budget, it is \"a quiet side street\" and it is only ten minutes' walk away."
+            },
+            {
+              "n": 8,
+              "prompt": "What is included in the rent at Linden Court?",
+              "options": [
+                { "key": "A", "text": "water and internet" },
+                { "key": "B", "text": "heating and internet" },
+                { "key": "C", "text": "water and heating" },
+                { "key": "D", "text": "heating and electricity" }
+              ],
+              "answer": "C",
+              "explanation": "Callum first says \"water and internet\" but corrects himself because he is reading an old advert: \"The landlord no longer pays for the internet, so it's water and heating now.\""
+            },
+            {
+              "n": 9,
+              "prompt": "To reserve the Linden Court flat, Priya needs to provide",
+              "options": [
+                { "key": "A", "text": "one week's rent." },
+                { "key": "B", "text": "a copy of her passport." },
+                { "key": "C", "text": "a letter from her university." },
+                { "key": "D", "text": "a reference from a previous landlord." }
+              ],
+              "answer": "C",
+              "explanation": "A week's rent is what they \"normally\" ask for, but \"this landlord will accept a letter from your university confirming your place instead\". The passport is needed \"only when you sign the contract\"."
+            },
+            {
+              "n": 10,
+              "prompt": "How will Priya see the flat?",
+              "options": [
+                { "key": "A", "text": "on a video call on Thursday" },
+                { "key": "B", "text": "on a video call on Friday" },
+                { "key": "C", "text": "through a visit by her cousin" },
+                { "key": "D", "text": "at a viewing after she arrives" }
+              ],
+              "answer": "B",
+              "explanation": "Video viewings are usually on Thursdays, but the colleague is on holiday, so Callum says \"I'll do it myself on Friday morning\". Her cousin is \"away until next month\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l06",
+      "section": 2,
+      "title": "A new city volunteer programme",
+      "topic": "society",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "P": { "role": "Radio presenter", "accent": "en-GB", "voice": "male" },
+        "C": { "role": "Leanne Dube, programme coordinator", "accent": "en-ZA", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 2. You will hear part of a local radio programme in which a coordinator talks about a new volunteer programme in the city. First, you have some time to look at questions 1 to 4." },
+        { "pause": 25, "label": "Look at questions 1 to 4" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 4." },
+        { "s": "P", "t": "Good afternoon, and welcome back to Corrington Today. My guest this week is Leanne Dube, who coordinates the city's new volunteer programme, Corrington Connect. Leanne, welcome." },
+        { "s": "C", "t": "Thanks for having me. Corrington Connect brings together all the volunteering opportunities in the city in one place, and I'd like to explain how it works." },
+        { "s": "C", "t": "People often assume the council started it to save money, but that was never the aim. Last year we surveyed residents, and almost half said they'd like to volunteer but had no idea where to start. So the programme is really about making that first step easier." },
+        { "s": "C", "t": "Now, a question I get all the time is how much time you have to give. When we launched in the spring, we asked for two hours every week. That put a lot of people off, especially parents and shift workers, so we've changed it." },
+        { "s": "C", "t": "The minimum is now four hours a month, and you can spread those hours however you like." },
+        { "s": "C", "t": "Before you start, there's one thing everyone has to do, and that's come to an induction evening at the Central Library. We tried running these online at first, but volunteers told us they missed meeting each other face to face." },
+        { "s": "C", "t": "References, by the way, are only needed for some roles, which I'll come to." },
+        { "s": "C", "t": "So what do volunteers get in return? Well, we can't pay anyone, and many people ask about free bus travel. Sadly, the budget didn't stretch that far." },
+        { "s": "C", "t": "What every volunteer does get is a Connect card, which gives ten percent off at more than sixty local shops and cafés. And after a hundred hours, you can also ask for a reference letter from the council." },
+        { "s": "N", "t": "Before you hear the rest of the talk, you have some time to look at questions 5 to 10." },
+        { "pause": 25, "label": "Look at questions 5 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 5 to 10." },
+        { "s": "C", "t": "Let me tell you about some of our projects. The Riverside Clean-up takes place on the first Saturday morning of every month, and in summer we add Wednesday evenings too." },
+        { "s": "C", "t": "Lots of parents bring their children along, and we have gloves in small sizes, so it's ideal for families." },
+        { "s": "C", "t": "Digital Buddies pairs volunteers with older residents who want help with things like video calls or online banking. You don't need to be an expert. If you can use a smartphone, you can help." },
+        { "s": "C", "t": "The project was actually suggested by a retired teacher, Mr Osei, who wrote to the council last year." },
+        { "s": "C", "t": "Our Homework Club runs on weekday afternoons at the Fenwick Community Centre. Because volunteers work with under-sixteens, they need a background check, and that can take up to three weeks, so please apply early." },
+        { "s": "C", "t": "The Community Fridge collects food from supermarkets that would otherwise be thrown away. It's been so popular that we've had to stop taking new volunteers for now, but if you put your name on our list, we'll contact you as soon as a place comes up." },
+        { "s": "C", "t": "Then there's the Heritage Trail, where our guides lead walking tours of the old town. At the moment the walks start outside the City Museum, but from January they'll begin at the new visitor centre on Harbour Street." },
+        { "s": "C", "t": "Finally, the Repair Café, held on the last Thursday evening of each month. People bring broken lamps, laptops and toasters, and volunteers fix them. We'd hoped the local college would run it with us, but that hasn't happened yet." },
+        { "s": "C", "t": "This is the one project where experience really matters, so we're looking for people who know about electronics or sewing. To find out more about any of these projects, just visit the council website. Thank you." },
+        { "s": "N", "t": "That is the end of section 2." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Why did the council set up Corrington Connect?",
+              "options": [
+                { "key": "A", "text": "to reduce the cost of public services" },
+                { "key": "B", "text": "to help residents who wanted to volunteer but did not know how" },
+                { "key": "C", "text": "to replace council staff who had left" },
+                { "key": "D", "text": "because many residents said they felt lonely" }
+              ],
+              "answer": "B",
+              "explanation": "Leanne rejects the money-saving idea (\"that was never the aim\") and says \"almost half said they'd like to volunteer but had no idea where to start\"."
+            },
+            {
+              "n": 2,
+              "prompt": "What is the minimum time commitment for volunteers now?",
+              "options": [
+                { "key": "A", "text": "two hours a week" },
+                { "key": "B", "text": "one day a month" },
+                { "key": "C", "text": "four hours a month" },
+                { "key": "D", "text": "four hours a week" }
+              ],
+              "answer": "C",
+              "explanation": "Two hours a week was the original requirement, but \"we've changed it. The minimum is now four hours a month\"."
+            },
+            {
+              "n": 3,
+              "prompt": "What must all new volunteers do before they start?",
+              "options": [
+                { "key": "A", "text": "complete an online training course" },
+                { "key": "B", "text": "provide references" },
+                { "key": "C", "text": "attend an evening session at the library" },
+                { "key": "D", "text": "have an interview with Leanne" }
+              ],
+              "answer": "C",
+              "explanation": "\"There's one thing everyone has to do, and that's come to an induction evening at the Central Library.\" The sessions used to be online, and references are \"only needed for some roles\"."
+            },
+            {
+              "n": 4,
+              "prompt": "What does every volunteer receive?",
+              "options": [
+                { "key": "A", "text": "free bus travel" },
+                { "key": "B", "text": "discounts at local businesses" },
+                { "key": "C", "text": "a certificate after fifty hours" },
+                { "key": "D", "text": "a reference letter from the council" }
+              ],
+              "answer": "B",
+              "explanation": "\"What every volunteer does get is a Connect card, which gives ten percent off at more than sixty local shops and cafés.\" Free bus travel was not affordable, and the reference letter is only available after a hundred hours."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "What does the speaker say about each of the following projects? Choose SIX answers from the box and write the correct letter, A-H, next to questions 5-10.",
+          "title": "Corrington Connect projects",
+          "options": [
+            { "key": "A", "text": "It needs volunteers with relevant experience." },
+            { "key": "B", "text": "It only takes place at weekends." },
+            { "key": "C", "text": "It requires a check that can take several weeks." },
+            { "key": "D", "text": "It is not accepting new volunteers at present." },
+            { "key": "E", "text": "It is particularly suitable for families." },
+            { "key": "F", "text": "It will soon start from a different place." },
+            { "key": "G", "text": "It is run jointly with a local college." },
+            { "key": "H", "text": "It was proposed by a member of the public." }
+          ],
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Riverside Clean-up",
+              "answer": "E",
+              "explanation": "Leanne says children come with their parents and \"it's ideal for families\". B is wrong because there are also \"Wednesday evenings\" in summer."
+            },
+            {
+              "n": 6,
+              "prompt": "Digital Buddies",
+              "answer": "H",
+              "explanation": "\"The project was actually suggested by a retired teacher, Mr Osei, who wrote to the council.\" A is wrong: \"You don't need to be an expert.\""
+            },
+            {
+              "n": 7,
+              "prompt": "Homework Club",
+              "answer": "C",
+              "explanation": "Volunteers \"need a background check, and that can take up to three weeks\"."
+            },
+            {
+              "n": 8,
+              "prompt": "Community Fridge",
+              "answer": "D",
+              "explanation": "\"We've had to stop taking new volunteers for now\", although people can put their names on a list."
+            },
+            {
+              "n": 9,
+              "prompt": "Heritage Trail",
+              "answer": "F",
+              "explanation": "The walks start outside the City Museum now, but \"from January they'll begin at the new visitor centre on Harbour Street\"."
+            },
+            {
+              "n": 10,
+              "prompt": "Repair Café",
+              "answer": "A",
+              "explanation": "\"This is the one project where experience really matters\". G is wrong because working with the college \"hasn't happened yet\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l07",
+      "section": 3,
+      "title": "Survey on online learning habits",
+      "topic": "education",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Hana, student", "accent": "en-US", "voice": "female" },
+        "B": { "role": "Tom, student", "accent": "en-AU", "voice": "male" },
+        "L": { "role": "Dr Lindqvist, lecturer", "accent": "en-CA", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 3. You will hear two students, Hana and Tom, discussing the results of a survey they carried out on students' online learning habits. Later, their lecturer, Dr Lindqvist, joins them. First, you have some time to look at questions 1 to 5." },
+        { "pause": 30, "label": "Look at questions 1 to 5" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 5." },
+        { "s": "A", "t": "OK, Tom, the survey's closed. We got two hundred and twelve responses in the end, which is more than I expected." },
+        { "s": "B", "t": "Great. So, what jumped out at you?" },
+        { "s": "A", "t": "Honestly, the playback speed. Nearly sixty percent said they usually watch recorded lectures at one and a half times normal speed or faster. I had no idea it was that common." },
+        { "s": "B", "t": "Neither did I. I assumed it was just a few people cramming before exams. What about the discussion forums?" },
+        { "s": "A", "t": "Hardly anyone uses them, but that's not exactly news. Nobody ever posts there. The devices question was the real shock for me, though. Over forty percent said their phone is the main device they study on." },
+        { "s": "B", "t": "Same here. I was sure laptops would dominate. And the late-night studying? Most people said they do their work after ten p.m." },
+        { "s": "A", "t": "Well, we predicted that in our proposal, so no surprise there." },
+        { "s": "B", "t": "Right. But we've got a problem with question nine, the one about weekly study hours." },
+        { "s": "A", "t": "I know. Some people included time in lectures and others didn't, so the figures are all over the place. It's not the number of responses that worries me. It's that people read the question in completely different ways." },
+        { "s": "B", "t": "Could we send out a short follow-up survey to check?" },
+        { "s": "A", "t": "There isn't time. The report's due in ten days." },
+        { "s": "B", "t": "Then should we just leave question nine out?" },
+        { "s": "A", "t": "If we drop it, it looks as if we're hiding something. Let's keep the data, but explain the problem clearly in the limitations section." },
+        { "s": "B", "t": "Fair enough. Oh, and the question about platform features. I expected the practice quizzes to come top, but the feature people said they'd miss most was the automatic captions." },
+        { "s": "A", "t": "Yes, even native speakers said they use them to check technical terms." },
+        { "s": "N", "t": "Before you hear the rest of the discussion, you have some time to look at questions 6 to 10." },
+        { "pause": 30, "label": "Look at questions 6 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 6 to 10." },
+        { "s": "L", "t": "Hello, you two. You wanted to talk through your draft report?" },
+        { "s": "A", "t": "Yes, thanks, Dr Lindqvist. Could we start with the introduction?" },
+        { "s": "L", "t": "Sure. It's clear and it's the right length, but it reads a bit like a blog post. You say online learning is obviously the future. Keep the content, but make the language more neutral and academic." },
+        { "s": "B", "t": "OK. What about the methodology? We wondered if it was too long." },
+        { "s": "L", "t": "I thought so at first, but when I reread it, every paragraph was necessary. I wouldn't change a thing there." },
+        { "s": "A", "t": "And the results? We've got that big table of percentages." },
+        { "s": "L", "t": "It's hard to read. I was going to suggest moving it to an appendix, but readers need those figures. Keep it where it is, but present the key findings as a bar chart as well." },
+        { "s": "B", "t": "Right. And the discussion section?" },
+        { "s": "L", "t": "At the moment, it only talks about your own data. You need to show how your findings compare with published research. Three or four studies would be enough." },
+        { "s": "A", "t": "And finally, the recommendations. Should we add more? There are only five." },
+        { "s": "L", "t": "Five is plenty. The problem is that they repeat a lot of what's in your conclusion. I'd merge the two into a single section." },
+        { "s": "B", "t": "That makes sense. Thanks, that's really helpful." },
+        { "s": "N", "t": "That is the end of section 3." }
+      ],
+      "groups": [
+        {
+          "type": "mcq_multi",
+          "instructions": "Choose TWO letters, A-E.",
+          "questions": [
+            {
+              "n": 1,
+              "count": 2,
+              "prompt": "Which TWO survey findings surprised both Hana and Tom?",
+              "options": [
+                { "key": "A", "text": "Many students speed up recorded lectures." },
+                { "key": "B", "text": "Few students use the online discussion forums." },
+                { "key": "C", "text": "Most students study late at night." },
+                { "key": "D", "text": "Many students mainly use a phone for studying." },
+                { "key": "E", "text": "Students rarely watch a recording more than once." }
+              ],
+              "answers": ["A", "D"],
+              "explanation": "Hana says of the playback speed \"I had no idea it was that common\" and Tom agrees (\"Neither did I\"); the phone finding was \"the real shock\" and Tom replies \"Same here\". The forum result was \"not exactly news\" and late-night study was \"no surprise\"."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 3,
+              "prompt": "What is the problem with question nine of the survey?",
+              "options": [
+                { "key": "A", "text": "Too few students answered it." },
+                { "key": "B", "text": "Students understood it in different ways." },
+                { "key": "C", "text": "It was too long and complicated." },
+                { "key": "D", "text": "Some of the answers were lost." }
+              ],
+              "answer": "B",
+              "explanation": "Hana says \"Some people included time in lectures and others didn't\" and \"people read the question in completely different ways\". She says it is \"not the number of responses that worries me\", so A is wrong."
+            },
+            {
+              "n": 4,
+              "prompt": "What do the students decide to do about question nine?",
+              "options": [
+                { "key": "A", "text": "send out a follow-up survey" },
+                { "key": "B", "text": "leave it out of the report" },
+                { "key": "C", "text": "explain the problem in the report" },
+                { "key": "D", "text": "interview some of the respondents" }
+              ],
+              "answer": "C",
+              "explanation": "A follow-up survey is rejected (\"There isn't time\") and so is dropping the question. Hana says \"keep the data, but explain the problem clearly in the limitations section\"."
+            },
+            {
+              "n": 5,
+              "prompt": "Which feature of the online platform did students say they would miss most?",
+              "options": [
+                { "key": "A", "text": "the practice quizzes" },
+                { "key": "B", "text": "the automatic captions" },
+                { "key": "C", "text": "the discussion forums" },
+                { "key": "D", "text": "the downloadable slides" }
+              ],
+              "answer": "B",
+              "explanation": "Tom \"expected the practice quizzes to come top\", but \"the feature people said they'd miss most was the automatic captions\"."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "What does Dr Lindqvist suggest for each section of the report? Choose FIVE answers from the box and write the correct letter, A-H, next to questions 6-10.",
+          "title": "Suggestions",
+          "options": [
+            { "key": "A", "text": "shorten it" },
+            { "key": "B", "text": "add a chart" },
+            { "key": "C", "text": "move part of it to an appendix" },
+            { "key": "D", "text": "combine it with another section" },
+            { "key": "E", "text": "refer to other studies" },
+            { "key": "F", "text": "change the style of writing" },
+            { "key": "G", "text": "make no changes" },
+            { "key": "H", "text": "add more points" }
+          ],
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "Introduction",
+              "answer": "F",
+              "explanation": "\"It reads a bit like a blog post... make the language more neutral and academic.\" A is wrong because \"it's the right length\"."
+            },
+            {
+              "n": 7,
+              "prompt": "Methodology",
+              "answer": "G",
+              "explanation": "The students wonder if it is too long, and he \"thought so at first\", but then says \"I wouldn't change a thing there\"."
+            },
+            {
+              "n": 8,
+              "prompt": "Results",
+              "answer": "B",
+              "explanation": "He considered an appendix but rejects it: \"Keep it where it is, but present the key findings as a bar chart as well.\""
+            },
+            {
+              "n": 9,
+              "prompt": "Discussion",
+              "answer": "E",
+              "explanation": "\"You need to show how your findings compare with published research. Three or four studies would be enough.\""
+            },
+            {
+              "n": 10,
+              "prompt": "Recommendations",
+              "answer": "D",
+              "explanation": "Hana asks about adding more, but he says \"Five is plenty\" and \"I'd merge the two into a single section\", meaning the recommendations and the conclusion."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l08",
+      "section": 4,
+      "title": "Biomimicry in architecture",
+      "topic": "science",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "L": { "role": "Lecturer", "accent": "en-IE", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 4. You will hear a lecture on biomimicry in architecture. First, you have some time to look at questions 1 to 4." },
+        { "pause": 25, "label": "Look at questions 1 to 4" },
+        { "s": "N", "t": "Now look at questions 5 to 10." },
+        { "pause": 25, "label": "Look at questions 5 to 10" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 10." },
+        { "s": "L", "t": "Good morning, everyone. Today's lecture is about biomimicry, which means designing buildings and products by learning from nature. Architects have always borrowed from nature, of course. Think of stone columns carved to look like palm trees." },
+        { "s": "L", "t": "But that's really decoration. Biomimicry asks a different question: not what does nature look like, but how does it work? And it doesn't mean using natural materials, either. A biomimetic building might be made entirely of concrete, glass and steel." },
+        { "s": "L", "t": "So why has this approach become so popular over the last twenty years or so? Some people point to fashion, and there's certainly been pressure to cut energy use. But in my view, the main reason is computing power." },
+        { "s": "L", "t": "Architects can now model how air or heat moves through a design in a matter of hours, so ideas taken from nature can actually be tested before anything is built." },
+        { "s": "L", "t": "The example everyone mentions is an office and shopping centre in Harare, in Zimbabwe, which opened in the nineteen nineties. Its designers studied termite mounds, which stay surprisingly cool inside even when the land around them is extremely hot." },
+        { "s": "L", "t": "The building has no conventional air-conditioning system. Instead, cool night air is drawn in and stored in the heavy concrete structure, and warm air escapes through chimneys on the roof." },
+        { "s": "L", "t": "And because there was no expensive cooling equipment to install, it actually cost less to build than a typical office of the same size." },
+        { "s": "L", "t": "Interestingly, the biology behind it has since been questioned. The original theory was that hot air simply rose up through the mound and out of the top, like smoke from a chimney." },
+        { "s": "L", "t": "But more recent studies suggest the mound behaves more like a lung. As the outside temperature rises and falls each day, air moves slowly in and out, almost as if the mound were breathing." },
+        { "s": "L", "t": "Let's move on to some other examples. Many of you will have seen how water forms perfect droplets on a lotus leaf and rolls off. You might assume the leaf is very smooth, but under a microscope its surface is covered in tiny bumps, and those bumps are coated in wax." },
+        { "s": "L", "t": "As the droplets roll off, they pick up dirt and carry it away, so the leaf cleans itself. You might expect this idea to be used mainly for windows, but in fact the best-known product is a paint for outside walls, which is washed clean whenever it rains." },
+        { "s": "L", "t": "My next example comes from one of the driest places on Earth, the Namib Desert in south-western Africa. There's almost no rain there, so a small beetle survives by standing on the sand dunes in the early morning and letting fog collect on its back." },
+        { "s": "L", "t": "The water then runs down towards its mouth. Engineers have copied this idea with large mesh nets that catch fog and turn it into drinking water." },
+        { "s": "L", "t": "These nets won't work in every dry region, though. Inland deserts rarely get fog, so they're most useful in coastal areas, where fog regularly comes in from the sea." },
+        { "s": "L", "t": "Finally, consider the humble pine cone. Its scales open and close depending on the weather, with no muscles at all. People often assume this is a reaction to temperature, but it's actually humidity. When the air is dry, the scales open, and when it's damp, they close." },
+        { "s": "L", "t": "Researchers have used this principle to build panels for the outside of buildings that open and close by themselves. You might expect them to be made of plastic or metal, but they're made from thin layers of wood, which naturally swells when it absorbs moisture." },
+        { "s": "L", "t": "So the panels need no motors and no electricity. Next week, we'll look at the limits of biomimicry, and at why copying nature doesn't always produce better buildings." },
+        { "s": "N", "t": "That is the end of section 4." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "According to the lecturer, what makes biomimicry different from earlier nature-inspired architecture?",
+              "options": [
+                { "key": "A", "text": "It copies the appearance of plants and animals more closely." },
+                { "key": "B", "text": "It is based on how natural systems work." },
+                { "key": "C", "text": "It relies on natural building materials." },
+                { "key": "D", "text": "It is mainly used for decoration." }
+              ],
+              "answer": "B",
+              "explanation": "Biomimicry asks \"not what does nature look like, but how does it work?\" C is wrong: \"it doesn't mean using natural materials, either\". Decoration describes the older approach."
+            },
+            {
+              "n": 2,
+              "prompt": "What does the lecturer believe is the main reason for the recent popularity of biomimicry?",
+              "options": [
+                { "key": "A", "text": "changing fashions in design" },
+                { "key": "B", "text": "the need to reduce energy use" },
+                { "key": "C", "text": "the ability to test designs on computers" },
+                { "key": "D", "text": "greater public interest in nature" }
+              ],
+              "answer": "C",
+              "explanation": "Fashion and energy are what \"some people point to\", but \"in my view, the main reason is computing power\", because designs \"can actually be tested before anything is built\"."
+            },
+            {
+              "n": 3,
+              "prompt": "What does the lecturer say about the building in Harare?",
+              "options": [
+                { "key": "A", "text": "It was cheaper to build than a conventional office." },
+                { "key": "B", "text": "It was designed by a team of biologists." },
+                { "key": "C", "text": "It only needs air conditioning at night." },
+                { "key": "D", "text": "It was the first building to copy termite mounds." }
+              ],
+              "answer": "A",
+              "explanation": "\"Because there was no expensive cooling equipment to install, it actually cost less to build than a typical office of the same size.\" C is wrong: it has \"no conventional air-conditioning system\"; cool night air is simply drawn in."
+            },
+            {
+              "n": 4,
+              "prompt": "What does more recent research suggest about termite mounds?",
+              "options": [
+                { "key": "A", "text": "Hot air escapes from the top, as in a chimney." },
+                { "key": "B", "text": "Air moves in and out of them in a daily cycle." },
+                { "key": "C", "text": "They are cooler inside than scientists had thought." },
+                { "key": "D", "text": "They are ventilated by the termites' movements." }
+              ],
+              "answer": "B",
+              "explanation": "\"As the outside temperature rises and falls each day, air moves slowly in and out, almost as if the mound were breathing.\" A describes \"the original theory\", which \"has since been questioned\"."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Write ONE WORD ONLY for each answer.",
+          "title": "Other examples of biomimicry",
+          "wordLimit": "ONE WORD ONLY",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Lotus leaf: surface has tiny bumps coated in ____",
+              "answer": ["wax"],
+              "explanation": "\"Under a microscope its surface is covered in tiny bumps, and those bumps are coated in wax.\" The leaf is not smooth, as people might assume."
+            },
+            {
+              "n": 6,
+              "prompt": "Best-known product: a ____ for outside walls that is cleaned by rain",
+              "answer": ["paint"],
+              "explanation": "\"You might expect this idea to be used mainly for windows, but in fact the best-known product is a paint for outside walls.\""
+            },
+            {
+              "n": 7,
+              "prompt": "Namib Desert beetle: collects water from ____ on its back",
+              "answer": ["fog"],
+              "explanation": "\"There's almost no rain there\", so the beetle survives by \"letting fog collect on its back\"."
+            },
+            {
+              "n": 8,
+              "prompt": "Mesh nets based on the beetle are most useful in ____ areas",
+              "answer": ["coastal"],
+              "explanation": "\"Inland deserts rarely get fog, so they're most useful in coastal areas, where fog regularly comes in from the sea.\""
+            },
+            {
+              "n": 9,
+              "prompt": "Pine cone: scales open and close in response to ____",
+              "answer": ["humidity"],
+              "explanation": "\"People often assume this is a reaction to temperature, but it's actually humidity.\""
+            },
+            {
+              "n": 10,
+              "prompt": "Self-opening building panels are made from thin layers of ____",
+              "answer": ["wood"],
+              "explanation": "\"You might expect them to be made of plastic or metal, but they're made from thin layers of wood.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

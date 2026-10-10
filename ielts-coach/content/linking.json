@@ -1,0 +1,722 @@
+{
+  "kind": "linking",
+  "linking": [
+    {
+      "function": "Adding a point",
+      "items": [
+        {
+          "phrase": "Furthermore,",
+          "use": "To add a second, often stronger, point that supports the same argument; best at the start of a sentence in formal writing.",
+          "ex": "Public libraries give everyone free access to books. Furthermore, they offer a quiet place to study for students who live in crowded homes.",
+          "ar": "علاوة على ذلك،",
+          "note": "Always followed by a comma. Use it once or twice per essay at most; a chain of adding words at the start of every sentence looks mechanical and lowers your Coherence and Cohesion score."
+        },
+        {
+          "phrase": "Moreover,",
+          "use": "To add a further point that builds on and strengthens the one you have just made; very formal.",
+          "ex": "Cycling to work saves money on fuel and parking. Moreover, it builds exercise into a busy daily routine.",
+          "ar": "فضلاً عن ذلك،",
+          "note": "Many Arabic speakers start almost every sentence with Moreover as a translation of كما أن or وأيضاً. Examiners notice this overuse. Keep it for a point that genuinely strengthens the previous one, and avoid it in Speaking, where it sounds unnatural."
+        },
+        {
+          "phrase": "In addition,",
+          "use": "To introduce another point of equal importance to the previous one.",
+          "ex": "Remote villages often lack hospitals. In addition, poor roads make it difficult for patients to reach the nearest town.",
+          "ar": "بالإضافة إلى ذلك،",
+          "note": "Write In addition, with a comma, or In addition to + noun or -ing. Avoid the wordy In addition to that, at the start of a sentence. Wrong: In addition to raise taxes. Right: In addition to raising taxes, the government could..."
+        },
+        {
+          "phrase": "Not only ... but also ...",
+          "use": "To emphasise that there are two advantages or problems, the second one often more surprising.",
+          "ex": "Learning a musical instrument not only improves concentration but also teaches children patience.",
+          "ar": "ليس فقط ... بل أيضاً ...",
+          "note": "When Not only begins the sentence, invert the subject and auxiliary: Not only does exercise improve health, but it also reduces stress. Keep both halves grammatically parallel."
+        },
+        {
+          "phrase": "What is more,",
+          "use": "To add a further, often more persuasive, point; slightly less formal than Moreover, so it works in both writing and speaking.",
+          "ex": "Online courses are usually cheaper than campus degrees. What is more, students can study at their own pace.",
+          "ar": "وفوق ذلك،",
+          "note": "Do not shorten it to What more, which is incorrect. In Speaking, the contracted form What's more sounds natural and fluent."
+        },
+        {
+          "phrase": "Another key factor is",
+          "use": "To introduce a new main idea in a topic sentence, usually at the start of a body paragraph, without relying on a linking adverb.",
+          "ex": "Another key factor is the cost of housing, which has risen far faster than wages in most large cities.",
+          "ar": "ومن العوامل المهمة الأخرى",
+          "note": "A clear topic sentence like this is stronger than starting a paragraph with Also,. As a sentence opener, Also is informal; place also before the main verb instead: It also reduces traffic."
+        },
+        {
+          "phrase": "as well as",
+          "use": "To join two nouns or -ing forms inside one sentence, adding the second item to the first.",
+          "ex": "Volunteering develops communication skills as well as a sense of responsibility.",
+          "ar": "إلى جانب؛ وكذلك",
+          "note": "After as well as, use a noun or an -ing form, not a full clause: as well as improving fitness, not as well as it improves fitness. It is not used as a sentence opener followed by a comma."
+        }
+      ]
+    },
+    {
+      "function": "Contrasting and conceding",
+      "items": [
+        {
+          "phrase": "However,",
+          "use": "To introduce a point that contrasts with the previous sentence.",
+          "ex": "Many people believe that homework improves results. However, too much of it can leave children exhausted and unmotivated.",
+          "ar": "ومع ذلك، / غير أنّ",
+          "note": "However links two sentences, not two clauses joined by a comma. Wrong: Fees are high, however many students still apply. Right: Fees are high. However, many students still apply. Or use a semicolon: Fees are high; however, many students still apply."
+        },
+        {
+          "phrase": "On the other hand,",
+          "use": "To present the opposite side of an issue after describing one side, often paired with On the one hand.",
+          "ex": "Living in a big city offers excellent job opportunities. On the other hand, the cost of living can be extremely high.",
+          "ar": "من ناحية أخرى، (لعرض الجانب المقابل)",
+          "note": "Use it only for a genuine contrast between two sides. A very common error is to use it simply to add another point, because من ناحية أخرى in Arabic is often used that way. If the second sentence supports the first, use Furthermore or In addition instead."
+        },
+        {
+          "phrase": "Although / Even though",
+          "use": "To join a concession and a main clause in one sentence; Even though is more emphatic.",
+          "ex": "Although technology has made communication easier, many people feel lonelier than ever.",
+          "ar": "على الرغم من أنّ / مع أنّ",
+          "note": "Do not add but to the main clause. Wrong: Although it is expensive, but it is worth it. Right: Although it is expensive, it is worth it. This error comes from the Arabic pattern مع أنّ ... إلا أنّ."
+        },
+        {
+          "phrase": "Despite / In spite of",
+          "use": "To show contrast using a noun or an -ing form rather than a full clause.",
+          "ex": "Despite the high cost of living, the capital continues to attract young graduates.",
+          "ar": "على الرغم من (+ اسم)",
+          "note": "Follow it with a noun, a pronoun, an -ing form, or the fact that + clause. Wrong: Despite it is expensive. Right: Despite being expensive, or Despite the fact that it is expensive. Never write Despite of."
+        },
+        {
+          "phrase": "Whereas / While",
+          "use": "To compare two contrasting facts or groups in one sentence; useful in both Task 1 and Task 2.",
+          "ex": "Whereas older people tend to read printed newspapers, younger readers mostly get their news from social media.",
+          "ar": "بينما / في حين أنّ",
+          "note": "When whereas or while begins the sentence, put a comma between the two clauses. While can also mean during the time that, so make sure the contrast is clear."
+        },
+        {
+          "phrase": "Nevertheless,",
+          "use": "To say that something is still true even though there is a strong point against it; more formal than However.",
+          "ex": "Nuclear power produces dangerous waste. Nevertheless, some experts see it as essential for cutting carbon emissions.",
+          "ar": "ومع ذلك؛ وبالرغم من ذلك",
+          "note": "Use it after admitting a strong opposing point. It works best at the start of a sentence followed by a comma and is rarely used in everyday speech."
+        },
+        {
+          "phrase": "Admittedly, ... but ...",
+          "use": "To concede that the opposing view has some truth before returning to your own argument; very effective in opinion essays.",
+          "ex": "Admittedly, school uniforms can be expensive for some families, but they reduce the pressure on children to wear fashionable clothes.",
+          "ar": "لا بدّ من الاعتراف بأنّ ... لكنّ ...",
+          "note": "One of the best ways to show a balanced, mature argument. Keep the concession short and make the counter-argument that follows longer and stronger."
+        },
+        {
+          "phrase": "That said,",
+          "use": "To introduce a contrasting point after something you have just stated; semi-formal and very natural in speaking.",
+          "ex": "I really enjoy living in the city. That said, I would like to move somewhere quieter when I have children.",
+          "ar": "ومع ذلك؛ ورغم ما قيل",
+          "note": "Ideal in Speaking Parts 1 and 3 for showing both sides of your opinion. Always followed by a comma."
+        }
+      ]
+    },
+    {
+      "function": "Cause and effect",
+      "items": [
+        {
+          "phrase": "As a result,",
+          "use": "To introduce the result of the situation described in the previous sentence.",
+          "ex": "Many factories have moved to automated production. As a result, demand for unskilled labour has fallen.",
+          "ar": "ونتيجة لذلك،",
+          "note": "Do not confuse the sentence linker As a result, (with a comma) with the preposition as a result of + noun: As a result of the new law, smoking rates fell."
+        },
+        {
+          "phrase": "Consequently,",
+          "use": "A more formal way of introducing a logical result.",
+          "ex": "The town has no reliable bus service. Consequently, most residents depend on their cars.",
+          "ar": "وبالتالي،",
+          "note": "Formal, so better in writing than in speaking. There is no form Consequently of; the prepositional phrase is as a consequence of."
+        },
+        {
+          "phrase": "lead to / result in",
+          "use": "Verbs that link a cause (the subject) to its effect (the object), helping you avoid repeating because.",
+          "ex": "Long working hours can lead to stress, and prolonged stress may result in serious health problems.",
+          "ar": "يؤدي إلى",
+          "note": "Both are followed by a noun or -ing form, not a clause: lead to people losing their jobs, not lead to people lose their jobs. Do not write lead to that. Do not confuse result in (cause to effect) with result from (effect from cause)."
+        },
+        {
+          "phrase": "due to / owing to",
+          "use": "Prepositions that introduce the cause of something; owing to is slightly more formal.",
+          "ex": "Owing to rising rents, many small shops in the city centre have closed.",
+          "ar": "بسبب؛ نظراً لـ",
+          "note": "Follow them with a noun phrase, not a full clause. Wrong: due to people are busy. Right: due to people's busy lifestyles, or due to the fact that people are busy."
+        },
+        {
+          "phrase": "Therefore,",
+          "use": "To introduce a logical conclusion or a recommendation that follows from what you have said.",
+          "ex": "Children copy the adults around them. Therefore, parents need to model healthy eating habits.",
+          "ar": "لذلك؛ ومن ثمّ",
+          "note": "It can also go inside a clause: It is therefore essential that... Because it is an adverb, it cannot join two sentences with only a comma; use a full stop or a semicolon before it."
+        },
+        {
+          "phrase": "This is largely because",
+          "use": "To explain the main reason behind a trend or claim you have just stated, while hedging slightly.",
+          "ex": "Fewer young people are buying homes. This is largely because property prices have risen much faster than salaries.",
+          "ar": "ويعود ذلك في الأساس إلى أنّ",
+          "note": "A good way to develop an idea. Avoid starting a sentence with Because and stopping after one clause, which creates a fragment: Because prices are high. (incomplete sentence)."
+        },
+        {
+          "phrase": "stem from",
+          "use": "To say that a problem originates in a particular cause; formal and precise.",
+          "ex": "Many health problems in later life stem from habits formed in childhood.",
+          "ar": "ينبع من؛ ينشأ عن",
+          "note": "Use it in the active voice: Problems stem from poverty. Not: Problems are stemmed from poverty."
+        },
+        {
+          "phrase": "which in turn",
+          "use": "To show a chain of causes, in which one effect causes another.",
+          "ex": "Better public transport reduces traffic, which in turn improves air quality in city centres.",
+          "ar": "وهو ما يؤدي بدوره إلى",
+          "note": "Excellent for extending an idea in depth, which examiners reward under Task Response. Put a comma before which."
+        }
+      ]
+    },
+    {
+      "function": "Giving examples",
+      "items": [
+        {
+          "phrase": "For example,",
+          "use": "To introduce a specific example that supports your general point.",
+          "ex": "Some jobs are impossible to do from home. For example, nurses and bus drivers must be physically present at work.",
+          "ar": "على سبيل المثال،",
+          "note": "At the start of a sentence it is followed by a comma and a complete sentence with a verb. Wrong: For example, nurses and bus drivers. (no verb)"
+        },
+        {
+          "phrase": "For instance,",
+          "use": "Another way to introduce an example; it can also be placed in the middle of a sentence between commas.",
+          "ex": "Small changes can make a big difference to health. Taking the stairs instead of the lift, for instance, adds regular exercise to the working day.",
+          "ar": "على سبيل المثال؛ مثلاً",
+          "note": "Alternate For example and For instance to avoid repetition. In formal essays, write the words in full rather than using the abbreviation e.g."
+        },
+        {
+          "phrase": "such as",
+          "use": "To give one or more examples inside a sentence, directly after a general noun.",
+          "ex": "Outdoor activities such as hiking and cycling help people to reduce stress.",
+          "ar": "مثل",
+          "note": "No comma after such as. In formal writing it is preferred to like for giving examples. Never start a new sentence with Such as."
+        },
+        {
+          "phrase": "A case in point is",
+          "use": "To introduce a particularly clear example that proves your point; sounds sophisticated.",
+          "ex": "Investment in cycling can transform a city. A case in point is the town of Harbridge, where new bike lanes have replaced two lanes of traffic.",
+          "ar": "وخير مثال على ذلك",
+          "note": "Use it for one strong, specific example. It is followed by a noun phrase, for example A case in point is the way..."
+        },
+        {
+          "phrase": "To illustrate this,",
+          "use": "To introduce an example that explains your point in more detail.",
+          "ex": "False information can spread very quickly online. To illustrate this, a single misleading post about a health remedy can reach thousands of people within hours.",
+          "ar": "ولتوضيح ذلك،",
+          "note": "Formal and suitable for Task 2. Follow it with a complete sentence."
+        },
+        {
+          "phrase": "notably / particularly",
+          "use": "To single out one important example from a larger group.",
+          "ex": "Several sectors, notably tourism and hospitality, depend heavily on seasonal workers.",
+          "ar": "ولا سيما؛ خصوصاً",
+          "note": "Usually placed between commas or directly before the example. Do not begin a sentence with Especially, followed by a comma; that use is incorrect."
+        },
+        {
+          "phrase": "like",
+          "use": "To give examples in informal speech, especially in the Speaking test.",
+          "ex": "At weekends I usually do outdoor activities like jogging or playing football.",
+          "ar": "مثل (في الكلام غير الرسمي)",
+          "note": "Fine in Speaking, but such as is better in Writing Task 2. Avoid using like as a filler at the start of sentences in the Speaking test."
+        }
+      ]
+    },
+    {
+      "function": "Clarifying and rephrasing",
+      "items": [
+        {
+          "phrase": "In other words,",
+          "use": "To explain the same idea more simply or more directly.",
+          "ex": "The council plans to pedestrianise the city centre. In other words, cars will no longer be allowed in the main shopping streets.",
+          "ar": "بعبارة أخرى،",
+          "note": "Use it to clarify, not to repeat the same words. It works equally well in speaking and writing."
+        },
+        {
+          "phrase": "That is to say,",
+          "use": "To make a statement more precise or explain exactly what you mean; formal.",
+          "ex": "The scheme targets young offenders, that is to say, people under eighteen who have committed a crime.",
+          "ar": "أي؛ بمعنى",
+          "note": "Formal, so avoid overusing it. The abbreviation i.e. means the same but should be written out in full in essays."
+        },
+        {
+          "phrase": "To put it another way,",
+          "use": "To repeat an idea in different words so that it is easier to understand.",
+          "ex": "The service is free at the point of use. To put it another way, patients do not pay when they see a doctor.",
+          "ar": "بتعبير آخر،",
+          "note": "Common in speaking too. One rephrase is enough; do not stack several clarifying phrases together."
+        },
+        {
+          "phrase": "namely",
+          "use": "To name the specific things you have just referred to in general terms.",
+          "ex": "The plan addresses two major problems, namely traffic congestion and air pollution.",
+          "ar": "وهما؛ ألا وهي",
+          "note": "Usually follows a comma and introduces the exact items. It is not used to start a new sentence."
+        },
+        {
+          "phrase": "By this I mean",
+          "use": "To explain a term or idea you have just used, especially in speaking.",
+          "ex": "I think schools should teach more life skills. By this I mean things like cooking, managing money and filling in forms.",
+          "ar": "وأقصد بذلك",
+          "note": "Very useful in Speaking Part 3 to extend your answers. In formal essays, This means that... is a more neutral alternative."
+        },
+        {
+          "phrase": "In fact,",
+          "use": "To add information that strengthens or corrects what was just said, often with a more exact or surprising detail.",
+          "ex": "Learning languages is not only for children. In fact, many adults learn faster because they are better at organising their study.",
+          "ar": "في الواقع؛ بل إنّ",
+          "note": "Do not use In fact simply to add a point; it should introduce something stronger or more accurate than the previous statement. In speaking, Actually works in a similar way."
+        },
+        {
+          "phrase": "What this means is that",
+          "use": "To explain the practical consequence or meaning of a fact.",
+          "ex": "The population is ageing rapidly. What this means is that more resources will be needed for elderly care.",
+          "ar": "ومعنى ذلك أنّ",
+          "note": "Natural in both speaking and writing. Use it once in an answer rather than repeatedly."
+        }
+      ]
+    },
+    {
+      "function": "Sequencing and structuring an essay",
+      "items": [
+        {
+          "phrase": "This essay will argue that",
+          "use": "To state your position clearly at the end of the introduction (the thesis statement).",
+          "ex": "This essay will argue that the benefits of studying abroad far outweigh the drawbacks.",
+          "ar": "سيبيّن هذا المقال أنّ",
+          "note": "Avoid opening the introduction with Nowadays, or In this modern era, followed by a vague general statement, a very common habit among Arabic speakers. Paraphrase the question directly instead, then give your position."
+        },
+        {
+          "phrase": "Firstly,",
+          "use": "To introduce the first of several points, usually at the start of a body paragraph.",
+          "ex": "Firstly, cities with good public transport tend to have lower levels of air pollution.",
+          "ar": "أولاً،",
+          "note": "Do not confuse Firstly with At first, which means at the beginning, before a change: At first I disliked the city, but now I love it."
+        },
+        {
+          "phrase": "Secondly,",
+          "use": "To introduce the second point in a sequence.",
+          "ex": "Secondly, studying abroad helps young people to become more independent.",
+          "ar": "ثانياً،",
+          "note": "Using Firstly, Secondly and Finally in every paragraph can look mechanical. At Band 7, vary them with topic sentences such as A further benefit is..."
+        },
+        {
+          "phrase": "Finally,",
+          "use": "To introduce the last point in a list or the last body paragraph.",
+          "ex": "Finally, a shorter working week could give parents more time with their children.",
+          "ar": "وأخيراً،",
+          "note": "Do not confuse Finally with At last (after a long wait) or At the end (of a particular period or place). Finally does not mean In conclusion, so do not use it to begin your conclusion."
+        },
+        {
+          "phrase": "On the one hand, ... On the other hand, ...",
+          "use": "To structure a discussion by presenting two opposing views.",
+          "ex": "On the one hand, tourism creates jobs. On the other hand, it can damage local cultures and the environment.",
+          "ar": "من ناحية ... ومن ناحية أخرى ...",
+          "note": "The second sentence must contrast with the first. Do not write On the other hand when there is no opposing idea; use the pair to frame two genuinely different sides."
+        },
+        {
+          "phrase": "Turning to",
+          "use": "To move to a new aspect of the topic, often at the start of a new paragraph.",
+          "ex": "Turning to the disadvantages, the most serious is the cost to taxpayers.",
+          "ar": "وبالانتقال إلى",
+          "note": "Followed by a noun phrase and a comma. It signals paragraph structure clearly, which supports Coherence and Cohesion."
+        },
+        {
+          "phrase": "With regard to / As for",
+          "use": "To introduce the topic you are going to discuss next.",
+          "ex": "As for the environmental impact, the new airport would greatly increase noise levels in nearby villages.",
+          "ar": "أمّا عن؛ فيما يخصّ",
+          "note": "With regard to is formal and As for is neutral. The standard form is with regard to; avoid with regards to in formal essays."
+        },
+        {
+          "phrase": "The main reason why ... is that ...",
+          "use": "To introduce the central argument in the topic sentence of a body paragraph.",
+          "ex": "The main reason why many people move to cities is that rural areas offer few well-paid jobs.",
+          "ar": "السبب الرئيسي في ... هو أنّ ...",
+          "note": "Avoid the redundant The reason is because...; write The reason is that..."
+        }
+      ]
+    },
+    {
+      "function": "Expressing opinion",
+      "items": [
+        {
+          "phrase": "In my view,",
+          "use": "To give your personal opinion in a formal, concise way.",
+          "ex": "In my view, governments should invest more in public transport than in new roads.",
+          "ar": "في رأيي؛ من وجهة نظري",
+          "note": "Do not combine two opinion markers: In my opinion, I think... is redundant. Never write According to me, which is not correct English."
+        },
+        {
+          "phrase": "I would argue that",
+          "use": "To present your opinion as a reasoned position; slightly tentative and academic.",
+          "ex": "I would argue that free university education is an investment rather than a cost.",
+          "ar": "أرى أنّ؛ يمكنني القول إنّ",
+          "note": "Works well in the introduction and conclusion of an opinion essay."
+        },
+        {
+          "phrase": "I firmly believe that",
+          "use": "To state a strong opinion clearly.",
+          "ex": "I firmly believe that every child should learn to swim at primary school.",
+          "ar": "أؤمن إيماناً راسخاً بأنّ",
+          "note": "Agree and believe are verbs, so write I agree and I believe. Arabic speakers sometimes write I am agree, which is incorrect."
+        },
+        {
+          "phrase": "From my perspective,",
+          "use": "To introduce your personal viewpoint, suggesting that others may see the issue differently.",
+          "ex": "From my perspective, working from home has made me more productive.",
+          "ar": "من منظوري",
+          "note": "From my point of view is also correct. Avoid For my opinion and In my point of view, which are incorrect."
+        },
+        {
+          "phrase": "I agree to a certain extent",
+          "use": "To show partial agreement in an opinion essay, often leading to a balanced and nuanced answer.",
+          "ex": "I agree to a certain extent that advertising aimed at children should be restricted, but a complete ban would be unrealistic.",
+          "ar": "أتفق إلى حدّ ما",
+          "note": "If you choose partial agreement, explain clearly which part you accept and which you reject, and keep the same position all the way to the conclusion."
+        },
+        {
+          "phrase": "It seems to me that",
+          "use": "To give an opinion in a softer, less direct way; especially natural in Speaking Part 3.",
+          "ex": "It seems to me that young people today are under more pressure than previous generations.",
+          "ar": "يبدو لي أنّ",
+          "note": "A useful alternative to I think when speaking. Avoid It seems for me."
+        },
+        {
+          "phrase": "I am inclined to think that",
+          "use": "To express a careful, slightly tentative opinion.",
+          "ex": "I am inclined to think that online shopping will never fully replace traditional stores.",
+          "ar": "أميل إلى الاعتقاد بأنّ",
+          "note": "Sounds thoughtful and academic. Always followed by a full clause."
+        }
+      ]
+    },
+    {
+      "function": "Generalising and hedging",
+      "items": [
+        {
+          "phrase": "Generally speaking,",
+          "use": "To introduce a statement that is true in most cases but not all.",
+          "ex": "Generally speaking, people who exercise regularly sleep better.",
+          "ar": "بشكل عام؛ عموماً",
+          "note": "Followed by a comma. It helps you avoid overgeneralising, which weakens an argument in Task 2."
+        },
+        {
+          "phrase": "tend to",
+          "use": "To say that something usually happens, without claiming that it always does.",
+          "ex": "Young people tend to adopt new technology much faster than their grandparents.",
+          "ar": "يميل إلى؛ غالباً ما",
+          "note": "Followed by the base form of a verb: tend to spend, not tend to spending. One of the simplest ways to soften a claim."
+        },
+        {
+          "phrase": "It could be argued that",
+          "use": "To present a view that some people hold, or an idea you want to suggest carefully.",
+          "ex": "It could be argued that social media has made people more aware of global issues.",
+          "ar": "قد يُقال إنّ؛ يمكن القول إنّ",
+          "note": "Impersonal and academic. Very useful for presenting the opposing view before you respond to it."
+        },
+        {
+          "phrase": "to some extent",
+          "use": "To show that something is partly, but not completely, true.",
+          "ex": "To some extent, the rise in obesity reflects changes in the type of work people do.",
+          "ar": "إلى حدّ ما",
+          "note": "Can begin or end a sentence. The noun is extent; to some extend is a common spelling mistake."
+        },
+        {
+          "phrase": "In most cases,",
+          "use": "To limit a claim to the majority of situations.",
+          "ex": "In most cases, students who have part-time jobs learn to manage their time more effectively.",
+          "ar": "في معظم الحالات،",
+          "note": "A safer alternative to always or all, which make an argument easy to challenge."
+        },
+        {
+          "phrase": "may / might / can",
+          "use": "Modal verbs that make a claim less absolute and more academic.",
+          "ex": "Banning cars from city centres may reduce pollution, but it might also hurt local businesses.",
+          "ar": "قد؛ ربما؛ يمكن أن",
+          "note": "Avoid absolute words such as always, never, all people and everyone. Writing Everyone knows that... is an overgeneralisation that weakens your position."
+        },
+        {
+          "phrase": "It is widely believed that",
+          "use": "To report a common view without saying exactly who holds it.",
+          "ex": "It is widely believed that learning a second language improves memory.",
+          "ar": "يُعتقد على نطاق واسع أنّ",
+          "note": "A passive reporting structure typical of academic writing. Avoid the clumsy It is believed by many people that..."
+        },
+        {
+          "phrase": "arguably",
+          "use": "To say that a statement can be supported by good reasons, although some people may disagree.",
+          "ex": "Clean drinking water is arguably the most important public health achievement in history.",
+          "ar": "من المرجّح القول إنّ؛ يمكن القول إنّ",
+          "note": "Usually placed before the word it modifies or at the start of a sentence. It lets you make a strong claim while still hedging it."
+        }
+      ]
+    },
+    {
+      "function": "Concluding",
+      "items": [
+        {
+          "phrase": "In conclusion,",
+          "use": "To begin the final paragraph of an essay and summarise your position.",
+          "ex": "In conclusion, although technology has some drawbacks in the classroom, its benefits outweigh them when it is used wisely.",
+          "ar": "في الختام،",
+          "note": "Use it once, at the start of the last paragraph. Do not write At the end, or In the end, as a translation of في النهاية; In the end means finally, after a long process, not in summary."
+        },
+        {
+          "phrase": "To conclude,",
+          "use": "An alternative to In conclusion with the same meaning.",
+          "ex": "To conclude, governments and individuals must share responsibility for reducing waste.",
+          "ar": "ختاماً،",
+          "note": "Do not introduce new arguments in the conclusion; restate your opinion and summarise your main reasons."
+        },
+        {
+          "phrase": "To sum up,",
+          "use": "To summarise your main points briefly; slightly less formal, so also suitable in speaking.",
+          "ex": "To sum up, both parents and schools play a vital role in teaching children good manners.",
+          "ar": "خلاصة القول،",
+          "note": "Acceptable in essays, but avoid informal versions such as All in all, and do not write To summarise everything above."
+        },
+        {
+          "phrase": "On balance,",
+          "use": "To give your final judgement after weighing up both sides of an argument.",
+          "ex": "On balance, I believe that the advantages of working from home outweigh the disadvantages.",
+          "ar": "بعد الموازنة بين الجانبين،",
+          "note": "Ideal for discussion and advantages/disadvantages essays, where you still need to give a clear final opinion."
+        },
+        {
+          "phrase": "All things considered,",
+          "use": "To give a conclusion after considering all the facts.",
+          "ex": "All things considered, a gradual increase in the retirement age seems the most realistic solution.",
+          "ar": "بعد أخذ جميع الأمور بعين الاعتبار،",
+          "note": "Followed by a comma. Slightly less formal than On balance, so it also works well in speaking."
+        },
+        {
+          "phrase": "For the reasons mentioned above,",
+          "use": "To link your final opinion back to the arguments in your body paragraphs.",
+          "ex": "For the reasons mentioned above, I am convinced that school sport should remain compulsory.",
+          "ar": "للأسباب المذكورة آنفاً،",
+          "note": "A neat way to show logical progression. Keep the final sentence short and clear."
+        },
+        {
+          "phrase": "Overall,",
+          "use": "In Task 1, to introduce the overview of the main trends; in Task 2, to begin a final summarising sentence.",
+          "ex": "Overall, the proportion of students studying online rose steadily, while campus enrolment declined.",
+          "ar": "بشكل عام؛ إجمالاً",
+          "note": "In Task 1, a clear overview beginning with Overall, is essential for Band 7 in Task Achievement. Give the main trends only, with no detailed figures."
+        }
+      ]
+    },
+    {
+      "function": "Describing data (Task 1 trends and comparisons)",
+      "items": [
+        {
+          "phrase": "rose sharply / increased dramatically",
+          "use": "To describe a fast, large upward movement on a graph.",
+          "ex": "The number of visitors to Lindale Museum rose sharply from 20,000 in 2015 to 65,000 in 2020.",
+          "ar": "ارتفع بشكل حادّ",
+          "note": "Use by for the size of the change and to for the final figure: rose by 45,000 to 65,000. Wrong: increased with 10%. Right: increased by 10%."
+        },
+        {
+          "phrase": "declined gradually / fell steadily",
+          "use": "To describe a slow, continuous downward movement.",
+          "ex": "Meanwhile, the proportion of households with a landline telephone declined gradually, reaching 30% by the end of the period.",
+          "ar": "انخفض تدريجياً",
+          "note": "Rise, fall and decline are intransitive here: The number rose, not The number was risen. For variety, use noun forms: There was a gradual decline in..."
+        },
+        {
+          "phrase": "peaked at",
+          "use": "To give the highest point reached on a graph.",
+          "ex": "Sales of electric bicycles peaked at 12,000 units in 2022 before falling slightly.",
+          "ar": "بلغ ذروته عند",
+          "note": "Write peaked at 12,000 or reached a peak of 12,000. Peaked to is incorrect."
+        },
+        {
+          "phrase": "levelled off / remained stable",
+          "use": "To describe a period when a figure stopped changing after rising or falling.",
+          "ex": "After several years of growth, the unemployment rate in Norland levelled off at around 5%.",
+          "ar": "استقرّ عند مستوى معيّن",
+          "note": "British spelling is levelled, with a double l. Remained stable and stayed constant are useful alternatives."
+        },
+        {
+          "phrase": "fluctuated between ... and ...",
+          "use": "To describe a figure that went up and down irregularly.",
+          "ex": "The price of coffee beans fluctuated between £3 and £5 per kilo throughout the decade.",
+          "ar": "تذبذب بين ... و ...",
+          "note": "Give the range rather than describing every small change; the examiner wants the general pattern."
+        },
+        {
+          "phrase": "accounted for / made up",
+          "use": "To describe what proportion of a total a category represents, especially in pie charts.",
+          "ex": "Transport accounted for almost a third of household spending in Velmont, while food made up just 15%.",
+          "ar": "شكّل؛ استحوذ على (نسبة من المجموع)",
+          "note": "Use the active form: Transport accounted for 30%, not Transport was accounted for 30%. Use the number of with countable nouns (people, cars) and the amount of with uncountable nouns (money, energy)."
+        },
+        {
+          "phrase": "twice as many ... as",
+          "use": "To compare two figures as a multiple.",
+          "ex": "In 2020, twice as many students studied business as engineering at Corwick University.",
+          "ar": "ضعف عدد ... مقارنةً بـ",
+          "note": "Use many with countable nouns and much with uncountable nouns: three times as much energy as. Double the number of... is another option."
+        },
+        {
+          "phrase": "compared with / in comparison with",
+          "use": "To compare figures for two categories, countries or years.",
+          "ex": "Spending on health rose to 18% in Velmont, compared with only 9% in neighbouring Delbria.",
+          "ar": "مقارنةً بـ",
+          "note": "Compare like with like: the figure for men was higher than that for women, not higher than women."
+        }
+      ]
+    }
+  ],
+  "collocations": [
+    {
+      "topic": "technology",
+      "items": [
+        { "c": "rapid technological advances", "ex": "Rapid technological advances have transformed the way people shop, bank and communicate.", "ar": "التطورات التكنولوجية المتسارعة" },
+        { "c": "become increasingly reliant on", "ex": "Students have become increasingly reliant on search engines and rarely open printed reference books.", "ar": "يصبح معتمداً بشكل متزايد على" },
+        { "c": "a double-edged sword", "ex": "Social media is a double-edged sword: it connects distant friends but can also spread misinformation.", "ar": "سلاح ذو حدّين" },
+        { "c": "cutting-edge technology", "ex": "The new hospital is equipped with cutting-edge technology for detecting cancer at an early stage.", "ar": "أحدث التقنيات؛ تكنولوجيا متطورة" },
+        { "c": "bridge the digital divide", "ex": "Providing free broadband in rural areas would help to bridge the digital divide between town and country.", "ar": "سدّ الفجوة الرقمية" },
+        { "c": "raise privacy concerns", "ex": "Facial recognition cameras in public places raise serious privacy concerns.", "ar": "يثير مخاوف بشأن الخصوصية" },
+        { "c": "excessive screen time", "ex": "Excessive screen time before bed can disrupt children's sleep.", "ar": "الإفراط في استخدام الشاشات" },
+        { "c": "keep pace with technological change", "ex": "Older workers may need regular training to keep pace with technological change.", "ar": "مواكبة التغيّر التكنولوجي" },
+        { "c": "harness the power of technology", "ex": "Schools should harness the power of technology to personalise learning for each student.", "ar": "تسخير قوة التكنولوجيا" },
+        { "c": "automate routine tasks", "ex": "Many companies now automate routine tasks such as data entry, which allows staff to focus on creative work.", "ar": "أتمتة المهام الروتينية" },
+        { "c": "fall victim to online fraud", "ex": "Elderly people who are new to the internet are more likely to fall victim to online fraud.", "ar": "يقع ضحية للاحتيال الإلكتروني" },
+        { "c": "a breakthrough in", "ex": "A breakthrough in battery technology could make electric cars affordable for ordinary families.", "ar": "إنجاز كبير أو اختراق علمي في" }
+      ]
+    },
+    {
+      "topic": "education",
+      "items": [
+        { "c": "acquire knowledge and skills", "ex": "School should be a place where children acquire knowledge and skills that they will use throughout their lives.", "ar": "اكتساب المعرفة والمهارات" },
+        { "c": "broaden your horizons", "ex": "Studying abroad allows students to broaden their horizons and understand other cultures.", "ar": "توسيع الآفاق" },
+        { "c": "equal access to education", "ex": "Equal access to education is essential if every child is to reach their full potential.", "ar": "تكافؤ فرص الحصول على التعليم" },
+        { "c": "sit an exam", "ex": "In many countries, students sit a national exam at the end of secondary school.", "ar": "يتقدّم للامتحان؛ يؤدّي الامتحان" },
+        { "c": "pursue a degree in", "ex": "More young women are choosing to pursue a degree in engineering.", "ar": "يسعى للحصول على شهادة جامعية في" },
+        { "c": "place too much emphasis on", "ex": "Many schools place too much emphasis on test scores and too little on creativity.", "ar": "يُولي اهتماماً مفرطاً بـ" },
+        { "c": "foster creativity", "ex": "Art and drama lessons foster creativity and help children express their emotions.", "ar": "تنمية الإبداع" },
+        { "c": "meet the needs of individual learners", "ex": "Large classes make it difficult for teachers to meet the needs of individual learners.", "ar": "تلبية احتياجات كل متعلّم على حدة" },
+        { "c": "gain practical experience", "ex": "Internships allow students to gain practical experience before they graduate.", "ar": "اكتساب خبرة عملية" },
+        { "c": "a heavy academic workload", "ex": "A heavy academic workload leaves many teenagers with little time for sport or hobbies.", "ar": "عبء دراسي ثقيل" },
+        { "c": "reach their full potential", "ex": "With the right support, students with learning difficulties can reach their full potential.", "ar": "بلوغ أقصى إمكاناتهم" },
+        { "c": "a student-centred approach", "ex": "A student-centred approach encourages learners to ask questions and work together.", "ar": "نهج يتمحور حول الطالب" },
+        { "c": "keep up with their studies", "ex": "Students who work long hours in part-time jobs often struggle to keep up with their studies.", "ar": "مواكبة دراستهم" }
+      ]
+    },
+    {
+      "topic": "work",
+      "items": [
+        { "c": "job satisfaction", "ex": "For many employees, job satisfaction matters more than a high salary.", "ar": "الرضا الوظيفي" },
+        { "c": "strike a balance between work and family life", "ex": "Flexible hours help parents to strike a balance between work and family life.", "ar": "تحقيق التوازن بين العمل والحياة الأسرية" },
+        { "c": "job security", "ex": "Short-term contracts offer little job security, which makes it hard for young people to plan for the future.", "ar": "الأمان الوظيفي" },
+        { "c": "climb the career ladder", "ex": "Employees who keep updating their skills are more likely to climb the career ladder.", "ar": "الترقّي في السلّم الوظيفي" },
+        { "c": "a highly competitive job market", "ex": "In a highly competitive job market, a degree alone is no longer enough to secure a good position.", "ar": "سوق عمل شديد التنافس" },
+        { "c": "earn a living", "ex": "Many artists find it difficult to earn a living from their work alone.", "ar": "يكسب رزقه" },
+        { "c": "long working hours", "ex": "Long working hours leave many parents with little time to spend with their children.", "ar": "ساعات العمل الطويلة" },
+        { "c": "flexible working arrangements", "ex": "Flexible working arrangements, such as working four longer days a week, can help companies keep their staff.", "ar": "ترتيبات العمل المرنة" },
+        { "c": "improve your job prospects", "ex": "Learning a second language can greatly improve your job prospects.", "ar": "تحسين فرصك في الحصول على عمل" },
+        { "c": "the gender pay gap", "ex": "Requiring companies to publish salary data may help to close the gender pay gap.", "ar": "فجوة الأجور بين الجنسين" },
+        { "c": "a skills shortage", "ex": "A skills shortage in the construction industry has delayed many housing projects.", "ar": "نقص في المهارات والكفاءات" },
+        { "c": "take early retirement", "ex": "Some workers take early retirement so that they can care for their grandchildren.", "ar": "يتقاعد مبكراً" }
+      ]
+    },
+    {
+      "topic": "environment",
+      "items": [
+        { "c": "tackle climate change", "ex": "International cooperation is the only realistic way to tackle climate change.", "ar": "التصدّي لتغيّر المناخ" },
+        { "c": "reduce carbon emissions", "ex": "Replacing old diesel buses with electric ones would reduce carbon emissions in city centres.", "ar": "خفض انبعاثات الكربون" },
+        { "c": "renewable energy sources", "ex": "Countries with long hours of sunshine are well placed to rely on renewable energy sources.", "ar": "مصادر الطاقة المتجددة" },
+        { "c": "reduce your carbon footprint", "ex": "Eating less meat is one simple way for individuals to reduce their carbon footprint.", "ar": "تقليل البصمة الكربونية" },
+        { "c": "endangered species", "ex": "Protected nature reserves give endangered species a chance to recover.", "ar": "الأنواع المهددة بالانقراض" },
+        { "c": "irreversible damage", "ex": "Overfishing can cause irreversible damage to marine ecosystems.", "ar": "ضرر لا يمكن إصلاحه" },
+        { "c": "take drastic action", "ex": "Governments must take drastic action now rather than leave the problem to future generations.", "ar": "اتخاذ إجراءات جذرية" },
+        { "c": "phase out fossil fuels", "ex": "Phasing out fossil fuels will require huge investment in public transport and clean energy.", "ar": "التخلّص التدريجي من الوقود الأحفوري" },
+        { "c": "single-use plastics", "ex": "Several cities have banned single-use plastics such as straws and shopping bags.", "ar": "البلاستيك أحادي الاستخدام" },
+        { "c": "raise environmental awareness", "ex": "School gardening projects raise environmental awareness from an early age.", "ar": "رفع الوعي البيئي" },
+        { "c": "extreme weather events", "ex": "Extreme weather events such as floods and heatwaves are becoming more frequent.", "ar": "الظواهر الجوية المتطرفة" },
+        { "c": "the depletion of natural resources", "ex": "Rapid population growth has accelerated the depletion of natural resources such as fresh water.", "ar": "استنزاف الموارد الطبيعية" }
+      ]
+    },
+    {
+      "topic": "health",
+      "items": [
+        { "c": "lead a sedentary lifestyle", "ex": "People who lead a sedentary lifestyle face a greater risk of heart disease.", "ar": "يعيش نمط حياة قليل الحركة" },
+        { "c": "take regular exercise", "ex": "Doctors recommend that adults take regular exercise, even if it is only a brisk daily walk.", "ar": "يمارس الرياضة بانتظام" },
+        { "c": "put a strain on the health service", "ex": "An ageing population will put a strain on the health service unless funding increases.", "ar": "يشكّل ضغطاً على الخدمات الصحية" },
+        { "c": "preventable diseases", "ex": "Many deaths in poorer regions are caused by preventable diseases such as measles.", "ar": "الأمراض التي يمكن الوقاية منها" },
+        { "c": "seek medical advice", "ex": "Anyone with persistent chest pain should seek medical advice immediately.", "ar": "طلب المشورة الطبية" },
+        { "c": "cut down on sugar", "ex": "Cutting down on sugar and salt is one of the easiest ways to improve your diet.", "ar": "يقلّل من تناول السكر" },
+        { "c": "adopt a healthier lifestyle", "ex": "Public campaigns encourage people to adopt a healthier lifestyle by walking more and eating less fast food.", "ar": "تبنّي نمط حياة أكثر صحة" },
+        { "c": "unhealthy eating habits", "ex": "Unhealthy eating habits formed in childhood often continue into adulthood.", "ar": "العادات الغذائية غير الصحية" },
+        { "c": "stress-related illnesses", "ex": "Long commutes and job insecurity have been linked to stress-related illnesses.", "ar": "الأمراض المرتبطة بالتوتر" },
+        { "c": "a major risk factor for", "ex": "Smoking remains a major risk factor for lung disease.", "ar": "عامل خطر رئيسي لـ" },
+        { "c": "free at the point of use", "ex": "In some countries, healthcare is free at the point of use and paid for through taxation.", "ar": "مجاني عند تلقّي الخدمة" },
+        { "c": "promote healthy eating", "ex": "Schools can promote healthy eating by removing vending machines that sell sugary snacks.", "ar": "تعزيز التغذية الصحية" },
+        { "c": "fall ill", "ex": "Workers without sick pay often keep working even when they fall ill.", "ar": "يمرض؛ يقع فريسة للمرض" }
+      ]
+    },
+    {
+      "topic": "society",
+      "items": [
+        { "c": "a widening gap between rich and poor", "ex": "A widening gap between rich and poor can lead to resentment and social unrest.", "ar": "اتساع الفجوة بين الأغنياء والفقراء" },
+        { "c": "play an active role in the community", "ex": "Retired people can play an active role in the community by volunteering at schools and charities.", "ar": "أداء دور فاعل في المجتمع" },
+        { "c": "traditional values", "ex": "Some older people worry that globalisation is eroding traditional values.", "ar": "القيم التقليدية" },
+        { "c": "close family ties", "ex": "In many Arab societies, close family ties mean that grandparents often live with their children.", "ar": "الروابط الأسرية الوثيقة" },
+        { "c": "bring about social change", "ex": "Young activists have used the internet to bring about social change.", "ar": "إحداث تغيير اجتماعي" },
+        { "c": "adapt to a new culture", "ex": "Children usually adapt to a new culture faster than their parents.", "ar": "التكيّف مع ثقافة جديدة" },
+        { "c": "commit a crime", "ex": "Young people who commit a crime for the first time should be given a second chance.", "ar": "يرتكب جريمة" },
+        { "c": "tackle the root causes of", "ex": "Rather than simply building more prisons, governments should tackle the root causes of crime, such as poverty and poor education.", "ar": "معالجة الأسباب الجذرية لـ" },
+        { "c": "the younger generation", "ex": "The younger generation is more open to living and working abroad.", "ar": "جيل الشباب" },
+        { "c": "a strong sense of community", "ex": "Small towns often have a strong sense of community, where neighbours know one another by name.", "ar": "إحساس قوي بروح الجماعة" },
+        { "c": "respect for the elderly", "ex": "Respect for the elderly is a value that many cultures try to pass on to children.", "ar": "احترام كبار السن" },
+        { "c": "lose touch with", "ex": "People who move to big cities sometimes lose touch with their roots.", "ar": "يفقد صلته بـ" }
+      ]
+    },
+    {
+      "topic": "government and policy",
+      "items": [
+        { "c": "allocate funding to", "ex": "The government should allocate more funding to mental health services.", "ar": "تخصيص التمويل لـ" },
+        { "c": "introduce legislation", "ex": "Several countries have introduced legislation to limit the number of hours employees can work.", "ar": "سنّ تشريعات" },
+        { "c": "impose strict regulations on", "ex": "Authorities should impose strict regulations on companies that pollute rivers.", "ar": "فرض لوائح صارمة على" },
+        { "c": "implement a policy", "ex": "It is one thing to announce a new policy and quite another to implement it effectively.", "ar": "تنفيذ سياسة" },
+        { "c": "cut public spending", "ex": "When governments cut public spending, libraries and youth centres are often the first to close.", "ar": "خفض الإنفاق العام" },
+        { "c": "raise taxes on", "ex": "Raising taxes on tobacco is widely seen as an effective way to reduce smoking.", "ar": "رفع الضرائب على" },
+        { "c": "impose a ban on", "ex": "The council imposed a ban on cars in the old town at weekends.", "ar": "فرض حظر على" },
+        { "c": "offer financial incentives", "ex": "Offering financial incentives, such as tax breaks, could encourage companies to hire young people.", "ar": "تقديم حوافز مالية" },
+        { "c": "enforce the law", "ex": "New rules are pointless unless the police have the resources to enforce the law.", "ar": "إنفاذ القانون" },
+        { "c": "launch a public awareness campaign", "ex": "The ministry launched a public awareness campaign about the dangers of using phones while driving.", "ar": "إطلاق حملة توعية عامة" },
+        { "c": "subsidise public transport", "ex": "Subsidising public transport would make it a realistic alternative to driving.", "ar": "دعم النقل العام مالياً" },
+        { "c": "a short-term solution", "ex": "Building wider roads is only a short-term solution to traffic congestion.", "ar": "حلّ قصير الأمد" },
+        { "c": "take responsibility for", "ex": "Governments cannot take sole responsibility for public health; individuals must also make better choices.", "ar": "تحمّل المسؤولية عن" }
+      ]
+    },
+    {
+      "topic": "data and research",
+      "items": [
+        { "c": "conduct research into", "ex": "Universities need more funding to conduct research into renewable energy.", "ar": "إجراء بحث في" },
+        { "c": "carry out a survey", "ex": "The council carried out a survey to find out how residents felt about the new cycle lanes.", "ar": "إجراء استطلاع" },
+        { "c": "collect data on", "ex": "Smart meters collect data on household energy use every thirty minutes.", "ar": "جمع البيانات عن" },
+        { "c": "draw conclusions", "ex": "It is risky to draw conclusions from such a small sample.", "ar": "استخلاص النتائج" },
+        { "c": "a growing body of evidence", "ex": "A growing body of evidence suggests that green spaces improve mental health.", "ar": "مجموعة متزايدة من الأدلة" },
+        { "c": "the findings suggest that", "ex": "The findings suggest that children who read for pleasure do better in all school subjects.", "ar": "تشير النتائج إلى أنّ" },
+        { "c": "a representative sample", "ex": "To be reliable, a survey must be based on a representative sample of the population.", "ar": "عيّنة ممثِّلة" },
+        { "c": "a strong correlation between", "ex": "The researchers found a strong correlation between sleep quality and exam results.", "ar": "ارتباط قوي بين" },
+        { "c": "the vast majority of", "ex": "The vast majority of respondents said they would prefer to work from home at least one day a week.", "ar": "الغالبية العظمى من" },
+        { "c": "a marked increase in", "ex": "The chart shows a marked increase in the number of electric cars sold after 2020.", "ar": "زيادة ملحوظة في" },
+        { "c": "be based on reliable data", "ex": "Health policies should be based on reliable data rather than on public opinion.", "ar": "قائم على بيانات موثوقة" },
+        { "c": "a slight decrease in", "ex": "There was a slight decrease in cinema attendance between March and May.", "ar": "انخفاض طفيف في" },
+        { "c": "the figures reveal that", "ex": "The figures reveal that fewer young people in Norland are learning to drive than a decade earlier.", "ar": "تكشف الأرقام أنّ" }
+      ]
+    }
+  ]
+}

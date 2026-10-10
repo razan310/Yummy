@@ -1,0 +1,443 @@
+{
+  "kind": "writing_task1",
+  "items": [
+    {
+      "id": "t1-01",
+      "chartType": "line",
+      "title": "Online learning by age group",
+      "prompt": "The graph below shows the percentage of adults in Norvia who took at least one online course between 2012 and 2024, by age group. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "line",
+        "title": "Adults taking at least one online course in Norvia, by age group",
+        "xLabels": ["2012", "2014", "2016", "2018", "2020", "2022", "2024"],
+        "yLabel": "Percentage of adults",
+        "unit": "%",
+        "yMin": 0,
+        "yMax": 50,
+        "series": [
+          { "name": "18-29", "values": [14, 19, 25, 31, 46, 42, 44] },
+          { "name": "30-44", "values": [9, 13, 18, 24, 38, 40, 45] },
+          { "name": "45-59", "values": [5, 7, 10, 13, 22, 21, 24] },
+          { "name": "60+", "values": [2, 2, 3, 5, 11, 13, 16] }
+        ]
+      },
+      "keyFeatures": [
+        "Participation rose in all four age groups over the period, with a sudden jump for every group in 2020.",
+        "The 18-29 group led for most of the period, but the 30-44 group overtook it in 2024 (45% compared with 44%).",
+        "After 2020 the youngest group dipped (46% to 42%) and only partly recovered, while the 30-44 group kept rising.",
+        "The over-60s were the least likely to study online throughout, yet their figure grew eightfold, from 2% to 16%."
+      ],
+      "usefulLanguage": [
+        "broken down into four age groups",
+        "a particularly sharp rise in",
+        "rose steadily to",
+        "respectively",
+        "dipped to ... and then recovered only slightly",
+        "continued to climb",
+        "overtook",
+        "followed a similar pattern but at much lower levels",
+        "increased eightfold"
+      ],
+      "modelAnswer": "The line graph illustrates the proportion of adults in Norvia who took at least one online course between 2012 and 2024, broken down into four age groups.\n\nOverall, participation increased in every age group over the period, with a particularly sharp rise in 2020. Although the youngest adults were the most likely to study online for most of these years, the 30-44 age group had overtaken them by 2024, while the over-60s remained the least likely to do so throughout.\n\nIn 2012, 14% of 18-29-year-olds took an online course, compared with 9% of those aged 30-44. Both figures rose steadily to 31% and 24% respectively by 2018, before jumping to 46% and 38% in 2020. Thereafter, the figure for the youngest group dipped to 42% and then recovered only slightly to 44%, whereas the 30-44 group continued to climb, reaching 45% in 2024.\n\nThe two older groups followed a similar pattern but at much lower levels. The rate for 45-59-year-olds grew from 5% in 2012 to 22% in 2020, finishing the period at 24%. Participation among the over-60s was just 2% at the start, but it increased eightfold to 16% by 2024."
+    },
+    {
+      "id": "t1-02",
+      "chartType": "line",
+      "title": "Electricity use by sector",
+      "prompt": "The graph below shows the amount of electricity consumed by data centres, households and transport in Castelmar between 2010 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "line",
+        "title": "Electricity consumption in Castelmar by sector, 2010-2025",
+        "xLabels": ["2010", "2013", "2016", "2019", "2022", "2025"],
+        "yLabel": "Electricity consumption (TWh)",
+        "unit": "",
+        "yMin": 0,
+        "yMax": 70,
+        "series": [
+          { "name": "Households", "values": [58, 60, 59, 57, 55, 54] },
+          { "name": "Data centres", "values": [6, 9, 14, 22, 33, 47] },
+          { "name": "Transport", "values": [2, 3, 5, 9, 16, 26] }
+        ]
+      },
+      "keyFeatures": [
+        "Households consumed the most electricity throughout, but their use peaked at 60 TWh in 2013 and then fell gradually to 54 TWh.",
+        "Data centre consumption grew at an accelerating rate, from 6 TWh to 47 TWh, almost eight times the 2010 level.",
+        "As a result, the gap between households and data centres narrowed from 52 TWh to just 7 TWh.",
+        "Transport was the smallest consumer; its use grew slowly until 2016 (5 TWh) and then rapidly, reaching 26 TWh in 2025."
+      ],
+      "usefulLanguage": [
+        "were the largest consumers of",
+        "edged up to a peak of",
+        "fell gradually",
+        "at an increasingly rapid rate",
+        "almost eight times the original amount",
+        "the difference between ... and ... narrowed",
+        "a mere",
+        "accelerated sharply",
+        "by contrast"
+      ],
+      "modelAnswer": "The line graph compares the amount of electricity consumed by data centres, households and transport in Castelmar from 2010 to 2025, measured in terawatt hours (TWh).\n\nOverall, households were the largest consumers of electricity throughout the period, although their use declined slightly. Meanwhile, demand from data centres and transport grew dramatically, and by 2025 data centres had closed most of the gap with households.\n\nHousehold consumption stood at 58 TWh in 2010 and edged up to a peak of 60 TWh in 2013. From then on, it fell gradually, reaching 54 TWh in 2025, just 4 TWh below its starting level.\n\nBy contrast, data centres used only 6 TWh in 2010, but this figure rose at an increasingly rapid rate, to 22 TWh in 2019 and 47 TWh in 2025, almost eight times the original amount. As a result, the difference between data centres and households narrowed from 52 TWh to only 7 TWh. Transport was the smallest consumer, using a mere 2 TWh at the start. Its consumption grew slowly to 5 TWh in 2016, but then accelerated sharply, climbing to 26 TWh by the end of the period."
+    },
+    {
+      "id": "t1-03",
+      "chartType": "bar",
+      "title": "International student numbers",
+      "prompt": "The chart below shows the number of international students enrolled at universities in five countries in 2014 and 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "bar",
+        "title": "International students enrolled at universities, 2014 and 2024",
+        "categories": ["Norvia", "Castelmar", "Estravia", "Dunholm", "Valoria"],
+        "yLabel": "Number of students (thousands)",
+        "unit": "",
+        "yMax": 250,
+        "series": [
+          { "name": "2014", "values": [185, 142, 64, 98, 23] },
+          { "name": "2024", "values": [240, 118, 156, 103, 71] }
+        ]
+      },
+      "keyFeatures": [
+        "Norvia was the most popular destination in both years, rising from 185,000 to 240,000 students.",
+        "Castelmar was the only country where numbers fell (142,000 to 118,000), slipping from second to third place.",
+        "Estravia recorded the largest increase, from 64,000 to 156,000, and became the second most popular destination.",
+        "Valoria roughly tripled its intake (23,000 to 71,000) but still ranked last, while Dunholm stayed almost unchanged (98,000 to 103,000)."
+      ],
+      "usefulLanguage": [
+        "the most popular destination",
+        "attracted more overseas students than a decade earlier",
+        "the only country to experience a fall",
+        "slip from second to third place",
+        "saw the most dramatic increase",
+        "roughly tripled its intake",
+        "relatively stable",
+        "edged up from ... to ...",
+        "well ahead of"
+      ],
+      "modelAnswer": "The bar chart compares the number of international students enrolled at universities in five countries in 2014 and 2024.\n\nOverall, four of the five countries attracted more overseas students in 2024 than a decade earlier, and Norvia remained the most popular destination in both years. The most striking changes were the rapid growth in Estravia and Valoria, while Castelmar was the only country to experience a fall.\n\nIn 2014, Norvia hosted 185,000 international students, well ahead of Castelmar, with 142,000. Ten years later, Norvia's figure had risen to 240,000, whereas Castelmar's had dropped to 118,000, causing it to slip from second to third place.\n\nEstravia saw the most dramatic increase, with enrolments rising from 64,000 to 156,000, which made it the second most popular destination by 2024. Valoria, the smallest host country in both years, roughly tripled its intake from 23,000 to 71,000, although it still ranked last. Meanwhile, the number of international students in Dunholm was relatively stable, edging up from 98,000 to 103,000, but it was overtaken by Estravia and fell from third to fourth place."
+    },
+    {
+      "id": "t1-04",
+      "chartType": "pie",
+      "title": "Working time at a software company",
+      "prompt": "The pie charts below show how employees at a software company spent their working hours in 2015 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "pie",
+        "title": "How employees at a software company spent their working hours",
+        "pies": [
+          {
+            "title": "2015",
+            "slices": [
+              { "label": "Writing code", "value": 42 },
+              { "label": "Meetings", "value": 17 },
+              { "label": "Email and messaging", "value": 11 },
+              { "label": "Testing and debugging", "value": 16 },
+              { "label": "Documentation", "value": 10 },
+              { "label": "Training", "value": 4 }
+            ]
+          },
+          {
+            "title": "2025",
+            "slices": [
+              { "label": "Writing code", "value": 30 },
+              { "label": "Meetings", "value": 23 },
+              { "label": "Email and messaging", "value": 19 },
+              { "label": "Testing and debugging", "value": 15 },
+              { "label": "Documentation", "value": 5 },
+              { "label": "Training", "value": 8 }
+            ]
+          }
+        ]
+      },
+      "keyFeatures": [
+        "Writing code was the largest category in both years, but its share fell from 42% to 30%.",
+        "Meetings (17% to 23%) and email and messaging (11% to 19%) both grew; together they took up 42% of working time in 2025, more than coding.",
+        "Training doubled from 4% to 8%, overtaking documentation, which halved from 10% to 5%.",
+        "Testing and debugging was the exception, staying almost the same (16% and 15%)."
+      ],
+      "usefulLanguage": [
+        "divided their working time between",
+        "the most time-consuming activity",
+        "took up a growing proportion of",
+        "more than twice as much as",
+        "halving from ... to ...",
+        "was almost unchanged",
+        "taken together",
+        "accounted for",
+        "overtaking"
+      ],
+      "modelAnswer": "The two pie charts show how staff at a software company divided their working time between six activities in 2015 and 2025.\n\nOverall, writing code remained the most time-consuming activity in both years, but its share fell considerably. Meanwhile, communication took up a growing proportion of the working day, and the time devoted to training doubled.\n\nIn 2015, employees spent 42% of their hours writing code, more than twice as much as on any other task. By 2025, this had decreased to 30%. Documentation also became less significant, halving from 10% to 5%, whereas the share of time spent on testing and debugging was almost unchanged, at 16% and 15% respectively.\n\nIn contrast, the proportion of time spent in meetings rose from 17% to 23%, and email and messaging increased even more sharply, from 11% to 19%. Taken together, these two forms of communication accounted for 42% of employees' time in 2025, far more than was spent on coding. Finally, although training was the smallest category in 2015, at just 4%, it had reached 8% a decade later, overtaking documentation."
+    },
+    {
+      "id": "t1-05",
+      "chartType": "table",
+      "title": "Smartphones and screen time",
+      "prompt": "The table below shows the percentage of adults who owned a smartphone and the average time adults spent looking at screens each day in four countries in 2015 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "table",
+        "title": "Smartphone ownership and daily screen time, 2015 and 2025",
+        "columns": ["Country", "Ownership 2015 (%)", "Ownership 2025 (%)", "Screen time 2015 (hours per day)", "Screen time 2025 (hours per day)"],
+        "rows": [
+          ["Norvia", "72", "94", "2.8", "4.1"],
+          ["Castelmar", "65", "91", "3.1", "3.6"],
+          ["Estravia", "38", "86", "1.9", "4.7"],
+          ["Valoria", "81", "89", "3.5", "3.2"]
+        ],
+        "note": "Ownership is the percentage of adults who own a smartphone. Screen time is the average number of hours an adult spends looking at screens per day."
+      },
+      "keyFeatures": [
+        "Ownership rose in all four countries and the figures converged: 86-94% in 2025, compared with 38-81% in 2015.",
+        "Estravia changed the most, moving from the lowest ownership (38%) and screen time (1.9 hours) in 2015 to the highest screen time (4.7 hours) in 2025.",
+        "Norvia overtook Valoria to have the highest ownership rate in 2025 (94%).",
+        "Valoria was the exception: screen time fell from 3.5 to 3.2 hours even though ownership rose."
+      ],
+      "usefulLanguage": [
+        "varied considerably",
+        "became much more uniform",
+        "ranging from ... to ...",
+        "by far the largest rise",
+        "overtook ... to record the highest rate",
+        "a notable exception",
+        "the rise was more modest",
+        "even though",
+        "turning to"
+      ],
+      "modelAnswer": "The table compares the percentage of adults who owned a smartphone and the average amount of time they spent looking at screens each day in four countries in 2015 and 2025.\n\nOverall, smartphone ownership increased in all four countries and became much more uniform, with figures ranging from 86% to 94% by 2025. Daily screen time also lengthened in most places, although Valoria was a notable exception.\n\nIn 2015, ownership levels varied considerably, from 81% in Valoria and 72% in Norvia to just 38% in Estravia. Over the following decade, Estravia saw by far the largest rise, to 86%, while Norvia overtook Valoria to record the highest rate, at 94%. Castelmar's figure also climbed substantially, from 65% to 91%.\n\nTurning to screen time, adults in Estravia spent the least time on screens in 2015, at 1.9 hours a day, yet ten years later they spent the most, at 4.7 hours. Norvia also saw a considerable increase, from 2.8 to 4.1 hours, whereas the rise in Castelmar was more modest, from 3.1 to 3.6 hours. By contrast, average screen time in Valoria fell from 3.5 to 3.2 hours, even though smartphone ownership there rose to 89%."
+    },
+    {
+      "id": "t1-06",
+      "chartType": "process",
+      "title": "Developing a mobile app",
+      "prompt": "The diagram below shows the stages involved in developing a mobile app, from the first idea to its release and beyond. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "process",
+        "title": "From idea to release: developing a mobile app",
+        "steps": [
+          { "label": "Idea and research", "detail": "Study the market and interview potential users" },
+          { "label": "Planning", "detail": "Choose core features; agree budget and deadline" },
+          { "label": "Design", "detail": "Sketch wireframes, then create final screen designs" },
+          { "label": "Prototype testing", "detail": "Users try a clickable prototype; designs revised" },
+          { "label": "Development", "detail": "App coded in two-week sprints" },
+          { "label": "Quality testing", "detail": "Automated and manual checks; bugs returned to developers" },
+          { "label": "Store review", "detail": "App submitted to app stores; review takes 1-3 days" },
+          { "label": "Launch", "detail": "Public release with a marketing campaign" },
+          { "label": "Feedback", "detail": "Reviews and usage data collected to plan updates" }
+        ],
+        "cyclic": true
+      },
+      "keyFeatures": [
+        "There are nine stages, which fall into three broad phases: research and design, building and testing, and release.",
+        "The process is cyclical: feedback collected after the launch provides ideas for the next version.",
+        "The app is tested twice: users try a prototype before any coding, and quality checks follow development.",
+        "Some stages involve going back a step: designs are revised after prototype testing, and bugs are returned to developers."
+      ],
+      "usefulLanguage": [
+        "The process begins with",
+        "Next,",
+        "before producing",
+        "so that",
+        "Once the design has been approved,",
+        "undergoes",
+        "is returned to",
+        "After this,",
+        "Finally,",
+        "The process is cyclical"
+      ],
+      "modelAnswer": "The diagram illustrates the stages involved in creating a mobile app, from the initial idea through to its public release and subsequent improvement.\n\nOverall, there are nine stages, which can be grouped into three main phases: research and design, building and testing, and release. The process is cyclical, since feedback from users after the launch provides ideas for the next version.\n\nThe process begins with research, in which developers study the market and interview potential users. Next, the core features are chosen and a budget and deadline are agreed. Designers then sketch wireframes before producing the final screen designs, and a clickable prototype is tried out by users so that the designs can be revised.\n\nOnce the design has been approved, the app is coded in two-week cycles known as sprints. It then undergoes automated and manual quality checks, and any bugs are returned to the developers to be fixed. After this, the app is submitted to the app stores, where the review typically takes between one and three days. Finally, it is released to the public alongside a marketing campaign, and reviews and usage data are collected to plan future updates."
+    },
+    {
+      "id": "t1-07",
+      "chartType": "process",
+      "title": "Rainwater harvesting at a school",
+      "prompt": "The diagram below shows how rainwater is collected and treated for use at a secondary school. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "process",
+        "title": "How rainwater is collected and treated at a school",
+        "steps": [
+          { "label": "Roof collection", "detail": "Rain falls on the sloping school roof" },
+          { "label": "Gutters", "detail": "Water runs into gutters and downpipes" },
+          { "label": "Leaf screen", "detail": "A mesh screen removes leaves and twigs" },
+          { "label": "First-flush diverter", "detail": "First 50 litres, which carry most dirt, sent to a drain" },
+          { "label": "Underground tank", "detail": "Stores up to 20,000 litres; excess overflows to a soakaway" },
+          { "label": "Sand filter", "detail": "Water pumped up; fine particles removed" },
+          { "label": "UV treatment", "detail": "Ultraviolet light kills bacteria" },
+          { "label": "Header tank", "detail": "Mains water added if the level falls too low" },
+          { "label": "School use", "detail": "Supplies toilets and garden irrigation" }
+        ],
+        "cyclic": false
+      },
+      "keyFeatures": [
+        "The process has nine stages, from rain falling on the roof to the water being used in toilets and for the garden.",
+        "Cleaning takes place in several steps: simple screening and diversion first, then a sand filter and ultraviolet light.",
+        "The first 50 litres of rain are diverted to a drain, and the underground tank holds 20,000 litres, with any excess going to a soakaway.",
+        "Mains water is a back-up that tops up the header tank when the level is too low."
+      ],
+      "usefulLanguage": [
+        "To begin with,",
+        "runs into",
+        "after which",
+        "is diverted to",
+        "with a capacity of",
+        "In the next stage,",
+        "is pumped up through",
+        "is topped up with",
+        "Finally,"
+      ],
+      "modelAnswer": "The diagram shows how rainwater is collected from a school roof, cleaned and stored for use in the building and its grounds.\n\nOverall, the process consists of nine stages, beginning with rain falling on the roof and ending with the treated water being supplied to the toilets and garden. Several stages are devoted to cleaning the water, first by simple physical means and later by filtration and ultraviolet light.\n\nTo begin with, rain falls onto the sloping roof and runs into gutters and downpipes. A mesh screen then removes leaves and twigs, after which a first-flush diverter sends the first 50 litres of water, which contain most of the dirt, to a drain. The remaining water is held in an underground tank with a capacity of 20,000 litres, and any excess overflows into a soakaway.\n\nIn the next stage, the water is pumped up through a sand filter, which removes fine particles, before ultraviolet light is used to kill bacteria. The clean water is then stored in a header tank, which is topped up with mains water if the level drops too low. Finally, it is supplied to the school's toilets and used to irrigate the garden."
+    },
+    {
+      "id": "t1-08",
+      "chartType": "map",
+      "title": "Changes to a university campus",
+      "prompt": "The maps below show the campus of Castelmar University in 2005 and today. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "map",
+        "title": "Castelmar University campus",
+        "maps": [
+          {
+            "title": "2005",
+            "features": [
+              { "label": "Main road", "kind": "road", "x": 0, "y": 90, "w": 100, "h": 5 },
+              { "label": "Campus road", "kind": "road", "x": 47, "y": 10, "w": 5, "h": 80 },
+              { "label": "Library", "kind": "building", "x": 10, "y": 12, "w": 25, "h": 18 },
+              { "label": "Lecture halls", "kind": "building", "x": 10, "y": 40, "w": 25, "h": 20 },
+              { "label": "Car park", "kind": "parking", "x": 8, "y": 66, "w": 33, "h": 18 },
+              { "label": "Sports field", "kind": "sports", "x": 60, "y": 12, "w": 32, "h": 30 },
+              { "label": "Woodland", "kind": "green", "x": 60, "y": 50, "w": 32, "h": 20 },
+              { "label": "Student union", "kind": "building", "x": 62, "y": 74, "w": 18, "h": 12 },
+              { "label": "Pond", "kind": "water", "x": 84, "y": 74, "w": 10, "h": 12 }
+            ]
+          },
+          {
+            "title": "Today",
+            "features": [
+              { "label": "Main road", "kind": "road", "x": 0, "y": 90, "w": 100, "h": 5 },
+              { "label": "Campus road", "kind": "road", "x": 47, "y": 10, "w": 5, "h": 80 },
+              { "label": "Cycle path", "kind": "path", "x": 43, "y": 10, "w": 3, "h": 80 },
+              { "label": "Library", "kind": "building", "x": 10, "y": 12, "w": 30, "h": 18 },
+              { "label": "Lecture halls", "kind": "building", "x": 10, "y": 40, "w": 25, "h": 20 },
+              { "label": "Innovation centre", "kind": "building", "x": 8, "y": 66, "w": 20, "h": 18 },
+              { "label": "Car park", "kind": "parking", "x": 31, "y": 66, "w": 10, "h": 18 },
+              { "label": "Sports centre", "kind": "building", "x": 60, "y": 12, "w": 14, "h": 30 },
+              { "label": "Football pitch", "kind": "sports", "x": 77, "y": 12, "w": 15, "h": 30 },
+              { "label": "Student accommodation", "kind": "building", "x": 60, "y": 50, "w": 20, "h": 20 },
+              { "label": "Garden", "kind": "green", "x": 83, "y": 50, "w": 9, "h": 20 },
+              { "label": "Student union", "kind": "building", "x": 62, "y": 74, "w": 18, "h": 12 },
+              { "label": "Pond", "kind": "water", "x": 84, "y": 74, "w": 10, "h": 12 }
+            ]
+          }
+        ]
+      },
+      "keyFeatures": [
+        "The campus has become more built-up, with new buildings on land that was previously woodland, sports field or car park.",
+        "The overall layout, including the campus road, the lecture halls, the student union and the pond, is unchanged.",
+        "In the east, most of the woodland has been replaced by student accommodation, and the sports field has been split into a sports centre and a smaller football pitch.",
+        "In the west, the library has been extended, an innovation centre occupies most of the old car park, and a cycle path now runs beside the campus road."
+      ],
+      "usefulLanguage": [
+        "has been cleared to make way for",
+        "has been replaced by",
+        "has been extended eastwards",
+        "has been reduced to roughly a third of its former size",
+        "now occupies",
+        "has been divided",
+        "remain unchanged",
+        "alongside",
+        "in the south-west corner"
+      ],
+      "modelAnswer": "The two maps illustrate the changes that have taken place on the campus of Castelmar University since 2005.\n\nOverall, the campus has become much more developed, with several new buildings constructed on what was previously open space or parking. However, the basic layout, including the central campus road and the main academic buildings, has remained largely the same.\n\nThe most significant changes have occurred on the eastern side of the campus. Most of the woodland in this area has been cleared to make way for student accommodation, leaving only a small garden to the east of the new building. To the north, the sports field has been divided, with a sports centre now occupying its western half and a smaller football pitch next to it.\n\nOn the western side, the library has been extended eastwards, while the lecture halls have not changed. The car park in the south-west corner has been reduced to roughly a third of its former size, and an innovation centre has been built on the land this freed up. In addition, a cycle path now runs alongside the campus road. The student union and the pond, close to the main road, remain unchanged."
+    },
+    {
+      "id": "t1-09",
+      "chartType": "mixed",
+      "title": "Commuting in Lindrow",
+      "prompt": "The bar chart below shows the average time taken to travel to work using five methods in the city of Lindrow in 2014 and 2024. The pie chart shows the proportion of commuters who used each method in 2024. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "mixed",
+        "title": "Commuting in Lindrow",
+        "parts": [
+          {
+            "type": "bar",
+            "title": "Average one-way journey time to work, 2014 and 2024",
+            "categories": ["Car", "Bus", "Metro", "Bicycle", "Walking"],
+            "yLabel": "Minutes",
+            "unit": "",
+            "yMax": 50,
+            "series": [
+              { "name": "2014", "values": [34, 41, 29, 22, 18] },
+              { "name": "2024", "values": [43, 38, 27, 21, 18] }
+            ]
+          },
+          {
+            "type": "pie",
+            "title": "Main method of travel to work, 2024",
+            "pies": [
+              {
+                "title": "2024",
+                "slices": [
+                  { "label": "Car", "value": 38 },
+                  { "label": "Metro", "value": 24 },
+                  { "label": "Bus", "value": 17 },
+                  { "label": "Bicycle", "value": 12 },
+                  { "label": "Walking", "value": 9 }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "keyFeatures": [
+        "In 2024 the car was the most popular method (38%) but also the slowest (43 minutes).",
+        "Car and bus swapped places: car journeys lengthened from 34 to 43 minutes, while bus journeys fell from 41 to 38 minutes.",
+        "Journey times by metro, bicycle and on foot barely changed, and walking stayed at 18 minutes.",
+        "The quickest methods, cycling (12%) and walking (9%), were the least used."
+      ],
+      "usefulLanguage": [
+        "by far the most popular way to",
+        "despite becoming the slowest option",
+        "the situation had reversed",
+        "had lengthened to",
+        "remained fairly stable",
+        "almost a quarter",
+        "accounted for",
+        "whereas",
+        "regarding"
+      ],
+      "modelAnswer": "The bar chart compares the average time it took commuters in the city of Lindrow to travel to work by five different methods in 2014 and 2024, while the pie chart shows the proportion of commuters who used each method in 2024.\n\nOverall, the car was by far the most popular way to get to work in 2024, despite having become the slowest option. In contrast, the quickest methods, cycling and walking, were the least widely used.\n\nIn 2014, bus journeys took the longest, at 41 minutes on average, followed by car journeys, at 34 minutes. Ten years later, however, the situation had reversed: the average car commute had lengthened to 43 minutes, whereas the bus journey had become shorter, at 38 minutes. Journey times for the other three methods remained fairly stable, with the metro taking 27 minutes in 2024 and cycling 21 minutes, while walking still took exactly 18 minutes.\n\nRegarding the pie chart, 38% of commuters travelled by car in 2024, and almost a quarter (24%) used the metro. The bus accounted for 17% of journeys, while only 12% of people cycled to work and just 9% walked."
+    },
+    {
+      "id": "t1-10",
+      "chartType": "bar",
+      "title": "Remote work by industry",
+      "prompt": "The chart below shows the average number of hours per week that employees in six industries in Norvia worked remotely in 2019 and 2025. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "chart": {
+        "type": "bar",
+        "title": "Average weekly hours of remote work by industry in Norvia, 2019 and 2025",
+        "categories": ["Information technology", "Finance", "Education", "Healthcare", "Manufacturing", "Retail"],
+        "yLabel": "Hours per week",
+        "unit": "",
+        "yMax": 25,
+        "series": [
+          { "name": "2019", "values": [6.5, 4, 1.5, 1, 1.5, 0.5] },
+          { "name": "2025", "values": [22.5, 15.5, 6, 2.5, 2, 0.5] }
+        ]
+      },
+      "keyFeatures": [
+        "Remote work increased in every industry except retail, where it stayed at 0.5 hours a week.",
+        "Information technology had the highest figure in both years, rising from 6.5 to 22.5 hours; finance was second (4 to 15.5 hours).",
+        "Education showed the largest proportional increase, quadrupling from 1.5 to 6 hours.",
+        "Growth in hands-on sectors was small: healthcare rose from 1 to 2.5 hours and manufacturing from 1.5 to 2 hours."
+      ],
+      "usefulLanguage": [
+        "worked remotely for an average of",
+        "rose dramatically",
+        "respectively",
+        "office-based sectors",
+        "the largest proportional rise",
+        "quadrupling from ... to ...",
+        "much smaller increases",
+        "grew by only half an hour",
+        "the only industry in which"
+      ],
+      "modelAnswer": "The bar chart compares the average number of hours per week that employees in six industries in Norvia spent working remotely in 2019 and 2025.\n\nOverall, remote working increased in every industry except retail, but the growth was far greater in office-based sectors. Information technology had the highest figure in both years, while retail workers spent the least time working remotely.\n\nIn 2019, IT employees worked remotely for an average of 6.5 hours a week, compared with 4 hours in finance. By 2025, these figures had risen dramatically, to 22.5 and 15.5 hours respectively, meaning that IT staff were working away from the office for more than three times as long as they had six years earlier.\n\nEducation saw the largest proportional rise, with remote hours quadrupling from 1.5 to 6. By contrast, the increases in healthcare and manufacturing were much smaller. Healthcare staff worked remotely for just 1 hour a week in 2019 and 2.5 hours in 2025, while the figure for manufacturing grew by only half an hour, from 1.5 to 2 hours. Retail was the only industry in which there was no change, with employees working remotely for just half an hour per week in both years."
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "kind": "speaking",
+  "part1": [
+    {
+      "id": "p1-00",
+      "topic": "Your work or studies and your daily routine",
+      "placement": true,
+      "questions": [
+        "Do you work, or are you a student at the moment?",
+        "What does a typical working day look like for you?",
+        "Which part of the day do you usually find most productive, and why?"
+      ]
+    },
+    {
+      "id": "p1-01",
+      "topic": "Your work or studies",
+      "placement": false,
+      "questions": [
+        "What do you do, and what does your job involve?",
+        "Why did you decide to go into this line of work?",
+        "What do you find most challenging about your job?",
+        "Do you prefer working on your own or as part of a team?",
+        "Is there anything you would like to change about the way you work?"
+      ]
+    },
+    {
+      "id": "p1-02",
+      "topic": "Your hometown",
+      "placement": false,
+      "questions": [
+        "Where is your hometown?",
+        "What do you like most about living there?",
+        "Has your hometown changed much since you were a child?",
+        "Is it a good place for young people to find work?",
+        "Would you recommend it to someone visiting your country? Why or why not?"
+      ]
+    },
+    {
+      "id": "p1-03",
+      "topic": "Mobile phones",
+      "placement": false,
+      "questions": [
+        "How often do you use your phone during the day?",
+        "Apart from making calls, what do you mainly use it for?",
+        "Can you remember when you got your first mobile phone?",
+        "Have you ever tried to spend a whole day without your phone?",
+        "Do you think people rely on their phones too much nowadays?"
+      ]
+    },
+    {
+      "id": "p1-04",
+      "topic": "Apps",
+      "placement": false,
+      "questions": [
+        "What kinds of apps do you use most often?",
+        "Is there an app you feel you couldn't live without?",
+        "Do you ever pay for apps, or do you mostly use free ones?",
+        "How do you usually find out about new apps?",
+        "Have you deleted any apps recently? Why?"
+      ]
+    },
+    {
+      "id": "p1-05",
+      "topic": "Reading",
+      "placement": false,
+      "questions": [
+        "Do you enjoy reading?",
+        "What kinds of things do you usually read?",
+        "Do you prefer reading on paper or on a screen?",
+        "Did you read a lot when you were a child?",
+        "Is there a book you would like to read again one day?"
+      ]
+    },
+    {
+      "id": "p1-06",
+      "topic": "Learning languages",
+      "placement": false,
+      "questions": [
+        "How many languages can you speak?",
+        "What do you find most difficult about learning English?",
+        "How do you practise English outside of lessons?",
+        "Would you like to learn another language in the future?",
+        "At what age do you think children should start learning a foreign language?"
+      ]
+    },
+    {
+      "id": "p1-07",
+      "topic": "Weekends",
+      "placement": false,
+      "questions": [
+        "What do you usually do at the weekend?",
+        "Do you prefer to relax or to keep busy at weekends?",
+        "Do you ever have to work at the weekend?",
+        "What did you do last weekend?",
+        "Are your weekends different now from when you were younger?"
+      ]
+    },
+    {
+      "id": "p1-08",
+      "topic": "Food and cooking",
+      "placement": false,
+      "questions": [
+        "Do you like cooking?",
+        "Who does most of the cooking in your home?",
+        "Is there a traditional dish from your country that you particularly enjoy?",
+        "Do you prefer eating at home or eating out?",
+        "Have your eating habits changed in the last few years?"
+      ]
+    },
+    {
+      "id": "p1-09",
+      "topic": "Music",
+      "placement": false,
+      "questions": [
+        "What kind of music do you like listening to?",
+        "At what times of day do you usually listen to music?",
+        "Do you listen to music while you are working or studying?",
+        "Have you ever learnt to play a musical instrument?",
+        "Is traditional music still popular in your country?"
+      ]
+    },
+    {
+      "id": "p1-10",
+      "topic": "Weather and seasons",
+      "placement": false,
+      "questions": [
+        "What is the weather usually like where you live?",
+        "Which season do you like best, and why?",
+        "Does the weather ever affect your mood?",
+        "How often do you check the weather forecast?",
+        "Would you like to live somewhere with a very different climate?"
+      ]
+    },
+    {
+      "id": "p1-11",
+      "topic": "Sleep",
+      "placement": false,
+      "questions": [
+        "How many hours do you usually sleep at night?",
+        "Do you find it easy to fall asleep?",
+        "Do you ever have a nap during the day?",
+        "Do you tend to use your phone just before you go to bed?",
+        "What do you do when you can't get to sleep?"
+      ]
+    },
+    {
+      "id": "p1-12",
+      "topic": "Social media",
+      "placement": false,
+      "questions": [
+        "Which social media platforms do you use?",
+        "Roughly how much time do you spend on social media each day?",
+        "Do you post much about your own life online?",
+        "Have you ever taken a break from social media?",
+        "Do you think social media has changed the way people make friends?"
+      ]
+    },
+    {
+      "id": "p1-13",
+      "topic": "Shopping online",
+      "placement": false,
+      "questions": [
+        "How often do you buy things online?",
+        "What was the last thing you bought online?",
+        "Do you prefer shopping online or in a physical shop? Why?",
+        "Have you ever had a problem with something you ordered online?",
+        "Do older people in your country shop online as much as younger people?"
+      ]
+    },
+    {
+      "id": "p1-14",
+      "topic": "Getting around",
+      "placement": false,
+      "questions": [
+        "How do you usually get to work or to your place of study?",
+        "How long does that journey normally take you?",
+        "Is public transport good in your city?",
+        "Would you ever consider cycling to work? Why or why not?",
+        "What could be done to improve transport where you live?"
+      ]
+    }
+  ],
+  "part2": [
+    {
+      "id": "p2-00",
+      "topic": "places",
+      "placement": true,
+      "cue": "Describe a place in your town or city where you like to spend time.",
+      "bullets": [
+        "where it is",
+        "how often you go there",
+        "what you usually do there"
+      ],
+      "finalBullet": "and explain why you like spending time there.",
+      "part3": {
+        "theme": "Public spaces in cities",
+        "questions": [
+          "Why do people who live in cities need public spaces such as parks and squares?",
+          "Should local governments spend more on public spaces or on roads and housing?",
+          "How have the places where young people meet changed in recent years?",
+          "Have shopping centres replaced traditional meeting places in your country? Is this a good thing?"
+        ]
+      },
+      "usefulPhrases": [
+        "The place I'd like to talk about is...",
+        "It's somewhere I've been going since I was a teenager.",
+        "Let me think... I'd say I go there two or three times a month.",
+        "To give you an idea of what it's like,...",
+        "It's not the most impressive place, but...",
+        "I suppose the main reason I like it is that..."
+      ]
+    },
+    {
+      "id": "p2-01",
+      "topic": "technology",
+      "placement": false,
+      "cue": "Describe an app that has made your daily life easier.",
+      "bullets": [
+        "what the app is and what it does",
+        "how you started using it",
+        "how often you use it"
+      ],
+      "finalBullet": "and explain how it has made your life easier.",
+      "part3": {
+        "theme": "Technology and convenience",
+        "questions": [
+          "Why are some people reluctant to start using new apps and technology?",
+          "Do apps that make life more convenient also make people less independent?",
+          "Should companies be allowed to collect data about how people use their apps?",
+          "How might everyday technology change the way people work over the next twenty years?",
+          "Is it the responsibility of app designers to make sure their products are not addictive?"
+        ]
+      },
+      "usefulPhrases": [
+        "The app I'm going to talk about is...",
+        "I came across it more or less by accident.",
+        "Basically, it lets you...",
+        "Before I started using it, I used to...",
+        "The best way to explain it is with an example.",
+        "Let me see... I'd say I use it at least twice a day.",
+        "It's not perfect, though. One thing that annoys me is...",
+        "To be honest, I can't imagine going back to the old way."
+      ]
+    },
+    {
+      "id": "p2-02",
+      "topic": "education",
+      "placement": false,
+      "cue": "Describe a skill you learned online.",
+      "bullets": [
+        "what the skill is",
+        "where and how you learned it online",
+        "how long it took you to learn it"
+      ],
+      "finalBullet": "and explain how you feel about learning in this way.",
+      "part3": {
+        "theme": "Online learning",
+        "questions": [
+          "What are the main advantages of learning online compared with learning in a classroom?",
+          "Why do so many people start online courses but never finish them?",
+          "Do employers value online qualifications as much as traditional degrees?",
+          "Are there any skills that cannot be learned properly online?",
+          "How might universities need to change if more people choose to study online?"
+        ]
+      },
+      "usefulPhrases": [
+        "I picked it up mainly through video tutorials.",
+        "At first I found it quite overwhelming, but...",
+        "What really helped me was...",
+        "For instance, there was one exercise where...",
+        "Hmm, it's hard to say exactly, but it probably took me a few months to get the hang of it.",
+        "If I'm honest, I didn't expect it to be so...",
+        "Looking back, I'd say..."
+      ]
+    },
+    {
+      "id": "p2-03",
+      "topic": "technology",
+      "placement": false,
+      "cue": "Describe a website that you find especially useful.",
+      "bullets": [
+        "what the website is",
+        "how you found out about it",
+        "what information or services it offers"
+      ],
+      "finalBullet": "and explain why you find it so useful.",
+      "part3": {
+        "theme": "The internet and information",
+        "questions": [
+          "How do people decide whether information they find online is reliable?",
+          "Has the internet made people better informed, or simply more confused?",
+          "Should schools teach children how to judge online sources? How could they do this?",
+          "Why do some websites become very popular while others quickly disappear?",
+          "Will printed reference books such as dictionaries still exist in the future?"
+        ]
+      },
+      "usefulPhrases": [
+        "It's a site I check pretty much every day.",
+        "A colleague recommended it to me when I was...",
+        "The thing that makes it stand out is...",
+        "Just last week, for example, I needed to...",
+        "It's hard to put into words, but...",
+        "I'd say it probably saves me a few hours a week."
+      ]
+    },
+    {
+      "id": "p2-04",
+      "topic": "education",
+      "placement": false,
+      "cue": "Describe a teacher who had a strong influence on you.",
+      "bullets": [
+        "who this teacher was",
+        "what subject he or she taught you",
+        "what his or her lessons were like"
+      ],
+      "finalBullet": "and explain why this teacher influenced you so much.",
+      "part3": {
+        "theme": "Teachers and teaching",
+        "questions": [
+          "What qualities make someone a good teacher?",
+          "Are teachers given enough respect in your country?",
+          "Could artificial intelligence ever replace human teachers? Why or why not?",
+          "Is it better for teachers to be strict or friendly with their students?",
+          "How has the role of the teacher changed now that students can find almost any information online?"
+        ]
+      },
+      "usefulPhrases": [
+        "The teacher who comes to mind straight away is...",
+        "She had a way of making difficult ideas seem simple.",
+        "I remember one lesson in particular when...",
+        "At the time I didn't really appreciate it, but...",
+        "It's partly because..., and partly because...",
+        "I suppose what I'm trying to say is..."
+      ]
+    },
+    {
+      "id": "p2-05",
+      "topic": "work",
+      "placement": false,
+      "cue": "Describe a time when you solved a problem at work or in your studies.",
+      "bullets": [
+        "what the problem was",
+        "when and where it happened",
+        "how you solved it"
+      ],
+      "finalBullet": "and explain how you felt after solving it.",
+      "part3": {
+        "theme": "Problem-solving at work",
+        "questions": [
+          "Why are some people better at solving problems than others?",
+          "Can problem-solving be taught at school, or does it only come from experience?",
+          "Do people solve problems more effectively on their own or in groups?",
+          "Why do some employees avoid telling their managers about problems?",
+          "How has technology changed the way companies deal with problems?"
+        ]
+      },
+      "usefulPhrases": [
+        "This happened about a year ago, when I was working on...",
+        "Basically, the problem was that...",
+        "Just to give you an idea of how serious it was,...",
+        "My first thought was..., but then I realised...",
+        "I have to admit I was quite nervous at first.",
+        "It turned out that...",
+        "To cut a long story short,...",
+        "In the end, it all worked out."
+      ]
+    },
+    {
+      "id": "p2-06",
+      "topic": "work",
+      "placement": false,
+      "cue": "Describe a team you were part of that achieved something successful.",
+      "bullets": [
+        "what the team was",
+        "who was in it",
+        "what the team achieved"
+      ],
+      "finalBullet": "and explain what made the team work well together.",
+      "part3": {
+        "theme": "Teamwork",
+        "questions": [
+          "What are the most common causes of conflict within a team?",
+          "Does a team always need a strong leader?",
+          "How has remote working affected the way teams cooperate?",
+          "Why do some people prefer to work independently rather than in a team?",
+          "Should schools put more emphasis on group projects? Why or why not?"
+        ]
+      },
+      "usefulPhrases": [
+        "The team I'm going to talk about was...",
+        "There were five of us, and each person had a different role.",
+        "Let me think how best to describe it...",
+        "We didn't always agree, of course.",
+        "For example, whenever someone got stuck,...",
+        "What made the difference, I think, was...",
+        "I'd say the main thing I learnt from it was..."
+      ]
+    },
+    {
+      "id": "p2-07",
+      "topic": "personal",
+      "placement": false,
+      "cue": "Describe a goal you would like to achieve in the next few years.",
+      "bullets": [
+        "what the goal is",
+        "when you first decided on it",
+        "what you are doing to achieve it"
+      ],
+      "finalBullet": "and explain why this goal is important to you.",
+      "part3": {
+        "theme": "Ambition and success",
+        "questions": [
+          "Why do some people set very ambitious goals while others prefer realistic ones?",
+          "How important is it for young people to have clear career plans?",
+          "Is success today measured mainly in terms of money?",
+          "What role should parents play in helping their children set goals?",
+          "Why do so many people give up on their goals?"
+        ]
+      },
+      "usefulPhrases": [
+        "One goal I've had for a while now is...",
+        "Well, let me think about how to explain this.",
+        "It all started when...",
+        "For example, at the moment I'm trying to...",
+        "It's easier said than done, though.",
+        "If everything goes to plan, I'd like to...",
+        "I'm not a hundred per cent sure, but I think...",
+        "The main reason it matters to me is that..."
+      ]
+    },
+    {
+      "id": "p2-08",
+      "topic": "personal",
+      "placement": false,
+      "cue": "Describe an important decision you made.",
+      "bullets": [
+        "what the decision was",
+        "when you made it",
+        "what options you had at the time"
+      ],
+      "finalBullet": "and explain whether you think it was the right decision.",
+      "part3": {
+        "theme": "Making decisions",
+        "questions": [
+          "Do young people today face more difficult decisions than previous generations did?",
+          "Should important decisions be made quickly or only after a long period of thought?",
+          "Who should young people turn to for advice about their careers?",
+          "Why do some people find it so hard to make decisions?",
+          "Does having too many choices make life more difficult? Why?"
+        ]
+      },
+      "usefulPhrases": [
+        "I'd like to talk about the time I decided to...",
+        "Well, how can I put it? It wasn't an easy choice.",
+        "On the one hand..., but on the other hand...",
+        "Let me give you an example of what I mean.",
+        "I spent weeks going back and forth about it.",
+        "What finally made up my mind was...",
+        "I'm not entirely sure, but I'd say...",
+        "With hindsight, I think..."
+      ]
+    },
+    {
+      "id": "p2-09",
+      "topic": "places",
+      "placement": false,
+      "cue": "Describe a place where you like to study or work.",
+      "bullets": [
+        "where it is",
+        "what it looks like",
+        "when you usually go there"
+      ],
+      "finalBullet": "and explain why it helps you to concentrate.",
+      "part3": {
+        "theme": "Workplaces and study environments",
+        "questions": [
+          "What makes a workplace comfortable and productive?",
+          "Will working from home become the norm for office workers?",
+          "Why do some students prefer to study in cafés rather than libraries?",
+          "Should companies design open-plan offices, or give workers private spaces?",
+          "How might libraries need to change in the future to remain useful?"
+        ]
+      },
+      "usefulPhrases": [
+        "The place I have in mind is...",
+        "It's nothing special to look at, but...",
+        "The atmosphere there is quite...",
+        "I tend to go there whenever I need to...",
+        "For instance, last week I spent a whole afternoon there working on...",
+        "Compared with working at home, it's...",
+        "Hmm, how can I put this? I suppose it's a mixture of things."
+      ]
+    },
+    {
+      "id": "p2-10",
+      "topic": "reading",
+      "placement": false,
+      "cue": "Describe a book or an article you read that taught you something useful.",
+      "bullets": [
+        "what it was about",
+        "when and where you read it",
+        "why you decided to read it"
+      ],
+      "finalBullet": "and explain what you learned from it.",
+      "part3": {
+        "theme": "Reading and knowledge",
+        "questions": [
+          "Why do fewer young people seem to read books for pleasure nowadays?",
+          "Is reading short articles online as valuable as reading a whole book?",
+          "Should governments do more to encourage reading? How?",
+          "How has the way people follow the news changed in recent years?",
+          "Do audiobooks offer the same benefits as reading?"
+        ]
+      },
+      "usefulPhrases": [
+        "It was an article I came across on...",
+        "Off the top of my head, I can't remember who wrote it, but...",
+        "If I remember correctly, the main idea was that...",
+        "For example, it explained how...",
+        "What struck me most was...",
+        "I'd never really thought about it that way before.",
+        "Since then, I've tried to..."
+      ]
+    },
+    {
+      "id": "p2-11",
+      "topic": "people",
+      "placement": false,
+      "cue": "Describe a person you know who is very good at their job.",
+      "bullets": [
+        "who this person is",
+        "what job he or she does",
+        "how you know him or her"
+      ],
+      "finalBullet": "and explain why you think this person is so good at the job.",
+      "part3": {
+        "theme": "Work and job satisfaction",
+        "questions": [
+          "Which is more important when choosing a job: the salary or job satisfaction?",
+          "Why are some people more successful in their careers than others?",
+          "Should people be paid according to how hard they work or according to the results they achieve?",
+          "Is it better to stay with one company for a long time or to change jobs regularly?",
+          "Which jobs do you think deserve more recognition in society?"
+        ]
+      },
+      "usefulPhrases": [
+        "The person I'd like to describe is...",
+        "I've known her for about three years now.",
+        "Let me think... what's the best way to describe her?",
+        "What impresses me most about him is...",
+        "A good example of this is when...",
+        "She's the kind of person who...",
+        "As far as I know, he...",
+        "I'd say she's a natural at it."
+      ]
+    },
+    {
+      "id": "p2-12",
+      "topic": "personal",
+      "placement": false,
+      "cue": "Describe a change in your life that you were happy about.",
+      "bullets": [
+        "what the change was",
+        "when it happened",
+        "how your life was different afterwards"
+      ],
+      "finalBullet": "and explain why you were happy about this change.",
+      "part3": {
+        "theme": "Change and adapting",
+        "questions": [
+          "Why do some people find it difficult to accept change?",
+          "Are older people generally less willing to change than younger people?",
+          "What have been the biggest changes in your country over the last few decades?",
+          "Is technology changing society too quickly?",
+          "How can companies help their employees adapt to changes at work?"
+        ]
+      },
+      "usefulPhrases": [
+        "The change I'm going to talk about happened when...",
+        "Let me see, it must have been about two years ago.",
+        "Before that, my life was quite different.",
+        "To give you an example,...",
+        "It took me a while to get used to it.",
+        "The biggest difference was probably that...",
+        "I can't say it was easy, but...",
+        "Looking back, it was definitely a turning point."
+      ]
+    },
+    {
+      "id": "p2-13",
+      "topic": "people",
+      "placement": false,
+      "cue": "Describe a time when you helped someone.",
+      "bullets": [
+        "who you helped",
+        "what the situation was",
+        "how you helped this person"
+      ],
+      "finalBullet": "and explain how you felt about helping him or her.",
+      "part3": {
+        "theme": "Helping others",
+        "questions": [
+          "Are people less willing to help strangers than they were in the past?",
+          "Why do some people choose to do voluntary work?",
+          "Should schools require students to do some kind of community service?",
+          "Is it mainly the government's responsibility or individuals' responsibility to help people in need?",
+          "How can technology make it easier for people to help each other?"
+        ]
+      },
+      "usefulPhrases": [
+        "This was back when I was at university.",
+        "A friend of mine was having trouble with...",
+        "Just to give you an example of how stressed she was,...",
+        "So what I did was...",
+        "It wasn't a big deal really, but...",
+        "I remember feeling quite proud, actually.",
+        "If I remember rightly, it was...",
+        "It made me realise that..."
+      ]
+    },
+    {
+      "id": "p2-14",
+      "topic": "science",
+      "placement": false,
+      "cue": "Describe an invention that you think has changed the world.",
+      "bullets": [
+        "what the invention is",
+        "when you first heard about it or used it",
+        "how people use it"
+      ],
+      "finalBullet": "and explain why you think it has been so important.",
+      "part3": {
+        "theme": "Inventions and progress",
+        "questions": [
+          "Which inventions of the last hundred years have had the greatest impact on everyday life?",
+          "Do all new inventions make life better? Can you think of any that have caused problems?",
+          "Should governments fund scientific research, or should this be left to private companies?",
+          "Why do some countries produce more inventions than others?",
+          "What kinds of inventions will the world need most in the future?"
+        ]
+      },
+      "usefulPhrases": [
+        "Hmm, there are so many to choose from, but I think I'll go for...",
+        "It's hard to imagine life without it.",
+        "Before it existed, people had to...",
+        "It's used for all sorts of things, from... to...",
+        "Some people would argue that..., but personally I think...",
+        "I might be wrong, but I'd guess...",
+        "In a nutshell,..."
+      ]
+    },
+    {
+      "id": "p2-15",
+      "topic": "events",
+      "placement": false,
+      "cue": "Describe an event you attended that was very well organised.",
+      "bullets": [
+        "what the event was",
+        "where and when it took place",
+        "who organised it"
+      ],
+      "finalBullet": "and explain why you think it was so well planned.",
+      "part3": {
+        "theme": "Planning and organisation",
+        "questions": [
+          "Why is careful planning so important for large public events?",
+          "Do people today plan their lives more carefully than people did in the past?",
+          "What skills does someone need to be a good event organiser?",
+          "Are there any disadvantages to planning everything in advance?",
+          "How has technology changed the way people organise events?"
+        ]
+      },
+      "usefulPhrases": [
+        "The event I'm thinking of was a conference I went to last year.",
+        "Right from the start, you could tell that...",
+        "Everything ran like clockwork.",
+        "Just to give you one example,...",
+        "Apparently, they had been planning it for months.",
+        "If I had to pick one thing, it would be..."
+      ]
+    }
+  ]
+}

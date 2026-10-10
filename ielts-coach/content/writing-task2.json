@@ -1,0 +1,465 @@
+{
+  "kind": "writing_task2",
+  "items": [
+    {
+      "id": "t2-00",
+      "essayType": "opinion",
+      "topic": "education",
+      "placement": true,
+      "prompt": "Some people believe that school students should be allowed to use AI chatbots to help them with their homework. To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "A chatbot can explain a difficult idea in several different ways, like a patient tutor available at any hour.",
+        "Pupils whose families cannot afford private lessons gain access to individual support.",
+        "Learning to question and improve AI output is a skill that most future jobs will require.",
+        "Some students will simply copy answers, so homework no longer shows what they really understand.",
+        "Chatbots sometimes give confident but wrong answers that young learners may not notice.",
+        "A middle way: allow AI for explanations and feedback, but ask pupils to show their working or submit their chat history."
+      ],
+      "usefulVocab": [
+        "a personal tutor on demand",
+        "to level the playing field",
+        "to outsource mental effort",
+        "plausible but inaccurate answers",
+        "to accept something without question",
+        "regulation rather than prohibition",
+        "to be impossible to enforce",
+        "clear guidelines on acceptable use"
+      ],
+      "modelAnswer": "Artificial intelligence chatbots have moved from novelty to everyday tool in a remarkably short time, and schools are now under pressure to decide whether pupils may use them for homework. In my view, allowing their use is the more sensible approach, provided that clear rules ensure they support learning rather than replace it.\n\nThe strongest argument in favour is that a chatbot can act as a tireless personal tutor. A teenager stuck on an equation at ten o'clock at night has traditionally had two options: give up or copy a friend's answer. An AI assistant, by contrast, can explain the method step by step, rephrase it when the first explanation fails and generate further practice questions. This kind of individual support was once available mainly to families who could pay for private tuition, so permitting chatbots could go some way towards levelling the playing field. Furthermore, since today's pupils will almost certainly use such tools at work, learning to question and refine an AI's output is a valuable skill in itself.\n\nAdmittedly, there is a real danger that some students will simply paste in the question and submit whatever appears, outsourcing precisely the mental effort that homework is designed to demand. Chatbots also produce plausible but inaccurate answers, which an inexperienced learner may accept without question. However, these problems call for regulation rather than prohibition, not least because a ban is almost impossible to enforce at home. Teachers could, for instance, ask pupils to submit their chat history alongside their work, or set tasks that require personal reflection, which no machine can supply on a pupil's behalf.\n\nIn conclusion, I largely agree that pupils should be permitted to use AI chatbots for homework. Used thoughtfully and within sensible guidelines, they can deepen understanding and widen access to support, whereas banning them would merely drive their use underground."
+    },
+    {
+      "id": "t2-01",
+      "essayType": "opinion",
+      "topic": "technology",
+      "placement": false,
+      "prompt": "AI coding assistants can now produce large sections of working software in a matter of seconds. Some people believe that, as a result, new programmers no longer need to learn the fundamentals of coding in depth. To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "AI tools remove repetitive boilerplate work, so beginners can focus on design and on what users actually need.",
+        "Developers already rely on libraries and frameworks they do not fully understand, so AI could be seen as one more layer of abstraction.",
+        "AI-generated code can look correct but contain subtle bugs or security flaws that only someone with strong foundations will notice.",
+        "Debugging and problem-solving skills are built by struggling with code line by line, and these skills are what make a developer senior.",
+        "Employers increasingly need people who can review, test and explain code, not just produce it.",
+        "Balanced view: learn the fundamentals first, then use AI to speed up routine work."
+      ],
+      "usefulVocab": [
+        "boilerplate code",
+        "a solid grasp of the fundamentals",
+        "a layer of abstraction",
+        "to take something at face value",
+        "a security vulnerability",
+        "to accumulate technical debt",
+        "a false sense of competence",
+        "to be correct, secure and maintainable",
+        "an accelerator rather than a substitute"
+      ],
+      "modelAnswer": "The arrival of AI tools that can generate functioning code from a simple description has led some to conclude that beginners can skip the slow process of mastering programming fundamentals. While I accept that these assistants have changed what a junior developer's day looks like, I strongly disagree that they make deep foundational knowledge unnecessary; if anything, they make it more important.\n\nIt is easy to see why the opposing view is attractive. Much of the code written by new programmers has always been repetitive boilerplate, such as setting up forms or connecting to a database, which an assistant now produces instantly. Freed from such chores, a newcomer might devote more attention to understanding users' needs or designing a clean interface. Moreover, developers have long built on frameworks whose inner workings they barely understand, so AI might be seen as merely the next layer of abstraction.\n\nYet this argument overlooks a crucial difference: a popular library has been tested by thousands of users, whereas AI-generated code is produced afresh each time and can be confidently wrong. It may contain a subtle logical error or a security vulnerability that only someone with a solid grasp of the fundamentals would recognise. A junior developer who takes such output at face value is not saving time but accumulating technical debt that others must later repay. Equally, the debugging skills that distinguish senior engineers are developed precisely by wrestling with code line by line. Without that struggle, newcomers risk acquiring a false sense of competence that collapses the first time the tool fails.\n\nIn conclusion, although AI assistants can usefully take over repetitive work, they cannot replace the understanding needed to judge whether code is correct, secure and maintainable. New programmers should therefore learn the fundamentals thoroughly and treat these tools as accelerators rather than substitutes for their own expertise."
+    },
+    {
+      "id": "t2-02",
+      "essayType": "discussion",
+      "topic": "work",
+      "placement": false,
+      "prompt": "Some companies have introduced a four-day working week with no reduction in pay, believing that employees will be just as productive. Others argue that this arrangement is unrealistic for most businesses. Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Rested employees may concentrate better and make fewer mistakes, so total output need not fall.",
+        "When time is limited, teams tend to cut unnecessary meetings and other low-value tasks.",
+        "A shorter week helps companies attract and keep skilled staff and reduces burnout.",
+        "Hospitals, shops and call centres must be staffed for fixed hours, so they would need extra workers and higher wage bills.",
+        "Squeezing five days of work into four could increase stress rather than reduce it.",
+        "Small firms with narrow profit margins may not be able to risk a trial."
+      ],
+      "usefulVocab": [
+        "work-life balance",
+        "a pilot scheme",
+        "to boost productivity",
+        "low-value activities",
+        "staff retention",
+        "burnout",
+        "narrow profit margins",
+        "round-the-clock cover",
+        "a one-size-fits-all policy"
+      ],
+      "modelAnswer": "The idea of a four-day week on full pay, once dismissed as utopian, has been trialled by a growing number of employers in recent years. While sceptics insist that it simply cannot work for most organisations, I believe it is a realistic and beneficial option for many, though certainly not all, types of business.\n\nThose who doubt the scheme point out that a great deal of work is tied to time rather than output. A hospital ward, a supermarket or a call centre must be staffed for a fixed number of hours, so giving every employee an extra day off would force managers to recruit additional workers, sharply increasing costs. Small firms operating on narrow profit margins may be unwilling to take such a gamble. There is also a concern that cramming five days' work into four would leave staff more exhausted, not less, defeating the very purpose of the reform.\n\nNevertheless, in knowledge-based sectors such as software development, marketing or finance, the experience of pilot schemes has often been encouraging. When time is scarce, teams tend to eliminate low-value activities, such as unnecessary meetings and constant email checking, that quietly consume much of a traditional week. Well-rested employees are also likely to concentrate better and make fewer costly errors. Just as importantly, a shorter week is a powerful recruitment tool: a company offering it can attract skilled candidates who might otherwise choose a better-paid competitor, and is less likely to lose experienced staff to burnout.\n\nIn my view, then, the debate should not be framed as a choice between universal adoption and outright rejection. Where productivity is measured by results rather than hours, a four-day week can benefit employers and employees alike, whereas services that depend on constant cover may need alternative arrangements, such as rotating schedules, to share similar advantages."
+    },
+    {
+      "id": "t2-03",
+      "essayType": "problem_solution",
+      "topic": "health",
+      "placement": false,
+      "prompt": "Many children now spend several hours a day looking at phones, tablets and computer screens, and doctors are increasingly concerned about the effects on their physical health. What are the causes of this situation, and what measures could be taken to address it? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Many apps and games for children use features such as autoplay and daily rewards that make them hard to put down.",
+        "Busy parents often use devices to keep children occupied while they work or do housework.",
+        "Heavy traffic and a lack of safe parks in cities mean less outdoor play than in the past.",
+        "Parents can set simple family rules, such as no devices in bedrooms at night, and model good habits themselves.",
+        "Schools can build physical activity into every day and teach some lessons outdoors.",
+        "Governments can regulate design features in apps for young children, and councils can invest in safe play spaces."
+      ],
+      "usefulVocab": [
+        "a sedentary lifestyle",
+        "short-sightedness",
+        "disturbed sleep",
+        "to be engineered to be addictive",
+        "to keep children occupied",
+        "the default form of entertainment",
+        "to lead by example",
+        "to disable a feature by default",
+        "outdoor play"
+      ],
+      "modelAnswer": "Young children absorbed in tablets are now a familiar sight in restaurants, on trains and even in playgrounds, raising concerns about poor eyesight, disturbed sleep and lack of exercise. In my view, the trend stems from both the design of digital products and changes in family life, and tackling it requires action from parents, schools and governments.\n\nOne major cause is that many apps and games aimed at children are deliberately engineered to be hard to put down. Features such as automatically playing the next video or rewarding daily log-ins exploit a child's natural curiosity, so that a 'quick' game easily stretches into an hour. Family circumstances play a part too. Parents who work long hours may, quite understandably, hand a child a device to keep them occupied while they cook or answer emails. In addition, heavy traffic and a shortage of safe green spaces in many cities have made outdoor play less of an option than it once was, leaving screens as the default form of entertainment.\n\nSince the causes are varied, so too must be the solutions. Within the home, parents could agree simple rules, such as keeping devices out of bedrooms at night, and, crucially, lead by example by limiting their own use. Schools could build physical activity into every day and hold some lessons outdoors, reminding children that learning is not confined to a screen. Governments also have a role: they could require apps targeted at young children to disable autoplay and similar features by default, while local councils could invest in parks and play areas that families consider safe.\n\nIn conclusion, excessive screen time among children is driven by persuasive technology, pressured family routines and a lack of outdoor alternatives. Only a combination of household boundaries, active school days and responsible regulation is likely to protect young people's long-term health."
+    },
+    {
+      "id": "t2-04",
+      "essayType": "two_part",
+      "topic": "education",
+      "placement": false,
+      "prompt": "Many schools are replacing printed textbooks with digital versions that students read on tablets or laptops. Why are schools making this change? Do you think it will improve the quality of children's learning? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Digital textbooks can be corrected and updated instantly, while printed books quickly go out of date.",
+        "Over several years, digital licences may be cheaper than buying new print editions, and pupils carry lighter bags.",
+        "Videos, interactive diagrams and quizzes give instant feedback and let teachers track each pupil's progress.",
+        "Reading long texts on screen tends to encourage skimming rather than careful reading.",
+        "Tablets that can open games and messaging apps make distraction more likely.",
+        "Pupils without reliable internet at home may fall behind, so a mix of print and digital may work best."
+      ],
+      "usefulVocab": [
+        "to update content instantly",
+        "interactive features",
+        "immediate feedback",
+        "to monitor progress",
+        "to encourage skimming",
+        "sustained reading",
+        "the digital divide",
+        "a blended approach",
+        "to translate into deeper learning"
+      ],
+      "modelAnswer": "In classrooms across the world, the heavy textbook is gradually being replaced by a tablet loaded with digital course materials. Schools are making this move largely for practical and financial reasons, but I am not convinced that it will automatically lead to better learning; that depends on how the technology is used.\n\nThe appeal of digital textbooks for school leaders is easy to understand. A printed book may be out of date within a year of publication, whereas an electronic version can be corrected or expanded instantly at little cost. Over several years, licences for digital content are often cheaper than repeatedly buying new print editions, and pupils no longer have to carry heavy bags between home and school. Furthermore, digital materials offer features that paper cannot, such as short videos, interactive diagrams and quizzes that give immediate feedback while allowing teachers to monitor each pupil's progress.\n\nWhether these advantages translate into deeper learning, however, is far from certain. Reading longer texts on screen tends to encourage skimming rather than careful reading, and a tablet that can also open games and messaging apps makes distraction almost inevitable. There is also a question of fairness: a pupil whose family cannot afford reliable internet access may fall behind classmates who can use every online feature at home. That said, when teachers set clear expectations and choose interactive tasks that genuinely require thought, digital resources can make abstract topics, such as the structure of a cell, far more accessible than a static page.\n\nTo sum up, schools are adopting digital textbooks mainly because they are flexible, up to date and potentially cheaper. I believe they can improve learning, but only as part of a blended approach in which printed texts are retained for sustained reading and screens are used where they offer something paper genuinely cannot."
+    },
+    {
+      "id": "t2-05",
+      "essayType": "positive_negative",
+      "topic": "technology",
+      "placement": false,
+      "prompt": "Many banks, airlines and online shops now deal with most customer enquiries through automated chatbots and voice systems instead of human staff. Is this a positive or negative development? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Chatbots answer routine questions instantly at any time of day, so customers avoid long phone queues.",
+        "Companies save on staffing costs, which may lead to lower prices.",
+        "Human staff can be moved to complex or sensitive cases that need judgement and empathy.",
+        "Bots often misunderstand unusual problems and can trap customers in frustrating loops.",
+        "Older or less confident users may feel excluded, and many call-centre jobs disappear.",
+        "The key condition: customers must always be able to reach a real person easily."
+      ],
+      "usefulVocab": [
+        "routine enquiries",
+        "round-the-clock support",
+        "to be kept on hold",
+        "to cut operating costs",
+        "to redeploy staff",
+        "to be trapped in an automated loop",
+        "to escalate a query",
+        "a basic obligation rather than an optional extra"
+      ],
+      "modelAnswer": "Anyone who has recently tried to change a flight or report a lost bank card has probably been greeted not by a person but by an automated assistant. Although this shift can be deeply frustrating when it goes wrong, I believe it is, on balance, a positive development, as long as companies continue to offer a human alternative.\n\nThe most obvious benefit is speed and availability. A large proportion of customer enquiries are routine, such as checking a delivery date or resetting a password, and a well-designed chatbot can resolve these instantly at any hour, sparing customers a long wait on hold. For businesses, automating such tasks considerably reduces operating costs, savings that may be passed on in the form of lower prices. Perhaps less obviously, automation can also improve human service: when staff no longer spend their shifts answering identical questions, they can be redeployed to complex cases, such as fraud claims or bereavement, that genuinely require patience and judgement.\n\nThere are, of course, genuine drawbacks. Chatbots still struggle with unusual problems, and few experiences are more exasperating than being trapped in an automated loop that keeps offering irrelevant answers. Older or less confident users may feel excluded altogether, while the decline of call-centre work has cost many people their jobs. However, these problems arise mainly when firms treat automation as a way to avoid customers rather than to serve them. Where people can easily escalate a query to a trained member of staff, the technology handles the simple cases and humans handle the rest.\n\nIn conclusion, automated customer service brings real gains in speed, cost and availability, and can even raise the quality of human support. I therefore regard it as a positive trend, but only if companies treat a clear route to a real person as a basic obligation rather than an optional extra."
+    },
+    {
+      "id": "t2-06",
+      "essayType": "adv_disadv",
+      "topic": "work",
+      "placement": false,
+      "prompt": "An increasing number of people now earn their living by doing short-term tasks arranged through apps and websites, such as delivering food, driving passengers or completing freelance projects, rather than having a permanent job. Do the advantages of this trend outweigh the disadvantages? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Workers can choose their own hours and combine work with study or caring for family.",
+        "Low barriers to entry allow newcomers, such as recent migrants or students, to start earning quickly.",
+        "Skilled freelancers, such as developers and designers, can find clients all over the world.",
+        "Most platform workers have no sick pay, paid holidays or pension, and their income is unpredictable.",
+        "Algorithms control pay and access to work, so individuals have little bargaining power.",
+        "Workers carry the costs and risks, such as vehicles, fuel and insurance, that employers would normally cover."
+      ],
+      "usefulVocab": [
+        "the gig economy",
+        "flexible working hours",
+        "low barriers to entry",
+        "to be classified as self-employed",
+        "employment rights",
+        "sick pay and paid holidays",
+        "bargaining power",
+        "a precarious existence",
+        "a supplement to a main income"
+      ],
+      "modelAnswer": "Digital platforms have made it possible to earn money by the hour, or even by the task, without ever signing an employment contract. Although this model offers genuine freedom to certain groups, I believe that, in its current form, its disadvantages outweigh its advantages for the majority of those who depend on it.\n\nThe case for platform work rests largely on flexibility. A university student can deliver meals between lectures, and a parent can accept freelance translation work during school hours, arrangements that a conventional nine-to-five job would rarely permit. Barriers to entry are also low: a newly arrived migrant with few local contacts can start earning within days. For highly skilled freelancers, such as web developers or illustrators, online marketplaces open the door to clients across the globe, allowing them to build an international portfolio from home.\n\nHowever, these benefits come at a considerable price. Because platform workers are usually classified as self-employed, they are typically entitled to neither sick pay nor paid holidays, and few contribute to a pension. A delivery rider who breaks a wrist may lose all income overnight. Moreover, pay rates and access to work are often determined by algorithms that can change without warning, leaving individuals with almost no bargaining power. What is presented as independence can therefore become a precarious existence in which the company holds the power while the worker carries the risk, including the cost of vehicles, fuel and insurance. For those relying on this work as their main income rather than a supplement, such insecurity is a serious problem.\n\nIn conclusion, gig work offers welcome flexibility and opportunity, particularly to students and skilled professionals. Yet for the many who depend on it full-time, the lack of security outweighs these gains, which is why governments should ensure that flexibility does not come at the expense of basic employment rights."
+    },
+    {
+      "id": "t2-07",
+      "essayType": "opinion",
+      "topic": "education",
+      "placement": false,
+      "prompt": "Some people believe that learning to write computer code should be compulsory for all children from the start of primary school, in the same way as reading and mathematics. To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Coding teaches children to break problems into small steps and to keep trying when something fails.",
+        "Digital skills are needed in almost every career, and early exposure may reduce stereotypes about who is good at technology.",
+        "Young children can learn through play, for example with floor robots or block-based programs.",
+        "Reading and mathematics are foundations for every other subject, so coding should not have equal status.",
+        "Primary timetables are already crowded, and many primary teachers are not trained to teach programming.",
+        "Coding could be built into maths, science and art projects instead of being a separate core subject."
+      ],
+      "usefulVocab": [
+        "computational thinking",
+        "to break a problem down",
+        "trial and error",
+        "block-based programming",
+        "foundational skills",
+        "an overcrowded curriculum",
+        "to challenge stereotypes",
+        "to complement rather than compete with",
+        "digital literacy"
+      ],
+      "modelAnswer": "As software shapes almost every aspect of modern life, some argue that coding should become a core primary school subject alongside reading and mathematics. I agree that young children benefit from an early introduction to programming, but I do not believe it deserves equal status with literacy and numeracy.\n\nThere are persuasive reasons for introducing coding early. Writing even a simple program teaches children to break a large problem into small, ordered steps and to test and correct their work when it fails, habits of mind that are valuable well beyond computing. Young learners can acquire these skills through play, for example by guiding a floor robot around an obstacle course or snapping together colourful blocks of instructions on a screen. Early exposure may also challenge stereotypes about who is suited to technology. If every child, regardless of gender or background, writes programs at seven, fewer will reach adolescence convinced that computing is not for people like them.\n\nHowever, placing coding on the same level as reading and mathematics would be a mistake. These two subjects are foundational in a way that programming is not: a child who cannot read fluently will struggle in every other lesson, including computing itself. Primary timetables are already overcrowded, and devoting equal time to a new subject would inevitably mean less time for core skills or for the arts and physical education. There is also a practical obstacle, since relatively few primary teachers have been trained to teach programming confidently, and a subject taught badly may discourage children rather than inspire them.\n\nIn conclusion, I agree with the proposal only in part. Children should certainly encounter coding from an early age, ideally woven into mathematics, science and art projects, but it should complement rather than compete with the basic skills on which all later learning depends."
+    },
+    {
+      "id": "t2-08",
+      "essayType": "discussion",
+      "topic": "technology",
+      "placement": false,
+      "prompt": "Some cities are installing networks of sensors and cameras to collect data on traffic, energy use and public spaces, arguing that this makes urban services more efficient. Others believe that this level of monitoring is a serious threat to people's privacy. Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Traffic lights that respond to real-time data can reduce congestion, journey times and air pollution.",
+        "Sensors can detect water leaks, full bins or broken street lights early, saving public money.",
+        "Data on how people use parks and bus routes helps planners make evidence-based decisions.",
+        "Cameras combined with facial recognition could track where every resident goes.",
+        "Data could be misused by a future government, sold to companies or stolen by hackers.",
+        "Possible safeguards: anonymise data, ban facial recognition, and have independent bodies publish what is collected."
+      ],
+      "usefulVocab": [
+        "real-time data",
+        "traffic congestion",
+        "to optimise public services",
+        "evidence rather than guesswork",
+        "mass surveillance",
+        "facial recognition software",
+        "to be repurposed",
+        "to anonymise data at the point of collection",
+        "independent oversight",
+        "privacy by design"
+      ],
+      "modelAnswer": "Across the world, city authorities are embedding sensors in roads, streetlights and bins, promising cleaner, faster and cheaper public services. Critics, however, warn that such 'smart' cities may become instruments of surveillance. Having considered both positions, I believe the technology is worth adopting, but only under strict rules on what data is gathered and who may use it.\n\nSupporters of smart city projects point to tangible improvements in everyday life. Traffic signals that respond to real-time data can shorten queues at busy junctions, cutting both journey times and exhaust emissions. Sensors in water pipes can detect leaks before they flood a street, while bins that report when they are full allow collection lorries to avoid unnecessary trips. At a time of tight municipal budgets, such efficiencies free up money for schools and housing. Data on how people actually use parks and bus routes can also help planners base their decisions on evidence rather than guesswork.\n\nOpponents, though, argue that the same infrastructure can easily be repurposed. A camera installed to count cyclists could, with facial recognition software, record exactly where each resident goes and when. Once such a system exists, there is no guarantee that a future government will resist using it to monitor protesters or journalists, and large datasets are always vulnerable to hackers. These fears are, in my view, entirely legitimate, but they argue for safeguards rather than rejection. Data can be anonymised at the point of collection, facial recognition can be prohibited by law, and an independent body can publish exactly what each device records.\n\nIn conclusion, smart city technology offers real gains in efficiency and sustainability, yet carries a genuine risk of intrusive surveillance. Provided that privacy is protected by design and enforced through transparent oversight, I believe its benefits justify its use."
+    },
+    {
+      "id": "t2-09",
+      "essayType": "problem_solution",
+      "topic": "environment",
+      "placement": false,
+      "prompt": "Every year, huge numbers of mobile phones, laptops and other electronic devices are thrown away, many of them while they still work. What are the causes of this problem, and what solutions can you suggest? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Manufacturers release new models every year, and advertising makes older devices seem outdated.",
+        "Devices are hard to repair: batteries are glued in, spare parts are expensive and software updates stop.",
+        "A repair often costs almost as much as a new device, so people choose to replace rather than fix.",
+        "Right-to-repair laws could force manufacturers to sell spare parts and publish repair guides.",
+        "Longer software support and lower taxes on repairs and refurbished devices would make keeping a device more attractive.",
+        "Retailers could be required to take back old equipment so that it is recycled safely."
+      ],
+      "usefulVocab": [
+        "electronic waste",
+        "a throwaway culture",
+        "planned obsolescence",
+        "spare parts",
+        "right-to-repair legislation",
+        "security updates",
+        "refurbished devices",
+        "to extend the lifespan of a product",
+        "to be dumped in landfill"
+      ],
+      "modelAnswer": "Electronic devices have become essential to modern life, yet they are increasingly treated as disposable. Vast numbers of phones and laptops are discarded long before they stop functioning, creating mountains of waste that contain both toxic substances and valuable metals. In my view, the problem is driven largely by commercial practices and could be significantly reduced through regulation and easier repair.\n\nThe root cause is arguably the business model of the technology industry itself. Manufacturers launch new models every year and market them as essential upgrades, encouraging consumers to regard a two-year-old phone as outdated. Many devices are also designed in ways that make repair difficult: batteries are glued in place, spare parts are expensive or unavailable, and older models eventually stop receiving software updates, leaving them insecure or unable to run common apps. Faced with a repair bill that approaches the price of a new handset, most people understandably choose to replace rather than fix.\n\nTackling this requires action on several fronts. Governments could introduce right-to-repair legislation obliging manufacturers to sell spare parts and publish repair guides for a minimum period after a product is launched. Equally important would be a legal requirement to provide security updates for far longer, so that working hardware is not made obsolete by software. Financial incentives also matter: reducing tax on repair services and refurbished devices would make keeping a phone more attractive than replacing it. Finally, retailers could be required to take back old equipment, ensuring that devices which genuinely cannot be saved are recycled safely rather than dumped in landfill.\n\nIn conclusion, electronic waste stems largely from rapid product cycles and devices that are difficult to repair. Through stronger repair rights, longer software support and incentives that reward reuse, it should be possible to extend the lifespan of the devices we depend on and reduce their environmental cost."
+    },
+    {
+      "id": "t2-10",
+      "essayType": "opinion",
+      "topic": "work",
+      "placement": false,
+      "prompt": "Many companies have removed private offices and asked employees to work together in large open-plan spaces in order to encourage teamwork. Some people believe that this type of office harms productivity more than it improves collaboration. To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Open-plan offices allow quick questions and spontaneous exchanges of ideas.",
+        "New employees can learn by overhearing experienced colleagues, and managers seem more approachable.",
+        "They are cheaper, because more people can fit into the same floor space.",
+        "Noise and constant interruptions make deep, focused work, such as programming or writing, very difficult.",
+        "Many employees wear headphones and send messages instead of talking, which defeats the purpose.",
+        "Lack of privacy can increase stress, and illnesses spread more easily; mixed layouts may be a better solution."
+      ],
+      "usefulVocab": [
+        "to foster collaboration",
+        "within earshot",
+        "a hierarchical culture",
+        "uninterrupted concentration",
+        "to lose one's train of thought",
+        "constant interruptions",
+        "to be counterproductive",
+        "knowledge work",
+        "quiet zones"
+      ],
+      "modelAnswer": "Over the past two decades, walls and private offices have disappeared from many workplaces, replaced by long rows of shared desks in the name of teamwork. I largely agree that this design does more damage to productivity than good to collaboration, although I accept that it has some merits.\n\nAdvocates of open-plan offices are not entirely wrong. When colleagues sit within earshot of one another, a quick question can be resolved in seconds rather than through a chain of emails, and new employees in particular can learn simply by overhearing how experienced staff handle problems. Removing private offices can also make senior managers more approachable, softening an overly hierarchical culture. Not least, such layouts are cheaper, as a company can fit far more people into the same floor space.\n\nNevertheless, these advantages are frequently outweighed by the cost to concentration. Many modern jobs, from writing reports to designing software, depend on long periods of uninterrupted thought, and an environment filled with phone calls, conversations and passing colleagues makes such focus almost impossible. Each interruption may last only a minute, but regaining one's train of thought can take considerably longer. Ironically, open-plan offices may even reduce genuine collaboration: many employees respond to the noise by wearing headphones and messaging the person sitting opposite rather than speaking to them. The lack of privacy can also add to stress, and illnesses such as colds spread more easily when dozens of people share the same space.\n\nIn conclusion, while open-plan offices make informal communication easier and reduce costs, I believe they undermine the deep concentration on which most knowledge work depends. A more effective approach would be a mixed layout, combining shared areas for teamwork with quiet rooms where employees can work without disruption."
+    },
+    {
+      "id": "t2-11",
+      "essayType": "adv_disadv",
+      "topic": "technology",
+      "placement": false,
+      "prompt": "In some countries, governments are moving public services such as tax returns, licence renewals and appointment bookings entirely online and closing their face-to-face offices. Do the advantages of this development outweigh the disadvantages? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Citizens can use services at any time without travelling or queuing.",
+        "Online forms can check information as it is entered, reducing errors and incomplete applications.",
+        "Governments save on administration, and the money could be spent on front-line services.",
+        "Elderly people, some disabled people and those without devices or internet may be shut out.",
+        "Rural areas with poor broadband face similar barriers, and unusual cases do not fit standard forms.",
+        "A system failure or cyber attack could leave a whole population without access at once."
+      ],
+      "usefulVocab": [
+        "digital by default",
+        "to streamline administration",
+        "front-line services",
+        "digital exclusion",
+        "broadband coverage",
+        "to be shut out of a service",
+        "to be legally entitled to",
+        "a cyber attack",
+        "an acceptable side effect"
+      ],
+      "modelAnswer": "Many governments are now redesigning public services to be 'digital by default', and some have gone further by closing the offices where citizens once queued to renew a licence or submit paperwork. While online services bring undeniable efficiencies, I believe that removing every face-to-face alternative creates disadvantages that outweigh these gains.\n\nThe benefits of moving services online are considerable. A citizen can complete a tax return at midnight or renew a passport during a lunch break, without travelling to an office or waiting in a queue. Well-designed digital forms also reduce errors, since they can check information as it is entered and prevent incomplete applications from being submitted. For the state, processing applications electronically cuts administrative costs, and those savings can, in principle, be redirected to front-line services such as healthcare or education.\n\nYet these advantages are enjoyed mostly by people who are already comfortable online. Elderly citizens, people with certain disabilities and those who cannot afford a computer or a reliable connection may find themselves effectively shut out of services to which they are legally entitled. Rural areas with weak broadband coverage face a similar barrier. Moreover, online systems handle standard cases well but tend to fail people whose circumstances are unusual, such as a refugee without the documents a form demands, who then has no one to explain the problem to. If a system crashes or suffers a cyber attack, an entire population may lose access at once. Since public services exist to serve everyone, excluding even a minority is a serious failure rather than an acceptable side effect.\n\nIn conclusion, digital public services are faster and cheaper for most citizens, but making them the only option sacrifices fairness for efficiency. Governments should therefore expand online access while keeping at least a limited network of offices for those who need personal help."
+    },
+    {
+      "id": "t2-12",
+      "essayType": "discussion",
+      "topic": "education",
+      "placement": false,
+      "prompt": "Some people believe that employers should treat degrees completed entirely online as equal to those earned at a traditional campus-based university. Others argue that a campus degree will always be more valuable. Discuss both these views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Campus life helps students develop teamwork, presentation skills and professional networks.",
+        "Some subjects, such as medicine or engineering, need hands-on practice that is hard to provide online.",
+        "Some online providers have low standards, so employers are cautious.",
+        "Many respected universities teach the same curriculum, with the same staff and exams, online and on campus.",
+        "Completing a degree online requires strong self-discipline and time management, which employers value.",
+        "Online degrees open higher education to working adults, parents and people in remote areas."
+      ],
+      "usefulVocab": [
+        "academic rigour",
+        "an accredited institution",
+        "the mode of delivery",
+        "hands-on experience",
+        "professional networks",
+        "self-discipline",
+        "time-management skills",
+        "to widen access to higher education",
+        "supervised placements",
+        "to be judged on equal terms"
+      ],
+      "modelAnswer": "As universities increasingly offer complete degree programmes over the internet, a debate has emerged over whether employers should value these qualifications as highly as traditional ones. Although campus study offers certain advantages, I believe that an online degree from a reputable institution should be judged on equal terms.\n\nThose who favour campus degrees argue that university is about far more than lectures and examinations. Living and studying alongside others, students learn to work in teams, present ideas in person and build professional networks that may prove invaluable later in their careers. Some subjects also require hands-on experience that is difficult to replicate remotely; few people would want to be treated by a doctor who had learned clinical skills entirely through a screen. In addition, the online market includes some providers with questionable standards, which makes employers understandably cautious.\n\nHowever, these concerns relate to the quality of particular courses rather than to online learning as such. Many established universities now teach the same curriculum online as on campus, using the same academic staff and comparable assessments, so the knowledge gained is essentially identical. Indeed, completing a demanding degree without the structure of a timetable arguably requires greater self-discipline and time management, qualities that most employers prize. Online study also opens higher education to working adults, parents and people in remote regions, and dismissing their achievements would mean overlooking a large pool of talent. Where practical skills are essential, as in medicine or engineering, programmes can combine online theory with supervised placements.\n\nIn conclusion, while campus life can foster valuable interpersonal skills and practical experience, I believe employers should focus on the rigour and accreditation of a degree rather than on how it was delivered. Judging applicants on what they have learned, rather than where they sat while learning it, is both fairer and more sensible."
+    },
+    {
+      "id": "t2-13",
+      "essayType": "two_part",
+      "topic": "society",
+      "placement": false,
+      "prompt": "Online platforms now allow people to give public ratings to almost anyone who provides a service, from taxi drivers and delivery workers to doctors and teachers. Why have these rating systems become so widespread? What effects do they have on the people who are being rated? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Apps that connect strangers need a quick way to build trust between customers and workers.",
+        "Ratings are a cheap form of quality control, replacing paid supervisors.",
+        "Consumers often trust reviews from ordinary people more than advertising.",
+        "Good ratings can reward hard work and give workers a sense of pride.",
+        "Scores can reflect things outside the worker's control, or even customers' prejudices.",
+        "Low ratings can cost workers their jobs, and professionals may avoid necessary but unpopular decisions."
+      ],
+      "usefulVocab": [
+        "to build trust between strangers",
+        "a form of quality control",
+        "peer reviews",
+        "to be on the receiving end",
+        "factors beyond someone's control",
+        "unconscious bias",
+        "to have one's account suspended",
+        "to play it safe",
+        "professional integrity"
+      ],
+      "modelAnswer": "Whether we take a taxi, order a meal or visit a clinic, we are now routinely invited to award stars to the person who served us. This practice has spread because it benefits both platforms and consumers, but its consequences for those being judged are, in my view, more harmful than helpful.\n\nThe popularity of rating systems stems partly from the nature of the digital economy. Platforms that connect strangers, such as ride-hailing apps, cannot function unless customers feel confident that a driver is safe and reliable, and a public score offers a simple way to build that trust. Ratings are also remarkably cheap for companies: rather than employing supervisors to monitor quality, a firm can let thousands of customers do the job for free. Consumers, for their part, tend to trust the experiences of other ordinary people more than advertising, so they actively seek out and contribute reviews.\n\nFor those on the receiving end, the effects are mixed. Admittedly, ratings can reward hard work, and a conscientious delivery driver may take genuine pride in a near-perfect score. However, scores frequently reflect factors beyond a worker's control, such as traffic delays or a restaurant preparing food slowly, and may even be influenced by customers' prejudices about age, accent or ethnicity. For platform workers, the stakes are high, as falling below a certain average can lead to their account being suspended. Professionals are affected too: a doctor who refuses to prescribe unnecessary antibiotics or a teacher who marks rigorously may receive poor reviews precisely for doing the job properly, which may tempt them to play it safe instead.\n\nIn conclusion, rating systems have spread because they create trust cheaply and give consumers a voice. Yet by exposing workers to constant and sometimes unfair judgement, they can undermine both well-being and professional integrity, so their influence should be treated with caution."
+    },
+    {
+      "id": "t2-14",
+      "essayType": "problem_solution",
+      "topic": "technology",
+      "placement": false,
+      "prompt": "Many apps and websites are deliberately designed to keep users scrolling and clicking for as long as possible. What problems does this cause, and what measures could be taken to tackle them? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Constant notifications make it hard to concentrate on study or work for long periods.",
+        "Late-night scrolling reduces sleep and affects mood and performance the next day.",
+        "Algorithms promote content that provokes strong emotions, which can distort public debate and harm self-esteem.",
+        "Individuals can turn off non-essential notifications and use built-in screen-time tools.",
+        "Designers can adopt ethical design, such as natural stopping points and success measured by user satisfaction.",
+        "Governments can ban the most manipulative features for children and require transparency about recommendation systems."
+      ],
+      "usefulVocab": [
+        "the attention economy",
+        "infinite scrolling",
+        "push notifications",
+        "engagement metrics",
+        "to optimise for engagement",
+        "knock-on effects",
+        "ethical design",
+        "natural stopping points",
+        "to curb manipulative features",
+        "digital well-being"
+      ],
+      "modelAnswer": "Behind many popular apps lies a business model that depends on capturing as much of our attention as possible, since more time on a platform means more advertising revenue. Features such as infinite scrolling and constant notifications are the result. In my view, this approach causes significant personal and social harm, but it can be curbed through combined action by individuals, industry and government.\n\nThe most immediate problem is the effect on concentration. When a phone signals a new notification every few minutes, sustained focus on study or work becomes extremely difficult, and many users find themselves picking up their device without consciously deciding to do so. Late-night scrolling can also eat into sleep, with knock-on effects on mood and performance the following day. On a wider scale, recommendation algorithms optimised for engagement tend to favour content that provokes strong emotions, such as outrage or envy, because it keeps people watching. This can distort public debate and leave young users in particular feeling inadequate as they compare themselves with others' carefully edited images.\n\nSeveral measures could reduce these harms. Individuals can disable non-essential notifications and use the screen-time tools built into most phones. More fundamentally, the technology industry should embrace ethical design, for instance by building in natural stopping points rather than endless feeds, and by measuring success through user satisfaction rather than minutes spent on screen. Since commercial pressures make voluntary change unlikely, however, regulation is also needed. Governments could prohibit the most manipulative features, such as autoplay and infinite scroll, on services used by children, and require platforms to explain how their recommendation systems rank content.\n\nIn conclusion, attention-maximising design undermines concentration and sleep and can distort public discourse. While individuals can protect themselves to some extent, lasting change will depend on designers rethinking their priorities and on regulators setting clear limits."
+    },
+    {
+      "id": "t2-15",
+      "essayType": "positive_negative",
+      "topic": "education",
+      "placement": false,
+      "prompt": "Many universities now record all of their lectures and make them available online. As a result, a large number of students rarely attend classes in person. Is this a positive or negative development? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Students can pause and replay difficult explanations, which is especially useful for second-language learners.",
+        "Recordings help students who work, care for relatives or are ill not to miss content.",
+        "Watching alone is passive: students cannot ask questions or join discussions.",
+        "Many students postpone watching and then cram hours of recordings before exams.",
+        "Empty lecture halls weaken the sense of community, which can lead to isolation.",
+        "Lecturers lose live feedback; universities could make in-person sessions more interactive."
+      ],
+      "usefulVocab": [
+        "to revise at one's own pace",
+        "a lifeline for",
+        "caring responsibilities",
+        "to supplement rather than replace",
+        "passive learning",
+        "to cram for an examination",
+        "a sense of community",
+        "to feel isolated",
+        "interactive sessions"
+      ],
+      "modelAnswer": "Lecture recordings, once a rare privilege, are now standard at many universities, and lecture halls that were once crowded are increasingly half-empty. Although recordings are a valuable resource in themselves, I believe that the widespread decline in attendance they have encouraged is, on the whole, a negative development.\n\nThere is no doubt that recordings bring real benefits. A student who finds a statistics lecture difficult can pause it, replay a complex explanation and take careful notes, which is especially helpful for those studying in their second language. Recordings are also a lifeline for students who work part-time, care for relatives or fall ill, ensuring that they do not miss essential content. From this perspective, online access makes higher education more flexible and inclusive.\n\nThe problem arises when recordings replace attendance rather than supplement it. Watching a video alone is a largely passive experience: students cannot ask questions, take part in discussions or benefit from the energy of a live audience. In practice, many also intend to catch up later but postpone doing so until the week before an examination, when they cram dozens of hours of material at double speed and retain relatively little. Perhaps more importantly, empty lecture halls erode the sense of community that university life should provide. Students who rarely come to campus have fewer opportunities to form friendships and study groups, and may feel isolated, which can affect both their well-being and their results.\n\nIn conclusion, recorded lectures are an excellent tool for revision and for students facing genuine obstacles to attendance. However, when they become a substitute for being present, learning becomes more passive and isolated, which is why I regard the overall trend as negative. Universities should make in-person sessions more interactive, so that attending offers something a recording cannot."
+    },
+    {
+      "id": "t2-16",
+      "essayType": "opinion",
+      "topic": "work",
+      "placement": false,
+      "prompt": "Some people argue that employees who work from home should be paid less than those who travel to an office, because they save time and money on commuting. To what extent do you agree or disagree? Give reasons for your answer and include any relevant examples from your own knowledge or experience.",
+      "ideas": [
+        "Home workers save on train tickets or fuel and gain hours each week.",
+        "Office-based staff may feel they earn less in real terms once travel costs are deducted.",
+        "Remote workers pay for heating, electricity, internet and equipment that an office would provide.",
+        "Employers already save money on office rent and running costs when staff work from home.",
+        "Pay should reflect skills, responsibility and results, not location: equal pay for equal work.",
+        "Lower pay would penalise parents and disabled workers; a travel allowance for office staff would be fairer."
+      ],
+      "usefulVocab": [
+        "commuting costs",
+        "disposable income",
+        "in real terms",
+        "office rent and overheads",
+        "equal pay for equal work",
+        "to penalise",
+        "a travel allowance",
+        "to bear the cost of",
+        "to be determined by performance"
+      ],
+      "modelAnswer": "Since remote working became widespread, some employers have questioned whether staff who no longer commute should be paid the same as their office-based colleagues. Although I understand the reasoning behind this proposal, I strongly disagree with it, as salaries should reflect the value of the work done rather than the place where it is carried out.\n\nAdmittedly, the argument has a certain surface logic. A person who works from home avoids the expense of train tickets or fuel and gains hours each week that would otherwise be spent in traffic. Office-based employees may therefore feel that, once travel costs are deducted, they are effectively earning less for the same job. Some home workers also choose to live where housing is considerably cheaper, which further increases their disposable income.\n\nHowever, this view rests on a narrow and one-sided calculation. Remote employees transfer many costs from their employer to themselves, paying for the heating, electricity, internet connection and often the furniture that a company would otherwise provide. Meanwhile, the employer saves substantially on office rent and overheads. More fundamentally, the principle of equal pay for equal work should not depend on location: a developer who writes the same code to the same standard deserves the same reward wherever her desk happens to be. Cutting salaries would also penalise precisely those for whom remote work matters most, including parents of young children and people with disabilities. If commuters genuinely face unfair costs, the obvious solution is a travel allowance for office staff, not a pay cut for everyone else.\n\nIn conclusion, while home workers may save on commuting, they bear other costs, and their contribution to an organisation is no less valuable. Pay should therefore be determined by skill, responsibility and performance, not by whether an employee walks into an office each morning."
+    }
+  ]
+}

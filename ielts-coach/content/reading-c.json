@@ -1,0 +1,639 @@
+{
+  "kind": "reading",
+  "items": [
+    {
+      "id": "r09",
+      "title": "Water in the Ancient Drylands",
+      "level": 1,
+      "topic": "history",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "For most of human history, settling in a dry region meant solving one problem before any other: how to obtain a dependable supply of water. Great rivers such as the Nile and the Euphrates allowed early farming communities to flourish along their banks, but vast areas of the Middle East, North Africa and South Asia had no permanent surface water at all. Rain, when it came, might fall in a few violent storms and then disappear for months. The societies that nevertheless built towns and cultivated fields in such places did so by developing ingenious methods of finding, moving and storing water, and several of those methods have proved remarkably durable."
+        },
+        {
+          "label": "B",
+          "text": "Perhaps the best known is the qanat, a system that most historians believe first appeared on the Iranian plateau around three thousand years ago. A qanat is essentially a tunnel that taps groundwater beneath the foot of a hill or mountain and carries it, by gravity alone, to the surface many kilometres away. Builders began by digging a test well to locate the water table, then excavated a gently sloping channel from the settlement that needed the water back towards the source. The gradient had to be steep enough to keep the water flowing but shallow enough to prevent it from eroding the tunnel floor, so the work demanded considerable surveying skill. Along the route, vertical shafts were sunk at regular intervals, allowing workers to remove excavated soil and providing fresh air below ground. Seen from above, a qanat still looks like a long line of small craters stretching across the desert."
+        },
+        {
+          "label": "C",
+          "text": "The advantages of this design are considerable. Because the water travels underground, very little is lost to evaporation, a crucial consideration where summer temperatures are extreme. No pumps or animals are needed to lift it, and since a qanat can deliver only as much water as the surrounding rock naturally releases, a well-managed system does not exhaust its source. The technique spread widely, appearing under different names across the Arabian Peninsula, where such channels are known as aflaj, and in the oases of the Sahara. In many communities the flow was shared among families according to strict timetables, with each household entitled to the water for an agreed length of time. Keeping the tunnels open, however, was hazardous work; collapses were a constant risk, and the specialist diggers who cleaned and repaired them belonged to a respected profession whose skills were usually passed down within families."
+        },
+        {
+          "label": "D",
+          "text": "In western India, a very different solution emerged. Here the difficulty was not a complete absence of rain but its extreme seasonality: the monsoon brought heavy downpours for a few months, after which the land dried out and the level of groundwater fell steadily. The response was the stepwell, a deep shaft or trench lined with stone and reached by long flights of steps. As the water table dropped during the dry season, people simply walked further down to reach it. Many stepwells were plain and practical, but others became elaborate structures several storeys deep, decorated with carved columns and sculptures. Their shaded lower levels were noticeably cooler than the ground above, and they served as places to rest, meet and hold religious ceremonies as well as to collect water. A number of the grandest examples were paid for by wealthy patrons, including royal women, as acts of public generosity."
+        },
+        {
+          "label": "E",
+          "text": "A third approach was to capture rainwater where it fell and keep it for later use. Cisterns, underground or partly underground tanks, were built in enormous numbers across the Mediterranean world and the Middle East. Their effectiveness depended on two things: a catchment surface, such as a roof, paved courtyard or rocky slope, from which water could be channelled, and a lining that would not leak. Builders in the Roman period, for instance, used a waterproof plaster containing crushed pottery or brick, which set hard even in damp conditions. In some desert cities, channels cut into the rock directed run-off from sudden storms into chains of cisterns, enabling populations to survive long dry seasons. Larger cities sometimes constructed vast covered reservoirs, their roofs supported by forests of columns, to store water delivered by aqueducts from distant hills."
+        },
+        {
+          "label": "F",
+          "text": "Many of these systems fell out of use in the nineteenth and twentieth centuries. Mechanical pumps made it possible to extract groundwater quickly from deep boreholes, and piped supplies replaced communal sources in growing towns. In India, colonial administrators regarded some stepwells as unhygienic, and a number were filled in or left to decay. Yet in many regions the pumps that replaced older methods have lowered water tables faster than rainfall can replenish them, and some neglected qanats have run dry as a result. This has prompted renewed interest in traditional techniques. According to Dr Samira Velloran, a water historian at the Asterly Institute for Arid Lands, the older systems 'were designed around the limits of the landscape rather than in defiance of them'. Several restoration projects are now clearing out qanats and stepwells, although Velloran cautions that such systems cannot, on their own, meet the needs of modern cities."
+        }
+      ],
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "The qanat was originally developed in North Africa and later adopted in Iran.",
+              "answer": "FALSE",
+              "explanation": "Paragraph B says most historians believe the qanat 'first appeared on the Iranian plateau', and paragraph C says it later spread to 'the oases of the Sahara'. The statement reverses this direction, so it contradicts the text."
+            },
+            {
+              "n": 2,
+              "prompt": "Qanat builders had to judge the slope of the tunnel with great precision.",
+              "answer": "TRUE",
+              "explanation": "Paragraph B explains that the gradient had to be 'steep enough to keep the water flowing but shallow enough to prevent it from eroding the tunnel floor', so the work 'demanded considerable surveying skill'. Judging the slope precisely is a paraphrase of this."
+            },
+            {
+              "n": 3,
+              "prompt": "In communities that relied on qanats, wealthier households were given access to the water for longer periods.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph C says the flow was shared 'according to strict timetables', with each household entitled to water 'for an agreed length of time'. It never says whether wealth affected the length of a household's share, so there is no information either way."
+            },
+            {
+              "n": 4,
+              "prompt": "The people who maintained qanats generally learnt their skills from members of their own family.",
+              "answer": "TRUE",
+              "explanation": "Paragraph C says the specialist diggers who cleaned and repaired the tunnels belonged to a profession 'whose skills were usually passed down within families'. 'Generally' matches 'usually'."
+            },
+            {
+              "n": 5,
+              "prompt": "Stepwells were developed in an area where rainfall was spread fairly evenly across the year.",
+              "answer": "FALSE",
+              "explanation": "Paragraph D says the problem in western India was the 'extreme seasonality' of rain: the monsoon brought heavy downpours 'for a few months', after which the land dried out. This contradicts the idea of evenly spread rainfall."
+            },
+            {
+              "n": 6,
+              "prompt": "Religious ceremonies at stepwells usually took place at the start of the monsoon.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph D mentions both the monsoon and the fact that stepwells were used to 'hold religious ceremonies', but it says nothing about when these ceremonies were held. The statement links two separate pieces of information that the text does not connect."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "title": "Rainwater cisterns",
+          "wordLimit": "ONE WORD ONLY",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "Requirement 1: a ____ surface (for example a roof or a paved yard) to gather the rain",
+              "answer": ["catchment"],
+              "explanation": "Paragraph E says effectiveness depended on 'a catchment surface, such as a roof, paved courtyard or rocky slope, from which water could be channelled'."
+            },
+            {
+              "n": 8,
+              "prompt": "Requirement 2: a watertight lining, e.g. Roman plaster made with broken-up ____ or brick that hardened even when wet",
+              "answer": ["pottery"],
+              "explanation": "Paragraph E says Roman-period builders used 'a waterproof plaster containing crushed pottery or brick, which set hard even in damp conditions'. 'Brick' is already given in the note, so the missing word is 'pottery'."
+            },
+            {
+              "n": 9,
+              "prompt": "Desert cities: channels cut into rock guided storm ____ into a series of cisterns",
+              "answer": ["run-off", "runoff"],
+              "explanation": "Paragraph E says rock-cut channels 'directed run-off from sudden storms into chains of cisterns'. 'A series of cisterns' paraphrases 'chains of cisterns'."
+            },
+            {
+              "n": 10,
+              "prompt": "Large cities: huge roofed reservoirs held water carried from far-off hills by ____",
+              "answer": ["aqueducts"],
+              "explanation": "Paragraph E ends by describing vast covered reservoirs built 'to store water delivered by aqueducts from distant hills'. 'Columns' is a distractor: they supported the roofs but did not carry water."
+            }
+          ]
+        },
+        {
+          "type": "short_answer",
+          "instructions": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "wordLimit": "NO MORE THAN THREE WORDS",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "What technology made it possible to draw water rapidly from deep underground?",
+              "answer": ["mechanical pumps", "pumps"],
+              "explanation": "Paragraph F says 'Mechanical pumps made it possible to extract groundwater quickly from deep boreholes'. 'Draw water rapidly from deep underground' paraphrases this."
+            },
+            {
+              "n": 12,
+              "prompt": "Which officials considered certain stepwells to be a danger to health?",
+              "answer": ["colonial administrators"],
+              "explanation": "Paragraph F says 'colonial administrators regarded some stepwells as unhygienic'. 'A danger to health' paraphrases 'unhygienic'."
+            },
+            {
+              "n": 13,
+              "prompt": "According to Dr Velloran, whose needs could restored traditional systems not meet by themselves?",
+              "answer": ["modern cities", "modern cities'"],
+              "explanation": "At the end of paragraph F, Velloran 'cautions that such systems cannot, on their own, meet the needs of modern cities'. 'By themselves' paraphrases 'on their own'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r10",
+      "title": "Repairing the Reef",
+      "level": 2,
+      "topic": "environment",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Coral reefs cover only a tiny fraction of the ocean floor, yet they support an extraordinary proportion of marine life and shield many tropical coastlines from waves and storms. Over recent decades, however, reefs in every ocean have suffered serious decline. Pollution, destructive fishing and coastal construction have all played a part, but the greatest threat is rising sea temperature. When water becomes too warm for too long, corals expel the microscopic algae that live inside their tissues and supply most of their food. The corals turn white, a process known as bleaching, and if conditions do not improve quickly, many die."
+        },
+        {
+          "label": "B",
+          "text": "In response, scientists and conservation groups have developed a range of techniques for repairing damaged reefs. The most widely used is known as coral gardening. Small fragments are taken from healthy colonies, or gathered after storms have broken them off, and grown in underwater nurseries, often suspended from ropes or tree-like frames. Once large enough, usually after many months, they are attached to degraded areas of reef with cement, epoxy or cable ties. The method is relatively simple and has been taken up by community groups and dive centres as well as research institutes, which partly explains its popularity. Hamid Qerani, who runs a volunteer nursery in the Pelorin Islands, believes this involvement brings a further benefit: 'Once people have planted corals with their own hands, they become the reef's strongest defenders.'"
+        },
+        {
+          "label": "C",
+          "text": "A refinement of this approach exploits a curious feature of coral biology. Massive, boulder-shaped corals normally grow extremely slowly, in some cases adding only a few millimetres a year. Researchers found, however, that when such corals are cut into very small pieces, each piece grows far faster than an intact colony would. Fragments from the same parent placed close together also fuse, eventually forming a single larger colony. According to Dr Ilse Marrowby of the Kestrel Bay Reef Laboratory, this technique, known as micro-fragmentation, allows restorers to cover in a few years a surface that might otherwise take decades to fill. She adds, however, that it is labour-intensive and does nothing to increase genetic variety, since every fragment is a clone of the original colony."
+        },
+        {
+          "label": "D",
+          "text": "Genetic diversity matters because a reef made up of a few cloned individuals may be badly exposed to the next heatwave or disease outbreak. For this reason, some teams are turning to sexual reproduction. Many corals release eggs and sperm on only a few nights each year, in synchronised spawning events. Researchers collect this spawn, fertilise it in tanks and rear the resulting larvae until they are ready to settle on a hard surface. The young corals are then released over damaged reefs or grown on small tiles before being planted out. Dr Kwame Asterholt, who leads a larval programme at the Merrow Isles Marine Centre, regards this as 'the only realistic way to restore reefs on anything like the scale required', since a single night's spawning can yield millions of larvae. The drawback is that very few of them survive their first year in the wild."
+        },
+        {
+          "label": "E",
+          "text": "In some places the problem is not a lack of coral but the absence of a stable surface on which it can grow. Blast fishing and ship groundings can reduce a reef to a field of loose rubble that shifts with every storm, burying or crushing any young corals that settle there. Here restorers have installed networks of steel frames or concrete structures that hold the rubble in place and give corals something solid to attach to. Professor Celia Brannoch, an ecologist who has monitored several such sites, reports that fish often return to the frames within weeks, long before coral cover has recovered. She warns, however, that structures made from unsuitable materials can corrode or break apart, scattering debris across the very habitat they were meant to repair."
+        },
+        {
+          "label": "F",
+          "text": "More ambitious still are efforts to help corals cope with the conditions that are killing them. Some laboratories are selectively breeding corals from parents that survived past heatwaves, in the hope of producing offspring with greater heat tolerance. Others are experimenting with beneficial bacteria or with exposing young corals to gradually rising temperatures. Supporters argue that, because ocean warming is expected to continue for decades, restoring reefs with ordinary corals is like replanting a forest with trees that are bound to burn. Critics, among them the marine policy researcher Dr Tomas Ferreira-Lund, doubt whether such interventions could ever be applied across thousands of square kilometres, and worry that releasing specially bred populations into the wild could have consequences that nobody can yet predict."
+        },
+        {
+          "label": "G",
+          "text": "Even the most enthusiastic practitioners accept that restoration has serious limits. Successful projects typically cover areas measured in hectares, while the world's reefs extend over hundreds of thousands of square kilometres, and costs per hectare remain high. Many projects are monitored for only a year or two, so their long-term success is often unknown. Above all, no technique can protect a reef from water that is simply too hot: transplanted corals bleach just as readily as wild ones. For this reason, most scientists describe restoration not as a solution but as a way of buying time until the causes of decline, above all greenhouse gas emissions, are brought under control. As Marrowby puts it, 'We can mend the roof, but someone else has to put out the fire.'"
+        }
+      ],
+      "groups": [
+        {
+          "type": "headings",
+          "instructions": "The passage has seven paragraphs, A-G. Choose the correct heading for paragraphs B-G from the list of headings below.",
+          "title": "List of Headings",
+          "options": [
+            { "key": "i", "text": "A temporary measure rather than a permanent cure" },
+            { "key": "ii", "text": "Measures to reduce pollution and overfishing" },
+            { "key": "iii", "text": "Faster growth from smaller pieces" },
+            { "key": "iv", "text": "Giving young corals a firm foundation" },
+            { "key": "v", "text": "Comparing the costs of different restoration methods" },
+            { "key": "vi", "text": "Producing large numbers of genetically varied corals" },
+            { "key": "vii", "text": "The most common method and the reasons for its appeal" },
+            { "key": "viii", "text": "Attempts to make corals more resistant to rising temperatures" },
+            { "key": "ix", "text": "The unexpected return of fish to damaged sites" }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Paragraph B",
+              "answer": "vii",
+              "explanation": "Paragraph B introduces coral gardening as 'the most widely used' technique, explains how it works, and says its simplicity and adoption by non-scientific groups 'partly explains its popularity'. Heading ii is a distractor: pollution and fishing are mentioned only in paragraph A, and Qerani's comment is about public support, not measures against them."
+            },
+            {
+              "n": 2,
+              "prompt": "Paragraph C",
+              "answer": "iii",
+              "explanation": "Paragraph C explains that when slow-growing corals are 'cut into very small pieces, each piece grows far faster than an intact colony would'. That is the central idea; the limitations mentioned at the end are secondary."
+            },
+            {
+              "n": 3,
+              "prompt": "Paragraph D",
+              "answer": "vi",
+              "explanation": "Paragraph D explains that sexual reproduction is used because 'genetic diversity matters', and that one spawning night 'can yield millions of larvae'. Heading vi combines both points: large numbers and genetic variety."
+            },
+            {
+              "n": 4,
+              "prompt": "Paragraph E",
+              "answer": "iv",
+              "explanation": "Paragraph E is about reefs reduced to 'loose rubble' and the frames that 'hold the rubble in place and give corals something solid to attach to'. Heading ix is a trap: the return of fish is only a supporting detail reported by Brannoch, not the main idea."
+            },
+            {
+              "n": 5,
+              "prompt": "Paragraph F",
+              "answer": "viii",
+              "explanation": "Paragraph F describes efforts 'to help corals cope with the conditions that are killing them', such as breeding for 'greater heat tolerance' and exposing corals to 'gradually rising temperatures'."
+            },
+            {
+              "n": 6,
+              "prompt": "Paragraph G",
+              "answer": "i",
+              "explanation": "Paragraph G says scientists describe restoration 'not as a solution but as a way of buying time'. Heading v is a distractor: costs are mentioned ('costs per hectare remain high'), but different methods are never compared."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "Look at the following statements and the list of people below. Match each statement with the correct person, A-E. NB You may use any letter more than once.",
+          "title": "List of People",
+          "options": [
+            { "key": "A", "text": "Dr Ilse Marrowby" },
+            { "key": "B", "text": "Dr Kwame Asterholt" },
+            { "key": "C", "text": "Professor Celia Brannoch" },
+            { "key": "D", "text": "Dr Tomas Ferreira-Lund" },
+            { "key": "E", "text": "Hamid Qerani" }
+          ],
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "A technique can produce coral cover quickly but leaves the population genetically uniform.",
+              "answer": "A",
+              "explanation": "In paragraph C, Marrowby says micro-fragmentation lets restorers cover a surface 'in a few years' but 'does nothing to increase genetic variety, since every fragment is a clone of the original colony'."
+            },
+            {
+              "n": 8,
+              "prompt": "Structures intended to help a reef may end up harming it.",
+              "answer": "C",
+              "explanation": "In paragraph E, Brannoch warns that structures 'made from unsuitable materials can corrode or break apart, scattering debris across the very habitat they were meant to repair'."
+            },
+            {
+              "n": 9,
+              "prompt": "One method is the only practical means of restoring reefs over a sufficiently large area.",
+              "answer": "B",
+              "explanation": "In paragraph D, Asterholt calls larval propagation 'the only realistic way to restore reefs on anything like the scale required'. Ferreira-Lund (paragraph F) also discusses scale, but he doubts that heat-tolerance interventions can be applied widely, which is the opposite point."
+            },
+            {
+              "n": 10,
+              "prompt": "Those who restore reefs must rely on others to deal with the underlying cause of the damage.",
+              "answer": "A",
+              "explanation": "In paragraph G, Marrowby says, 'We can mend the roof, but someone else has to put out the fire.' In context, the fire is the cause of decline (warming from emissions), which restorers themselves cannot stop."
+            }
+          ]
+        },
+        {
+          "type": "sentence_endings",
+          "instructions": "Complete each sentence with the correct ending, A-G, below.",
+          "options": [
+            { "key": "A", "text": "are no less likely to bleach than corals that grew there naturally." },
+            { "key": "B", "text": "are mostly collected from colonies damaged by storms." },
+            { "key": "C", "text": "it is simple enough to be carried out by non-specialists." },
+            { "key": "D", "text": "are usually monitored for several years after planting." },
+            { "key": "E", "text": "manage to live through their first year in the natural environment." },
+            { "key": "F", "text": "tend to attract fish to the site within a few weeks." },
+            { "key": "G", "text": "it produces corals that are more genetically varied." }
+          ],
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Coral gardening has spread widely partly because",
+              "answer": "C",
+              "explanation": "Paragraph B says the method 'is relatively simple and has been taken up by community groups and dive centres as well as research institutes, which partly explains its popularity'. G is wrong: genetic variety is the advantage of sexual reproduction in paragraph D, not of gardening."
+            },
+            {
+              "n": 12,
+              "prompt": "Only a small proportion of the larvae reared in spawning programmes",
+              "answer": "E",
+              "explanation": "Paragraph D ends: 'very few of them survive their first year in the wild'. 'Only a small proportion' paraphrases 'very few', and 'the natural environment' paraphrases 'the wild'."
+            },
+            {
+              "n": 13,
+              "prompt": "Corals that are transplanted from nurseries onto a damaged reef",
+              "answer": "A",
+              "explanation": "Paragraph G states that 'transplanted corals bleach just as readily as wild ones'. D is wrong because paragraph G says many projects are monitored 'for only a year or two'; F is wrong because paragraph E says fish return to the steel frames, not to transplanted corals."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r11",
+      "title": "The Price of Attention",
+      "level": 3,
+      "topic": "technology",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Economists have long recognised that whatever is scarce becomes valuable. In an age when information is plentiful and often free, the scarce resource is no longer content but the human capacity to attend to it. This simple observation lies behind what has come to be called the attention economy. Many of the most popular digital services charge their users nothing; instead, they earn their income by selling advertisers access to those users' time and focus. The longer a person stays, the more advertisements can be displayed and the more data can be gathered about their interests. It follows that, for such businesses, the key measure of success is not whether users are satisfied but how much of their attention has been captured."
+        },
+        {
+          "label": "B",
+          "text": "The design techniques that serve this goal are by now familiar. Infinite scroll removes the natural stopping points once provided by the end of a page or a chapter. Autoplay starts the next video before the viewer has decided whether to watch it. Notifications arrive at unpredictable moments, and the uncertainty is itself part of their pull: psychologists have long observed that rewards delivered irregularly sustain behaviour more effectively than predictable ones. Streaks, badges and counters showing how many people have reacted to a post add a social dimension, so that time away from an app begins to feel like a loss. None of these features is sinister in isolation, and each can be defended as a convenience. Taken together, however, they create an environment engineered to make leaving difficult."
+        },
+        {
+          "label": "C",
+          "text": "It would be a mistake, though, to imagine designers deliberately plotting to manipulate the public. The reality is more mundane and, in some ways, more troubling. Modern apps are refined through continuous experimentation, in which slightly different versions of a screen are shown to different groups of users and whichever version generates more engagement is kept. No one needs to intend harm for the result to be harmful; the process simply selects whatever holds attention most effectively. As Ruth Kalinowska, who spent six years designing features for a social media start-up, put it to me: 'Nobody in the room ever asked whether a change was good for people. We asked whether the numbers went up.'"
+        },
+        {
+          "label": "D",
+          "text": "The industry's usual response has been to place responsibility on the individual. Users, the argument goes, are adults who are free to switch off, and many devices now include tools that report daily screen time or allow limits to be set on particular apps. I find this argument unpersuasive. It is not that people bear no responsibility for their habits; clearly they do. But it is unreasonable to expect individual willpower to compete on equal terms with systems shaped by thousands of experiments and some of the most sophisticated data analysis in the world. The screen-time tools themselves can usually be dismissed with a single tap, which suggests they were built to reassure users rather than to change their behaviour."
+        },
+        {
+          "label": "E",
+          "text": "Critics of the industry, on the other hand, sometimes weaken their case by overstating it. It has become common to describe heavy use of social media or games as an addiction comparable to drug dependence. The evidence for such comparisons is, at best, mixed. Studies of the effects of screen use on wellbeing have produced conflicting findings, and many rely on people's own estimates of how long they spend online, which are known to be unreliable. Exaggerated claims also make it easier for companies to dismiss legitimate concerns as a moral panic, like those that once greeted novels, radio and television. The more modest claim, that many products are designed to encourage more use than people themselves would choose, is both better supported and quite sufficient to justify action."
+        },
+        {
+          "label": "F",
+          "text": "What form should that action take? Some propose that designers adopt a professional code of ethics, similar to those that govern doctors or engineers. The idea has some merit, but codes of conduct carry little weight when an employee's performance is judged by engagement figures. Others favour regulation, and this, I believe, is the more promising path, provided that it targets specific practices rather than overall usage. Rules restricting how many hours people may spend online would be both unenforceable and paternalistic. By contrast, requiring autoplay to be switched off by default, or notifications to be grouped and delivered at times users have chosen, would leave adults free to decide for themselves while removing some of the pressure that currently shapes their decisions."
+        },
+        {
+          "label": "G",
+          "text": "There are signs that change is possible. A number of smaller companies have begun to promote their products on the grounds that they respect users' time, and some have abandoned advertising in favour of subscriptions, a model that rewards a service for being genuinely useful rather than merely absorbing. Whether such businesses can compete with free alternatives remains to be seen. But the attention economy is not a law of nature; it is the product of particular commercial decisions, and decisions can be made differently. For developers and designers especially, the question is not only what can be built but what ought to be."
+        }
+      ],
+      "groups": [
+        {
+          "type": "matching_info",
+          "instructions": "The passage has seven paragraphs, A-G. Which paragraph contains the following information? NB You may use any letter more than once.",
+          "options": [
+            { "key": "A", "text": "Paragraph A" },
+            { "key": "B", "text": "Paragraph B" },
+            { "key": "C", "text": "Paragraph C" },
+            { "key": "D", "text": "Paragraph D" },
+            { "key": "E", "text": "Paragraph E" },
+            { "key": "F", "text": "Paragraph F" },
+            { "key": "G", "text": "Paragraph G" }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "a comparison between present-day concerns and reactions to earlier forms of media",
+              "answer": "E",
+              "explanation": "Paragraph E warns that exaggerated claims let companies dismiss concerns 'as a moral panic, like those that once greeted novels, radio and television'. Those are the earlier forms of media."
+            },
+            {
+              "n": 2,
+              "prompt": "an explanation of how a damaging outcome can arise without anyone wanting it",
+              "answer": "C",
+              "explanation": "Paragraph C says 'No one needs to intend harm for the result to be harmful', because continuous testing 'simply selects whatever holds attention most effectively'."
+            },
+            {
+              "n": 3,
+              "prompt": "a suggestion that certain features offered to users are largely for show",
+              "answer": "D",
+              "explanation": "Paragraph D says screen-time tools 'can usually be dismissed with a single tap', which suggests they 'were built to reassure users rather than to change their behaviour', meaning they are largely for appearance."
+            },
+            {
+              "n": 4,
+              "prompt": "a reference to a source of income that rewards usefulness rather than time spent",
+              "answer": "G",
+              "explanation": "Paragraph G describes subscriptions as 'a model that rewards a service for being genuinely useful rather than merely absorbing'. Paragraph A describes the advertising model, which rewards time spent, so it is not the answer."
+            }
+          ]
+        },
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Each of the design features mentioned is objectionable even when considered on its own.",
+              "answer": "NO",
+              "explanation": "In paragraph B the writer says 'None of these features is sinister in isolation, and each can be defended as a convenience'. The problem only arises when they are 'taken together', so the writer disagrees with the statement."
+            },
+            {
+              "n": 6,
+              "prompt": "Individuals are partly to blame for the way they use technology.",
+              "answer": "YES",
+              "explanation": "In paragraph D the writer rejects the industry's argument but adds: 'It is not that people bear no responsibility for their habits; clearly they do.' The writer simply thinks individual willpower is not enough on its own."
+            },
+            {
+              "n": 7,
+              "prompt": "Research into screen use and wellbeing has been held back by a shortage of funding.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph E criticises the research for 'conflicting findings' and for relying on people's own unreliable estimates of their screen time. Funding is never mentioned, so the writer's view on it cannot be known."
+            },
+            {
+              "n": 8,
+              "prompt": "The claim that products are designed to make people use them more than they intend is strong enough to warrant a response.",
+              "answer": "YES",
+              "explanation": "At the end of paragraph E the writer says the 'more modest claim', that products encourage 'more use than people themselves would choose', is 'better supported and quite sufficient to justify action'."
+            },
+            {
+              "n": 9,
+              "prompt": "A legal limit on the time people may spend online would be a sensible measure.",
+              "answer": "NO",
+              "explanation": "In paragraph F the writer supports regulation of specific practices but says 'Rules restricting how many hours people may spend online would be both unenforceable and paternalistic'."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "According to the writer, businesses in the attention economy judge their success mainly by",
+              "options": [
+                { "key": "A", "text": "the quality of the content they provide." },
+                { "key": "B", "text": "how satisfied their users are." },
+                { "key": "C", "text": "the amount of user attention they obtain." },
+                { "key": "D", "text": "the number of advertisers they attract." }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph A says 'the key measure of success is not whether users are satisfied but how much of their attention has been captured'. B is directly rejected. Advertisers are mentioned (D) as the source of income, but not as the measure of success."
+            },
+            {
+              "n": 11,
+              "prompt": "What does the writer say about notifications?",
+              "options": [
+                { "key": "A", "text": "Their unpredictability makes them more compelling." },
+                { "key": "B", "text": "They are less effective than streaks and badges." },
+                { "key": "C", "text": "They were originally designed by psychologists." },
+                { "key": "D", "text": "Most users would prefer to receive them at fixed times." }
+              ],
+              "answer": "A",
+              "explanation": "Paragraph B says notifications 'arrive at unpredictable moments, and the uncertainty is itself part of their pull'. Psychologists (C) are mentioned only as having studied irregular rewards, and paragraph F proposes delivery at chosen times (D) without claiming that most users want this."
+            },
+            {
+              "n": 12,
+              "prompt": "What does Ruth Kalinowska's comment suggest about the company she worked for?",
+              "options": [
+                { "key": "A", "text": "Staff were instructed to mislead users." },
+                { "key": "B", "text": "Decisions were based on measurable results rather than users' wellbeing." },
+                { "key": "C", "text": "Designers were unaware that experiments were being carried out." },
+                { "key": "D", "text": "Its approach changed after users complained." }
+              ],
+              "answer": "B",
+              "explanation": "In paragraph C, Kalinowska says nobody asked 'whether a change was good for people. We asked whether the numbers went up.' A is wrong because the writer says it would be 'a mistake' to imagine designers deliberately plotting to manipulate people."
+            },
+            {
+              "n": 13,
+              "prompt": "What is the writer's opinion of a professional code of ethics for designers?",
+              "options": [
+                { "key": "A", "text": "It would make regulation unnecessary." },
+                { "key": "B", "text": "It should be closely modelled on the codes followed by doctors." },
+                { "key": "C", "text": "It has already been adopted by several smaller companies." },
+                { "key": "D", "text": "It would achieve little while staff are judged on engagement figures." }
+              ],
+              "answer": "D",
+              "explanation": "Paragraph F says the idea 'has some merit, but codes of conduct carry little weight when an employee's performance is judged by engagement figures'. The writer prefers regulation, so A is wrong; the smaller companies in paragraph G (C) are linked to subscriptions, not ethics codes."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r12",
+      "title": "The Measure of a Student",
+      "level": 3,
+      "topic": "education",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Few aspects of education provoke as much argument as the standardised test: an examination in which every candidate answers the same questions, under the same conditions, and is marked in the same way. To its supporters, such a test is the fairest available means of comparing large numbers of people; to its opponents, it reduces the rich and varied business of learning to a single number. Yet the debate is far older than most of its participants realise, and an understanding of how standardised testing arose helps to explain why it has proved so difficult either to defend wholeheartedly or to abandon."
+        },
+        {
+          "label": "B",
+          "text": "The most celebrated early example comes from imperial China, where, for well over a thousand years, written examinations were a principal route into the state bureaucracy. Candidates were tested on their knowledge of classical texts and their ability to compose essays in a prescribed style. In some periods, elaborate precautions were taken against favouritism: candidates' names were concealed, and their answers were copied out by clerks so that examiners could not recognise the handwriting. The historian Dr Odile Varnham argues that the system's real innovation was not the testing of knowledge itself but 'the idea that an official post could be earned rather than inherited'. She notes, however, that preparation for the examinations demanded years of study that only relatively wealthy families could easily support."
+        },
+        {
+          "label": "C",
+          "text": "In Europe and North America, written examinations gradually replaced oral ones during the nineteenth century. Reformers argued that setting every pupil the same questions on paper was more impartial than an oral interview, in which a teacher's opinion of a child might colour the result, and that it also allowed schools to be compared with one another. Governments, meanwhile, began to appoint civil servants by competitive examination rather than personal recommendation. In the early twentieth century, the development of intelligence tests and of the multiple-choice format made it possible to assess very large populations quickly, and by the middle of the century answer sheets could be marked by machine, so that the cost of marking each additional paper fell dramatically."
+        },
+        {
+          "label": "D",
+          "text": "Today standardised tests serve several distinct purposes, and much confusion arises from treating them as one. Some tests select: they decide who is offered a university place or a scholarship. Some certify that a candidate has reached a required standard, as professional licensing examinations do. Others are diagnostic, intended to show teachers which skills a pupil has not yet mastered. And many are used for accountability, with schools' average results published or linked to funding and inspection. According to Professor Bernard Oyelaran-Fisk, an assessment specialist, the most serious problems arise when a test designed for one purpose is pressed into service for another, when, for instance, results from an examination meant to identify individual pupils' needs are used to rank schools."
+        },
+        {
+          "label": "E",
+          "text": "It is accountability testing that has attracted the fiercest criticism. When a school's reputation or a teacher's pay depends on results, there is a strong incentive to devote lesson time to the material and question types that will appear on the test, at the expense of subjects and skills that are not assessed. Dr Hana Kirchwell, who has observed classroom practice in several countries, found that in the schools under greatest pressure, art, music and extended project work were the first activities to be reduced. She is careful to add that 'teaching to the test' is not always harmful: if a test is well designed, preparing for it may amount to little more than teaching the curriculum thoroughly. The difficulty is that few tests are able to capture qualities such as creativity or the capacity to collaborate."
+        },
+        {
+          "label": "F",
+          "text": "A second line of criticism concerns fairness. Because average scores tend to rise with family income, some critics argue that tests measure social advantage as much as ability; families who can pay for private tutoring and practice materials give their children a considerable head start. Others go further, claiming that some test questions assume cultural knowledge that is more familiar to certain groups than to others. Defenders reply that the alternatives are often worse. Teachers' own judgements, Dr Felix Amadou-Strand points out, have been shown in some studies to be influenced by pupils' behaviour, appearance and background, and such biases are far harder to detect than those in a published test. A standardised test, he argues, at least makes inequality visible, which is the first step towards tackling it."
+        },
+        {
+          "label": "G",
+          "text": "What seems clear is that the real question is not whether to test but how. Several education systems are experimenting with approaches that combine shorter external tests with assessed coursework, or that test a sample of pupils rather than every child, which provides national data while easing the pressure on individual schools. Varnham sees a lesson here from the long history she studies. Examinations, she observes, have always shaped what is taught, so 'the real task is to design tests worth teaching to'."
+        }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What point does the writer make in the first paragraph?",
+              "options": [
+                { "key": "A", "text": "Most people involved in the debate are well informed about its history." },
+                { "key": "B", "text": "The origins of standardised testing help to account for why it has been neither fully embraced nor given up." },
+                { "key": "C", "text": "Opponents of standardised testing have weaker arguments than its supporters." },
+                { "key": "D", "text": "Standardised tests are used less widely than they were in the past." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph A says understanding how testing arose 'helps to explain why it has proved so difficult either to defend wholeheartedly or to abandon'. A is contradicted: the debate is 'far older than most of its participants realise'. Neither side's arguments are judged stronger (C)."
+            },
+            {
+              "n": 2,
+              "prompt": "The precautions taken in some periods of the Chinese examination system were intended to",
+              "options": [
+                { "key": "A", "text": "limit the number of candidates who passed." },
+                { "key": "B", "text": "make the examinations accessible to poorer families." },
+                { "key": "C", "text": "ensure that candidates wrote in the prescribed style." },
+                { "key": "D", "text": "prevent examiners from knowing whose work they were marking." }
+              ],
+              "answer": "D",
+              "explanation": "Paragraph B says that, to prevent favouritism, 'candidates' names were concealed' and answers were recopied 'so that examiners could not recognise the handwriting'. The 'prescribed style' (C) is mentioned, but as something tested, not as the aim of the precautions; B contradicts Varnham's point about wealthy families."
+            },
+            {
+              "n": 3,
+              "prompt": "According to the passage, nineteenth-century reformers preferred written examinations because they",
+              "options": [
+                { "key": "A", "text": "reduced the influence of teachers' personal opinions of pupils." },
+                { "key": "B", "text": "could be marked rapidly by machine." },
+                { "key": "C", "text": "were cheaper to run than oral interviews." },
+                { "key": "D", "text": "tested a wider range of abilities." }
+              ],
+              "answer": "A",
+              "explanation": "Paragraph C says reformers thought written papers were 'more impartial than an oral interview, in which a teacher's opinion of a child might colour the result'. Machine marking (B) and falling costs (C) belong to the twentieth century, not to the reformers' arguments."
+            },
+            {
+              "n": 4,
+              "prompt": "What was one consequence of machine marking?",
+              "options": [
+                { "key": "A", "text": "The multiple-choice format was invented." },
+                { "key": "B", "text": "Intelligence tests replaced other forms of assessment." },
+                { "key": "C", "text": "Marking additional papers became far less expensive." },
+                { "key": "D", "text": "Civil servants began to be appointed by examination." }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph C says that once answer sheets could be marked by machine, 'the cost of marking each additional paper fell dramatically'. The multiple-choice format (A) came before machine marking, and civil service examinations (D) began in the previous century."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "Look at the following statements and the list of researchers below. Match each statement with the correct researcher, A-D. NB You may use any letter more than once.",
+          "title": "List of Researchers",
+          "options": [
+            { "key": "A", "text": "Dr Odile Varnham" },
+            { "key": "B", "text": "Professor Bernard Oyelaran-Fisk" },
+            { "key": "C", "text": "Dr Hana Kirchwell" },
+            { "key": "D", "text": "Dr Felix Amadou-Strand" }
+          ],
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Difficulties occur when a test is used for a purpose it was not designed for.",
+              "answer": "B",
+              "explanation": "In paragraph D, Oyelaran-Fisk says the most serious problems arise 'when a test designed for one purpose is pressed into service for another'."
+            },
+            {
+              "n": 6,
+              "prompt": "Teachers' assessments may contain prejudices that are difficult to identify.",
+              "answer": "D",
+              "explanation": "In paragraph F, Amadou-Strand points out that teachers' judgements can be influenced by 'behaviour, appearance and background', and that such biases are 'far harder to detect' than those in a published test."
+            },
+            {
+              "n": 7,
+              "prompt": "When schools are under pressure, activities that are not examined tend to be cut first.",
+              "answer": "C",
+              "explanation": "In paragraph E, Kirchwell found that in the schools under greatest pressure, 'art, music and extended project work were the first activities to be reduced'. These are activities the tests do not assess."
+            },
+            {
+              "n": 8,
+              "prompt": "A historical examination system made it possible to gain an official position through achievement rather than birth.",
+              "answer": "A",
+              "explanation": "In paragraph B, Varnham argues that the Chinese system's real innovation was 'the idea that an official post could be earned rather than inherited'."
+            },
+            {
+              "n": 9,
+              "prompt": "Examinations have always influenced the content of teaching.",
+              "answer": "A",
+              "explanation": "In paragraph G, Varnham 'observes' that examinations 'have always shaped what is taught'. Kirchwell (C) describes the effect of testing in present-day schools under pressure, but she does not claim it has always been so."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "title": "Concerns about standardised testing and possible responses",
+          "wordLimit": "NO MORE THAN TWO WORDS",
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "When a school's standing depends on its results, teachers are tempted to spend lessons on the content and ____ expected in the test, while subjects that are not assessed may suffer.",
+              "answer": ["question types"],
+              "explanation": "Paragraph E says there is an incentive to devote lesson time 'to the material and question types that will appear on the test'. 'Content' in the summary paraphrases 'material', so the missing words are 'question types'."
+            },
+            {
+              "n": 11,
+              "prompt": "Critics also question whether tests are fair, since higher scores are generally associated with greater ____.",
+              "answer": ["family income", "income"],
+              "explanation": "Paragraph F says 'average scores tend to rise with family income', which is why some critics think tests measure social advantage."
+            },
+            {
+              "n": 12,
+              "prompt": "Supporters reply that teachers' judgements contain hidden biases, whereas a standardised test at least reveals ____, the first step towards dealing with it.",
+              "answer": ["inequality"],
+              "explanation": "Paragraph F reports Amadou-Strand's argument that a standardised test 'at least makes inequality visible, which is the first step towards tackling it'. 'Reveals' paraphrases 'makes visible'."
+            },
+            {
+              "n": 13,
+              "prompt": "Some education systems now assess only a ____ of pupils, which still provides national data but reduces the pressure on schools.",
+              "answer": ["sample"],
+              "explanation": "Paragraph G mentions approaches that 'test a sample of pupils rather than every child, which provides national data while easing the pressure on individual schools'."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

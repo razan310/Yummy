@@ -1,0 +1,1217 @@
+{
+  "kind": "grammar",
+  "items": [
+    {
+      "id": "g01",
+      "title": "Articles: a, an, the and no article",
+      "forSkill": "both",
+      "why": "Arabic has a definite article (al-) but no written indefinite article, and it uses al- with general and abstract nouns where English uses no article at all. As a result, Arabic speakers often drop a/an ('I am developer') and add 'the' before general ideas ('The technology changes our lives').",
+      "rule": [
+        "Use a/an with a singular countable noun mentioned for the first time or meaning 'one of many': a developer, an online course.",
+        "Use the when the listener or reader knows which one you mean: it was mentioned before, there is only one, or a phrase identifies it (the app I use at work).",
+        "Use no article with plural and uncountable nouns when you mean them in general: Technology changes quickly. Children need exercise.",
+        "A singular countable noun can never stand alone: write a/the/my/this computer, never just computer.",
+        "Use the with superlatives, ordinal numbers and decades: the highest figure, the second year, the 1990s.",
+        "In Task 1, measured quantities take the: the number of, the proportion of, the percentage of, the rate of."
+      ],
+      "ar": "في اللغة العربية أداة تعريف واحدة هي «ال»، ولا توجد أداة تنكير مكتوبة، إذ يدل التنوين على النكرة. لذلك ينسى كثير من المتعلمين العرب كتابة a أو an قبل الاسم المفرد المعدود، فيقولون I am developer بدلاً من I am a developer. ومن جهة أخرى، تستخدم العربية «ال» مع الأسماء العامة والمجردة، فنقول: «التكنولوجيا تغيّر حياتنا» و«التعليم مهم». أما في الإنجليزية فالاسم غير المعدود أو الجمع إذا قُصد به المعنى العام يأتي بلا أداة: Technology changes our lives و Education is important. استخدم the فقط عندما يكون المقصود شيئاً محدداً يعرفه القارئ، مثل: the education system in my country. والقاعدة الذهبية: الاسم المفرد المعدود لا يقف وحده أبداً، بل يحتاج إلى a أو the أو كلمة مثل my أو this.",
+      "examples": [
+        {
+          "wrong": "I work as frontend developer in a software company.",
+          "right": "I work as a frontend developer in a software company.",
+          "note": "Jobs are singular countable nouns, so they need a/an after 'work as' and 'be': She is an engineer."
+        },
+        {
+          "wrong": "The technology has changed the way people communicate.",
+          "right": "Technology has changed the way people communicate.",
+          "note": "Technology in general takes no article. Use 'the' only for a specific technology: the technology used in electric cars."
+        },
+        {
+          "wrong": "The graph shows number of people who used public transport.",
+          "right": "The graph shows the number of people who used public transport.",
+          "note": "'The number of', 'the proportion of' and 'the percentage of' always take 'the'."
+        },
+        {
+          "wrong": "In my opinion, the children should learn the programming at school.",
+          "right": "In my opinion, children should learn programming at school.",
+          "note": "Children in general and school subjects take no article."
+        },
+        {
+          "wrong": "Unemployment rate reached highest level in 2015.",
+          "right": "The unemployment rate reached its highest level in 2015.",
+          "note": "A specific rate needs 'the', and a superlative needs 'the' or a possessive such as 'its'."
+        },
+        {
+          "wrong": "Most of the people in my city use the cars to get to work.",
+          "right": "Most people in my city use cars to get to work.",
+          "note": "'Most people' means people in general. 'Most of the people' needs a specific group: most of the people at the meeting."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "My brother is ____ engineer at a large energy company.",
+          "options": ["a", "the", "an", "no article"],
+          "answer": 2,
+          "explain": "Engineer is a singular countable noun that begins with a vowel sound, so it needs 'an'. It is the first mention and means 'one of many engineers', so 'the' is wrong.",
+          "explainAr": "كلمة engineer اسم مفرد معدود يبدأ بصوت متحرك، لذلك نستخدم an. ولا نستخدم the لأن المقصود مهندس من بين مهندسين كثيرين، وليس مهندساً محدداً."
+        },
+        {
+          "q": "____ is one of the most important factors in a country's development.",
+          "options": ["Education", "The education", "Educations", "The educations"],
+          "answer": 0,
+          "explain": "Education is used here in a general, abstract sense, so it takes no article. It is also uncountable, so it has no plural form.",
+          "explainAr": "المقصود هنا التعليم بشكل عام، والاسم المجرد العام لا يأخذ أداة تعريف في الإنجليزية، رغم أننا نقول «التعليم» بأل في العربية. كما أن الكلمة غير معدودة فلا تُجمع."
+        },
+        {
+          "q": "The chart compares ____ of households with internet access in four countries.",
+          "options": ["percentage", "a percentage", "some percentage", "the percentage"],
+          "answer": 3,
+          "explain": "'The percentage of' refers to a specific measured figure, so it always takes 'the'. This pattern appears in almost every Task 1 report.",
+          "explainAr": "عبارة the percentage of تشير إلى رقم محدد يمكن قياسه، لذلك تأتي دائماً مع the، وهي من أكثر العبارات استخداماً في المهمة الأولى من الكتابة."
+        },
+        {
+          "q": "I downloaded ____ app last month, but ____ app keeps crashing.",
+          "options": ["the / an", "an / the", "an / an", "the / the"],
+          "answer": 1,
+          "explain": "The first mention introduces a new app, so it takes 'an'. The second mention refers to the same app, which the listener now knows, so it takes 'the'.",
+          "explainAr": "في المرة الأولى نذكر التطبيق لأول مرة فنستخدم an، وفي المرة الثانية نتحدث عن التطبيق نفسه الذي أصبح معروفاً للسامع فنستخدم the."
+        },
+        {
+          "q": "Which sentence is correct?",
+          "options": [
+            "Smartphone has become essential part of modern life.",
+            "The smartphone has become an essential part of the modern life.",
+            "Smartphones have become an essential part of modern life.",
+            "The smartphones have become essential part of modern life."
+          ],
+          "answer": 2,
+          "explain": "'Smartphones' in general takes no article, 'part' is singular and countable so it needs 'an', and 'modern life' in general takes no article. The second option is wrong only because of 'the modern life'.",
+          "explainAr": "كلمة smartphones بمعنى الهواتف الذكية عموماً لا تحتاج إلى أداة، وكلمة part مفرد معدود فتحتاج إلى an، وعبارة modern life بمعناها العام لا تأخذ the. أما الخيار الثاني فخطؤه الوحيد هو the modern life."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title": "Do not drop 'be' or auxiliary verbs",
+      "forSkill": "both",
+      "why": "Arabic nominal sentences such as 'الطقس حار' or 'أنا مبرمج' have no verb, and Arabic questions are formed without an auxiliary. This leads to sentences like 'The weather very hot' or 'Why you chose this job?', which examiners notice immediately in both Speaking and Writing.",
+      "rule": [
+        "Every English clause needs a verb. When there is no other verb, use be: The weather is hot. My job is challenging.",
+        "Use be before adjectives, nouns, places and -ing forms: She is a designer. The office is near the station. Prices are rising.",
+        "Passive verbs need be: The data was collected in 2020, not The data collected in 2020.",
+        "Questions in the present simple and past simple need do, does or did: Why did you choose this job? Where does she work?",
+        "Negatives also need an auxiliary: I don't agree, not I not agree.",
+        "Keep be after 'there' and inside relative clauses: There are many reasons. People who are unemployed need support."
+      ],
+      "ar": "الجملة الاسمية في العربية لا تحتاج إلى فعل، فنقول «الطقس حارّ» و«هي مبرمجة» دون أي فعل. أما في الإنجليزية فلا بد لكل جملة من فعل، فإذا لم يوجد فعل آخر نستخدم فعل الكون be بصيغته المناسبة: am أو is أو are أو was أو were، فنقول: The weather is hot و She is a programmer. كذلك تُكوَّن الأسئلة في العربية بإضافة «هل» أو أداة استفهام فقط، بينما تحتاج الإنجليزية إلى فعل مساعد مثل do أو does أو did في المضارع البسيط والماضي البسيط، فنقول: Why did you choose this job? وليس Why you chose this job? ويحتاج النفي أيضاً إلى فعل مساعد: I don't think so. ويُعدّ حذف هذه الأفعال من أكثر الأخطاء التي يلاحظها الممتحن، لأنه يؤثر مباشرة في درجة الدقة النحوية.",
+      "examples": [
+        {
+          "wrong": "My hometown very crowded in summer.",
+          "right": "My hometown is very crowded in summer.",
+          "note": "'Crowded' is an adjective and cannot act as a verb, so 'is' is required."
+        },
+        {
+          "wrong": "Why you decided to study computer science?",
+          "right": "Why did you decide to study computer science?",
+          "note": "A past simple question needs 'did' + the base form of the verb."
+        },
+        {
+          "wrong": "Nowadays many young people interested in working abroad.",
+          "right": "Nowadays many young people are interested in working abroad.",
+          "note": "'Interested' is an adjective, so it needs 'are' before it."
+        },
+        {
+          "wrong": "The number of tourists increasing every year.",
+          "right": "The number of tourists is increasing every year.",
+          "note": "The continuous form is be + -ing; the -ing form alone is not a verb."
+        },
+        {
+          "wrong": "The survey conducted in five cities.",
+          "right": "The survey was conducted in five cities.",
+          "note": "Without 'was', the sentence says the survey did the conducting. The passive needs be + past participle."
+        },
+        {
+          "wrong": "I not like working late at night.",
+          "right": "I don't like working late at night.",
+          "note": "Present simple negatives need 'don't' or 'doesn't' + base form."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The cost of living in big cities ____ much higher than in rural areas.",
+          "options": ["(no word)", "are", "is", "be"],
+          "answer": 2,
+          "explain": "The sentence has no other verb, so it needs be. The subject is 'the cost', which is singular, so 'is' is correct, not 'are'.",
+          "explainAr": "لا يوجد في الجملة فعل آخر، لذلك نحتاج إلى فعل be. والفاعل هو the cost وهو مفرد، فنستخدم is وليس are."
+        },
+        {
+          "q": "Choose the correct question.",
+          "options": ["Where you work now?", "Where you are work now?", "Where does you work now?", "Where do you work now?"],
+          "answer": 3,
+          "explain": "A present simple question needs the auxiliary 'do' (with I, you, we, they) followed by the base form of the main verb.",
+          "explainAr": "السؤال في المضارع البسيط يحتاج إلى الفعل المساعد do مع you، ثم الفعل الأساسي في صيغته المجردة. أما does فتُستخدم مع he وshe وit فقط."
+        },
+        {
+          "q": "Many new apartments ____ near the city centre last year.",
+          "options": ["were built", "built", "was built", "have built"],
+          "answer": 0,
+          "explain": "Apartments cannot build anything, so the passive is needed: be + past participle. The subject is plural and the time is finished (last year), so 'were built' is correct.",
+          "explainAr": "الشقق لا تقوم بالبناء، لذلك نحتاج إلى المبني للمجهول: be مع التصريف الثالث. والفاعل جمع والزمن ماضٍ منتهٍ (last year)، فالصحيح were built."
+        },
+        {
+          "q": "I think online courses ____ useful for people who work full-time.",
+          "options": ["(no word)", "are", "is", "do"],
+          "answer": 1,
+          "explain": "'Useful' is an adjective, so the clause needs be. 'Courses' is plural, so the verb is 'are'.",
+          "explainAr": "كلمة useful صفة، فالجملة تحتاج إلى فعل be، والفاعل courses جمع، لذلك نستخدم are."
+        },
+        {
+          "q": "She ____ agree with the new policy, so she wrote to her manager.",
+          "options": ["not", "wasn't", "didn't", "no"],
+          "answer": 2,
+          "explain": "'Agree' is a main verb, so the past negative is 'didn't' + base form. 'Wasn't agree' wrongly mixes be with a main verb.",
+          "explainAr": "الفعل agree فعل أساسي، لذلك يكون النفي في الماضي بـ didn't ثم الفعل المجرد. أما wasn't agree فخطأ لأنه يجمع بين be وفعل أساسي."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title": "Present perfect or past simple?",
+      "forSkill": "both",
+      "why": "Arabic uses one past form (الفعل الماضي) for finished events and for past events connected to the present, so learners often say 'I live here since 2015' or 'I have finished university two years ago'. Choosing the right tense matters in Speaking Parts 1 and 2 and in Task 1 descriptions.",
+      "rule": [
+        "Use the past simple for finished actions at a finished time: I joined the company in 2021. The figure fell in 2010.",
+        "Never use the present perfect with a finished time expression such as yesterday, last year, in 2019, ago or when I was a child.",
+        "Use the present perfect for situations that started in the past and continue now, usually with for or since: I have worked here for three years.",
+        "Use the present perfect for life experience and recent changes with a present result: I have never used that app. Prices have risen sharply.",
+        "Since + a point in time (since 2020, since I graduated); for + a length of time (for six months).",
+        "In Task 1, use the past simple for data about past years; use the present perfect only when the period reaches the present: Since 2010, the number has doubled."
+      ],
+      "ar": "في العربية نستخدم الفعل الماضي للتعبير عن أي حدث سابق، سواء انتهى أم ما زال أثره ممتداً إلى الآن. أما الإنجليزية فتفرّق بين زمنين: الماضي البسيط (past simple) لحدث انتهى في وقت محدد منتهٍ، مثل I graduated in 2019، والمضارع التام (present perfect) لحدث بدأ في الماضي وما زال مستمراً، أو لتجربة في الحياة دون ذكر وقتها، مثل I have worked as a developer for four years. ومن الأخطاء الشائعة قول I work here since 2020 ترجمةً لعبارة «أعمل هنا منذ 2020»، والصواب I have worked here since 2020. وتذكّر أن الكلمات الدالة على وقت منتهٍ، مثل yesterday وlast year وago، لا تأتي مع المضارع التام أبداً.",
+      "examples": [
+        {
+          "wrong": "I work as a developer since 2021.",
+          "right": "I have worked as a developer since 2021.",
+          "note": "A situation that started in the past and continues now needs the present perfect with 'since'."
+        },
+        {
+          "wrong": "I have finished my degree two years ago.",
+          "right": "I finished my degree two years ago.",
+          "note": "'Ago' marks a finished time, so only the past simple is possible."
+        },
+        {
+          "wrong": "I have learnt to drive when I was eighteen.",
+          "right": "I learnt to drive when I was eighteen.",
+          "note": "A 'when' clause about a finished period requires the past simple."
+        },
+        {
+          "wrong": "Since 2010, the use of public transport increased steadily.",
+          "right": "Since 2010, the use of public transport has increased steadily.",
+          "note": "'Since' + a past point connected to now requires the present perfect."
+        },
+        {
+          "wrong": "In 2005, the population has reached two million.",
+          "right": "In 2005, the population reached two million.",
+          "note": "Task 1 data for a specific past year uses the past simple."
+        },
+        {
+          "wrong": "I know my best friend for ten years.",
+          "right": "I have known my best friend for ten years.",
+          "note": "'Know' is a state verb, so it cannot be continuous; use the present perfect simple."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "I ____ in this flat since I moved to the city in 2022.",
+          "options": ["live", "have lived", "lived", "am living"],
+          "answer": 1,
+          "explain": "The situation started in 2022 and continues now, and the sentence uses 'since', so the present perfect is required.",
+          "explainAr": "بدأ السكن في عام 2022 وما زال مستمراً حتى الآن، والجملة تحتوي على since، لذلك نستخدم المضارع التام have lived."
+        },
+        {
+          "q": "The company ____ its first mobile app in 2018.",
+          "options": ["has launched", "has been launching", "launches", "launched"],
+          "answer": 3,
+          "explain": "'In 2018' is a finished time, so the past simple is the only correct choice.",
+          "explainAr": "عبارة in 2018 تدل على وقت منتهٍ، لذلك لا يصح إلا الماضي البسيط launched."
+        },
+        {
+          "q": "____ you ever ____ a presentation in English?",
+          "options": ["Did / give", "Do / give", "Have / given", "Have / gave"],
+          "answer": 2,
+          "explain": "A question about life experience with 'ever' uses the present perfect: have + past participle (given, not gave).",
+          "explainAr": "السؤال عن تجربة في الحياة باستخدام ever يكون بالمضارع التام: have ثم التصريف الثالث given، وليس التصريف الثاني gave."
+        },
+        {
+          "q": "Between 1990 and 2000, the number of cars in the city ____.",
+          "options": ["doubled", "has doubled", "have doubled", "is doubling"],
+          "answer": 0,
+          "explain": "The period 1990 to 2000 is finished, so the past simple is used. 'Have doubled' is also wrong because 'the number' is singular.",
+          "explainAr": "الفترة من 1990 إلى 2000 انتهت، لذلك نستخدم الماضي البسيط. كما أن have doubled خطأ لأن الفاعل the number مفرد."
+        },
+        {
+          "q": "Which sentence is correct?",
+          "options": [
+            "I have met my manager for the first time last Monday.",
+            "I met my manager for the first time last Monday.",
+            "I have been meeting my manager last Monday.",
+            "I meet my manager for the first time last Monday."
+          ],
+          "answer": 1,
+          "explain": "'Last Monday' is a finished time, so the past simple 'met' is correct. The present perfect cannot be used with it.",
+          "explainAr": "عبارة last Monday تدل على وقت منتهٍ، فالصحيح الماضي البسيط met، ولا يجوز استخدام المضارع التام معها."
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title": "Subject-verb agreement and plural nouns",
+      "forSkill": "both",
+      "why": "In Arabic, plurals of things often take a singular feminine verb (الشركات تنمو), and nouns after numbers from eleven upwards are singular (عشرون عاماً). Transferred into English, this produces errors such as 'The companies grows', 'five year' and 'she work', which are very noticeable in speech.",
+      "rule": [
+        "In the present simple, add -s to the verb after he, she, it and singular nouns: The app helps users. My sister works in a bank.",
+        "Plural nouns take plural verbs, whether they refer to people or things: Prices are rising. The figures show...",
+        "After any number above one and after many, several, a few, both and various, use a plural noun: three years, many reasons, several countries.",
+        "The verb agrees with the head noun, not the nearest noun: The number of students is increasing. One of the main reasons is cost.",
+        "Everyone, each and every take a singular verb: Everyone has a phone. Each country has its own system.",
+        "People and police are plural without -s: People are worried, not People is worried."
+      ],
+      "ar": "في العربية يتفق الفعل مع الفاعل بطريقة مختلفة، فجمع غير العاقل يُعامل غالباً معاملة المفرد المؤنث، فنقول «الأسعار ترتفع» و«الشركات تنمو». أما في الإنجليزية فكل جمع يحتاج إلى فعل جمع، سواء كان لإنسان أو لشيء: Prices are rising. كذلك يجب إضافة s إلى الفعل في المضارع البسيط مع المفرد الغائب (he وshe وit): She works from home. ومن الأخطاء الشائعة نسيان s الجمع بعد الأعداد، لأن العربية تستخدم التمييز المفرد بعد الأعداد من أحد عشر فما فوق، فنقول «عشرون عاماً». أما في الإنجليزية فكل عدد أكبر من واحد يحتاج إلى اسم جمع: twenty years. وانتبه إلى أن الفعل يتفق مع الاسم الأساسي في الفاعل لا مع أقرب اسم إليه، فنقول: The number of cars is increasing.",
+      "examples": [
+        {
+          "wrong": "My brother work for a telecommunications company.",
+          "right": "My brother works for a telecommunications company.",
+          "note": "A singular subject in the present simple needs -s on the verb."
+        },
+        {
+          "wrong": "The number of people who shop online have increased.",
+          "right": "The number of people who shop online has increased.",
+          "note": "The head noun is 'number' (singular), not 'people'."
+        },
+        {
+          "wrong": "I have been learning English for five year.",
+          "right": "I have been learning English for five years.",
+          "note": "Every number above one needs a plural noun."
+        },
+        {
+          "wrong": "One of the biggest problem are traffic congestion.",
+          "right": "One of the biggest problems is traffic congestion.",
+          "note": "Pattern: one of the + plural noun + singular verb."
+        },
+        {
+          "wrong": "There is many reasons why people move to cities.",
+          "right": "There are many reasons why people move to cities.",
+          "note": "After 'there', the verb agrees with the noun that follows it."
+        },
+        {
+          "wrong": "Every students have a laptop at my university.",
+          "right": "Every student has a laptop at my university.",
+          "note": "'Every' takes a singular noun and a singular verb."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The figures for 2020 ____ that sales fell sharply.",
+          "options": ["shows", "is showing", "show", "has shown"],
+          "answer": 2,
+          "explain": "The subject is 'the figures', which is plural, so the verb is 'show'. 'For 2020' does not change the subject.",
+          "explainAr": "الفاعل هو the figures وهو جمع، لذلك يأتي الفعل show بدون s. وعبارة for 2020 لا تغيّر الفاعل."
+        },
+        {
+          "q": "Each of the four countries ____ a different approach to recycling.",
+          "options": ["has", "have", "are having", "were having"],
+          "answer": 0,
+          "explain": "The head of the subject is 'each', which is singular, so the verb is 'has', even though 'countries' comes just before it.",
+          "explainAr": "الكلمة الأساسية في الفاعل هي each وهي مفردة، لذلك نستخدم has، حتى لو جاءت كلمة countries الجمع قبل الفعل مباشرة."
+        },
+        {
+          "q": "The quality of the services in my area ____ improved a lot recently.",
+          "options": ["have", "are", "were", "has"],
+          "answer": 3,
+          "explain": "The head noun is 'quality' (singular), so the auxiliary is 'has'. 'Services' and 'area' are not the subject.",
+          "explainAr": "الاسم الأساسي في الفاعل هو quality وهو مفرد، لذلك نستخدم has. أما services وarea فليستا الفاعل."
+        },
+        {
+          "q": "My manager usually ____ the team meeting on Monday mornings.",
+          "options": ["lead", "leads", "leading", "are leading"],
+          "answer": 1,
+          "explain": "A habit with a singular subject in the present simple needs -s: 'leads'.",
+          "explainAr": "الجملة تصف عادة، والفاعل مفرد غائب، لذلك يأخذ الفعل في المضارع البسيط s فيصبح leads."
+        },
+        {
+          "q": "Which phrase is correct?",
+          "options": ["two hundreds students", "two hundred student", "two hundred students", "two hundreds student"],
+          "answer": 2,
+          "explain": "'Hundred' takes no -s after a number, but the noun that follows must be plural: two hundred students.",
+          "explainAr": "كلمة hundred لا تأخذ s بعد العدد، لكن الاسم الذي بعدها يجب أن يكون جمعاً، بخلاف العربية التي نقول فيها «مئتا طالب» بالمفرد."
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title": "Countable and uncountable nouns",
+      "forSkill": "both",
+      "why": "Many nouns that have plurals in Arabic, such as معلومات, نصائح, أبحاث and معدات, are uncountable in English. Learners therefore write 'informations', 'researches' or 'an advice', which lowers accuracy scores in both Writing and Speaking.",
+      "rule": [
+        "Uncountable nouns have no plural and never take a/an: information, advice, research, equipment, knowledge, evidence, feedback, software, furniture, traffic, progress, accommodation.",
+        "Use a singular verb with uncountable nouns: The information is useful. The equipment was expensive.",
+        "To count them, use a unit word or a countable synonym: a piece of advice, an item of equipment, a study (not a research).",
+        "Use much, little and a large amount of with uncountable nouns; use many, few and a large number of with countable plurals.",
+        "Some nouns change meaning: experience (uncountable, knowledge from doing something) vs an experience (an event); work (employment) vs works (art or building works)."
+      ],
+      "ar": "كثير من الأسماء التي تُجمع في العربية لا تُجمع في الإنجليزية، فنقول «معلومات» و«نصائح» و«أبحاث» و«معدات»، لكن الكلمات المقابلة لها في الإنجليزية غير معدودة: information وadvice وresearch وequipment. هذه الكلمات لا تأخذ s الجمع، ولا تسبقها a أو an، ويأتي الفعل بعدها مفرداً: The information is useful. وإذا أردت العدّ فاستخدم كلمة وسيطة، مثل a piece of advice أو two items of equipment، أو استخدم كلمة معدودة مرادفة، مثل a study بدلاً من a research. واستخدم much وa large amount of مع الأسماء غير المعدودة، وmany وa large number of مع الأسماء المعدودة. هذه الأخطاء صغيرة، لكنها تتكرر كثيراً في الكتابة الأكاديمية، فتؤثر في تقييم الدقة.",
+      "examples": [
+        {
+          "wrong": "The website gives many useful informations about visas.",
+          "right": "The website gives a lot of useful information about visas.",
+          "note": "Information is uncountable: no -s, and use a lot of or much, not many."
+        },
+        {
+          "wrong": "My manager gave me an advice that changed my career.",
+          "right": "My manager gave me a piece of advice that changed my career.",
+          "note": "Advice cannot take 'an'; use 'a piece of advice' or simply 'some advice'."
+        },
+        {
+          "wrong": "Recent researches show that sleep affects memory.",
+          "right": "Recent research shows that sleep affects memory.",
+          "note": "Research is uncountable and takes a singular verb. Alternatively: Recent studies show..."
+        },
+        {
+          "wrong": "Hospitals in rural areas need more modern equipments.",
+          "right": "Hospitals in rural areas need more modern equipment.",
+          "note": "Equipment never takes -s."
+        },
+        {
+          "wrong": "There was too much cars on the road this morning.",
+          "right": "There were too many cars on the road this morning.",
+          "note": "Cars is countable, so it takes many and a plural verb."
+        },
+        {
+          "wrong": "Students should receive feedbacks on their essays regularly.",
+          "right": "Students should receive feedback on their essays regularly.",
+          "note": "Feedback is uncountable."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The government has invested heavily in ____ into renewable energy.",
+          "options": ["research", "researches", "a research", "the researches"],
+          "answer": 0,
+          "explain": "Research is uncountable, so it has no plural and cannot take 'a'. Here it is general, so it takes no article.",
+          "explainAr": "كلمة research غير معدودة، فلا تُجمع ولا تسبقها a، والمقصود هنا البحث بشكل عام فلا تحتاج إلى أداة."
+        },
+        {
+          "q": "Could you give me some ____ about preparing for the interview?",
+          "options": ["advices", "an advice", "advise", "advice"],
+          "answer": 3,
+          "explain": "Advice is an uncountable noun, so 'some advice' is correct. 'Advise' is the verb.",
+          "explainAr": "كلمة advice اسم غير معدود، فنقول some advice. أما advise بحرف s فهي الفعل «ينصح» وليست الاسم."
+        },
+        {
+          "q": "The new office furniture ____ delivered last week.",
+          "options": ["were", "was", "have been", "are"],
+          "answer": 1,
+          "explain": "Furniture is uncountable, so it takes a singular verb. 'Last week' is a finished time, so 'was' is correct.",
+          "explainAr": "كلمة furniture غير معدودة، فيأتي الفعل بعدها مفرداً، والزمن ماضٍ منتهٍ (last week)، لذلك نستخدم was."
+        },
+        {
+          "q": "There is ____ evidence that remote work improves productivity, but the results are mixed.",
+          "options": ["many", "a few", "some", "several"],
+          "answer": 2,
+          "explain": "Evidence is uncountable, so it cannot follow many, a few or several, which are used only with plural countable nouns.",
+          "explainAr": "كلمة evidence غير معدودة، فلا تأتي بعد many أو a few أو several، لأن هذه الكلمات تُستخدم مع الأسماء المعدودة الجمع فقط."
+        },
+        {
+          "q": "The amount of ____ on the motorway has increased since the new bridge opened.",
+          "options": ["cars", "traffics", "vehicle", "traffic"],
+          "answer": 3,
+          "explain": "'The amount of' is used with uncountable nouns, and traffic is uncountable. With cars you would need 'the number of cars'.",
+          "explainAr": "عبارة the amount of تُستخدم مع الأسماء غير المعدودة، وكلمة traffic غير معدودة. أما مع cars فنقول the number of cars."
+        }
+      ]
+    },
+    {
+      "id": "g06",
+      "title": "Run-on sentences and comma splices",
+      "forSkill": "writing",
+      "why": "Arabic writing often joins many clauses with و (and) and uses commas freely between complete sentences. Transferred into English, this produces very long 'and... and...' sentences and comma splices, which make an essay look unplanned and lower both Coherence and Cohesion and Grammatical Range and Accuracy.",
+      "rule": [
+        "Two complete sentences (each with a subject and verb) cannot be joined with only a comma. This error is called a comma splice.",
+        "Fix a comma splice with a full stop, a semicolon, a conjunction (and, but, so, because, although) or a relative or participle clause.",
+        "Avoid chains of 'and': if one sentence joins three or more clauses with 'and', split it or use subordination.",
+        "However, therefore, moreover and in addition cannot join two clauses with a comma. Put a full stop or semicolon before them and a comma after: Costs rose; however, demand remained stable.",
+        "Aim for a mix of sentence lengths, with one main idea in each sentence."
+      ],
+      "ar": "تميل الكتابة العربية إلى ربط الجمل الطويلة بحرف العطف «و» مرة بعد مرة، وتُستخدم الفاصلة بحرية بين جمل مستقلة. أما في الإنجليزية فلا يجوز وصل جملتين تامتين بفاصلة فقط، ويسمى هذا الخطأ comma splice، مثل: Many people work from home, this saves time. ولتصحيحه ضع نقطة أو فاصلة منقوطة، أو استخدم أداة ربط مثل because أو which أو so. كذلك فإن تكرار and في جملة واحدة طويلة يجعل الفكرة غير واضحة، ويوحي للممتحن بأن الكاتب لم يخطط لنصه. وانتبه إلى أن كلمات مثل however وtherefore ليست أدوات وصل بين جملتين، بل تحتاج إلى نقطة أو فاصلة منقوطة قبلها وفاصلة بعدها.",
+      "examples": [
+        {
+          "wrong": "Many employees now work from home, this saves them time and money.",
+          "right": "Many employees now work from home, which saves them time and money.",
+          "note": "A relative clause with 'which' fixes the comma splice. A full stop before 'This' would also be correct."
+        },
+        {
+          "wrong": "The council built new roads and the traffic got worse and people started driving more and pollution increased.",
+          "right": "Although the council built new roads, traffic got worse. This was because people started driving more, which in turn increased pollution.",
+          "note": "Subordination (although, because, which) shows how the ideas are connected instead of listing them with 'and'."
+        },
+        {
+          "wrong": "Online learning is flexible, however, it requires a lot of self-discipline.",
+          "right": "Online learning is flexible; however, it requires a lot of self-discipline.",
+          "note": "'However' is not a conjunction. Use a semicolon or a full stop before it."
+        },
+        {
+          "wrong": "The figure for Japan was the highest, it reached 45% in 2020.",
+          "right": "The figure for Japan was the highest, reaching 45% in 2020.",
+          "note": "A participle clause joins the ideas correctly and adds grammatical range."
+        },
+        {
+          "wrong": "Some people prefer to live in cities, they have more job opportunities there.",
+          "right": "Some people prefer to live in cities because they have more job opportunities there.",
+          "note": "'Because' makes the reason clear and removes the comma splice."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "Which sentence is correctly punctuated?",
+          "options": [
+            "Prices rose sharply, consumers bought less.",
+            "Prices rose sharply, therefore consumers bought less.",
+            "Prices rose sharply; therefore, consumers bought less.",
+            "Prices rose sharply therefore, consumers bought less."
+          ],
+          "answer": 2,
+          "explain": "'Therefore' cannot join two clauses on its own, so it needs a semicolon (or full stop) before it and a comma after it. The first option is a comma splice.",
+          "explainAr": "كلمة therefore لا تربط بين جملتين وحدها، لذلك تحتاج إلى فاصلة منقوطة أو نقطة قبلها وفاصلة بعدها. أما الخيار الأول ففيه وصل جملتين بفاصلة فقط."
+        },
+        {
+          "q": "Choose the best way to join these sentences: 'Public transport is cheap. Many people still prefer to drive.'",
+          "options": [
+            "Although public transport is cheap, many people still prefer to drive.",
+            "Public transport is cheap, many people still prefer to drive.",
+            "Public transport is cheap and many people still prefer to drive.",
+            "Public transport is cheap, however many people still prefer to drive."
+          ],
+          "answer": 0,
+          "explain": "The ideas contrast, so 'although' is the right link. The second and fourth options are comma splices, and 'and' in the third option hides the contrast.",
+          "explainAr": "بين الفكرتين تناقض، لذلك نستخدم although. الخياران الثاني والرابع فيهما وصل جملتين بفاصلة فقط، أما and في الخيار الثالث فلا تُظهر التناقض."
+        },
+        {
+          "q": "Which sentence contains a comma splice?",
+          "options": [
+            "The app is free, but it contains adverts.",
+            "Because the app is free, it contains adverts.",
+            "The app, which is free, contains adverts.",
+            "The app is free, it contains a lot of adverts."
+          ],
+          "answer": 3,
+          "explain": "The last sentence joins two complete clauses ('The app is free' and 'it contains a lot of adverts') with only a comma. The others use 'but', 'because' or 'which'.",
+          "explainAr": "الجملة الأخيرة تصل بين جملتين تامتين بفاصلة فقط دون أداة ربط، أما الجمل الأخرى فتستخدم but أو because أو which."
+        },
+        {
+          "q": "Choose the best revision of: 'I finished the course and I got a certificate and I applied for a new job and I got it.'",
+          "options": [
+            "I finished the course and got a certificate, and I applied for a new job and got it.",
+            "After finishing the course and gaining a certificate, I applied for a new job, and I was successful.",
+            "I finished the course, I got a certificate, I applied for a new job, I got it.",
+            "I finished the course and I got a certificate, and then I applied for a new job and I got it."
+          ],
+          "answer": 1,
+          "explain": "The second option uses a time phrase with -ing forms to show the order of events and avoids the chain of 'and'. The third option is a series of comma splices.",
+          "explainAr": "الخيار الثاني يستخدم تركيباً زمنياً مع صيغة ing ليُظهر ترتيب الأحداث، ويتجنب تكرار and. أما الخيار الثالث فيصل جملاً تامة بفواصل فقط."
+        },
+        {
+          "q": "Which sentence is NOT correct?",
+          "options": [
+            "The number of visitors fell in 2019. However, it recovered the following year.",
+            "The number of visitors fell in 2019, but it recovered the following year.",
+            "The number of visitors fell in 2019, it recovered the following year.",
+            "Although the number of visitors fell in 2019, it recovered the following year."
+          ],
+          "answer": 2,
+          "explain": "The third sentence is a comma splice: two complete clauses joined only by a comma. The others use a full stop, 'but' or 'although'.",
+          "explainAr": "الجملة الثالثة تصل بين جملتين تامتين بفاصلة فقط، وهذا خطأ. أما الجمل الأخرى فتستخدم نقطة أو but أو although."
+        }
+      ]
+    },
+    {
+      "id": "g07",
+      "title": "Relative clauses without extra pronouns",
+      "forSkill": "both",
+      "why": "An Arabic relative clause normally repeats the noun with a pronoun (الضمير العائد): 'التطبيق الذي أستخدمه' translates word for word as 'the app that I use it'. English does not allow this extra pronoun, and it also uses commas and different pronouns for defining and non-defining clauses.",
+      "rule": [
+        "Do not repeat the noun with a pronoun inside a relative clause: the app that I use, not the app that I use it.",
+        "Use who for people, which for things, and that for either in defining clauses; whose for possession; where for places; when for times.",
+        "Defining clauses (no commas) tell us which one: The employees who work remotely are happier. Non-defining clauses (with commas) add extra information: My manager, who has worked here for ten years, approved the plan.",
+        "Never use that in a non-defining clause: The website, which was launched in 2020, ...",
+        "In a defining clause, you can omit the relative pronoun when it is the object: the course (that) I took.",
+        "Use which after a comma to comment on a whole clause: Rents have risen, which has forced many young people to move."
+      ],
+      "ar": "في العربية يحتاج الاسم الموصول غالباً إلى ضمير عائد يرجع إلى الاسم السابق، فنقول: «التطبيق الذي أستخدمه» و«الشركة التي أعمل فيها». أما في الإنجليزية فيحلّ الاسم الموصول نفسه محلّ هذا الضمير، فلا يجوز تكراره. نقول the app that I use وليس the app that I use it، ونقول the company where I work أو the company that I work for وليس the company that I work in it. استخدم who للعاقل وwhich لغير العاقل، وthat لكليهما في الجمل التي تحدد المقصود. أما الجملة الوصفية الإضافية التي تأتي بين فاصلتين فلا تُستخدم فيها that، بل who أو which فقط. ويمكن استخدام which بعد فاصلة للتعليق على الجملة كلها، وهذا يضيف تنوعاً نحوياً مفيداً في الكتابة والمحادثة.",
+      "examples": [
+        {
+          "wrong": "The app that I use it every day helps me learn new words.",
+          "right": "The app that I use every day helps me learn new words.",
+          "note": "'That' already refers to the app, so 'it' must be removed."
+        },
+        {
+          "wrong": "This is the company which I work in it.",
+          "right": "This is the company where I work.",
+          "note": "Use 'where', or 'the company (that) I work for'. Never add 'it'."
+        },
+        {
+          "wrong": "My colleague which sits next to me is from Egypt.",
+          "right": "My colleague who sits next to me is from Egypt.",
+          "note": "Use 'who' (or 'that') for people, not 'which'."
+        },
+        {
+          "wrong": "Dubai, that is a popular tourist destination, attracts millions of visitors.",
+          "right": "Dubai, which is a popular tourist destination, attracts millions of visitors.",
+          "note": "Non-defining clauses (between commas) use 'which', never 'that'."
+        },
+        {
+          "wrong": "Many young people cannot afford housing, it is a serious problem.",
+          "right": "Many young people cannot afford housing, which is a serious problem.",
+          "note": "'Which' comments on the whole clause and also removes the comma splice."
+        },
+        {
+          "wrong": "Children who their parents read to them often enjoy books later.",
+          "right": "Children whose parents read to them often enjoy books later.",
+          "note": "'Whose' replaces 'who their'."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The course ____ was very practical.",
+          "options": ["that I took it last year", "which I took it last year", "that I took last year", "who I took last year"],
+          "answer": 2,
+          "explain": "'That' refers to the course and is the object of 'took', so 'it' must not be added. 'Who' is only for people.",
+          "explainAr": "كلمة that تعود على the course وهي مفعول به للفعل took، فلا يجوز إضافة it بعد الفعل. أما who فتُستخدم للأشخاص فقط."
+        },
+        {
+          "q": "The manager ____ hired me has just left the company.",
+          "options": ["who", "which", "whose", "where"],
+          "answer": 0,
+          "explain": "The noun is a person and the pronoun is the subject of 'hired', so 'who' is correct.",
+          "explainAr": "الاسم السابق شخص، والاسم الموصول فاعل للفعل hired، لذلك نستخدم who."
+        },
+        {
+          "q": "My hometown, ____ is on the coast, is famous for its seafood.",
+          "options": ["that", "where", "it", "which"],
+          "answer": 3,
+          "explain": "This is a non-defining clause (between commas) and the pronoun is the subject of 'is', so 'which' is needed. 'That' is not used after a comma, and 'where' cannot be the subject of a verb; it must be followed by a clause with its own subject (where many fishermen live).",
+          "explainAr": "هذه جملة وصفية إضافية بين فاصلتين، والاسم الموصول فاعل للفعل is، لذلك نستخدم which. ولا تُستخدم that بعد الفاصلة، أما where فلا تكون فاعلاً، بل يأتي بعدها جملة لها فاعلها الخاص."
+        },
+        {
+          "q": "Which sentence is correct?",
+          "options": [
+            "The city where I grew up it has changed a lot.",
+            "The city where I grew up has changed a lot.",
+            "The city which I grew up has changed a lot.",
+            "The city that I grew up there has changed a lot."
+          ],
+          "answer": 1,
+          "explain": "'Where' replaces 'in the city', so nothing else is needed. The first and fourth options repeat a pronoun or adverb, and the third needs 'in' (which I grew up in).",
+          "explainAr": "كلمة where تحلّ محلّ in the city، فلا نحتاج إلى أي إضافة. الخياران الأول والرابع يكرران الضمير أو كلمة there، والخيار الثالث ينقصه حرف الجر in."
+        },
+        {
+          "q": "Housing costs have doubled, ____ means many young people still live with their parents.",
+          "options": ["that", "it", "which", "what"],
+          "answer": 2,
+          "explain": "After a comma, 'which' can refer to the whole previous clause. 'It' would create a comma splice, and 'that' cannot follow a comma here.",
+          "explainAr": "بعد الفاصلة يمكن أن تعود which على الجملة السابقة كلها. أما it فتؤدي إلى وصل جملتين بفاصلة فقط، ولا تُستخدم that بعد الفاصلة في هذا الموضع."
+        }
+      ]
+    },
+    {
+      "id": "g08",
+      "title": "The passive voice in academic writing",
+      "forSkill": "writing",
+      "why": "Arabic forms the passive (المبني للمجهول) by changing the vowels of the verb and uses it less in everyday writing, so learners either avoid the English passive or form it incorrectly ('the data collected', 'are mix'). Task 1 process diagrams and Task 2 essays both reward an accurate, objective passive.",
+      "rule": [
+        "Form the passive with be in the correct tense + past participle: is made, was built, has been introduced, will be replaced, should be banned.",
+        "Use the passive when the action matters more than the doer, or when the doer is unknown or obvious: The data was collected in 2022.",
+        "Use the present simple passive to describe stages in a process: The leaves are picked, dried and then packed.",
+        "Add 'by + agent' only when it gives useful information: The policy was introduced by the city council.",
+        "Only verbs that take an object can be passive. Rise, fall, happen, occur and appear cannot: The accident happened, not The accident was happened.",
+        "Impersonal passives sound academic in Task 2: It is often argued that... It is widely believed that..."
+      ],
+      "ar": "يُبنى الفعل للمجهول في العربية بتغيير حركاته، مثل: كَتَبَ ← كُتِبَ. أما في الإنجليزية فيتكوّن المبني للمجهول من فعل be بالزمن المناسب يليه التصريف الثالث للفعل (past participle)، مثل The data was collected و New roads have been built. ومن الأخطاء الشائعة حذف be، فيُكتب The survey conducted in 2020، أو استخدام الفعل المجرد بدلاً من التصريف الثالث، مثل are mix. يُستخدم المبني للمجهول كثيراً في الكتابة الأكاديمية لأنه يركّز على الحدث لا على الفاعل، وهو ضروري في وصف مراحل العمليات في المهمة الأولى. لكن انتبه: الأفعال اللازمة التي لا تأخذ مفعولاً به، مثل rise وfall وhappen، لا تُبنى للمجهول أبداً.",
+      "examples": [
+        {
+          "wrong": "The questionnaire distributed to 500 employees.",
+          "right": "The questionnaire was distributed to 500 employees.",
+          "note": "Without 'was', the questionnaire seems to do the distributing."
+        },
+        {
+          "wrong": "First, the raw materials are mix with water.",
+          "right": "First, the raw materials are mixed with water.",
+          "note": "The passive needs the past participle (mixed), not the base form."
+        },
+        {
+          "wrong": "The number of users was increased dramatically in 2021.",
+          "right": "The number of users increased dramatically in 2021.",
+          "note": "In trend descriptions 'increase' has no object, so it is active."
+        },
+        {
+          "wrong": "A new metro line will built by 2030.",
+          "right": "A new metro line will be built by 2030.",
+          "note": "Future passive: will be + past participle."
+        },
+        {
+          "wrong": "Smoking should ban in all public places.",
+          "right": "Smoking should be banned in all public places.",
+          "note": "Modal passive: modal + be + past participle."
+        },
+        {
+          "wrong": "The accident was happened late at night.",
+          "right": "The accident happened late at night.",
+          "note": "'Happen' has no object, so it can never be passive."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "In the next stage, the bottles ____ and sorted by colour.",
+          "options": ["are collected", "collect", "are collecting", "collected"],
+          "answer": 0,
+          "explain": "Bottles do not collect anything; someone collects them. A process description uses the present simple passive: are + past participle.",
+          "explainAr": "الزجاجات لا تقوم بالجمع، بل يجمعها شخص ما. ووصف مراحل العملية يكون بالمبني للمجهول في المضارع البسيط: are مع التصريف الثالث."
+        },
+        {
+          "q": "The new library ____ in 2019 at a cost of three million pounds.",
+          "options": ["built", "was build", "was built", "has built"],
+          "answer": 2,
+          "explain": "The library did not build itself, so the passive is needed, and 'in 2019' requires the past simple: was + past participle (built).",
+          "explainAr": "المكتبة لم تبنِ نفسها، لذلك نحتاج إلى المبني للمجهول، وعبارة in 2019 تتطلب الماضي البسيط: was ثم التصريف الثالث built."
+        },
+        {
+          "q": "Which verb CANNOT be used in the passive?",
+          "options": ["introduce", "produce", "reduce", "occur"],
+          "answer": 3,
+          "explain": "'Occur' never takes an object, so it has no passive form. The other three verbs take objects (introduce a law, produce goods, reduce costs).",
+          "explainAr": "الفعل occur لازم لا يأخذ مفعولاً به، لذلك لا يُبنى للمجهول. أما الأفعال الأخرى فمتعدية، مثل introduce a law وproduce goods وreduce costs."
+        },
+        {
+          "q": "It ____ that working from home improves work-life balance.",
+          "options": ["often argues", "is often argued", "is often arguing", "has often argued"],
+          "answer": 1,
+          "explain": "This is an impersonal passive: It + be + past participle + that. It means 'people often argue that'.",
+          "explainAr": "هذا تركيب المبني للمجهول غير الشخصي: It ثم be ثم التصريف الثالث ثم that، ومعناه «كثيراً ما يُقال إن»."
+        },
+        {
+          "q": "Since 2015, several measures ____ to reduce air pollution in the city.",
+          "options": ["have taken", "were taking", "have been take", "have been taken"],
+          "answer": 3,
+          "explain": "'Since 2015' needs the present perfect, and measures are taken by someone, so the form is have been + past participle (taken).",
+          "explainAr": "عبارة since 2015 تتطلب المضارع التام، والإجراءات يتخذها شخص ما، لذلك نستخدم have been ثم التصريف الثالث taken."
+        }
+      ]
+    },
+    {
+      "id": "g09",
+      "title": "Conditionals for building arguments",
+      "forSkill": "both",
+      "why": "Arabic often uses a past verb after إذا even for future meaning, and لو for imagined situations, so learners mix English patterns and write 'If the government will invest...' or 'If I would have time...'. Accurate conditionals are one of the easiest ways to show range in Task 2 and Speaking Part 3.",
+      "rule": [
+        "First conditional (a real future possibility): If + present simple, will/can/may + base verb: If the government invests in public transport, congestion will fall.",
+        "Never use will or would in the if-clause: If prices rise, not If prices will rise.",
+        "Second conditional (hypothetical or unlikely): If + past simple, would/could/might + base verb: If cars were banned from city centres, the air would be cleaner. Use were for all persons in formal style.",
+        "Third conditional (an imagined past): If + had + past participle, would have + past participle: If I had started earlier, I would have finished on time.",
+        "For range, use unless (= if not), provided that, as long as and otherwise, and formal inversion: Were governments to raise taxes, ... / Had I known, ..."
+      ],
+      "ar": "في العربية نستخدم الفعل الماضي غالباً بعد «إذا» حتى عندما نتحدث عن المستقبل، فنقول «إذا درستَ نجحتَ»، ونستخدم «لو» للأمور الافتراضية. أما في الإنجليزية فلكل نوع من الشرط نمط زمني ثابت. في الشرط الأول، وهو احتمال حقيقي في المستقبل، نستخدم المضارع البسيط بعد if و will في جواب الشرط، ولا نستخدم will بعد if أبداً: If the government invests more, unemployment will fall. وفي الشرط الثاني، وهو افتراض بعيد يقابل «لو» غالباً، نستخدم الماضي البسيط بعد if و would في الجواب: If I lived abroad, I would miss my family. وفي الشرط الثالث نتحدث عن ماضٍ لم يحدث: If I had known, I would have helped. واستخدام الشرط بدقة في المقالة وفي الجزء الثالث من المحادثة يُظهر تنوعاً نحوياً واضحاً.",
+      "examples": [
+        {
+          "wrong": "If the government will raise fuel prices, people will drive less.",
+          "right": "If the government raises fuel prices, people will drive less.",
+          "note": "The if-clause uses the present simple, even for the future."
+        },
+        {
+          "wrong": "If I would have more free time, I would learn to play the guitar.",
+          "right": "If I had more free time, I would learn to play the guitar.",
+          "note": "Second conditional: past simple in the if-clause, would in the main clause."
+        },
+        {
+          "wrong": "If I studied harder at school, I would have gone to a better university.",
+          "right": "If I had studied harder at school, I would have gone to a better university.",
+          "note": "An imagined past result needs the past perfect in the if-clause."
+        },
+        {
+          "wrong": "Unless the city doesn't build more housing, rents will keep rising.",
+          "right": "Unless the city builds more housing, rents will keep rising.",
+          "note": "'Unless' already means 'if not', so do not add another negative."
+        },
+        {
+          "wrong": "If cars was banned from the city centre, it will be much quieter.",
+          "right": "If cars were banned from the city centre, it would be much quieter.",
+          "note": "Do not mix patterns: past in the if-clause goes with would, not will."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "If more people ____ public transport, there would be less congestion.",
+          "options": ["use", "will use", "used", "would use"],
+          "answer": 2,
+          "explain": "The main clause has 'would', so this is a second conditional: the if-clause needs the past simple 'used'.",
+          "explainAr": "جواب الشرط يحتوي على would، فهذا شرط من النوع الثاني، ويأتي بعد if الماضي البسيط used."
+        },
+        {
+          "q": "If the company ____ its prices, it will lose customers.",
+          "options": ["increases", "will increase", "increased", "would increase"],
+          "answer": 0,
+          "explain": "The main clause has 'will', so this is a first conditional: present simple after 'if', never 'will'.",
+          "explainAr": "جواب الشرط يحتوي على will، فهذا شرط من النوع الأول، ويأتي بعد if المضارع البسيط، ولا نستخدم will بعد if."
+        },
+        {
+          "q": "If I ____ about the course earlier, I would have enrolled.",
+          "options": ["knew", "have known", "would know", "had known"],
+          "answer": 3,
+          "explain": "'Would have enrolled' shows an imagined past, so this is a third conditional: if + past perfect (had known).",
+          "explainAr": "عبارة would have enrolled تدل على ماضٍ لم يحدث، فهذا شرط من النوع الثالث، ويأتي بعد if الماضي التام had known."
+        },
+        {
+          "q": "Students will not improve ____ they receive regular feedback.",
+          "options": ["if", "unless", "provided that", "as long as"],
+          "answer": 1,
+          "explain": "The meaning is 'if they do not receive feedback, they will not improve', so 'unless' (= if not) is correct. The other options give the opposite meaning.",
+          "explainAr": "المعنى: لن يتحسن الطلاب إذا لم يحصلوا على تقييم منتظم، لذلك نستخدم unless بمعنى «إلا إذا». أما الخيارات الأخرى فتعطي معنى معاكساً."
+        },
+        {
+          "q": "____ governments to ban private cars, city centres would become much quieter.",
+          "options": ["If", "Should", "Were", "Had"],
+          "answer": 2,
+          "explain": "This is a formal inverted second conditional: Were + subject + to-infinitive = If governments were to ban. 'If' would need 'were' after the subject.",
+          "explainAr": "هذا شرط من النوع الثاني بصيغة التقديم الرسمية: Were ثم الفاعل ثم to مع الفعل، ومعناه If governments were to ban. أما If فتحتاج إلى were بعد الفاعل."
+        }
+      ]
+    },
+    {
+      "id": "g10",
+      "title": "Comparatives and superlatives for Task 1",
+      "forSkill": "writing",
+      "why": "Arabic forms comparisons with one pattern (أفعل) followed by من, so learners sometimes double the comparative ('more higher'), use 'from' instead of 'than', or forget 'the' with superlatives. Task 1 requires accurate comparisons in almost every sentence.",
+      "rule": [
+        "One-syllable adjectives add -er/-est: higher, the highest. Longer adjectives use more/the most: more popular, the most expensive. Never combine the two: more higher.",
+        "Use than after a comparative, never from or that alone: Sales were higher than in 2010.",
+        "Superlatives need the (or a possessive): the largest proportion, its lowest point.",
+        "Show the size of a difference with slightly, a little, considerably, significantly, much or far. Do not use very with comparatives.",
+        "Use as... as and twice/three times as... as for equal or multiple comparisons: Exports were twice as high as imports.",
+        "Compare like with like, using that/those to avoid repeating the noun: The rate in the north was higher than that in the south."
+      ],
+      "ar": "تُصاغ المقارنة في العربية بوزن «أفعل» مع «مِن»، مثل «أعلى من» و«أكثر شيوعاً من». أما في الإنجليزية فنضيف er إلى الصفة القصيرة مثل higher، ونستخدم more مع الصفة الطويلة مثل more popular، ولا نجمع بينهما أبداً، فلا نقول more higher. وتأتي than بعد صيغة المقارنة، لا from. أما صيغة التفضيل فتحتاج إلى the: the highest figure. وفي المهمة الأولى من الكتابة تحتاج إلى المقارنة في كل فقرة تقريباً، لذا تعلّم الكلمات التي تبيّن حجم الفرق، مثل slightly وconsiderably وfar، وتراكيب مثل twice as high as. ولا تستخدم very مع صيغة المقارنة. وتذكّر أن تقارن الشيء بما يماثله، فتقول: The rate in Spain was higher than that in Italy.",
+      "examples": [
+        {
+          "wrong": "The figure for Canada was more higher than the figure for Mexico.",
+          "right": "The figure for Canada was higher than the figure for Mexico.",
+          "note": "Use either -er or more, never both."
+        },
+        {
+          "wrong": "Spending on rent was larger from spending on food.",
+          "right": "Spending on rent was larger than spending on food.",
+          "note": "Comparatives are followed by 'than', not 'from' (a translation of من)."
+        },
+        {
+          "wrong": "Brazil had highest percentage of renewable energy.",
+          "right": "Brazil had the highest percentage of renewable energy.",
+          "note": "Superlatives need 'the'."
+        },
+        {
+          "wrong": "The number of male students was double as many as female students.",
+          "right": "There were twice as many male students as female students.",
+          "note": "Use 'twice as many... as' for countable nouns; 'double' does not work in this pattern."
+        },
+        {
+          "wrong": "Unemployment in the north was higher than the south.",
+          "right": "Unemployment in the north was higher than that in the south.",
+          "note": "Compare unemployment with unemployment, not with a region. 'That' replaces 'unemployment'."
+        },
+        {
+          "wrong": "Online sales were very higher in 2020 than in 2015.",
+          "right": "Online sales were much higher in 2020 than in 2015.",
+          "note": "'Very' cannot modify a comparative; use much, far or considerably."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "In 2020, coal was ____ source of electricity in the country.",
+          "options": ["most important", "the more important", "the most important", "the importantest"],
+          "answer": 2,
+          "explain": "'Important' is a long adjective, so the superlative is 'the most important'. A superlative before a noun needs 'the'.",
+          "explainAr": "كلمة important صفة طويلة، فصيغة التفضيل منها the most important، وصيغة التفضيل قبل الاسم تحتاج إلى the."
+        },
+        {
+          "q": "Car ownership in rural areas was considerably ____ in urban areas.",
+          "options": ["more high than that", "higher than that", "higher from that", "higher that"],
+          "answer": 1,
+          "explain": "'High' is a short adjective (higher), the comparison word is 'than', and 'that' replaces 'car ownership' so like is compared with like.",
+          "explainAr": "كلمة high صفة قصيرة فنقول higher، وأداة المقارنة هي than، وكلمة that تحلّ محلّ car ownership حتى نقارن الشيء بما يماثله."
+        },
+        {
+          "q": "The price of houses in the capital was ____ the national average.",
+          "options": ["three times as high as", "three times higher from", "three times as higher as", "three times high than"],
+          "answer": 0,
+          "explain": "The pattern for multiples is: number + times + as + adjective (base form) + as.",
+          "explainAr": "تركيب المضاعفات هو: العدد ثم times ثم as ثم الصفة في صيغتها الأصلية ثم as."
+        },
+        {
+          "q": "Which word CANNOT go in the gap? 'Spending on health was ____ higher than spending on defence.'",
+          "options": ["significantly", "far", "slightly", "very"],
+          "answer": 3,
+          "explain": "'Very' cannot modify a comparative adjective. The other three words show how big the difference is and are all correct.",
+          "explainAr": "كلمة very لا تأتي قبل صيغة المقارنة، أما الكلمات الثلاث الأخرى فتبيّن حجم الفرق وكلها صحيحة."
+        },
+        {
+          "q": "Of the five countries, Norway recorded ____ level of unemployment.",
+          "options": ["the lower", "lowest", "the lowest", "the most low"],
+          "answer": 2,
+          "explain": "Comparing five countries needs a superlative, and 'low' is a short adjective: the lowest.",
+          "explainAr": "المقارنة بين خمس دول تحتاج إلى صيغة التفضيل، وكلمة low صفة قصيرة فنقول the lowest."
+        }
+      ]
+    },
+    {
+      "id": "g11",
+      "title": "Describing trends: verbs, nouns and adverbs",
+      "forSkill": "writing",
+      "why": "Task 1 line and bar charts require accurate verb forms (rise, rose, risen) and the right choice between verb + adverb (rose sharply) and adjective + noun (a sharp rise). Arabic speakers often confuse rise and raise, mix the two patterns ('a sharply rise') or use the wrong preposition ('a rise of the price').",
+      "rule": [
+        "Learn the irregular forms: rise, rose, risen; fall, fell, fallen; grow, grew, grown. Increase, decrease, decline, drop and fluctuate are regular.",
+        "Rise and fall have no object: Prices rose. Raise needs an object: The bank raised interest rates.",
+        "Verb + adverb: rose sharply, fell slightly, increased steadily. Adjective + noun: a sharp rise, a slight fall, a steady increase.",
+        "With nouns, use there was or a time phrase + saw/experienced: There was a sharp rise in sales. The decade saw a gradual decline in...",
+        "After a noun, use in for what changed and of for the size: a rise in unemployment of 3%.",
+        "Describe the end of a trend with level off, stabilise, peak at, reach a peak of and hit a low of."
+      ],
+      "ar": "في وصف الاتجاهات في المهمة الأولى تحتاج إلى أفعال دقيقة. احفظ التصريفات الشاذة: rise وrose وrisen، وfall وfell وfallen. وفرّق بين rise وهو فعل لازم لا يحتاج إلى مفعول به، مثل The price rose، وraise وهو فعل متعدٍّ، مثل The company raised its prices. ويمكنك التعبير عن التغيّر بطريقتين: فعل يليه ظرف مثل rose sharply، أو صفة يليها اسم مثل a sharp rise. لا تخلط بين الطريقتين، فلا تقل fell sharp أو a sharply rise. ومع الاسم نستخدم in لما تغيّر وof لمقدار التغيّر: a rise in sales of 10%. أما مع الفعل فنستخدم by لمقدار التغيّر وto للقيمة النهائية. والتنويع بين التركيبين يرفع درجة التنوع النحوي والمفردات.",
+      "examples": [
+        {
+          "wrong": "The number of visitors raised dramatically in 2018.",
+          "right": "The number of visitors rose dramatically in 2018.",
+          "note": "There is no object, so use rise (rose), not raise."
+        },
+        {
+          "wrong": "Sales have rose steadily since 2015.",
+          "right": "Sales have risen steadily since 2015.",
+          "note": "The present perfect needs the past participle: risen."
+        },
+        {
+          "wrong": "There was a significantly increase in car ownership.",
+          "right": "There was a significant increase in car ownership.",
+          "note": "A noun (increase) is described by an adjective (significant), not an adverb."
+        },
+        {
+          "wrong": "Unemployment fell sharp between 2010 and 2012.",
+          "right": "Unemployment fell sharply between 2010 and 2012.",
+          "note": "A verb (fell) is described by an adverb (sharply)."
+        },
+        {
+          "wrong": "There was a rise of the price of oil.",
+          "right": "There was a rise in the price of oil.",
+          "note": "Use 'in' for the thing that changed; 'of' is for the amount (a rise of 10%)."
+        },
+        {
+          "wrong": "The figure increased with 15% in two years.",
+          "right": "The figure increased by 15% in two years.",
+          "note": "After a verb, the size of a change takes 'by'."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The proportion of students studying online ____ steadily over the period.",
+          "options": ["raised", "rose", "risen", "rised"],
+          "answer": 1,
+          "explain": "There is no object, so the verb is 'rise', and its past simple is 'rose'. 'Risen' is the past participle and needs 'has' or 'had'.",
+          "explainAr": "لا يوجد مفعول به، فالفعل المناسب rise، وماضيه البسيط rose. أما risen فهو التصريف الثالث ويحتاج إلى has أو had قبله."
+        },
+        {
+          "q": "The decade ____ a dramatic fall in the birth rate.",
+          "options": ["was seen", "fell", "happened", "saw"],
+          "answer": 3,
+          "explain": "A time period can be the subject of 'saw' + noun phrase: The decade saw a dramatic fall. This is a useful alternative to 'there was'.",
+          "explainAr": "يمكن أن تكون الفترة الزمنية فاعلاً للفعل saw يليه اسم: The decade saw a dramatic fall، وهو بديل مفيد لعبارة there was."
+        },
+        {
+          "q": "There was a ____ decline in the use of landline phones.",
+          "options": ["gradual", "gradually", "graduation", "gradualness"],
+          "answer": 0,
+          "explain": "'Decline' is a noun here, so it needs an adjective before it: a gradual decline.",
+          "explainAr": "كلمة decline هنا اسم، فتحتاج إلى صفة قبلها: a gradual decline، وليس الظرف gradually."
+        },
+        {
+          "q": "By 2020, the figure had ____ to its lowest point.",
+          "options": ["fell", "fall", "felt", "fallen"],
+          "answer": 3,
+          "explain": "The past perfect is had + past participle, and the past participle of 'fall' is 'fallen'. 'Felt' comes from 'feel'.",
+          "explainAr": "الماضي التام يتكوّن من had مع التصريف الثالث، والتصريف الثالث للفعل fall هو fallen. أما felt فهي من الفعل feel."
+        },
+        {
+          "q": "Which sentence is correct?",
+          "options": [
+            "The government rose taxes in 2019.",
+            "Taxes were risen by the government in 2019.",
+            "The government raised taxes in 2019.",
+            "The government has rose taxes in 2019."
+          ],
+          "answer": 2,
+          "explain": "'Taxes' is the object, so the verb must be 'raise' (raised). 'Rise' never takes an object and cannot be passive.",
+          "explainAr": "كلمة taxes مفعول به، لذلك نستخدم الفعل المتعدي raise وماضيه raised. أما rise فلا يأخذ مفعولاً به ولا يُبنى للمجهول."
+        }
+      ]
+    },
+    {
+      "id": "g12",
+      "title": "Prepositions with numbers and time",
+      "forSkill": "writing",
+      "why": "Arabic prepositions do not map neatly onto English ones (في can mean in, on or at), so learners often guess. In Task 1 a single wrong preposition changes the meaning of the data: 'rose by 10%' and 'rose to 10%' describe different changes.",
+      "rule": [
+        "By = the size of a change: Sales rose by 5% (for example, from 20% to 25%).",
+        "From = the starting value and to = the final value: The figure rose from 20% to 25%.",
+        "At = a value at one point: Prices stood at £3. Unemployment peaked at 12%.",
+        "Time: in + years, months, seasons and decades (in 2010, in March, in the 1990s); on + days and dates (on Monday, on 5 June); at + clock times and at night, at the weekend.",
+        "For a period, use between... and or from... to, never between... to.",
+        "By + a time means 'not later than': By 2020, the figure had doubled. Until means a situation continued up to that point: It remained stable until 2015."
+      ],
+      "ar": "حروف الجر في العربية لا تقابل حروف الجر الإنجليزية مقابلة مباشرة، فحرف «في» مثلاً قد يقابل in أو on أو at. وفي المهمة الأولى من الكتابة قد يغيّر حرف جر واحد معنى الرقم كله: فعبارة rose by 10% تعني أن مقدار الزيادة عشرة في المئة، بينما rose to 10% تعني أن القيمة النهائية أصبحت عشرة في المئة. استخدم from للقيمة الأولى وto للقيمة النهائية، وat لقيمة ثابتة في نقطة معينة، مثل peaked at 80%. وفي الزمن نستخدم in مع السنوات والشهور، وon مع الأيام والتواريخ، وat مع الساعات. ولا تخلط بين between… and وfrom… to. أما by مع الزمن فتعني «بحلول»، مثل By 2020, the figure had doubled، بينما until تعني «حتى» أي استمرار الحالة إلى تلك النقطة.",
+      "examples": [
+        {
+          "wrong": "The price of petrol rose with 20 pence.",
+          "right": "The price of petrol rose by 20 pence.",
+          "note": "The size of a change takes 'by'."
+        },
+        {
+          "wrong": "Between 2005 to 2015, the population doubled.",
+          "right": "Between 2005 and 2015, the population doubled.",
+          "note": "Between... and; from... to. Do not mix them."
+        },
+        {
+          "wrong": "The unemployment rate peaked in 12% in 2009.",
+          "right": "The unemployment rate peaked at 12% in 2009.",
+          "note": "A value at one point takes 'at'; the year takes 'in'."
+        },
+        {
+          "wrong": "My exam is in Saturday at the morning.",
+          "right": "My exam is on Saturday morning.",
+          "note": "Days take 'on'. 'In the morning' alone is fine, but with a day we say 'on Saturday morning'."
+        },
+        {
+          "wrong": "Until 2030, half of all new cars will be electric.",
+          "right": "By 2030, half of all new cars will be electric.",
+          "note": "A target or deadline uses 'by' (not later than), not 'until'."
+        },
+        {
+          "wrong": "The figure dropped from 40% until 25%.",
+          "right": "The figure dropped from 40% to 25%.",
+          "note": "The final value takes 'to'."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "The number of subscribers increased from 2 million ____ 5 million.",
+          "options": ["by", "at", "to", "until"],
+          "answer": 2,
+          "explain": "'From' gives the starting value and 'to' gives the final value. The increase was by 3 million, not by 5 million.",
+          "explainAr": "تدل from على القيمة الأولى وto على القيمة النهائية. أما مقدار الزيادة فكان ثلاثة ملايين، فلا يصح by مع خمسة ملايين."
+        },
+        {
+          "q": "Profits fell ____ £3 million, from £15 million to £12 million.",
+          "options": ["by", "to", "at", "of"],
+          "answer": 0,
+          "explain": "£3 million is the size of the fall (15 minus 12), so it takes 'by'. 'To' would mean the final figure was £3 million.",
+          "explainAr": "ثلاثة ملايين هي مقدار الانخفاض (15 ناقص 12)، لذلك نستخدم by. أما to فتعني أن القيمة النهائية أصبحت ثلاثة ملايين."
+        },
+        {
+          "q": "Car sales remained stable ____ around 40,000 a year.",
+          "options": ["on", "in", "at", "by"],
+          "answer": 2,
+          "explain": "A level that stays the same is described with 'at': remained stable at, stood at, levelled off at.",
+          "explainAr": "عندما نصف قيمة ثابتة نستخدم at، كما في remained stable at وstood at وlevelled off at."
+        },
+        {
+          "q": "The new metro line opened ____ 14 March 2022.",
+          "options": ["in", "at", "by", "on"],
+          "answer": 3,
+          "explain": "A specific date takes 'on'. 'In' is used only for the month or year alone (in March, in 2022).",
+          "explainAr": "التاريخ المحدد باليوم يأخذ on، أما in فتُستخدم مع الشهر وحده أو السنة وحدها، مثل in March وin 2022."
+        },
+        {
+          "q": "____ the end of the period, renewable energy had overtaken coal.",
+          "options": ["Until", "By", "In", "Since"],
+          "answer": 1,
+          "explain": "'By' + a time means that the change was complete at that point, and it often goes with the past perfect (had overtaken).",
+          "explainAr": "كلمة by مع الزمن تعني «بحلول»، أي أن التغيّر اكتمل عند تلك النقطة، وكثيراً ما تأتي مع الماضي التام مثل had overtaken."
+        }
+      ]
+    },
+    {
+      "id": "g13",
+      "title": "Word formation: choosing the right word form",
+      "forSkill": "both",
+      "why": "Arabic builds related words from a root using patterns (اقتصاد، اقتصادي), so learners often know the root but choose the wrong English form, writing 'economical growth', 'it effects people' or 'a success person'. Word form errors lower your Lexical Resource score and can also confuse meaning.",
+      "rule": [
+        "First decide which part of speech the sentence needs: a noun after an article or adjective, an adjective before a noun or after be, an adverb to describe a verb or adjective.",
+        "Economic = related to the economy (economic growth); economical = saving money or fuel (an economical car).",
+        "Affect is normally a verb (Pollution affects health); effect is normally a noun (Pollution has an effect on health).",
+        "Learn common families: success, successful, succeed, successfully; benefit, beneficial; danger, dangerous, endanger; responsibility, responsible, responsibly.",
+        "Typical suffixes: -tion, -ment, -ness, -ity for nouns; -al, -ive, -ous, -ful for adjectives; -ise, -en, -ify for verbs; -ly for adverbs."
+      ],
+      "ar": "تُشتق الكلمات في العربية من جذر واحد على أوزان مختلفة، مثل اقتصاد واقتصادي واقتصادياً، وهذا يشبه ما يحدث في الإنجليزية من خلال اللواحق مثل -tion و-al و-ly. لكن المشكلة أن المتعلم يعرف الجذر ثم يختار الصيغة الخطأ، فيكتب economical growth بدلاً من economic growth. فكلمة economic تعني «اقتصادي» أي متعلق بالاقتصاد، أما economical فتعني «موفِّر» أو «قليل التكلفة». ومن الأخطاء الشائعة أيضاً الخلط بين affect وهو فعل بمعنى «يؤثّر في»، وeffect وهو اسم بمعنى «تأثير». لذلك اسأل نفسك دائماً: هل يحتاج هذا الموضع إلى اسم أم فعل أم صفة أم ظرف؟ وتعلّم الكلمات على شكل عائلات، لأن ذلك يرفع دقة المفردات ويوسّع حصيلتك اللغوية.",
+      "examples": [
+        {
+          "wrong": "Tourism is important for the economical growth of my country.",
+          "right": "Tourism is important for the economic growth of my country.",
+          "note": "Growth of the economy is economic; economical means 'not wasteful'."
+        },
+        {
+          "wrong": "Social media effects the way teenagers see themselves.",
+          "right": "Social media affects the way teenagers see themselves.",
+          "note": "A verb is needed, so use affect."
+        },
+        {
+          "wrong": "My father is a very success businessman.",
+          "right": "My father is a very successful businessman.",
+          "note": "An adjective is needed before the noun 'businessman'."
+        },
+        {
+          "wrong": "Regular exercise is benefit for mental health.",
+          "right": "Regular exercise is beneficial for mental health.",
+          "note": "After 'is' we need an adjective here. Alternatively: Regular exercise benefits mental health."
+        },
+        {
+          "wrong": "Parents should take responsible for their children's screen time.",
+          "right": "Parents should take responsibility for their children's screen time.",
+          "note": "'Take' needs a noun object: take responsibility for."
+        },
+        {
+          "wrong": "Many people are not aware of the dangerous of fast food.",
+          "right": "Many people are not aware of the dangers of fast food.",
+          "note": "After 'the' and before 'of' we need a noun: dangers."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "Hybrid cars are more ____ than traditional cars because they use less fuel.",
+          "options": ["economic", "economy", "economical", "economically"],
+          "answer": 2,
+          "explain": "The meaning is 'saving fuel and money', so the adjective is 'economical'. 'Economic' means 'related to the economy'.",
+          "explainAr": "المعنى هنا «موفِّر للوقود والمال»، لذلك نستخدم الصفة economical. أما economic فتعني «متعلق بالاقتصاد»."
+        },
+        {
+          "q": "Lack of sleep can seriously ____ a student's concentration.",
+          "options": ["affect", "effect", "effective", "affection"],
+          "answer": 0,
+          "explain": "After the modal 'can' we need a verb, and the verb meaning 'have an influence on' is 'affect'.",
+          "explainAr": "بعد الفعل الناقص can نحتاج إلى فعل، والفعل الذي يعني «يؤثّر في» هو affect، أما effect فهو اسم."
+        },
+        {
+          "q": "Living abroad can be a very ____ experience.",
+          "options": ["benefit", "beneficially", "beneficiary", "beneficial"],
+          "answer": 3,
+          "explain": "Between 'very' and the noun 'experience' we need an adjective: beneficial.",
+          "explainAr": "بين very والاسم experience نحتاج إلى صفة، وهي beneficial."
+        },
+        {
+          "q": "The project was a great ____, thanks to careful planning.",
+          "options": ["successful", "success", "succeed", "successfully"],
+          "answer": 1,
+          "explain": "After 'a great' we need a noun: a great success.",
+          "explainAr": "بعد a great نحتاج إلى اسم، فنقول a great success."
+        },
+        {
+          "q": "Governments must deal with the ____ of rising sea levels.",
+          "options": ["consequent", "consequently", "consequences", "consequential"],
+          "answer": 2,
+          "explain": "After 'the' and before 'of' we need a noun: the consequences of. The other options are an adjective, an adverb and another adjective.",
+          "explainAr": "بعد the وقبل of نحتاج إلى اسم، فنقول the consequences of. أما الخيارات الأخرى فهي صفة وظرف وصفة أخرى."
+        }
+      ]
+    },
+    {
+      "id": "g14",
+      "title": "Complex sentences for grammatical range",
+      "forSkill": "both",
+      "why": "Band 7 in Grammatical Range and Accuracy needs a variety of complex structures used with good control. Many Arabic speakers rely on 'and', 'but' and 'because', or translate Arabic patterns such as 'رغم أن... إلا أن', which produces the common error 'Although..., but...'.",
+      "rule": [
+        "Although or even though + clause shows contrast. Do not add but to the other clause: Although the course was expensive, it was worth it.",
+        "Despite or in spite of + noun or -ing form, never a full clause: Despite the high cost... / Despite being expensive...",
+        "Whereas and while compare two contrasting facts: Car use rose in the suburbs, whereas it fell in the city centre.",
+        "A non-defining which-clause adds a comment: The app is free, which explains its popularity.",
+        "Participle clauses make writing concise: Having finished my degree, I joined a start-up. The subject of both clauses must be the same person or thing.",
+        "Mix simple and complex sentences; accuracy matters more than length."
+      ],
+      "ar": "للوصول إلى الدرجة 7 في معيار التنوع والدقة النحوية يجب أن تستخدم تراكيب معقدة متنوعة دون أخطاء كثيرة. ومن أشهر أخطاء المتعلمين العرب قول Although…, but… ترجمةً لتركيب «رغم أن… إلا أن…»، والصواب أن تستخدم أداة واحدة فقط: Although the job was stressful, I enjoyed it. وانتبه إلى أن despite يأتي بعدها اسم أو صيغة ing وليس جملة كاملة. واستخدم whereas للمقارنة بين حقيقتين متقابلتين، وهي مفيدة جداً في المهمة الأولى. أما تراكيب اسم الفاعل مثل Having finished my degree, I… فتجعل الكتابة موجزة وأكاديمية، بشرط أن يكون الفاعل في الجملتين واحداً. ولا تُكثر من الجمل الطويلة على حساب الدقة، فالجملة القصيرة الصحيحة أفضل من الطويلة المليئة بالأخطاء.",
+      "examples": [
+        {
+          "wrong": "Although the salary was low, but I accepted the job.",
+          "right": "Although the salary was low, I accepted the job.",
+          "note": "Use one contrast word only: although or but, not both."
+        },
+        {
+          "wrong": "Despite the course was difficult, most students passed.",
+          "right": "Despite the difficulty of the course, most students passed.",
+          "note": "'Despite' needs a noun phrase. Alternatively: Although the course was difficult, ..."
+        },
+        {
+          "wrong": "Having finished the report, the computer crashed.",
+          "right": "After I had finished the report, the computer crashed.",
+          "note": "The participle clause wrongly suggests that the computer finished the report. Both clauses must share a subject."
+        },
+        {
+          "wrong": "Whereas exports from Germany rose, but exports from Italy fell.",
+          "right": "Whereas exports from Germany rose, those from Italy fell.",
+          "note": "'Whereas' already shows contrast, so 'but' must be removed."
+        },
+        {
+          "wrong": "The city introduced bike lanes, this was very popular.",
+          "right": "The city introduced bike lanes, which proved very popular.",
+          "note": "A which-clause comments on the whole idea and avoids a comma splice."
+        },
+        {
+          "wrong": "Even I was tired, I continued working.",
+          "right": "Even though I was tired, I continued working.",
+          "note": "'Even' alone is not a conjunction; use 'even though' or 'although'."
+        }
+      ],
+      "exercise": [
+        {
+          "q": "____ online shopping is convenient, many people still prefer to see products before buying them.",
+          "options": ["Despite", "However", "Although", "In spite of"],
+          "answer": 2,
+          "explain": "A full clause follows (online shopping is convenient), so we need the conjunction 'although'. Despite and in spite of need a noun or -ing form, and however cannot join clauses.",
+          "explainAr": "يأتي بعد الفراغ جملة كاملة، لذلك نحتاج إلى أداة الربط although. أما despite وin spite of فيأتي بعدهما اسم أو صيغة ing، وhowever لا تربط بين جملتين."
+        },
+        {
+          "q": "Which sentence is correct?",
+          "options": [
+            "Although it was raining, but we went out.",
+            "Despite it was raining, we went out.",
+            "Even it was raining, we went out.",
+            "Although it was raining, we went out."
+          ],
+          "answer": 3,
+          "explain": "Only the last sentence uses one correct contrast conjunction. The first doubles the link word, the second uses despite with a clause, and the third uses 'even' as a conjunction.",
+          "explainAr": "الجملة الأخيرة وحدها تستخدم أداة تناقض واحدة صحيحة. الأولى تكرر أداة الربط، والثانية تضع جملة كاملة بعد despite، والثالثة تستخدم even وحدها كأداة ربط."
+        },
+        {
+          "q": "____ the instructions carefully, I installed the software without any problems.",
+          "options": ["Having read", "Despite reading", "Although I read", "I read"],
+          "answer": 0,
+          "explain": "The participle clause shows that reading happened first and the subject (I) is the same in both clauses. 'Despite' and 'although' show contrast, which is illogical here, and 'I read' creates a comma splice.",
+          "explainAr": "تركيب Having read يدل على أن القراءة حدثت أولاً، والفاعل I واحد في الجملتين. أما despite وalthough فتدلان على تناقض لا معنى له هنا، وI read تؤدي إلى وصل جملتين بفاصلة فقط."
+        },
+        {
+          "q": "Sales of e-books increased, ____ sales of printed books remained stable.",
+          "options": ["despite", "in spite", "whereas", "although of"],
+          "answer": 2,
+          "explain": "'Whereas' links two contrasting facts in full clauses. 'Despite' cannot be followed by a clause, and 'in spite' and 'although of' are not correct forms.",
+          "explainAr": "تربط whereas بين حقيقتين متقابلتين في جملتين كاملتين. أما despite فلا يأتي بعدها جملة، وin spite وalthough of صيغتان غير صحيحتين."
+        },
+        {
+          "q": "____ the high cost of living, the city continues to attract young professionals.",
+          "options": ["Although", "Even though", "Whereas", "Despite"],
+          "answer": 3,
+          "explain": "A noun phrase follows (the high cost of living), so we need 'despite'. Although, even though and whereas must be followed by a full clause.",
+          "explainAr": "يأتي بعد الفراغ اسم (the high cost of living)، لذلك نستخدم despite. أما although وeven though وwhereas فيجب أن تأتي بعدها جملة كاملة."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,688 @@
+{
+  "kind": "listening",
+  "items": [
+    {
+      "id": "lp",
+      "section": 1,
+      "title": "Joining a co-working space",
+      "topic": "work",
+      "placement": true,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Hana (receptionist)", "accent": "en-NZ", "voice": "female" },
+        "B": { "role": "Marcus", "accent": "en-IN", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 1. You will hear a telephone conversation between a receptionist at a co-working space and a freelancer who wants to become a member. First, you have some time to look at questions 1 to 5." },
+        { "pause": 25, "label": "Look at questions 1 to 5" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 5." },
+        { "s": "A", "t": "Good morning, Hillgate Works, Hana speaking. How can I help?" },
+        { "s": "B", "t": "Hi. I'm a freelancer, and I'd like to find out about joining." },
+        { "s": "A", "t": "Of course. Could I have your name first?" },
+        { "s": "B", "t": "Sure, it's Marcus Thelwall. That's T, H, E, L, W, A, double L." },
+        { "s": "A", "t": "Thanks, Marcus. And what kind of work do you do?" },
+        { "s": "B", "t": "Well, I trained as a graphic designer, but I hardly do any design these days. I'm a freelance copywriter now. I mostly write website content for tech companies." },
+        { "s": "A", "t": "Lovely. Now, we offer two types of membership. With a fixed desk, you get the same desk every day and you can leave your things there overnight." },
+        { "s": "B", "t": "That sounds handy, but I'm only planning to come in three days a week." },
+        { "s": "A", "t": "In that case a flexible desk would probably suit you better. You just choose any free desk in the open-plan area when you arrive." },
+        { "s": "B", "t": "Right, I'll go for the flexible one, then. How much is that?" },
+        { "s": "A", "t": "Let me check. It's a hundred and ninety-five pounds a month. Oh, sorry, I'm looking at the wrong line, that's the fixed desk. Yours is a hundred and forty-five." },
+        { "s": "B", "t": "That's fine. And could I start on the first of April?" },
+        { "s": "A", "t": "Ah, the first is a public holiday, so the building will be closed. Would the following Monday suit you?" },
+        { "s": "B", "t": "Monday the eighth? Yes, that's fine." },
+        { "s": "A", "t": "Great, so that's Monday the eighth of April." },
+        { "s": "N", "t": "Before the conversation continues, you have some time to look at questions 6 to 8." },
+        { "pause": 20, "label": "Look at questions 6 to 8" },
+        { "s": "N", "t": "Now listen and answer questions 6 to 8." },
+        { "s": "A", "t": "Is there anything in particular you need from a workspace, Marcus?" },
+        { "s": "B", "t": "Well, a reliable internet connection, obviously, but every place has decent wifi these days. What I really need is somewhere private to talk to clients on the phone without disturbing anyone." },
+        { "s": "A", "t": "Well, we have four soundproof phone booths on each floor, and members can use them whenever they're free." },
+        { "s": "B", "t": "Perfect. What about meeting rooms? Some clients like to meet face to face." },
+        { "s": "A", "t": "Members used to get meeting rooms at half price, but we changed that in January. Now every member gets three hours free each month, and after that it's twelve pounds an hour." },
+        { "s": "B", "t": "That should be plenty for me. Is there anything I need to bring on my first day?" },
+        { "s": "A", "t": "Some co-working spaces ask for a reference from your last workspace, but we don't. Just bring some photo ID, such as a passport or a driving licence." },
+        { "s": "B", "t": "And do I need a passport-sized photo for the access card?" },
+        { "s": "A", "t": "No, we'll take your picture at the front desk and print your card there and then." },
+        { "s": "B", "t": "Brilliant. Thanks for your help, Hana." },
+        { "s": "A", "t": "You're welcome, Marcus. See you on the eighth." },
+        { "s": "N", "t": "That is the end of section 1." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "title": "Hillgate Works: New Member Form",
+          "wordLimit": "ONE WORD AND/OR A NUMBER",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Name: Marcus ____",
+              "answer": ["Thelwall"],
+              "explanation": "Marcus says \"it's Marcus Thelwall\" and spells it \"T, H, E, L, W, A, double L\". Remember that \"double L\" means two Ls at the end."
+            },
+            {
+              "n": 2,
+              "prompt": "Occupation: freelance ____",
+              "answer": ["copywriter"],
+              "explanation": "He says \"I trained as a graphic designer, but I hardly do any design these days. I'm a freelance copywriter now.\" Graphic design was his earlier job, so it is the distractor."
+            },
+            {
+              "n": 3,
+              "prompt": "Type of membership: ____ desk",
+              "answer": ["flexible"],
+              "explanation": "Hana describes the fixed desk first, but Marcus will only come \"three days a week\" and says \"I'll go for the flexible one\"."
+            },
+            {
+              "n": 4,
+              "prompt": "Monthly fee: £____",
+              "answer": ["145", "£145"],
+              "explanation": "Hana first reads \"a hundred and ninety-five pounds\" but corrects herself: \"that's the fixed desk. Yours is a hundred and forty-five.\""
+            },
+            {
+              "n": 5,
+              "prompt": "Start date: Monday ____",
+              "answer": ["8 April", "8th April", "April 8", "April 8th"],
+              "explanation": "Marcus asks for \"the first of April\", but that is a public holiday, so they agree on \"Monday the eighth of April\"."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "What does Marcus say he most needs from a workspace?",
+              "options": [
+                { "key": "A", "text": "a reliable internet connection" },
+                { "key": "B", "text": "a private place to make phone calls" },
+                { "key": "C", "text": "a room for meeting clients in person" }
+              ],
+              "answer": "B",
+              "explanation": "He mentions the internet but dismisses it (\"every place has decent wifi these days\"), then says \"What I really need is somewhere private to talk to clients on the phone\". Meeting rooms are only asked about afterwards."
+            },
+            {
+              "n": 7,
+              "prompt": "What do members now get when they use the meeting rooms?",
+              "options": [
+                { "key": "A", "text": "three hours free every month" },
+                { "key": "B", "text": "half the standard hourly price" },
+                { "key": "C", "text": "unlimited use for twelve pounds a month" }
+              ],
+              "answer": "A",
+              "explanation": "Half price was the old system: \"Members used to get meeting rooms at half price, but we changed that in January.\" Now \"every member gets three hours free each month\"; twelve pounds is the hourly charge after that."
+            },
+            {
+              "n": 8,
+              "prompt": "What does Marcus need to bring on his first day?",
+              "options": [
+                { "key": "A", "text": "a reference from his previous workspace" },
+                { "key": "B", "text": "a passport-sized photograph" },
+                { "key": "C", "text": "an identity document with his photo on it" }
+              ],
+              "answer": "C",
+              "explanation": "Hana says other places ask for a reference \"but we don't. Just bring some photo ID, such as a passport or a driving licence.\" A photograph is not needed because \"we'll take your picture at the front desk\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l01",
+      "section": 1,
+      "title": "Enrolling on an evening web design course",
+      "topic": "education",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "A": { "role": "Owen (enrolments adviser)", "accent": "en-IE", "voice": "male" },
+        "B": { "role": "Ruth", "accent": "en-CA", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 1. You will hear a woman phoning a college to enrol on an evening course. First, you have some time to look at questions 1 to 6." },
+        { "pause": 25, "label": "Look at questions 1 to 6" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 6." },
+        { "s": "A", "t": "Larchmont Community College, enrolments. Owen speaking." },
+        { "s": "B", "t": "Oh, hello. I'm calling about your evening courses in web design. I'd like to sign up, if there are still places." },
+        { "s": "A", "t": "There are, yes. I'll just take a few details. Can I have your full name?" },
+        { "s": "B", "t": "It's Ruth Ashdown." },
+        { "s": "A", "t": "Could you spell the surname for me?" },
+        { "s": "B", "t": "Yes, A, S, H, D, O, W, N." },
+        { "s": "A", "t": "Thank you. And can I ask what you do for a living? We collect that for our records." },
+        { "s": "B", "t": "I worked as an accountant for about twelve years, but these days I run a bakery. It's only a small one, on the high street." },
+        { "s": "A", "t": "Lovely. Now, which course were you interested in?" },
+        { "s": "B", "t": "I was thinking of Web Design Intermediate. I've used website builders a bit, so I'm not a complete beginner." },
+        { "s": "A", "t": "Have you done any coding at all, though? The intermediate course assumes you can already write basic HTML." },
+        { "s": "B", "t": "No, never. I've only ever dragged and dropped things." },
+        { "s": "A", "t": "Then I'd really recommend Web Design Foundation. It starts from the very beginning, and you can move up next term." },
+        { "s": "B", "t": "OK, Foundation it is." },
+        { "s": "A", "t": "We run it on two evenings. The Tuesday group is completely full, I'm afraid, but there's space on Thursdays." },
+        { "s": "B", "t": "Thursday's actually better for me anyway, because I do the shop's accounts on Tuesday nights." },
+        { "s": "A", "t": "Good. Classes usually start at half past six, but the Thursday group starts a bit later, at a quarter past seven, because the room's used for another class before that." },
+        { "s": "B", "t": "A quarter past seven. That's fine, the shop closes at six." },
+        { "s": "A", "t": "And the fee for the ten weeks is three hundred and twenty pounds." },
+        { "s": "B", "t": "Oh. Is there any kind of discount? I live in Larchmont itself, if that makes a difference." },
+        { "s": "A", "t": "It does, actually. Residents of the borough pay the reduced rate, which is two hundred and seventy-five pounds." },
+        { "s": "B", "t": "That's much better." },
+        { "s": "N", "t": "Before you hear the rest of the conversation, you have some time to look at questions 7 to 10." },
+        { "pause": 25, "label": "Look at questions 7 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 7 to 10." },
+        { "s": "A", "t": "Can I ask why you want to do the course? It helps the tutor plan the sessions." },
+        { "s": "B", "t": "Well, my nephew built my website, but every time I change the menu or the prices, I have to wait days for him to update it. I just want to be able to do it myself." },
+        { "s": "A", "t": "That's very common. And will you need the certificate at the end? Some people want it for job applications." },
+        { "s": "B", "t": "Not really, I'm not too bothered about that." },
+        { "s": "A", "t": "Fair enough, everyone gets one anyway. Now, about the first class. The computer room has desktop machines, so there's no need to bring a laptop." },
+        { "s": "B", "t": "Should I bring a memory stick to save my work?" },
+        { "s": "A", "t": "No, everything's saved online these days. But do bring some notes on what you'd like your own website to do. The tutor uses them in the first session." },
+        { "s": "B", "t": "Right. And is there an exam at the end?" },
+        { "s": "A", "t": "There used to be a written test in the final week, but that was dropped last year. Now you build a small website of your own, and the tutor marks that. You can present it to the group if you like, but that part is optional." },
+        { "s": "B", "t": "That sounds much more useful. Is there anything I should do before the course starts?" },
+        { "s": "A", "t": "Some students buy the recommended textbook, but it's quite expensive and the tutor gives out handouts anyway. What I'd really suggest is watching the free introductory videos on our website. There are three, about twenty minutes each." },
+        { "s": "B", "t": "I'll do that. Could I come and see the computer room beforehand?" },
+        { "s": "A", "t": "You're welcome to, but it's locked in the evenings except on class nights, so you'd need to come in during the day." },
+        { "s": "B", "t": "I can't really leave the shop during the day, so I'll just wait. Thanks, Owen." },
+        { "s": "A", "t": "No problem. I'll email you the confirmation this afternoon." },
+        { "s": "N", "t": "That is the end of section 1." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the form below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "title": "Larchmont Community College: Evening Course Enrolment",
+          "wordLimit": "ONE WORD AND/OR A NUMBER",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Name: Ruth ____",
+              "answer": ["Ashdown"],
+              "explanation": "Ruth gives her name as \"Ruth Ashdown\" and spells the surname \"A, S, H, D, O, W, N\"."
+            },
+            {
+              "n": 2,
+              "prompt": "Occupation: runs a ____",
+              "answer": ["bakery"],
+              "explanation": "She \"worked as an accountant\" in the past, \"but these days I run a bakery\". The form asks about her present job, so accountant is the distractor."
+            },
+            {
+              "n": 3,
+              "prompt": "Course: Web Design ____",
+              "answer": ["Foundation"],
+              "explanation": "Ruth first asks about the Intermediate course, but she has never written code, so Owen says \"I'd really recommend Web Design Foundation\" and she agrees: \"OK, Foundation it is.\""
+            },
+            {
+              "n": 4,
+              "prompt": "Day: ____ evenings",
+              "answer": ["Thursday", "Thursdays"],
+              "explanation": "\"The Tuesday group is completely full, I'm afraid, but there's space on Thursdays.\" Ruth says Thursday is \"actually better for me anyway\"."
+            },
+            {
+              "n": 5,
+              "prompt": "Class start time: ____",
+              "answer": ["7.15", "7:15", "7.15 pm", "7:15 pm", "7.15pm", "7:15pm", "19.15", "19:15"],
+              "explanation": "Classes \"usually start at half past six, but the Thursday group starts a bit later, at a quarter past seven\". Half past six (6.30) is the distractor."
+            },
+            {
+              "n": 6,
+              "prompt": "Fee: £____",
+              "answer": ["275", "£275"],
+              "explanation": "The standard fee is \"three hundred and twenty pounds\", but Ruth lives in Larchmont, so she pays \"the reduced rate, which is two hundred and seventy-five pounds\"."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "What is Ruth's main reason for taking the course?",
+              "options": [
+                { "key": "A", "text": "to get a certificate for job applications" },
+                { "key": "B", "text": "to make changes to her website without help" },
+                { "key": "C", "text": "to help her nephew with his web design work" }
+              ],
+              "answer": "B",
+              "explanation": "She is tired of waiting for her nephew to update the menu and prices: \"I just want to be able to do it myself.\" She is \"not too bothered\" about the certificate, so A is wrong."
+            },
+            {
+              "n": 8,
+              "prompt": "What should Ruth bring to the first class?",
+              "options": [
+                { "key": "A", "text": "a laptop" },
+                { "key": "B", "text": "a memory stick" },
+                { "key": "C", "text": "some ideas for her own website" }
+              ],
+              "answer": "C",
+              "explanation": "There is \"no need to bring a laptop\" and no memory stick is needed because \"everything's saved online\". Owen says \"do bring some notes on what you'd like your own website to do\"."
+            },
+            {
+              "n": 9,
+              "prompt": "How are students on the course assessed?",
+              "options": [
+                { "key": "A", "text": "by a written test in the final week" },
+                { "key": "B", "text": "by a website they create" },
+                { "key": "C", "text": "by a presentation to the group" }
+              ],
+              "answer": "B",
+              "explanation": "The written test \"was dropped last year\". \"Now you build a small website of your own, and the tutor marks that.\" The presentation is \"optional\", so it is not the assessment."
+            },
+            {
+              "n": 10,
+              "prompt": "What does Owen recommend Ruth does before the course starts?",
+              "options": [
+                { "key": "A", "text": "watch some videos online" },
+                { "key": "B", "text": "buy the course textbook" },
+                { "key": "C", "text": "visit the computer room" }
+              ],
+              "answer": "A",
+              "explanation": "He says the textbook is \"quite expensive\" and not really needed: \"What I'd really suggest is watching the free introductory videos on our website.\" Visiting the room is possible but not his recommendation, and Ruth decides not to."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "section": 2,
+      "title": "Welcome to a new science centre",
+      "topic": "science",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "G": { "role": "Tess (guide)", "accent": "en-AU", "voice": "female" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 2. You will hear a guide welcoming a group of visitors to a new science centre. First, you have some time to look at questions 1 to 4." },
+        { "pause": 25, "label": "Look at questions 1 to 4" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 4." },
+        { "s": "G", "t": "Good morning, everyone, and welcome to the Wrenfield Discovery Centre. My name's Tess, and I'll be giving you a quick introduction before you go off and explore." },
+        { "s": "G", "t": "First, a little history. Lots of visitors assume this building used to be the town's power station, because of that tall brick chimney you passed on the way in. In fact, it was a wool mill, and for over a century it produced cloth that was sold all over the country." },
+        { "s": "G", "t": "The mill closed in the nineteen-eighties, and the building stood empty for years until the town council and a local university turned it into the centre you see today. We opened just three weeks ago, so you're among our very first visitors." },
+        { "s": "G", "t": "So what makes us different? In a traditional science museum, most objects sit behind glass with a label next to them. Here, almost nothing is behind glass. You're meant to push, pull, build and take things apart. If something breaks, don't worry, our technicians can fix it." },
+        { "s": "G", "t": "A group of local schoolchildren helped us test some of the exhibits before we opened, and we're planning to change a few displays each year. But the main idea is simple: science is something you do, not something you just look at." },
+        { "s": "G", "t": "Now, a few practical points. I know some of you were hoping for a coffee, but I'm sorry to say the café is still waiting for its coffee machine to arrive, so today it's only serving cold drinks and snacks." },
+        { "s": "G", "t": "The planetarium show costs an extra four pounds, and there's no reduction on that, I'm afraid. However, because we're still in our opening month, if you show your wristband in the gift shop, you'll get fifteen per cent off anything you buy." },
+        { "s": "G", "t": "Speaking of wristbands, yours isn't just a ticket. At every exhibit there's a small scanner. Touch your wristband against it, and your results are stored, so you can log in at home and look back at everything you did today." },
+        { "s": "G", "t": "You're welcome to keep the wristband as a souvenir, there's no need to hand it in. But please be aware that it won't let you back in if you leave the building, so if you go out for lunch, you'll need to buy a new ticket." },
+        { "s": "N", "t": "Before you hear the rest of the talk, you have some time to look at questions 5 to 10." },
+        { "pause": 25, "label": "Look at questions 5 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 5 to 10." },
+        { "s": "G", "t": "Right, let me tell you about the different areas. Here on the ground floor you'll find the Weather Lab. The highlight there is the storm booth. You step inside, close the door, and feel winds of up to eighty kilometres an hour. Hold on to your hat!" },
+        { "s": "G", "t": "Next to it is the Tinker Workshop. Our staff used to run live demonstrations in there, but those have moved to the main hall because the workshop got too crowded." },
+        { "s": "G", "t": "So now it's all hands-on. You can build a simple machine, such as a pulley or a little crane, using recycled cardboard, bottle tops and string." },
+        { "s": "G", "t": "Up on the first floor is the Sound Tunnel. It's a long, dark corridor, and when you speak or sing into the microphones, you can watch your voice turn into moving patterns on a huge screen. Children love it, and so do the adults, to be honest." },
+        { "s": "G", "t": "Opposite that is Code Corner. You might expect a room full of computers, but in fact there's just one tablet on each table. You use it to give simple instructions to a small robot and try to guide it through a maze without touching any of the walls." },
+        { "s": "G", "t": "Also on the first floor is the Body Zone. There's a lot to do in there, but the most popular activity is the reaction wall. Lights flash on and off at random, and you have to hit them as fast as you can. Your time goes straight onto the scoreboard." },
+        { "s": "G", "t": "Finally, if the weather's good, do go up to the Rooftop Garden. We did consider putting a telescope up there, but the city lights make stargazing almost impossible, so we decided against it." },
+        { "s": "G", "t": "Instead, you'll find vegetables and herbs growing in water, with no soil at all, and our gardener is always happy to explain how it works." },
+        { "s": "G", "t": "Right, that's enough from me. Enjoy your visit, and don't forget to scan those wristbands!" },
+        { "s": "N", "t": "That is the end of section 2." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "The building that houses the centre was originally",
+              "options": [
+                { "key": "A", "text": "a textile factory." },
+                { "key": "B", "text": "a power station." },
+                { "key": "C", "text": "part of a university." }
+              ],
+              "answer": "A",
+              "explanation": "\"Lots of visitors assume this building used to be the town's power station ... In fact, it was a wool mill.\" A wool mill is a textile factory. The university only helped to turn it into the centre."
+            },
+            {
+              "n": 2,
+              "prompt": "According to the guide, the main difference between the centre and a traditional science museum is that",
+              "options": [
+                { "key": "A", "text": "its exhibits were designed by local schoolchildren." },
+                { "key": "B", "text": "visitors are expected to handle the exhibits." },
+                { "key": "C", "text": "all of its displays are replaced every year." }
+              ],
+              "answer": "B",
+              "explanation": "\"Here, almost nothing is behind glass. You're meant to push, pull, build and take things apart.\" Schoolchildren only \"helped us test\" exhibits, and only \"a few displays\" will change each year."
+            },
+            {
+              "n": 3,
+              "prompt": "Today, visitors can get a discount in",
+              "options": [
+                { "key": "A", "text": "the café." },
+                { "key": "B", "text": "the planetarium." },
+                { "key": "C", "text": "the gift shop." }
+              ],
+              "answer": "C",
+              "explanation": "The planetarium has \"no reduction\" and the café only has cold drinks, but \"if you show your wristband in the gift shop, you'll get fifteen per cent off anything you buy.\""
+            },
+            {
+              "n": 4,
+              "prompt": "What does the guide say about the wristbands?",
+              "options": [
+                { "key": "A", "text": "They keep a record of what visitors do at the exhibits." },
+                { "key": "B", "text": "They must be handed in when visitors leave." },
+                { "key": "C", "text": "They allow visitors to leave and come back later." }
+              ],
+              "answer": "A",
+              "explanation": "\"Touch your wristband against it, and your results are stored, so you can log in at home and look back at everything you did today.\" There is \"no need to hand it in\" and it \"won't let you back in\"."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "What can visitors do in each of the following areas of the centre? Choose SIX answers from the box and write the correct letter, A-H, next to questions 5-10.",
+          "title": "Areas of the centre",
+          "options": [
+            { "key": "A", "text": "watch scientists carry out experiments" },
+            { "key": "B", "text": "compete to see who can react most quickly" },
+            { "key": "C", "text": "find out how food can be grown without soil" },
+            { "key": "D", "text": "feel what it is like to be in extreme weather" },
+            { "key": "E", "text": "look at the stars and planets" },
+            { "key": "F", "text": "guide a machine along a route" },
+            { "key": "G", "text": "see an image of their own voice" },
+            { "key": "H", "text": "make a simple device from waste materials" }
+          ],
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "the Weather Lab",
+              "answer": "D",
+              "explanation": "In the storm booth you \"feel winds of up to eighty kilometres an hour\", which is an experience of extreme weather."
+            },
+            {
+              "n": 6,
+              "prompt": "the Tinker Workshop",
+              "answer": "H",
+              "explanation": "Live demonstrations \"have moved to the main hall\", so A is wrong. Now \"you can build a simple machine ... using recycled cardboard, bottle tops and string\"."
+            },
+            {
+              "n": 7,
+              "prompt": "the Sound Tunnel",
+              "answer": "G",
+              "explanation": "\"When you speak or sing into the microphones, you can watch your voice turn into moving patterns on a huge screen.\""
+            },
+            {
+              "n": 8,
+              "prompt": "Code Corner",
+              "answer": "F",
+              "explanation": "Visitors \"give simple instructions to a small robot and try to guide it through a maze\". A robot is a machine and the maze is the route."
+            },
+            {
+              "n": 9,
+              "prompt": "the Body Zone",
+              "answer": "B",
+              "explanation": "On the reaction wall \"you have to hit them as fast as you can. Your time goes straight onto the scoreboard\", so visitors compete on reaction speed."
+            },
+            {
+              "n": 10,
+              "prompt": "the Rooftop Garden",
+              "answer": "C",
+              "explanation": "The telescope idea was rejected (\"we decided against it\"), so E is wrong. Instead there are \"vegetables and herbs growing in water, with no soil at all\" and the gardener explains how it works."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l03",
+      "section": 3,
+      "title": "Testing a university app",
+      "topic": "technology",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "T": { "role": "Dr Hallworth (tutor)", "accent": "en-US", "voice": "male" },
+        "L": { "role": "Leila", "accent": "en-ZA", "voice": "female" },
+        "A": { "role": "Arun", "accent": "en-IN", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 3. You will hear two students, Leila and Arun, talking to their tutor about a group project in which they tested how easy their university's mobile app is to use. First, you have some time to look at questions 1 to 5." },
+        { "pause": 30, "label": "Look at questions 1 to 5" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 5." },
+        { "s": "T", "t": "Come in, both of you. So, how's the usability project going? Remind me why you chose the Campus Compass app in the first place." },
+        { "s": "A", "t": "Well, we'd heard a lot of complaints about it, but honestly that wasn't the main reason. Every student has it on their phone, so we knew it would be easy to find people to take part." },
+        { "s": "L", "t": "And we thought the IT department might be interested in our results, although they haven't actually asked us for anything." },
+        { "s": "T", "t": "Fair enough. And how did the sessions go? You were using the think-aloud method, weren't you?" },
+        { "s": "L", "t": "Yes, we asked each participant to say what they were thinking while they did the tasks. But in the first few sessions people hardly said a word. They just went completely silent." },
+        { "s": "A", "t": "At first we thought it was because the room was noisy, as there's a lot of traffic in that corridor. But we moved to a quieter room, and it made no difference." },
+        { "s": "L", "t": "So from the fourth session on, we started with a short practice task, just checking the weather on their phone, and that got them talking much more naturally." },
+        { "s": "T", "t": "That's a good solution, and worth mentioning in your report. How many people did you test altogether?" },
+        { "s": "A", "t": "Ten. We were a bit worried that wasn't enough." },
+        { "s": "T", "t": "I wouldn't worry. People often assume you need large numbers, but in this kind of testing a small group usually reveals most of the serious problems. More participants would mostly show you the same issues again. Spend your time on the analysis instead." },
+        { "s": "L", "t": "That's a relief." },
+        { "s": "T", "t": "And what did you actually measure in each session?" },
+        { "s": "A", "t": "We timed how long each task took, and we noted down every error, like tapping the wrong button or having to go back a screen." },
+        { "s": "L", "t": "We'd hoped to use eye-tracking glasses as well, but the equipment was booked for the whole term. And we tried counting the number of taps, but it was impossible to keep up while we were watching." },
+        { "s": "A", "t": "We also planned a satisfaction questionnaire at the end, but our pilot showed it took longer than the tasks themselves, so we dropped it." },
+        { "s": "T", "t": "That's a pity, because you'll need some way of showing how people felt. Perhaps add a single rating question next time." },
+        { "s": "N", "t": "Before you hear the rest of the discussion, you have some time to look at questions 6 to 10." },
+        { "pause": 30, "label": "Look at questions 6 to 10" },
+        { "s": "N", "t": "Now listen and answer questions 6 to 10." },
+        { "s": "T", "t": "So, what did you find out about the main features?" },
+        { "s": "L", "t": "Let's start with the timetable. We expected it to be difficult because the colour coding is so confusing, but almost everyone found their next lecture in under twenty seconds, which was much quicker than we'd predicted." },
+        { "s": "A", "t": "Booking a study room in the library was a different story. People found the page easily enough, but the time boxes use the twenty-four-hour clock." },
+        { "s": "A", "t": "So several people typed in three when they meant three in the afternoon, and ended up booking a room in the middle of the night." },
+        { "s": "T", "t": "That's an easy fix, at least. What about the campus map?" },
+        { "s": "L", "t": "Technically it works, but nobody wanted to use it. As soon as we asked them to find the sports hall, most participants closed our app and opened the ordinary maps app on their phone instead." },
+        { "s": "A", "t": "Then there were the notification settings. We thought people might not recognise the icons, but actually the bell symbol was fine." },
+        { "s": "A", "t": "The real problem was that the settings are hidden inside the profile menu, and only two people found them without us pointing them out." },
+        { "s": "T", "t": "And logging in? I've heard students say it doesn't work on older phones." },
+        { "s": "L", "t": "We tested it on some quite old handsets, and it was fine. It just takes ages. With the two-step verification, logging in took nearly a minute on average, which people found really frustrating." },
+        { "s": "T", "t": "Good. You've got plenty of material there. For the report, I'd like you to rank these problems by how serious they are." },
+        { "s": "A", "t": "We'll do that this week." },
+        { "s": "N", "t": "That is the end of section 3." }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B or C.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Why did the students choose the Campus Compass app for their project?",
+              "options": [
+                { "key": "A", "text": "Many students had complained about it." },
+                { "key": "B", "text": "It would be easy to recruit participants." },
+                { "key": "C", "text": "The IT department had asked for feedback on it." }
+              ],
+              "answer": "B",
+              "explanation": "Arun says the complaints were not \"the main reason\": \"Every student has it on their phone, so we knew it would be easy to find people to take part.\" The IT department \"haven't actually asked us for anything\"."
+            },
+            {
+              "n": 2,
+              "prompt": "What problem did the students have in the first testing sessions?",
+              "options": [
+                { "key": "A", "text": "The participants did not talk enough." },
+                { "key": "B", "text": "The room was too noisy." },
+                { "key": "C", "text": "The tasks were too difficult." }
+              ],
+              "answer": "A",
+              "explanation": "Leila says \"people hardly said a word. They just went completely silent.\" They thought noise was the cause, but moving to a quieter room \"made no difference\", so B is wrong."
+            },
+            {
+              "n": 3,
+              "prompt": "What does the tutor say about the number of participants?",
+              "options": [
+                { "key": "A", "text": "It is too small for the results to be reliable." },
+                { "key": "B", "text": "It is large enough to show the main problems." },
+                { "key": "C", "text": "It should be increased before the report is written." }
+              ],
+              "answer": "B",
+              "explanation": "Dr Hallworth says \"a small group usually reveals most of the serious problems\" and that more people \"would mostly show you the same issues again\", so they should not recruit more."
+            }
+          ]
+        },
+        {
+          "type": "mcq_multi",
+          "instructions": "Choose TWO letters, A-E.",
+          "questions": [
+            {
+              "n": 4,
+              "count": 2,
+              "prompt": "Which TWO kinds of data did the students record in their sessions?",
+              "options": [
+                { "key": "A", "text": "the time taken to complete each task" },
+                { "key": "B", "text": "where participants looked on the screen" },
+                { "key": "C", "text": "the number of taps participants made" },
+                { "key": "D", "text": "the mistakes participants made" },
+                { "key": "E", "text": "how satisfied participants felt" }
+              ],
+              "answers": ["A", "D"],
+              "explanation": "Arun says \"We timed how long each task took, and we noted down every error\". Eye tracking was not possible (\"the equipment was booked\"), counting taps was \"impossible to keep up\", and the questionnaire was dropped."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "What did the students find out about each feature of the app? Choose FIVE answers from the box and write the correct letter, A-G, next to questions 6-10.",
+          "title": "Features of the app",
+          "options": [
+            { "key": "A", "text": "Participants made errors when entering information." },
+            { "key": "B", "text": "Participants preferred to use a different app." },
+            { "key": "C", "text": "It did not work properly on older phones." },
+            { "key": "D", "text": "It was slow to use." },
+            { "key": "E", "text": "Participants were confused by the icons." },
+            { "key": "F", "text": "Participants completed the task faster than expected." },
+            { "key": "G", "text": "Most participants could not find it without help." }
+          ],
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "the timetable",
+              "answer": "F",
+              "explanation": "Leila says \"almost everyone found their next lecture in under twenty seconds, which was much quicker than we'd predicted\". The confusing colour coding is what they expected, not what happened."
+            },
+            {
+              "n": 7,
+              "prompt": "the study room booking",
+              "answer": "A",
+              "explanation": "Because of the twenty-four-hour clock, \"several people typed in three when they meant three in the afternoon\" and booked a room \"in the middle of the night\"."
+            },
+            {
+              "n": 8,
+              "prompt": "the campus map",
+              "answer": "B",
+              "explanation": "\"Technically it works, but nobody wanted to use it.\" Most participants \"opened the ordinary maps app on their phone instead\"."
+            },
+            {
+              "n": 9,
+              "prompt": "the notification settings",
+              "answer": "G",
+              "explanation": "The icons were not the problem (\"the bell symbol was fine\"), so E is wrong. The settings are \"hidden inside the profile menu, and only two people found them without us pointing them out\"."
+            },
+            {
+              "n": 10,
+              "prompt": "the login process",
+              "answer": "D",
+              "explanation": "On older phones \"it was fine\", so C is wrong. \"It just takes ages\": logging in \"took nearly a minute on average\"."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "l04",
+      "section": 4,
+      "title": "Urban heat islands and city design",
+      "topic": "environment",
+      "placement": false,
+      "speakers": {
+        "N": { "role": "Narrator", "accent": "en-GB", "voice": "female" },
+        "L": { "role": "Lecturer", "accent": "en-NZ", "voice": "male" }
+      },
+      "script": [
+        { "s": "N", "t": "Section 4. You will hear a lecture about urban heat islands and how the design of cities can reduce them. First, you have some time to look at questions 1 to 10." },
+        { "pause": 30, "label": "Look at questions 1 to 10" },
+        { "s": "N", "t": "Now listen carefully and answer questions 1 to 10." },
+        { "s": "L", "t": "Good morning. Today we're looking at a problem that affects almost every large city: the urban heat island. Put simply, this is when a city is noticeably warmer than the countryside around it." },
+        { "s": "L", "t": "Now, you might expect the difference to be greatest in the middle of a summer afternoon, when the streets feel hottest. In fact, the gap is usually largest at night, when the countryside cools down quickly but the city holds on to its heat." },
+        { "s": "L", "t": "So why does this happen? The first cause is the materials cities are built from. Asphalt and concrete absorb large amounts of energy from the sun during the day, and then release it slowly after sunset, rather like a storage heater." },
+        { "s": "L", "t": "The second cause is the lack of vegetation. In the countryside, plants cool the air around them through the evaporation of water from their leaves. Replace fields with car parks, and you lose that natural cooling." },
+        { "s": "L", "t": "Third, there's the shape of the city itself. When tall buildings line narrow streets, they block the wind, which would otherwise carry warm air away. They also trap heat that is reflected back and forth between their walls." },
+        { "s": "L", "t": "And finally, cities produce heat of their own, from vehicles, from factories and, ironically, from air conditioners, which pump hot air out into the street." },
+        { "s": "L", "t": "What are the consequences? The most serious is the effect on health. During a heatwave, the risk of heat-related illness rises sharply." },
+        { "s": "L", "t": "It's older people living alone who are most vulnerable, partly because there may be nobody around to notice when they become unwell." },
+        { "s": "L", "t": "There's an economic cost too. People use more air conditioning, so demand for electricity rises, and on the hottest days this can put real strain on the supply. Water use goes up as well, but it's the energy bill that worries city authorities most." },
+        { "s": "L", "t": "So what can planners do? Let's start with roofs. A cool roof is simply one coated with pale, reflective paint, so that it sends sunlight back into the sky instead of absorbing it." },
+        { "s": "L", "t": "A good example is the city of Varnholm. The council originally intended to paint the roofs of its hospitals, but the work turned out to be too disruptive for patients, so it began with schools instead." },
+        { "s": "L", "t": "The engineers had predicted a fall of around five degrees in top-floor classrooms. In practice, the drop was smaller, up to three degrees, but that was still enough to make lessons far more comfortable in the summer term." },
+        { "s": "L", "t": "Green roofs, which are covered with plants, are another option. They cost more and need stronger buildings to support them, but they also store rainwater, which helps to reduce flooding." },
+        { "s": "L", "t": "However, the measure that many researchers rate most highly is also the oldest: planting trees along streets. Trees cool the air through evaporation, just as fields do, and they also provide shade." },
+        { "s": "L", "t": "But not all trees are equally useful. Planners should choose species with a wide canopy, because a broad layer of leaves shades far more of the pavement than a tall, narrow tree does." },
+        { "s": "L", "t": "Of course, none of these measures works on its own. Next week, we'll look at how some cities are combining them in a single long-term strategy." },
+        { "s": "N", "t": "That is the end of section 4." }
+      ],
+      "groups": [
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.",
+          "title": "Urban heat islands",
+          "wordLimit": "ONE WORD AND/OR A NUMBER",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Definition: a city is warmer than the surrounding ____",
+              "answer": ["countryside"],
+              "explanation": "The lecturer defines it as \"when a city is noticeably warmer than the countryside around it\"."
+            },
+            {
+              "n": 2,
+              "prompt": "The temperature difference is usually greatest at ____",
+              "answer": ["night"],
+              "explanation": "\"You might expect the difference to be greatest in the middle of a summer afternoon ... In fact, the gap is usually largest at night.\" Afternoon is the distractor."
+            },
+            {
+              "n": 3,
+              "prompt": "Causes: asphalt and concrete absorb the sun's energy and ____ it slowly after sunset",
+              "answer": ["release"],
+              "explanation": "\"Asphalt and concrete absorb large amounts of energy from the sun during the day, and then release it slowly after sunset.\""
+            },
+            {
+              "n": 4,
+              "prompt": "Causes: fewer plants means less cooling from the ____ of water from leaves",
+              "answer": ["evaporation"],
+              "explanation": "\"Plants cool the air around them through the evaporation of water from their leaves.\""
+            },
+            {
+              "n": 5,
+              "prompt": "Causes: tall buildings along narrow streets block the ____",
+              "answer": ["wind"],
+              "explanation": "\"When tall buildings line narrow streets, they block the wind, which would otherwise carry warm air away.\""
+            },
+            {
+              "n": 6,
+              "prompt": "Effects: in a heatwave, older people who live ____ are most at risk",
+              "answer": ["alone"],
+              "explanation": "\"It's older people living alone who are most vulnerable\", because nobody may notice when they become unwell."
+            },
+            {
+              "n": 7,
+              "prompt": "Effects: greater use of air conditioning increases demand for ____",
+              "answer": ["electricity"],
+              "explanation": "\"People use more air conditioning, so demand for electricity rises.\" Water use also rises, but the question is about the effect of air conditioning, and the lecturer stresses the energy bill."
+            },
+            {
+              "n": 8,
+              "prompt": "Cool roofs: in Varnholm, the roofs of ____ were painted first",
+              "answer": ["schools"],
+              "explanation": "The council \"originally intended to paint the roofs of its hospitals\", but this was too disruptive, \"so it began with schools instead\"."
+            },
+            {
+              "n": 9,
+              "prompt": "Cool roofs: top-floor temperatures fell by up to ____ degrees",
+              "answer": ["3", "three"],
+              "explanation": "Engineers \"had predicted a fall of around five degrees\", but \"in practice, the drop was smaller, up to three degrees\". Five is the prediction, not the result."
+            },
+            {
+              "n": 10,
+              "prompt": "Street trees: choose species with a wide ____ to shade more of the pavement",
+              "answer": ["canopy"],
+              "explanation": "\"Planners should choose species with a wide canopy, because a broad layer of leaves shades far more of the pavement.\""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

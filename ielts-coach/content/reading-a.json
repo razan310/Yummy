@@ -1,0 +1,762 @@
+{
+  "kind": "reading",
+  "items": [
+    {
+      "id": "rp",
+      "title": "Gardens in the Sky",
+      "level": 1,
+      "topic": "environment",
+      "placement": true,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "In many of the world's most crowded cities, the land available for parks has shrunk steadily as housing and offices have spread. Yet above the streets lies a resource that planners long overlooked: vast areas of flat roof used for little more than air-conditioning units and water tanks. Recently, a growing number of property owners, community groups and councils have begun to turn these empty surfaces into gardens."
+        },
+        {
+          "label": "B",
+          "text": "Rooftop gardens generally fall into two categories. Extensive roofs are covered with a thin layer of soil and planted with hardy, low-growing species such as mosses and succulents, which need little water and almost no attention. Intensive roofs, by contrast, have deeper soil and can support vegetables, shrubs and even small trees, but they are far heavier and must be looked after regularly. Before either type is installed, an engineer has to confirm that the building can carry the extra load, particularly when the soil is saturated after heavy rain. Many older buildings fail this test, which is why intensive gardens are found mainly on relatively modern structures."
+        },
+        {
+          "label": "C",
+          "text": "Environmental benefits have been the main reason for official support. Plants and soil absorb rainwater that would otherwise pour straight into drains, reducing the risk of flooding during storms. In summer, a planted roof stays considerably cooler than bare concrete, which lowers the temperature of the rooms directly below and reduces the demand for air conditioning. In Port Callan, for example, engineers found that top-floor flats beneath a garden needed noticeably less cooling than identical flats under an ordinary roof. Rooftop planting can also provide food and shelter for bees and birds, although its value for wildlife depends heavily on the choice of plants."
+        },
+        {
+          "label": "D",
+          "text": "Social benefits are harder to measure but are frequently mentioned by residents. On the Halvorsen estate in the city of Brenmouth, tenants who had rarely spoken to one another now meet every week to plant and harvest vegetables on the roof of their block. The produce is shared, and any surplus is sold at a small market whose earnings pay for seeds and tools. Similar projects have been set up on the roofs of schools, where pupils use the gardens for science lessons."
+        },
+        {
+          "label": "E",
+          "text": "Despite these advantages, rooftop gardens remain uncommon. Installation is expensive, insurers may charge higher premiums, and waterproofing layers must be inspected regularly to prevent leaks. Access is another obstacle: many roofs can only be reached by narrow ladders, which makes them unsuitable for elderly or disabled gardeners. To overcome these barriers, some city authorities now offer grants that cover part of the construction costs, and new planning rules in several places require large developments to include green roofs from the start. Supporters argue that, as cities grow hotter and more crowded, roofs may be among the last places where nature can return to urban life."
+        }
+      ],
+      "groups": [
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "City planners have always recognised flat roofs as a valuable space.",
+              "answer": "FALSE",
+              "explanation": "Paragraph A describes flat roofs as 'a resource that planners long overlooked'. Overlooking something for a long time contradicts always recognising its value."
+            },
+            {
+              "n": 2,
+              "prompt": "Extensive roofs require less maintenance than intensive roofs.",
+              "answer": "TRUE",
+              "explanation": "Paragraph B says the plants on extensive roofs need 'almost no attention', whereas intensive roofs 'must be looked after regularly'. So extensive roofs need less upkeep."
+            },
+            {
+              "n": 3,
+              "prompt": "Extensive roofs are more widespread than intensive roofs.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph B compares the two types in terms of soil depth, weight and care, and says intensive gardens are found mainly on modern buildings, but it never says which type is more common. You might guess that cheap, low-maintenance roofs are more popular, but the text does not say so."
+            },
+            {
+              "n": 4,
+              "prompt": "The plants chosen for a rooftop garden make little difference to its usefulness for wildlife.",
+              "answer": "FALSE",
+              "explanation": "Paragraph C ends by saying that the value of rooftop planting for wildlife 'depends heavily on the choice of plants', which is the opposite of 'little difference'."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the sentences below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "wordLimit": "NO MORE THAN THREE WORDS",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "By soaking up rainwater, planted roofs lower the chance of ____ in stormy weather.",
+              "answer": ["flooding"],
+              "explanation": "Paragraph C: plants and soil absorb rainwater, 'reducing the risk of flooding during storms'. 'Drains' is a trap: rainwater would otherwise go into the drains, but drains are not what the roofs make less likely."
+            },
+            {
+              "n": 6,
+              "prompt": "On the Halvorsen estate, money from selling extra vegetables is spent on ____.",
+              "answer": ["seeds and tools", "tools and seeds"],
+              "explanation": "Paragraph D: surplus produce is sold at a small market 'whose earnings pay for seeds and tools'. 'Small market' is where the vegetables are sold, not what the money buys."
+            },
+            {
+              "n": 7,
+              "prompt": "At some schools, pupils have their ____ in a rooftop garden.",
+              "answer": ["science lessons"],
+              "explanation": "Paragraph D, last sentence: on school roofs 'pupils use the gardens for science lessons'."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 8,
+              "prompt": "According to paragraph E, why are many rooftops unsuitable for some gardeners?",
+              "options": [
+                { "key": "A", "text": "Insuring them is too expensive." },
+                { "key": "B", "text": "It is difficult to get up onto them." },
+                { "key": "C", "text": "Their waterproofing often fails." },
+                { "key": "D", "text": "They are too exposed to bad weather." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph E: many roofs 'can only be reached by narrow ladders, which makes them unsuitable for elderly or disabled gardeners'. Insurance (A) and leaks (C) are mentioned as general problems, not as reasons why the roofs are unsuitable for particular people."
+            },
+            {
+              "n": 9,
+              "prompt": "What does the writer say about some city authorities?",
+              "options": [
+                { "key": "A", "text": "They insist that every new building has a green roof." },
+                { "key": "B", "text": "They pay part of the cost of creating rooftop gardens." },
+                { "key": "C", "text": "They have persuaded insurers to lower their prices." },
+                { "key": "D", "text": "They employ staff to look after rooftop gardens." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph E: some city authorities 'offer grants that cover part of the construction costs'. A is wrong because the new rules apply only to 'large developments' and only 'in several places', not to every new building."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r01",
+      "title": "Who Looks After Free Software?",
+      "level": 1,
+      "topic": "technology",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Almost every website, smartphone and online banking service depends on software that nobody owns. Open-source code is published under licences that allow anyone to read it, change it and share their changes, and a great deal of it is written and maintained by volunteers. A typical commercial application may contain hundreds of open-source components, from small libraries that format dates to large frameworks that draw the entire user interface. Because this code costs nothing to use, it is easy to forget that someone has to write it, test it and repair it when it breaks."
+        },
+        {
+          "label": "B",
+          "text": "Most open-source projects begin modestly. A single developer solves a problem in their own work, decides that the solution might help others, and publishes it online. If people find it useful, they start to report faults, suggest improvements and eventually submit changes of their own. At this stage, decisions are usually made informally by the original author, who examines every proposed change personally before accepting or rejecting it. Many successful projects never move beyond this point and remain dependent on one or two individuals for years."
+        },
+        {
+          "label": "C",
+          "text": "As a project grows, however, this informal arrangement tends to break down. The founder may receive far more requests than they can answer, and contributors who feel ignored often drift away. Larger projects therefore develop more formal structures. Some adopt a maintainer model, in which a small group of trusted contributors is given permission to approve changes to particular parts of the code. Others create elected steering committees, publish written rules about how disagreements should be settled, and hold regular online meetings that anyone can observe. A study of community governance carried out at the Larkfield Institute for Digital Commons found that projects with clearly written decision-making procedures were better at keeping their newer contributors than those that relied on unwritten custom."
+        },
+        {
+          "label": "D",
+          "text": "People contribute for a wide range of reasons. Some are employed by technology companies that rely on a particular project and pay their staff to improve it. Others are students or junior developers who regard public contributions as a way of demonstrating their abilities to future employers, since a record of accepted changes is visible to anyone. A third group take part simply because they enjoy solving technical puzzles or feel a sense of obligation towards a tool that has helped them. Surveys of contributors suggest that members of this last group often remain involved the longest, perhaps because their commitment does not depend on a salary or a job search."
+        },
+        {
+          "label": "E",
+          "text": "Money remains a persistent difficulty. Although some projects receive donations or grants, the sums involved are often small and irregular, and they rarely reach the people doing the least glamorous work, such as investigating security reports or updating documentation. Several well-known incidents in the history of the internet have involved serious security flaws in widely used components that were looked after by only a handful of unpaid volunteers. These cases drew public attention to an uncomfortable imbalance: enormous numbers of organisations benefit from such software, but very few contribute anything towards its upkeep."
+        },
+        {
+          "label": "F",
+          "text": "In response, new forms of support have emerged. Several foundations now act as neutral homes for important projects, holding their trademarks and managing donations so that no single company can control them. Online platforms allow users to make small monthly payments directly to individual developers. A number of employers have also introduced policies that allow staff to spend a fixed portion of their working week on the open-source projects the business depends on. Critics point out, however, that these arrangements still favour popular, highly visible projects, while obscure components that are equally essential receive little attention."
+        },
+        {
+          "label": "G",
+          "text": "Perhaps the most underestimated challenge is human rather than technical. Maintainers frequently describe exhaustion caused by a constant stream of demands, some of them rude, from users who expect free software to be supported like a paid product. To reduce this pressure, many projects now publish codes of conduct setting out how participants should treat one another, and some deliberately recruit newcomers to share routine tasks such as answering questions and sorting bug reports. Experienced maintainers argue that a project's long-term survival depends less on brilliant code than on whether it can welcome, train and keep the people who look after it."
+        }
+      ],
+      "groups": [
+        {
+          "type": "matching_info",
+          "instructions": "The reading passage has seven paragraphs, A-G. Which paragraph contains the following information? Write the correct letter, A-G. NB You may use any letter more than once.",
+          "options": [
+            { "key": "A", "text": "Paragraph A" },
+            { "key": "B", "text": "Paragraph B" },
+            { "key": "C", "text": "Paragraph C" },
+            { "key": "D", "text": "Paragraph D" },
+            { "key": "E", "text": "Paragraph E" },
+            { "key": "F", "text": "Paragraph F" },
+            { "key": "G", "text": "Paragraph G" }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "a reason why taking part in a project may help some people to find work",
+              "answer": "D",
+              "explanation": "Paragraph D says students and junior developers see public contributions as a way of 'demonstrating their abilities to future employers', because accepted changes are visible to anyone."
+            },
+            {
+              "n": 2,
+              "prompt": "examples of routine jobs that can be handed to new participants",
+              "answer": "G",
+              "explanation": "Paragraph G says some projects 'recruit newcomers to share routine tasks such as answering questions and sorting bug reports'."
+            },
+            {
+              "n": 3,
+              "prompt": "a description of how a typical project comes into existence",
+              "answer": "B",
+              "explanation": "Paragraph B explains the usual starting point: a single developer solves a problem in their own work and publishes the solution online, after which others start to use and improve it."
+            },
+            {
+              "n": 4,
+              "prompt": "a reference to weaknesses in widely used software that depended on very few unpaid helpers",
+              "answer": "E",
+              "explanation": "Paragraph E mentions 'serious security flaws in widely used components that were looked after by only a handful of unpaid volunteers'. Paragraph B also says projects can depend on one or two people, but it does not mention any resulting weaknesses."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Open-source components are seldom found in commercial software.",
+              "answer": "FALSE",
+              "explanation": "Paragraph A states that 'a typical commercial application may contain hundreds of open-source components', so they are very common, not rare."
+            },
+            {
+              "n": 6,
+              "prompt": "When a project is new, its creator usually looks at every change that others suggest before deciding whether to accept it.",
+              "answer": "TRUE",
+              "explanation": "Paragraph B: at this early stage, decisions are made by 'the original author, who examines every proposed change personally before accepting or rejecting it'."
+            },
+            {
+              "n": 7,
+              "prompt": "The Larkfield Institute found that unwritten traditions helped projects to keep new contributors more effectively than written procedures.",
+              "answer": "FALSE",
+              "explanation": "Paragraph C reports the opposite: projects with 'clearly written decision-making procedures were better at keeping their newer contributors than those that relied on unwritten custom'."
+            },
+            {
+              "n": 8,
+              "prompt": "Students tend to have more of their contributions accepted than junior developers do.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph D mentions both students and junior developers and says a record of accepted changes is visible to anyone, but it never compares how often each group's changes are accepted."
+            },
+            {
+              "n": 9,
+              "prompt": "Contributors who are motivated neither by pay nor by career goals often stay involved for longer than others.",
+              "answer": "TRUE",
+              "explanation": "Paragraph D: people who take part out of enjoyment or a sense of obligation 'often remain involved the longest, perhaps because their commitment does not depend on a salary or a job search'."
+            },
+            {
+              "n": 10,
+              "prompt": "Most of the foundations that host open-source projects are funded by governments.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph F says foundations hold trademarks and manage donations for projects, and paragraph E mentions grants, but the passage never says where the foundations' own money comes from or mentions governments at all."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the summary below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "title": "Supporting open-source projects",
+          "wordLimit": "NO MORE THAN THREE WORDS",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Some foundations act as impartial bases for key projects, taking charge of their trademarks and their ____ so that no one company is in control.",
+              "answer": ["donations"],
+              "explanation": "Paragraph F: foundations act as 'neutral homes' for projects, 'holding their trademarks and managing donations so that no single company can control them'."
+            },
+            {
+              "n": 12,
+              "prompt": "Critics argue that this support mostly goes to well-known projects, while ____ of equal importance are largely neglected.",
+              "answer": ["obscure components"],
+              "explanation": "Paragraph F, last sentence: the arrangements 'favour popular, highly visible projects, while obscure components that are equally essential receive little attention'."
+            },
+            {
+              "n": 13,
+              "prompt": "To ease the pressure on maintainers, many projects publish ____ that explain how participants should behave towards each other.",
+              "answer": ["codes of conduct"],
+              "explanation": "Paragraph G: 'many projects now publish codes of conduct setting out how participants should treat one another'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r02",
+      "title": "Serious Play",
+      "level": 1,
+      "topic": "education",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Walk into a well-run nursery classroom and you may see very little that looks like teaching. Children are building towers from wooden blocks, pouring water between containers or acting out a visit to the doctor with toy instruments. To an untrained observer, all this can look like nothing more than a pleasant way of passing the time. Yet many early-years specialists insist that such activities are the foundation of later learning, and that the growing pressure to introduce formal reading and arithmetic lessons at an ever younger age may be doing more harm than good."
+        },
+        {
+          "label": "B",
+          "text": "The belief that young children learn through play is far from new. Educational thinkers in several countries argued during the nineteenth and early twentieth centuries that children should be free to explore materials for themselves rather than memorise facts. What has changed in recent decades is the kind of evidence available. Developmental psychologists have now carried out a large number of observational studies and classroom experiments, and they have begun to identify which types of play appear to support which skills."
+        },
+        {
+          "label": "C",
+          "text": "Researchers commonly distinguish between free play, in which children decide what to do and how to do it, and guided play, in which an adult sets up an activity with a learning goal in mind but allows the child to take the lead. A teacher might, for example, fill a tray with objects of different shapes and ask the children which ones will roll, without telling them the answer. A team led by the psychologist Imogen Varga at the Corriston Early Learning Centre compared the two approaches over a full school year. They reported that guided play was especially effective for teaching early mathematical ideas, such as the difference between more and fewer, whereas free play seemed more valuable for developing social skills."
+        },
+        {
+          "label": "D",
+          "text": "Language development offers another example. In pretend play, children often adopt roles and negotiate the rules of the game with one another: 'You be the shopkeeper, and I'll come and buy the bread.' Such exchanges require them to use longer and more complex sentences than they would in ordinary conversation, and to adjust their vocabulary to suit the character they are playing. Teachers who join in, taking on a minor role rather than directing the game, can introduce new words naturally without interrupting the flow of the activity."
+        },
+        {
+          "label": "E",
+          "text": "Play also appears to strengthen what psychologists call executive function: the ability to plan, to hold instructions in mind and to resist acting on impulse. Games with rules, such as those in which children must stand completely still when the music stops, give them repeated practice in controlling their own behaviour. Teachers often observe that children who find it hard to wait for their turn in such games also struggle to follow a sequence of instructions in other activities. Some researchers believe that this capacity is a better predictor of later success at school than early reading ability, although the evidence for this claim is still being debated."
+        },
+        {
+          "label": "F",
+          "text": "Despite this growing body of research, play-based approaches face considerable resistance. Many parents worry that their children will fall behind if they are not taught letters and numbers directly, and some governments have introduced formal assessments for children as young as four. In such systems, teachers may feel obliged to reduce the time available for play so that children are prepared for tests. Critics of play-based learning argue, meanwhile, that children from disadvantaged backgrounds in particular need explicit instruction, since they may have fewer opportunities to develop early literacy at home."
+        },
+        {
+          "label": "G",
+          "text": "A growing number of educators argue that the choice between play and instruction is a false one. In the Stellmoor district, for instance, nursery teachers are trained to observe children at play and to recognise moments when a brief question or explanation could extend their thinking. Rather than replacing play with lessons, the teachers weave learning goals into activities that the children already enjoy. Early reports from the district suggest that parents who were initially sceptical have become more supportive after attending open sessions at which teachers explained the purpose of each activity."
+        }
+      ],
+      "groups": [
+        {
+          "type": "headings",
+          "instructions": "The reading passage has seven paragraphs, A-G. Choose the correct heading for paragraphs B-G from the list of headings below. Write the correct number, i-ix.",
+          "options": [
+            { "key": "i", "text": "Combining play and instruction in practice" },
+            { "key": "ii", "text": "The origins of the first nursery schools" },
+            { "key": "iii", "text": "Comparing child-led and adult-shaped activities" },
+            { "key": "iv", "text": "Practising control over one's own actions" },
+            { "key": "v", "text": "Forces working against a play-centred approach" },
+            { "key": "vi", "text": "How acting out roles enriches children's speech" },
+            { "key": "vii", "text": "A traditional belief gains scientific support" },
+            { "key": "viii", "text": "Proof that early reading lessons are harmful" },
+            { "key": "ix", "text": "Why adults should stay out of children's games" }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Paragraph B",
+              "answer": "vii",
+              "explanation": "Paragraph B says the idea of learning through play is 'far from new' (thinkers argued for it in the nineteenth century) but that psychologists now have studies and experiments to support it. Heading ii is a trap: the paragraph mentions early thinkers, not the first nursery schools."
+            },
+            {
+              "n": 2,
+              "prompt": "Paragraph C",
+              "answer": "iii",
+              "explanation": "Paragraph C contrasts free play, where children decide what to do, with guided play, where an adult sets up the activity, and reports Varga's comparison of the two."
+            },
+            {
+              "n": 3,
+              "prompt": "Paragraph D",
+              "answer": "vi",
+              "explanation": "Paragraph D explains that in pretend play children adopt roles and use longer, more complex sentences and new vocabulary. Heading ix is wrong because the paragraph says teachers can usefully join in with a minor role."
+            },
+            {
+              "n": 4,
+              "prompt": "Paragraph E",
+              "answer": "iv",
+              "explanation": "Paragraph E is about executive function, including the ability 'to resist acting on impulse', and games that give children practice 'in controlling their own behaviour'. Heading viii is wrong: the paragraph only compares this skill with early reading as a predictor, and says the claim is still debated."
+            },
+            {
+              "n": 5,
+              "prompt": "Paragraph F",
+              "answer": "v",
+              "explanation": "Paragraph F opens by saying play-based approaches 'face considerable resistance' and then lists the sources: anxious parents, government assessments, teachers preparing children for tests, and critics who prefer explicit instruction."
+            },
+            {
+              "n": 6,
+              "prompt": "Paragraph G",
+              "answer": "i",
+              "explanation": "Paragraph G argues that 'the choice between play and instruction is a false one' and describes how Stellmoor teachers add brief questions and learning goals to children's play."
+            }
+          ]
+        },
+        {
+          "type": "short_answer",
+          "instructions": "Answer the questions below. Choose NO MORE THAN THREE WORDS from the passage for each answer.",
+          "wordLimit": "NO MORE THAN THREE WORDS",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "According to Varga's team, what did free play seem to develop more effectively than guided play?",
+              "answer": ["social skills"],
+              "explanation": "Paragraph C: guided play was effective for early mathematical ideas, 'whereas free play seemed more valuable for developing social skills'. 'Mathematical ideas' is the distractor because it belongs to guided play."
+            },
+            {
+              "n": 8,
+              "prompt": "What kind of role should teachers adopt when they join in children's pretend games?",
+              "answer": ["a minor role", "minor role"],
+              "explanation": "Paragraph D: teachers who join in, 'taking on a minor role rather than directing the game', can introduce new words naturally."
+            },
+            {
+              "n": 9,
+              "prompt": "What have some governments introduced for children of only four years of age?",
+              "answer": ["formal assessments", "assessments"],
+              "explanation": "Paragraph F: 'some governments have introduced formal assessments for children as young as four'."
+            },
+            {
+              "n": 10,
+              "prompt": "At what kind of event did teachers in Stellmoor explain the aims of their activities to parents?",
+              "answer": ["open sessions"],
+              "explanation": "Paragraph G: sceptical parents became more supportive 'after attending open sessions at which teachers explained the purpose of each activity'."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "What does the writer say about the classroom activities described in paragraph A?",
+              "options": [
+                { "key": "A", "text": "They are mainly intended to keep children busy." },
+                { "key": "B", "text": "Their value may not be obvious to people without training." },
+                { "key": "C", "text": "They are being replaced by formal lessons in most nurseries." },
+                { "key": "D", "text": "They are more common in some countries than in others." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph A: 'To an untrained observer, all this can look like nothing more than a pleasant way of passing the time', yet specialists see it as the foundation of later learning. C is wrong: the paragraph mentions pressure to introduce formal lessons, not that most nurseries have already replaced play."
+            },
+            {
+              "n": 12,
+              "prompt": "What does the writer say about the claim that executive function predicts later success at school?",
+              "options": [
+                { "key": "A", "text": "It has been confirmed by recent research." },
+                { "key": "B", "text": "It has been rejected by most psychologists." },
+                { "key": "C", "text": "It is not yet accepted by everyone." },
+                { "key": "D", "text": "It applies only to children who can already read." }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph E: only 'some researchers' believe this, and 'the evidence for this claim is still being debated'. That means it is neither confirmed (A) nor rejected by most (B)."
+            },
+            {
+              "n": 13,
+              "prompt": "According to critics of play-based learning, which children most need direct teaching?",
+              "options": [
+                { "key": "A", "text": "those who already read at home" },
+                { "key": "B", "text": "those whose families have fewer advantages" },
+                { "key": "C", "text": "those who are younger than four" },
+                { "key": "D", "text": "those who are about to take formal tests" }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph F: critics argue that 'children from disadvantaged backgrounds in particular need explicit instruction', because they may have fewer chances to develop literacy at home. Age four and tests are mentioned in the paragraph, but in connection with government assessments, not the critics' argument."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r03",
+      "title": "The Four-Day Week on Trial",
+      "level": 2,
+      "topic": "work",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "For most of the twentieth century, the five-day, forty-hour week was treated as a fixed feature of working life. In recent years, however, a growing number of organisations have experimented with a different arrangement: staff work four days instead of five, usually for the same salary, on the understanding that they will maintain their previous level of output. Trials of this kind have been run by software firms, local councils, charities and manufacturers in several countries, and their results have attracted considerable attention from employers, trade unions and governments alike."
+        },
+        {
+          "label": "B",
+          "text": "Supporters of the idea argue that much of the traditional working week is wasted. Long meetings, unnecessary emails and constant interruptions, they claim, consume hours without producing anything of value. The economist Mateo Ferrandis, who has advised several pilot schemes, compares the shorter week to a deadline. 'When people know they have less time,' he says, 'they become ruthless about what actually matters.' In his view, the main gains come not from employees working faster but from organisations finally abandoning tasks that should have been dropped years earlier."
+        },
+        {
+          "label": "C",
+          "text": "The design of trials varies considerably. In the most common model, the whole organisation closes on the same extra day each week, typically a Friday. Elsewhere, staff take different days off on a rotating basis so that customers can still be served five days a week, and some employers have chosen to keep five days but shorten each one. Dr Helena Brask, an occupational psychologist at the Northgate School of Management, warns that this variety makes comparison difficult. 'A software company that shuts every Friday and a hospital department that staggers its rotas are not really testing the same thing,' she notes, 'yet both are reported simply as four-day-week trials.'"
+        },
+        {
+          "label": "D",
+          "text": "Most organisations that have published results report that productivity was maintained or improved, and that sickness absence fell. Employees typically describe feeling less tired, spending more time with their families and finding it easier to manage caring responsibilities. Recruitment also appears to benefit, as firms offering a shorter week often receive more applications for each vacancy. Yet Brask points out that participation in most trials was voluntary, so the organisations involved were likely to be those whose managers were already enthusiastic and whose work was well suited to the change. 'We are mostly hearing from volunteers,' she says, 'and volunteers rarely report failure.'"
+        },
+        {
+          "label": "E",
+          "text": "Not every trial has ended successfully. At Corran Logistics, a parcel delivery firm, managers abandoned their experiment after it became clear that drivers could not complete the same number of deliveries in fewer days without working dangerously long shifts. The sociologist Anselm Thorne, who studied the case, argues that the four-day week is far easier to introduce in office jobs, where tasks can often be reorganised, than in roles tied to physical work or fixed opening hours. He is also concerned that in some workplaces the same amount of work has simply been squeezed into four longer and more intense days, leaving staff no less exhausted than before."
+        },
+        {
+          "label": "F",
+          "text": "A further question concerns how long the benefits last. Most trials have run for between six months and a year, and some researchers suspect that early improvements partly reflect the novelty of the scheme and employees' desire to prove that it can work. Dr Priya Lindqvist, who has followed a group of firms for several years after their trials ended, describes a more mixed picture. Most of the companies she studied kept the shorter week, but several quietly reintroduced longer hours for managers, and a few had begun to expect staff to be available by phone on their day off. 'The policy survives on paper,' she observes, 'but its edges are being worn away.'"
+        },
+        {
+          "label": "G",
+          "text": "What the trials reveal, perhaps, is less about the number of days than about how work is organised. Organisations that succeeded generally spent months preparing: cutting meetings, clarifying priorities and agreeing in advance how results would be measured. Those that simply removed a day without changing anything else were far more likely to struggle. Ferrandis believes that even firms which never adopt a four-day week could benefit from asking the questions the trials forced others to answer. For governments considering whether to promote the idea, the evidence so far suggests caution: the shorter week appears to work well under certain conditions, but it is not yet clear how widely those conditions can be reproduced."
+        }
+      ],
+      "groups": [
+        {
+          "type": "matching_info",
+          "instructions": "The reading passage has seven paragraphs, A-G. Which paragraph contains the following information? Write the correct letter, A-G. NB You may use any letter more than once.",
+          "options": [
+            { "key": "A", "text": "Paragraph A" },
+            { "key": "B", "text": "Paragraph B" },
+            { "key": "C", "text": "Paragraph C" },
+            { "key": "D", "text": "Paragraph D" },
+            { "key": "E", "text": "Paragraph E" },
+            { "key": "F", "text": "Paragraph F" },
+            { "key": "G", "text": "Paragraph G" }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "a reference to an advantage of the shorter week when hiring new employees",
+              "answer": "D",
+              "explanation": "Paragraph D: 'Recruitment also appears to benefit, as firms offering a shorter week often receive more applications for each vacancy.'"
+            },
+            {
+              "n": 2,
+              "prompt": "the suggestion that the trials offer lessons even to employers who keep a five-day week",
+              "answer": "G",
+              "explanation": "Paragraph G: Ferrandis believes 'even firms which never adopt a four-day week could benefit from asking the questions the trials forced others to answer'."
+            },
+            {
+              "n": 3,
+              "prompt": "an outline of different ways in which working time has been reduced",
+              "answer": "C",
+              "explanation": "Paragraph C describes three designs: the whole organisation closing on the same extra day, staff taking different days off in rotation, and five shorter days."
+            },
+            {
+              "n": 4,
+              "prompt": "an example of an organisation that gave up the new arrangement",
+              "answer": "E",
+              "explanation": "Paragraph E: at Corran Logistics 'managers abandoned their experiment' because drivers could not complete their deliveries safely. Paragraph F is a trap: those firms brought back some longer hours but 'kept the shorter week'."
+            }
+          ]
+        },
+        {
+          "type": "matching_features",
+          "instructions": "Look at the following statements and the list of people below. Match each statement with the correct person, A, B, C or D. NB You may use any letter more than once.",
+          "options": [
+            { "key": "A", "text": "Mateo Ferrandis" },
+            { "key": "B", "text": "Helena Brask" },
+            { "key": "C", "text": "Anselm Thorne" },
+            { "key": "D", "text": "Priya Lindqvist" }
+          ],
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "The organisations that have taken part in trials may not be typical of employers in general.",
+              "answer": "B",
+              "explanation": "Paragraph D: Brask points out that participation was voluntary, so the organisations involved were probably those with enthusiastic managers and work 'well suited to the change'. In other words, they were not a representative sample."
+            },
+            {
+              "n": 6,
+              "prompt": "Having less time encourages people to concentrate on what is genuinely important.",
+              "answer": "A",
+              "explanation": "Paragraph B: Ferrandis says that when people have less time, 'they become ruthless about what actually matters'."
+            },
+            {
+              "n": 7,
+              "prompt": "Some employees on a shorter week may be just as tired as they were before.",
+              "answer": "C",
+              "explanation": "Paragraph E: Thorne worries that work has been squeezed into four longer days, 'leaving staff no less exhausted than before'. Paragraph D says employees feel less tired, but that is the trial reports, not Thorne."
+            },
+            {
+              "n": 8,
+              "prompt": "In some firms, the shorter week has gradually been weakened while officially remaining in place.",
+              "answer": "D",
+              "explanation": "Paragraph F: Lindqvist found firms reintroducing longer hours for managers and expecting staff to answer the phone on their day off, and she says 'The policy survives on paper, but its edges are being worn away.'"
+            },
+            {
+              "n": 9,
+              "prompt": "Trials described in the same way may in fact involve very different arrangements.",
+              "answer": "B",
+              "explanation": "Paragraph C: Brask says a company that closes every Friday and a hospital department with staggered rotas 'are not really testing the same thing', yet both are called four-day-week trials."
+            }
+          ]
+        },
+        {
+          "type": "summary_bank",
+          "instructions": "Complete the summary using the list of words, A-H, below.",
+          "title": "Do the benefits last?",
+          "options": [
+            { "key": "A", "text": "enthusiastic" },
+            { "key": "B", "text": "preparation" },
+            { "key": "C", "text": "exhaustion" },
+            { "key": "D", "text": "novelty" },
+            { "key": "E", "text": "reachable" },
+            { "key": "F", "text": "flexibility" },
+            { "key": "G", "text": "careful" },
+            { "key": "H", "text": "productivity" }
+          ],
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "Because most trials have been fairly short, some researchers believe that the early gains may result partly from the ____ of the arrangement.",
+              "answer": "D",
+              "explanation": "Paragraph F: some researchers suspect early improvements 'partly reflect the novelty of the scheme'. Flexibility and productivity fit the grammar but are not given as the reason."
+            },
+            {
+              "n": 11,
+              "prompt": "Lindqvist found that although most firms kept the policy, some began to require employees to be ____ even on their day off.",
+              "answer": "E",
+              "explanation": "Paragraph F: a few firms 'had begun to expect staff to be available by phone on their day off', which means they had to be reachable."
+            },
+            {
+              "n": 12,
+              "prompt": "Organisations that succeeded had usually devoted several months to ____ before the change.",
+              "answer": "B",
+              "explanation": "Paragraph G: successful organisations 'generally spent months preparing', for example by cutting meetings and clarifying priorities."
+            },
+            {
+              "n": 13,
+              "prompt": "The evidence so far implies that governments should be ____ about encouraging the shorter week.",
+              "answer": "G",
+              "explanation": "Paragraph G: 'the evidence so far suggests caution', because it is unclear how widely the right conditions can be reproduced. 'Enthusiastic' is the trap: the word appears in paragraph D, but it describes managers, and the passage suggests the opposite attitude for governments."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r04",
+      "title": "The Sleeping Student",
+      "level": 3,
+      "topic": "science",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Students have long treated sleep as the first thing to sacrifice when examinations approach. The all-night revision session is almost a rite of passage, celebrated in student folklore as proof of seriousness and dedication. Yet over the past few decades, research in neuroscience and psychology has assembled a strong case that this habit is not merely uncomfortable but counterproductive. Sleep, it now appears, is not an interruption to learning but one of its essential stages. If this is correct, then the way many students organise their study rests on a misunderstanding, and so, I would argue, does much of the advice they receive from the institutions that teach them."
+        },
+        {
+          "label": "B",
+          "text": "The central idea is known as memory consolidation. When we first encounter new information, it is held in a fragile form, vulnerable to disruption by whatever we experience next. Over the following hours and days, some of these memory traces are stabilised and linked to existing knowledge, while others fade. A substantial body of evidence indicates that sleep plays a special part in this process. During deep, slow-wave sleep, the brain appears to replay patterns of activity associated with recent experiences, gradually shifting them from temporary storage in a region called the hippocampus to more durable networks in the outer layers of the brain. Other stages of sleep have been linked to different kinds of learning, including the acquisition of physical skills, although the precise mechanisms are less well understood."
+        },
+        {
+          "label": "C",
+          "text": "Some of the most persuasive evidence comes from simple comparisons. In experiments of the kind conducted by Dr Ines Marlowe and her colleagues at the Halden Sleep Laboratory, volunteers learn a set of unfamiliar word pairs and are tested twelve hours later, either after a night's sleep or after a day spent awake. Those who have slept generally remember more, even though both groups have spent the same length of time away from the material. Marlowe's team found, moreover, that the benefit was greatest for pairs that volunteers had initially found difficult to learn. Similarly, Dr Rafael Ostrander has reported that people who are told before sleeping that they will be tested the next day remember more than those who expect no test, as though the sleeping brain sorts memories according to their likely future usefulness."
+        },
+        {
+          "label": "D",
+          "text": "I should admit that the picture is not as tidy as popular accounts suggest. Many experiments involve small groups of young adults learning artificial material in laboratory conditions, and the effects, though consistent, are often modest. It is far from obvious that remembering word pairs in a sleep laboratory tells us much about mastering organic chemistry or constructing a history essay. Some researchers, notably the cognitive scientist Professor Tobias Wren, have also questioned whether sleep actively strengthens memories at all. Wren suggests that it may simply protect them, by giving the brain a period in which no new information arrives to compete with what has just been learned. To my mind, however, this debate matters more to laboratory scientists than to students: whether sleep strengthens memories or merely shields them, the practical cost of losing it is much the same."
+        },
+        {
+          "label": "E",
+          "text": "What, then, should students do differently? The most obvious lesson is that the night before an examination is a poor time to give up sleep, since material learned in a state of exhaustion is unlikely to be consolidated well. Less obvious, but probably more important, is the case for spreading study over many days. Each period of study followed by sleep gives the brain a fresh opportunity to stabilise what has been learned, so that ten hours of revision divided across two weeks will usually produce more lasting knowledge than the same ten hours crammed into two days. This principle of spacing was recognised by psychologists long before its connection with sleep was understood; the sleep research simply offers a plausible explanation of why it works."
+        },
+        {
+          "label": "F",
+          "text": "Some enthusiasts have gone further, promoting techniques that claim to enhance learning during sleep itself, such as playing recordings of lecture notes overnight or wearing headbands that emit sounds intended to deepen slow-wave sleep. There is laboratory evidence that sounds or smells present during learning can, when presented again during sleep, slightly improve recall of the associated material. But I am deeply sceptical of attempts to turn such findings into commercial products. The effects observed in carefully controlled experiments are small, and a student who disturbs their sleep with gadgets risks losing more than they gain. No technique yet devised is a substitute for simply sleeping long enough."
+        },
+        {
+          "label": "G",
+          "text": "Perhaps the most significant implications are for institutions rather than individuals. Schools and universities routinely schedule examinations early in the morning, set homework deadlines at midnight and concentrate revision into intensive final weeks, all practices that work against the processes described above. Teenagers are particularly affected, since their natural sleep patterns shift later during adolescence, yet in many places their school day begins earlier than that of younger children. It would be naive to expect timetables to be redesigned overnight, and there are genuine practical obstacles, from transport arrangements to parents' working hours. Nonetheless, it seems to me indefensible that institutions devoted to learning should so consistently ignore what is known about how learning actually happens."
+        }
+      ],
+      "groups": [
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "What does the writer say about all-night revision in paragraph A?",
+              "options": [
+                { "key": "A", "text": "It is less widespread than it once was." },
+                { "key": "B", "text": "It is often regarded as evidence of commitment." },
+                { "key": "C", "text": "It is encouraged by many teachers." },
+                { "key": "D", "text": "It improves memory in the short term." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph A: the all-night session is 'celebrated in student folklore as proof of seriousness and dedication'. C is a trap: the writer criticises the advice institutions give, but never says teachers encourage all-night study."
+            },
+            {
+              "n": 2,
+              "prompt": "According to paragraph B, what is thought to happen during slow-wave sleep?",
+              "options": [
+                { "key": "A", "text": "Unimportant memories are deliberately deleted." },
+                { "key": "B", "text": "Physical skills are learned more quickly." },
+                { "key": "C", "text": "Recent memories are transferred to longer-lasting storage." },
+                { "key": "D", "text": "The hippocampus stops receiving new information." }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph B: during slow-wave sleep the brain replays recent experiences, 'gradually shifting them from temporary storage' in the hippocampus 'to more durable networks'. Physical skills (B) are linked to other stages of sleep, not slow-wave sleep."
+            },
+            {
+              "n": 3,
+              "prompt": "What did Marlowe's team discover?",
+              "options": [
+                { "key": "A", "text": "Volunteers who slept had studied the word pairs for longer." },
+                { "key": "B", "text": "Sleep helped most with items that had been hard to learn." },
+                { "key": "C", "text": "Volunteers who stayed awake remembered easy items better." },
+                { "key": "D", "text": "Learning in the morning was more effective than learning at night." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph C: 'the benefit was greatest for pairs that volunteers had initially found difficult to learn'. A is wrong because both groups spent the same time away from the material, and nothing is said about study time; C and D are not mentioned."
+            },
+            {
+              "n": 4,
+              "prompt": "Why, according to the writer, is spreading study over many days effective?",
+              "options": [
+                { "key": "A", "text": "It reduces the total number of hours of revision needed." },
+                { "key": "B", "text": "It gives the brain repeated chances to consolidate learning during sleep." },
+                { "key": "C", "text": "It stops students from feeling anxious before examinations." },
+                { "key": "D", "text": "It was developed as a direct result of sleep research." }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph E: 'Each period of study followed by sleep gives the brain a fresh opportunity to stabilise what has been learned.' A is wrong because the example compares the same ten hours; D is wrong because spacing was recognised 'long before its connection with sleep was understood'."
+            }
+          ]
+        },
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the views of the writer in the passage? Write YES if the statement agrees with the views of the writer, NO if the statement contradicts the views of the writer, NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "The guidance that educational institutions give students about studying is often based on a false assumption.",
+              "answer": "YES",
+              "explanation": "Paragraph A: the writer says students' study habits rest on a misunderstanding, 'and so, I would argue, does much of the advice they receive from the institutions that teach them'."
+            },
+            {
+              "n": 6,
+              "prompt": "Laboratory studies of sleep and memory have produced conflicting results.",
+              "answer": "NO",
+              "explanation": "Paragraph D: the writer admits the picture is 'not as tidy as popular accounts suggest', but says the effects, 'though consistent, are often modest'. The writer's doubts concern the small size of the effects and the artificial conditions, and Wren disagrees about how to interpret the findings, not about the results themselves."
+            },
+            {
+              "n": 7,
+              "prompt": "It is important for students to know whether sleep strengthens memories or simply protects them.",
+              "answer": "NO",
+              "explanation": "Paragraph D: the writer says this debate 'matters more to laboratory scientists than to students', because whichever is true, 'the practical cost of losing it is much the same'."
+            },
+            {
+              "n": 8,
+              "prompt": "Smells are more effective than sounds at improving recall during sleep.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph F mentions both sounds and smells and says they can 'slightly improve recall', but the writer never compares the two, so we cannot tell which the writer thinks works better."
+            },
+            {
+              "n": 9,
+              "prompt": "It is unacceptable for schools and universities to keep overlooking what research has shown about learning.",
+              "answer": "YES",
+              "explanation": "Paragraph G: although the writer accepts that timetables cannot change overnight, it 'seems to me indefensible that institutions devoted to learning should so consistently ignore what is known about how learning actually happens'."
+            }
+          ]
+        },
+        {
+          "type": "sentence_endings",
+          "instructions": "Complete each sentence with the correct ending, A-H, below.",
+          "options": [
+            { "key": "A", "text": "actively strengthen every memory formed during the day." },
+            { "key": "B", "text": "expect to need the information at a later date." },
+            { "key": "C", "text": "their sleep patterns naturally move later at this stage of life." },
+            { "key": "D", "text": "have already studied the material on several occasions." },
+            { "key": "E", "text": "keep newly learned material safe from competing information." },
+            { "key": "F", "text": "provide an effective substitute for a full night's sleep." },
+            { "key": "G", "text": "slightly improve recall of linked material if they are repeated during sleep." },
+            { "key": "H", "text": "they tend to revise late into the night before examinations." }
+          ],
+          "questions": [
+            {
+              "n": 10,
+              "prompt": "Ostrander's research suggests that sleep improves memory most for people who",
+              "answer": "B",
+              "explanation": "Paragraph C: people told before sleeping that 'they will be tested the next day remember more than those who expect no test', as if the brain sorts memories by 'their likely future usefulness'."
+            },
+            {
+              "n": 11,
+              "prompt": "Wren has proposed that the main contribution of sleep to memory may be to",
+              "answer": "E",
+              "explanation": "Paragraph D: Wren suggests sleep 'may simply protect' memories by providing a period in which 'no new information arrives to compete with what has just been learned'. A is the opposite: Wren questions whether sleep 'actively strengthens memories at all'."
+            },
+            {
+              "n": 12,
+              "prompt": "Laboratory studies indicate that sounds or smells present during learning can",
+              "answer": "G",
+              "explanation": "Paragraph F: such sounds or smells, 'when presented again during sleep, slightly improve recall of the associated material'. F is wrong because the writer says 'No technique yet devised is a substitute for simply sleeping long enough'."
+            },
+            {
+              "n": 13,
+              "prompt": "Early school start times are a particular problem for teenagers because",
+              "answer": "C",
+              "explanation": "Paragraph G: teenagers are particularly affected 'since their natural sleep patterns shift later during adolescence'. H is not mentioned in the passage."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

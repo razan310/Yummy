@@ -1,0 +1,2487 @@
+{
+  "kind": "vocab",
+  "items": [
+    {
+      "w": "curriculum",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "all the subjects and topics that are taught in a school, college or course",
+      "ex": "Many educators argue that the national curriculum should include practical life skills such as managing money.",
+      "col": [
+        "a broad curriculum",
+        "the national curriculum",
+        "include sth in the curriculum"
+      ],
+      "fam": "curricula (pl), curricular (adj)",
+      "ar": "المنهج الدراسي"
+    },
+    {
+      "w": "urbanisation",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the process by which more and more people leave the countryside to live in towns and cities",
+      "ex": "Rapid urbanisation has put enormous pressure on housing and public transport in many developing countries.",
+      "col": [
+        "rapid urbanisation",
+        "the pace of urbanisation",
+        "unplanned urbanisation"
+      ],
+      "fam": "urban (adj), urbanised (adj)",
+      "ar": "التمدّن؛ التحضّر (انتقال السكان إلى المدن)"
+    },
+    {
+      "w": "sedentary",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "health",
+      "def": "involving a lot of sitting and very little physical activity",
+      "ex": "Office workers who lead a sedentary lifestyle are more likely to suffer from back pain and weight gain.",
+      "col": [
+        "a sedentary lifestyle",
+        "sedentary jobs",
+        "sedentary behaviour"
+      ],
+      "fam": "sedentariness (n)",
+      "ar": "قليل الحركة؛ خامل"
+    },
+    {
+      "w": "critical thinking",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the ability to question information, judge evidence and reach your own reasoned conclusions",
+      "ex": "Rather than simply memorising facts, students should be taught critical thinking so that they can evaluate what they read online.",
+      "col": [
+        "develop critical thinking",
+        "critical thinking skills",
+        "encourage critical thinking"
+      ],
+      "fam": "think critically (v phrase), critic (n), critique (n/v)",
+      "ar": "التفكير النقدي"
+    },
+    {
+      "w": "inequality",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "an unfair situation in which some groups in society have more money, power or opportunities than others",
+      "ex": "Unless governments tackle income inequality, the gap between the richest and poorest families will continue to widen.",
+      "col": [
+        "social inequality",
+        "tackle inequality",
+        "widening inequality"
+      ],
+      "fam": "unequal (adj), unequally (adv), equality (n)",
+      "ar": "عدم المساواة؛ التفاوت"
+    },
+    {
+      "w": "obesity",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the medical condition of being so overweight that it is dangerous to your health",
+      "ex": "Childhood obesity has risen sharply in many countries, largely because of sugary drinks and a lack of exercise.",
+      "col": [
+        "childhood obesity",
+        "obesity rates",
+        "tackle obesity"
+      ],
+      "fam": "obese (adj)",
+      "ar": "السمنة المفرطة"
+    },
+    {
+      "w": "rote learning",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "learning information by repeating it until you remember it, without necessarily understanding it",
+      "ex": "Education systems that rely heavily on rote learning may produce students who pass exams but struggle to solve real problems.",
+      "col": [
+        "rely on rote learning",
+        "move away from rote learning",
+        "learn sth by rote"
+      ],
+      "fam": "by rote (adv phrase)",
+      "ar": "الحفظ الآلي؛ التعلّم بالتلقين والاستظهار"
+    },
+    {
+      "w": "migration",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the movement of people from one place or country to another, usually to live or work",
+      "ex": "Migration from rural areas to cities is often driven by the hope of finding better-paid jobs.",
+      "col": [
+        "rural-to-urban migration",
+        "mass migration",
+        "economic migration"
+      ],
+      "fam": "migrate (v), migrant (n), immigrant (n), emigrate (v)",
+      "ar": "الهجرة"
+    },
+    {
+      "w": "preventive",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "health",
+      "def": "intended to stop an illness or problem from happening, rather than treating it afterwards",
+      "ex": "Spending more on preventive healthcare, such as regular check-ups, could save governments money in the long run.",
+      "col": [
+        "preventive measures",
+        "preventive medicine",
+        "preventive healthcare"
+      ],
+      "fam": "prevent (v), prevention (n), preventable (adj), preventative (adj, same meaning)",
+      "ar": "وقائي"
+    },
+    {
+      "w": "assessment",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the process of judging a student's knowledge, skills or progress, for example through tests, projects or observation",
+      "ex": "Continuous assessment through projects and presentations gives a fairer picture of a student's ability than a single final exam.",
+      "col": [
+        "continuous assessment",
+        "a form of assessment",
+        "assessment methods"
+      ],
+      "fam": "assess (v), assessor (n)",
+      "ar": "التقييم؛ التقويم"
+    },
+    {
+      "w": "welfare",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "help, especially money, that the government gives to people who are poor, ill or without a job",
+      "ex": "Some people believe that a generous welfare system discourages people from looking for work, while others see it as a vital form of protection.",
+      "col": [
+        "the welfare system",
+        "welfare benefits",
+        "welfare spending"
+      ],
+      "fam": "welfare state (n)",
+      "ar": "الرعاية الاجتماعية؛ الضمان الاجتماعي"
+    },
+    {
+      "w": "life expectancy",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the average number of years that a person is expected to live",
+      "ex": "Thanks to better sanitation and medical care, life expectancy has increased dramatically over the past century.",
+      "col": [
+        "average life expectancy",
+        "life expectancy at birth",
+        "increase life expectancy"
+      ],
+      "fam": "expect (v), expectancy (n)",
+      "ar": "متوسط العمر المتوقع"
+    },
+    {
+      "w": "tuition fees",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the money that students pay to a college or university for their teaching",
+      "ex": "Rising tuition fees may discourage talented students from low-income families from applying to university.",
+      "col": [
+        "pay tuition fees",
+        "abolish tuition fees",
+        "rising tuition fees"
+      ],
+      "fam": "tuition (n)",
+      "ar": "الرسوم الدراسية"
+    },
+    {
+      "w": "ageing population",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "a population in which the proportion of older people is growing compared with younger people",
+      "ex": "An ageing population means that fewer workers will have to support a growing number of retired people.",
+      "col": [
+        "cope with an ageing population",
+        "the challenges of an ageing population",
+        "a rapidly ageing population"
+      ],
+      "fam": "age (v), aged (adj), the aged (n)",
+      "ar": "شيخوخة السكان؛ تزايد نسبة كبار السن"
+    },
+    {
+      "w": "well-being",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the state of being healthy, happy and comfortable in your life",
+      "ex": "Spending time outdoors has a positive effect on both physical and mental well-being.",
+      "col": [
+        "mental well-being",
+        "emotional well-being",
+        "promote well-being"
+      ],
+      "fam": "wellness (n)",
+      "ar": "الرفاه؛ السلامة النفسية والجسدية"
+    },
+    {
+      "w": "vocational",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "connected with the practical skills and training needed for a particular job",
+      "ex": "Vocational courses in plumbing or nursing can lead directly to employment, which makes them an attractive alternative to university.",
+      "col": [
+        "vocational training",
+        "vocational qualifications",
+        "vocational courses"
+      ],
+      "fam": "vocation (n)",
+      "ar": "مهني (متعلق بالتدريب المهني)"
+    },
+    {
+      "w": "demographic",
+      "pos": "adjective / noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "relating to the structure of a population, such as age, sex or birth rate; as a noun, a particular group within a population",
+      "ex": "Demographic changes, such as falling birth rates, will force many countries to rethink how they fund care for the elderly.",
+      "col": [
+        "demographic change",
+        "demographic trends",
+        "a younger demographic"
+      ],
+      "fam": "demography (n), demographics (n)",
+      "ar": "سكاني؛ ديموغرافي (يتعلق بتركيبة السكان)"
+    },
+    {
+      "w": "epidemic",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "a situation in which a disease spreads quickly and affects many people in one area at the same time; also any harmful problem that grows fast",
+      "ex": "Some doctors describe the rise in type 2 diabetes as a silent epidemic linked to modern diets.",
+      "col": [
+        "an obesity epidemic",
+        "a flu epidemic",
+        "the spread of an epidemic"
+      ],
+      "fam": "epidemiology (n), pandemic (n)",
+      "ar": "وباء"
+    },
+    {
+      "w": "literacy",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the ability to read and write",
+      "ex": "Improving adult literacy can help people find better jobs and take a more active part in their communities.",
+      "col": [
+        "literacy rates",
+        "adult literacy",
+        "improve literacy"
+      ],
+      "fam": "literate (adj), illiterate (adj), illiteracy (n)",
+      "ar": "معرفة القراءة والكتابة؛ محو الأمية"
+    },
+    {
+      "w": "discrimination",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "treating a person or group unfairly because of their race, sex, age, religion or another characteristic",
+      "ex": "Laws against discrimination in the workplace help to ensure that people are hired on the basis of ability alone.",
+      "col": [
+        "racial discrimination",
+        "age discrimination",
+        "discrimination against women"
+      ],
+      "fam": "discriminate (v), discriminatory (adj)",
+      "ar": "التمييز (العنصري أو غيره)"
+    },
+    {
+      "w": "balanced diet",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "a way of eating that includes the right amounts of the different kinds of food needed to stay healthy",
+      "ex": "Schools have a responsibility to teach children what a balanced diet looks like and why it matters.",
+      "col": [
+        "eat a balanced diet",
+        "maintain a balanced diet",
+        "part of a balanced diet"
+      ],
+      "fam": "balance (n/v), dietary (adj)",
+      "ar": "نظام غذائي متوازن"
+    },
+    {
+      "w": "plagiarism",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "copying someone else's words or ideas and presenting them as your own work",
+      "ex": "Universities now use detection software to identify plagiarism in student essays.",
+      "col": [
+        "accused of plagiarism",
+        "detect plagiarism",
+        "a case of plagiarism"
+      ],
+      "fam": "plagiarise (v), plagiarist (n)",
+      "ar": "الانتحال؛ السرقة العلمية أو الأدبية"
+    },
+    {
+      "w": "gender equality",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the situation in which men and women have the same rights, opportunities and treatment",
+      "ex": "Achieving gender equality in leadership positions requires changes in both company policy and social attitudes.",
+      "col": [
+        "promote gender equality",
+        "achieve gender equality",
+        "gender equality in the workplace"
+      ],
+      "fam": "equal (adj), equally (adv)",
+      "ar": "المساواة بين الجنسين"
+    },
+    {
+      "w": "mental health",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the condition of a person's mind and emotions, including how well they cope with stress",
+      "ex": "Employers are increasingly aware that long working hours can damage their staff's mental health.",
+      "col": [
+        "mental health problems",
+        "mental health services",
+        "raise awareness of mental health"
+      ],
+      "fam": "mentally (adv), mentality (n)",
+      "ar": "الصحة النفسية"
+    },
+    {
+      "w": "compulsory",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "required by law or by a rule, so that you have no choice",
+      "ex": "In my view, physical education should remain compulsory throughout secondary school.",
+      "col": [
+        "compulsory education",
+        "compulsory subjects",
+        "make sth compulsory"
+      ],
+      "fam": "compel (v), compulsion (n)",
+      "ar": "إلزامي؛ إجباري"
+    },
+    {
+      "w": "multicultural",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "society",
+      "def": "including people of many different races, religions, languages and traditions",
+      "ex": "Growing up in a multicultural city teaches children to respect customs that differ from their own.",
+      "col": [
+        "a multicultural society",
+        "multicultural communities",
+        "multicultural education"
+      ],
+      "fam": "multiculturalism (n), culture (n), cultural (adj)",
+      "ar": "متعدد الثقافات"
+    },
+    {
+      "w": "processed food",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "food that has been changed by industrial methods, often with added salt, sugar, fat or preservatives",
+      "ex": "Busy families often depend on processed food because it is cheap and quick to prepare.",
+      "col": [
+        "highly processed food",
+        "consumption of processed food",
+        "cut down on processed food"
+      ],
+      "fam": "process (v), processing (n)",
+      "ar": "الأطعمة المصنَّعة"
+    },
+    {
+      "w": "higher education",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "education at a college or university, after the end of secondary school",
+      "ex": "Access to higher education should depend on academic ability rather than on a family's ability to pay.",
+      "col": [
+        "access to higher education",
+        "higher education institutions",
+        "enter higher education"
+      ],
+      "fam": "educate (v), educational (adj)",
+      "ar": "التعليم العالي"
+    },
+    {
+      "w": "generation gap",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the difference in attitudes, values and behaviour between young people and older people",
+      "ex": "Technology has widened the generation gap, as many grandparents struggle to understand how their grandchildren communicate.",
+      "col": [
+        "bridge the generation gap",
+        "a widening generation gap"
+      ],
+      "fam": "generation (n), generational (adj)",
+      "ar": "الفجوة بين الأجيال"
+    },
+    {
+      "w": "junk food",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "food that is quick and tasty but contains a lot of fat, sugar or salt and has little nutritional value",
+      "ex": "Banning advertisements for junk food during children's television programmes could help to reduce childhood obesity.",
+      "col": [
+        "eat junk food",
+        "junk food advertising",
+        "ban junk food in schools"
+      ],
+      "fam": "junk (n)",
+      "ar": "الوجبات السريعة غير الصحية"
+    },
+    {
+      "w": "qualification",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "an official record, such as a degree or certificate, showing that you have passed exams or completed training",
+      "ex": "Many employers now value practical experience as highly as formal qualifications.",
+      "col": [
+        "academic qualifications",
+        "gain a qualification",
+        "professional qualifications"
+      ],
+      "fam": "qualify (v), qualified (adj)",
+      "ar": "مؤهل (علمي أو مهني)"
+    },
+    {
+      "w": "peer pressure",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the influence that people of your own age or group have on you to behave in the same way as them",
+      "ex": "Teenagers often start smoking because of peer pressure rather than personal choice.",
+      "col": [
+        "give in to peer pressure",
+        "resist peer pressure",
+        "under peer pressure"
+      ],
+      "fam": "peer (n)",
+      "ar": "ضغط الأقران"
+    },
+    {
+      "w": "chronic",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "health",
+      "def": "lasting for a long time or happening again and again, especially describing an illness",
+      "ex": "Chronic diseases such as diabetes and heart disease place a heavy burden on national health systems.",
+      "col": [
+        "chronic illness",
+        "chronic pain",
+        "a chronic shortage of sth"
+      ],
+      "fam": "chronically (adv)",
+      "ar": "مزمن"
+    },
+    {
+      "w": "extracurricular",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "describing activities, such as sport, music or clubs, that students do in addition to their normal classes",
+      "ex": "Extracurricular activities like debating help teenagers to build confidence and teamwork skills.",
+      "col": [
+        "extracurricular activities",
+        "take part in extracurricular clubs"
+      ],
+      "fam": "curriculum (n), curricular (adj)",
+      "ar": "لا منهجي؛ خارج المنهج الدراسي"
+    },
+    {
+      "w": "role model",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "a person whose behaviour, attitudes or achievements other people, especially young people, admire and copy",
+      "ex": "Famous athletes should remember that they are role models for millions of young fans.",
+      "col": [
+        "a positive role model",
+        "act as a role model",
+        "a good role model for children"
+      ],
+      "fam": "model (v)",
+      "ar": "قدوة؛ مثال يُحتذى به"
+    },
+    {
+      "w": "public health",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the health of the population as a whole, and the work done by governments to protect and improve it",
+      "ex": "Smoking bans in public places were introduced mainly to protect public health.",
+      "col": [
+        "a threat to public health",
+        "public health campaigns",
+        "improve public health"
+      ],
+      "fam": "healthy (adj), healthily (adv)",
+      "ar": "الصحة العامة"
+    },
+    {
+      "w": "academic performance",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "how well a student does in their studies, usually measured by grades and test results",
+      "ex": "Research suggests that getting enough sleep has a direct impact on students' academic performance.",
+      "col": [
+        "improve academic performance",
+        "poor academic performance",
+        "affect academic performance"
+      ],
+      "fam": "perform (v), academically (adv)",
+      "ar": "الأداء الدراسي"
+    },
+    {
+      "w": "nuclear family",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "a family unit made up of two parents and their children, without grandparents or other relatives living with them",
+      "ex": "In many cities, the nuclear family has replaced the extended family as the most common type of household.",
+      "col": [
+        "the traditional nuclear family",
+        "the decline of the nuclear family"
+      ],
+      "fam": "family (n), familial (adj)",
+      "ar": "الأسرة النواة (الوالدان والأبناء فقط)"
+    },
+    {
+      "w": "healthcare",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the services that look after people's health, such as hospitals, doctors and nurses",
+      "ex": "Some argue that healthcare should be free for everyone, while others believe patients should pay for part of their treatment.",
+      "col": [
+        "access to healthcare",
+        "free healthcare",
+        "healthcare provision"
+      ],
+      "fam": "health (n), healthy (adj)",
+      "ar": "الرعاية الصحية"
+    },
+    {
+      "w": "scholarship",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "an amount of money given to a student, usually because of excellent results, to help pay for their education",
+      "ex": "Offering scholarships to gifted students from poor backgrounds is one way to make universities fairer.",
+      "col": [
+        "win a scholarship",
+        "award a scholarship",
+        "a full scholarship"
+      ],
+      "fam": "scholar (n), scholarly (adj)",
+      "ar": "منحة دراسية"
+    },
+    {
+      "w": "homelessness",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the situation of having no home and often having to sleep outside or in temporary shelters",
+      "ex": "Homelessness is rarely caused by a single factor; job loss, debt and family breakdown often combine.",
+      "col": [
+        "tackle homelessness",
+        "rising homelessness",
+        "the causes of homelessness"
+      ],
+      "fam": "homeless (adj), the homeless (n)",
+      "ar": "التشرّد"
+    },
+    {
+      "w": "vaccination",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the process of giving people a substance, usually by injection, to protect them against a disease",
+      "ex": "Free vaccination programmes have almost eliminated several childhood diseases in many parts of the world.",
+      "col": [
+        "a vaccination programme",
+        "compulsory vaccination",
+        "vaccination rates"
+      ],
+      "fam": "vaccinate (v), vaccine (n)",
+      "ar": "التطعيم؛ التلقيح"
+    },
+    {
+      "w": "distance learning",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "a way of studying in which students learn from home or another place, usually online, instead of attending classes in person",
+      "ex": "Distance learning allows working adults to gain a degree without giving up their jobs.",
+      "col": [
+        "a distance learning course",
+        "study through distance learning"
+      ],
+      "fam": "learner (n)",
+      "ar": "التعلّم عن بُعد"
+    },
+    {
+      "w": "anti-social behaviour",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "actions that harm or upset other people in a community, such as vandalism, noise or aggressive behaviour in public",
+      "ex": "Providing youth clubs and sports facilities can reduce anti-social behaviour among bored teenagers.",
+      "col": [
+        "tackle anti-social behaviour",
+        "anti-social behaviour in public places"
+      ],
+      "fam": "social (adj), sociable (adj)",
+      "ar": "السلوك المخلّ بالنظام العام؛ السلوك المعادي للمجتمع"
+    },
+    {
+      "w": "hygiene",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the practice of keeping yourself and your surroundings clean in order to prevent illness",
+      "ex": "Simple hygiene measures, such as washing hands with soap, can greatly reduce the spread of infection.",
+      "col": [
+        "personal hygiene",
+        "poor hygiene",
+        "food hygiene"
+      ],
+      "fam": "hygienic (adj), unhygienic (adj)",
+      "ar": "النظافة الصحية"
+    },
+    {
+      "w": "lifelong learning",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the idea that people should continue to learn and develop new skills throughout their lives, not only at school",
+      "ex": "As jobs change rapidly, lifelong learning is no longer a luxury but a necessity.",
+      "col": [
+        "promote lifelong learning",
+        "a culture of lifelong learning"
+      ],
+      "fam": "lifelong (adj), learner (n)",
+      "ar": "التعلّم مدى الحياة"
+    },
+    {
+      "w": "affordable housing",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "homes that people on low or average incomes can afford to buy or rent",
+      "ex": "The lack of affordable housing forces many young couples to live with their parents for longer.",
+      "col": [
+        "a shortage of affordable housing",
+        "build affordable housing",
+        "access to affordable housing"
+      ],
+      "fam": "afford (v), affordability (n)",
+      "ar": "السكن الميسور التكلفة"
+    },
+    {
+      "w": "nutritious",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "health",
+      "def": "containing the substances your body needs to grow and stay healthy",
+      "ex": "Providing free nutritious lunches at school can improve both pupils' health and their concentration.",
+      "col": [
+        "nutritious food",
+        "a nutritious meal",
+        "cheap and nutritious"
+      ],
+      "fam": "nutrition (n), nutrient (n), nutritional (adj)",
+      "ar": "مُغذٍّ"
+    },
+    {
+      "w": "drop out",
+      "pos": "phrasal verb",
+      "lvl": 1,
+      "topic": "education",
+      "def": "to leave school, college or a course before you have finished it",
+      "ex": "Students who feel that their lessons are irrelevant to their lives are more likely to drop out of school.",
+      "col": [
+        "drop out of school",
+        "drop out of university",
+        "the dropout rate"
+      ],
+      "fam": "dropout (n)",
+      "ar": "يترك الدراسة؛ يتسرّب من التعليم"
+    },
+    {
+      "w": "overcrowding",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the situation in which too many people live in or use a place",
+      "ex": "Overcrowding in major cities has led to traffic congestion and a sharp rise in housing costs.",
+      "col": [
+        "severe overcrowding",
+        "overcrowding in prisons",
+        "reduce overcrowding"
+      ],
+      "fam": "overcrowded (adj), crowd (n)",
+      "ar": "الاكتظاظ؛ الازدحام السكاني"
+    },
+    {
+      "w": "self-esteem",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "health",
+      "def": "the feeling of confidence and respect that you have for yourself and your abilities",
+      "ex": "Constant comparison with others on social media can seriously damage young people's self-esteem.",
+      "col": [
+        "low self-esteem",
+        "boost self-esteem",
+        "build self-esteem"
+      ],
+      "fam": "esteem (n), self-confidence (n)",
+      "ar": "تقدير الذات"
+    },
+    {
+      "w": "numeracy",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the ability to understand and work with numbers",
+      "ex": "Basic numeracy is essential in everyday life, from managing a household budget to understanding medical advice.",
+      "col": [
+        "literacy and numeracy",
+        "numeracy skills",
+        "improve numeracy"
+      ],
+      "fam": "numerate (adj), innumerate (adj)",
+      "ar": "المهارات الحسابية الأساسية"
+    },
+    {
+      "w": "integration",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the process by which people, especially newcomers, become a full part of a society and share its rights and responsibilities",
+      "ex": "Free language classes play a key role in the integration of newcomers into local communities.",
+      "col": [
+        "social integration",
+        "the integration of immigrants",
+        "promote integration"
+      ],
+      "fam": "integrate (v), integrated (adj)",
+      "ar": "الاندماج"
+    },
+    {
+      "w": "enrol",
+      "pos": "verb",
+      "lvl": 1,
+      "topic": "education",
+      "def": "to officially join a school, college or course",
+      "ex": "More adults are choosing to enrol on evening courses so that they can retrain for a new career.",
+      "col": [
+        "enrol on a course",
+        "enrol at a university",
+        "enrol in a programme"
+      ],
+      "fam": "enrolment (n)",
+      "ar": "يلتحق؛ يسجّل (في مؤسسة تعليمية)"
+    },
+    {
+      "w": "birth rate",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the number of babies born in a particular period, usually per 1,000 people in a year",
+      "ex": "A declining birth rate may eventually lead to labour shortages and fewer taxpayers.",
+      "col": [
+        "a falling birth rate",
+        "a low birth rate",
+        "boost the birth rate"
+      ],
+      "fam": "birth (n)",
+      "ar": "معدل المواليد"
+    },
+    {
+      "w": "syllabus",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the list of topics that will be studied in a particular course or subject",
+      "ex": "Teachers often complain that the syllabus is so full that there is no time left for discussion.",
+      "col": [
+        "cover the syllabus",
+        "on the syllabus",
+        "a packed syllabus"
+      ],
+      "fam": "syllabuses or syllabi (pl)",
+      "ar": "مقرّر المادة الدراسية"
+    },
+    {
+      "w": "cultural identity",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the feeling of belonging to a group that shares the same culture, language, history or traditions",
+      "ex": "Learning their parents' language helps the children of migrants to preserve their cultural identity.",
+      "col": [
+        "preserve cultural identity",
+        "lose cultural identity",
+        "a strong sense of cultural identity"
+      ],
+      "fam": "identify (v), identity (n), cultural (adj)",
+      "ar": "الهوية الثقافية"
+    },
+    {
+      "w": "discipline",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "the practice of training people to obey rules and control their own behaviour; also, a subject of study at university",
+      "ex": "Some parents feel that discipline in schools has become too relaxed in recent decades.",
+      "col": [
+        "maintain discipline",
+        "strict discipline",
+        "self-discipline"
+      ],
+      "fam": "discipline (v), disciplined (adj), disciplinary (adj)",
+      "ar": "الانضباط"
+    },
+    {
+      "w": "stereotype",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "a fixed and often unfair idea about what a particular type of person or group is like",
+      "ex": "Films and advertisements can reinforce gender stereotypes, for example by showing only women doing housework.",
+      "col": [
+        "gender stereotypes",
+        "reinforce stereotypes",
+        "challenge stereotypes"
+      ],
+      "fam": "stereotype (v), stereotypical (adj)",
+      "ar": "صورة نمطية"
+    },
+    {
+      "w": "gifted",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "having a natural ability or intelligence that is much higher than average",
+      "ex": "Gifted children may become bored and badly behaved if their lessons are not challenging enough.",
+      "col": [
+        "gifted children",
+        "academically gifted",
+        "gifted and talented programmes"
+      ],
+      "fam": "gift (n)",
+      "ar": "موهوب"
+    },
+    {
+      "w": "social isolation",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the state of having very little contact with other people or with the wider community",
+      "ex": "Social isolation among elderly people who live alone can lead to depression and poor physical health.",
+      "col": [
+        "combat social isolation",
+        "suffer from social isolation",
+        "reduce social isolation"
+      ],
+      "fam": "isolate (v), isolated (adj)",
+      "ar": "العزلة الاجتماعية"
+    },
+    {
+      "w": "hands-on",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "involving doing something practically rather than only reading or hearing about it",
+      "ex": "Hands-on experience in a laboratory helps students understand scientific concepts far better than textbooks alone.",
+      "col": [
+        "hands-on experience",
+        "hands-on learning",
+        "a hands-on approach"
+      ],
+      "fam": "hands-off (adj, opposite)",
+      "ar": "عملي؛ تطبيقي"
+    },
+    {
+      "w": "disadvantaged",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "society",
+      "def": "having less money, education or fewer opportunities than most other people in society",
+      "ex": "Free breakfast clubs give children from disadvantaged backgrounds a better start to the school day.",
+      "col": [
+        "disadvantaged backgrounds",
+        "disadvantaged groups",
+        "socially disadvantaged"
+      ],
+      "fam": "disadvantage (n), advantaged (adj)",
+      "ar": "محروم؛ من الفئات الأقل حظاً"
+    },
+    {
+      "w": "standardised test",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "an exam that is given and marked in the same way for all students, so that results can be compared",
+      "ex": "Critics argue that standardised tests measure only a narrow range of skills and ignore creativity.",
+      "col": [
+        "sit a standardised test",
+        "rely on standardised tests",
+        "standardised test scores"
+      ],
+      "fam": "standard (n), standardise (v), standardisation (n)",
+      "ar": "اختبار موحَّد"
+    },
+    {
+      "w": "upbringing",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the way in which a child is cared for and taught how to behave by their parents or carers",
+      "ex": "A strict upbringing does not necessarily produce well-behaved adults.",
+      "col": [
+        "a strict upbringing",
+        "a religious upbringing",
+        "a privileged upbringing"
+      ],
+      "fam": "bring up (phrasal v)",
+      "ar": "التنشئة؛ التربية"
+    },
+    {
+      "w": "well-rounded",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "having a wide range of skills, interests and experiences, not only academic knowledge",
+      "ex": "The aim of education should be to produce well-rounded individuals, not just people who are good at exams.",
+      "col": [
+        "a well-rounded education",
+        "well-rounded individuals",
+        "well-rounded students"
+      ],
+      "fam": "rounded (adj)",
+      "ar": "متكامل الشخصية؛ متعدد المهارات"
+    },
+    {
+      "w": "crime rate",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the number of crimes committed in a particular area during a particular period",
+      "ex": "Better street lighting and more police patrols are often credited with reducing the crime rate in city centres.",
+      "col": [
+        "a high crime rate",
+        "a rise in the crime rate",
+        "reduce the crime rate"
+      ],
+      "fam": "criminal (n/adj), criminality (n)",
+      "ar": "معدل الجريمة"
+    },
+    {
+      "w": "bullying",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "repeatedly hurting or frightening someone who is weaker, physically or with words, including online",
+      "ex": "Schools should have clear policies to deal with bullying, including cyberbullying that happens outside school hours.",
+      "col": [
+        "tackle bullying",
+        "a victim of bullying",
+        "online bullying"
+      ],
+      "fam": "bully (v/n)",
+      "ar": "التنمّر"
+    },
+    {
+      "w": "community service",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "unpaid work that an offender is ordered to do for the local community instead of going to prison; also voluntary work for the community",
+      "ex": "For minor offences, community service may be more effective than a short prison sentence.",
+      "col": [
+        "do community service",
+        "sentence sb to community service",
+        "hours of community service"
+      ],
+      "fam": "community (n), communal (adj)",
+      "ar": "خدمة المجتمع (عقوبة بديلة أو عمل تطوعي)"
+    },
+    {
+      "w": "state school",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "a school that is paid for by the government and provides free education",
+      "ex": "Parents who send their children to private schools still pay the taxes that fund state schools.",
+      "col": [
+        "attend a state school",
+        "state school pupils",
+        "the state school system"
+      ],
+      "fam": "state-funded (adj)",
+      "ar": "مدرسة حكومية"
+    },
+    {
+      "w": "volunteering",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "doing work without being paid, usually to help other people or support a good cause",
+      "ex": "Volunteering at a local charity gives young people valuable experience and a sense of purpose.",
+      "col": [
+        "encourage volunteering",
+        "volunteering opportunities",
+        "volunteer for a charity"
+      ],
+      "fam": "volunteer (n/v), voluntary (adj)",
+      "ar": "العمل التطوعي"
+    },
+    {
+      "w": "home-schooling",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "educating children at home, usually by their parents, instead of sending them to school",
+      "ex": "Supporters of home-schooling claim that it allows lessons to match each child's pace and interests.",
+      "col": [
+        "opt for home-schooling",
+        "the rise of home-schooling"
+      ],
+      "fam": "home-school (v), home-schooled (adj)",
+      "ar": "التعليم المنزلي"
+    },
+    {
+      "w": "sense of belonging",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "the feeling of being accepted as an important part of a group or community",
+      "ex": "Local festivals help residents to develop a sense of belonging to their neighbourhood.",
+      "col": [
+        "a strong sense of belonging",
+        "foster a sense of belonging",
+        "lack a sense of belonging"
+      ],
+      "fam": "belong (v), belongings (n)",
+      "ar": "الشعور بالانتماء"
+    },
+    {
+      "w": "bilingual",
+      "pos": "adjective",
+      "lvl": 1,
+      "topic": "education",
+      "def": "able to speak two languages equally well, or using two languages",
+      "ex": "Children raised in bilingual homes often find it easier to learn a third language later in life.",
+      "col": [
+        "bilingual education",
+        "a bilingual school",
+        "fully bilingual"
+      ],
+      "fam": "bilingualism (n), monolingual (adj), multilingual (adj)",
+      "ar": "ثنائي اللغة"
+    },
+    {
+      "w": "offender",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "society",
+      "def": "a person who has committed a crime",
+      "ex": "Young offenders should be given education and training so that they do not return to crime.",
+      "col": [
+        "young offenders",
+        "first-time offenders",
+        "repeat offenders"
+      ],
+      "fam": "offend (v), offence (n)",
+      "ar": "الجاني؛ مرتكب الجريمة"
+    },
+    {
+      "w": "gap year",
+      "pos": "noun",
+      "lvl": 1,
+      "topic": "education",
+      "def": "a year that a young person takes off between school and university, often to travel, work or volunteer",
+      "ex": "A well-planned gap year can help students mature and choose a university course more wisely.",
+      "col": [
+        "take a gap year",
+        "spend a gap year abroad"
+      ],
+      "fam": "gap (n)",
+      "ar": "سنة فاصلة (بين المدرسة والجامعة)"
+    },
+    {
+      "w": "attainment",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the level of success that a student reaches, especially as shown by exam results",
+      "ex": "In most societies there is a clear link between family income and educational attainment.",
+      "col": [
+        "educational attainment",
+        "the attainment gap",
+        "raise attainment"
+      ],
+      "fam": "attain (v), attainable (adj)",
+      "ar": "التحصيل العلمي"
+    },
+    {
+      "w": "community cohesion",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the situation in which people from different backgrounds in an area get on well, trust each other and share common values",
+      "ex": "Shared public spaces such as parks and libraries strengthen community cohesion by bringing different groups together.",
+      "col": [
+        "promote community cohesion",
+        "undermine community cohesion",
+        "social cohesion"
+      ],
+      "fam": "cohesive (adj), cohere (v)",
+      "ar": "التماسك المجتمعي"
+    },
+    {
+      "w": "malnutrition",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "poor health caused by not eating enough food or not eating the right kinds of food",
+      "ex": "Malnutrition in early childhood can affect brain development and later performance at school.",
+      "col": [
+        "suffer from malnutrition",
+        "child malnutrition",
+        "severe malnutrition"
+      ],
+      "fam": "malnourished (adj), nutrition (n)",
+      "ar": "سوء التغذية"
+    },
+    {
+      "w": "tertiary education",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "education at college or university level, after primary and secondary school",
+      "ex": "Many governments have expanded tertiary education in the belief that a more educated workforce will strengthen the economy.",
+      "col": [
+        "tertiary education institutions",
+        "expand tertiary education",
+        "access to tertiary education"
+      ],
+      "fam": "primary (adj), secondary (adj)",
+      "ar": "التعليم العالي (ما بعد الثانوي)"
+    },
+    {
+      "w": "social mobility",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the ability of people to move to a higher social or economic position than the one they were born into",
+      "ex": "Free, high-quality education is one of the most powerful drivers of social mobility.",
+      "col": [
+        "improve social mobility",
+        "upward social mobility",
+        "a lack of social mobility"
+      ],
+      "fam": "mobile (adj), immobility (n)",
+      "ar": "الحراك الاجتماعي"
+    },
+    {
+      "w": "immune system",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "the system in the body that protects it against infections and diseases",
+      "ex": "Regular exercise and enough sleep help to keep the immune system strong.",
+      "col": [
+        "a weakened immune system",
+        "boost the immune system",
+        "strengthen the immune system"
+      ],
+      "fam": "immunity (n), immune (adj), immunise (v)",
+      "ar": "جهاز المناعة"
+    },
+    {
+      "w": "cramming",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "studying a large amount of information in a very short time just before an exam",
+      "ex": "Last-minute cramming may help students pass a test, but the information is usually forgotten within weeks.",
+      "col": [
+        "last-minute cramming",
+        "cram for an exam",
+        "a cramming culture"
+      ],
+      "fam": "cram (v), crammer (n)",
+      "ar": "الحشو؛ المذاكرة المكثفة في اللحظة الأخيرة"
+    },
+    {
+      "w": "marginalised",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "treated as unimportant and pushed to the edge of society, with little power or influence",
+      "ex": "Policies should be designed to give a voice to marginalised groups, such as people with disabilities.",
+      "col": [
+        "marginalised communities",
+        "marginalised groups",
+        "feel marginalised"
+      ],
+      "fam": "marginalise (v), margin (n), marginalisation (n)",
+      "ar": "مهمَّش"
+    },
+    {
+      "w": "contagious",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "health",
+      "def": "describing a disease that spreads easily from one person to another through close contact",
+      "ex": "Children with contagious illnesses should stay at home to avoid infecting their classmates.",
+      "col": [
+        "highly contagious",
+        "a contagious disease",
+        "contagious laughter"
+      ],
+      "fam": "contagion (n)",
+      "ar": "مُعدٍ"
+    },
+    {
+      "w": "mixed-ability",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "education",
+      "def": "describing a class or group in which students of different levels of ability are taught together",
+      "ex": "In mixed-ability classes, stronger students can deepen their own understanding by helping weaker classmates.",
+      "col": [
+        "mixed-ability classes",
+        "mixed-ability teaching",
+        "mixed-ability groups"
+      ],
+      "fam": "ability (n), able (adj)",
+      "ar": "متفاوت المستويات (صف يضم طلاباً بقدرات مختلفة)"
+    },
+    {
+      "w": "rehabilitation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the process of helping someone, such as a former prisoner or a person with an addiction, return to a normal, useful life",
+      "ex": "Prisons should focus on rehabilitation rather than punishment if they want to reduce reoffending.",
+      "col": [
+        "the rehabilitation of offenders",
+        "a rehabilitation programme",
+        "drug rehabilitation"
+      ],
+      "fam": "rehabilitate (v)",
+      "ar": "إعادة التأهيل"
+    },
+    {
+      "w": "longevity",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "long life, or the fact of living for a long time",
+      "ex": "Scientists believe that diet, social connections and genetics all contribute to longevity.",
+      "col": [
+        "increased longevity",
+        "the secret of longevity"
+      ],
+      "fam": "long (adj), long-lived (adj)",
+      "ar": "طول العمر"
+    },
+    {
+      "w": "spoon-feed",
+      "pos": "verb",
+      "lvl": 2,
+      "topic": "education",
+      "def": "to give students so much help and information that they do not need to think for themselves",
+      "ex": "If teachers spoon-feed students the answers, the students will never learn to solve problems independently.",
+      "col": [
+        "spoon-feed students",
+        "spoon-fed information"
+      ],
+      "fam": "spoon-feeding (n), spoon-fed (adj)",
+      "ar": "يقدّم المعلومة جاهزة؛ يلقّن دون إشراك المتعلّم في التفكير"
+    },
+    {
+      "w": "deprivation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "a lack of the basic things people need, such as enough money, food, good housing or education",
+      "ex": "Areas with high levels of deprivation often also have lower life expectancy and more crime.",
+      "col": [
+        "social deprivation",
+        "areas of deprivation",
+        "economic deprivation"
+      ],
+      "fam": "deprive (v), deprived (adj)",
+      "ar": "الحرمان"
+    },
+    {
+      "w": "sanitation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "systems for providing clean water and safely removing human waste, which protect public health",
+      "ex": "Investing in basic sanitation is one of the most cost-effective ways to prevent disease in poorer regions.",
+      "col": [
+        "poor sanitation",
+        "improved sanitation",
+        "access to sanitation"
+      ],
+      "fam": "sanitary (adj), sanitise (v)",
+      "ar": "الصرف الصحي؛ خدمات الإصحاح"
+    },
+    {
+      "w": "exam-oriented",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "education",
+      "def": "focused mainly on preparing students to pass exams rather than on wider learning",
+      "ex": "In an exam-oriented system, subjects that are not tested, such as art and music, are often neglected.",
+      "col": [
+        "an exam-oriented system",
+        "exam-oriented teaching",
+        "an exam-oriented culture"
+      ],
+      "fam": "orientation (n), orient (v)",
+      "ar": "موجَّه نحو الامتحانات"
+    },
+    {
+      "w": "mortality rate",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "the number of deaths in a particular group or period, usually per 1,000 people",
+      "ex": "Access to clean water and trained midwives has led to a sharp fall in the infant mortality rate in many regions.",
+      "col": [
+        "the infant mortality rate",
+        "a high mortality rate",
+        "reduce the mortality rate"
+      ],
+      "fam": "mortal (adj), mortality (n), immortal (adj)",
+      "ar": "معدل الوفيات"
+    },
+    {
+      "w": "holistic",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "education",
+      "def": "dealing with the whole person or situation, rather than only one part of it",
+      "ex": "A holistic approach to education considers students' emotional and social development as well as their grades.",
+      "col": [
+        "a holistic approach",
+        "holistic education",
+        "holistic development"
+      ],
+      "fam": "holistically (adv), holism (n)",
+      "ar": "شمولي؛ كلّي"
+    },
+    {
+      "w": "deterrent",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "something that makes people decide not to do something, especially commit a crime, because of the possible consequences",
+      "ex": "There is little evidence that longer prison sentences act as an effective deterrent.",
+      "col": [
+        "act as a deterrent",
+        "an effective deterrent",
+        "a deterrent to crime"
+      ],
+      "fam": "deter (v), deterrence (n)",
+      "ar": "رادع"
+    },
+    {
+      "w": "counselling",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "professional advice and support given to help people deal with personal or emotional problems",
+      "ex": "Every university should offer free counselling to students who are struggling with stress or anxiety.",
+      "col": [
+        "receive counselling",
+        "counselling services",
+        "offer counselling"
+      ],
+      "fam": "counsel (v), counsellor (n)",
+      "ar": "الإرشاد النفسي؛ الاستشارة النفسية"
+    },
+    {
+      "w": "truancy",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the act of staying away from school without permission",
+      "ex": "Truancy is often a warning sign of deeper problems at home or of bullying at school.",
+      "col": [
+        "tackle truancy",
+        "truancy rates",
+        "persistent truancy"
+      ],
+      "fam": "truant (n), play truant (idiom)",
+      "ar": "التغيّب المتعمَّد عن المدرسة دون إذن"
+    },
+    {
+      "w": "reoffend",
+      "pos": "verb",
+      "lvl": 2,
+      "topic": "society",
+      "def": "to commit another crime after being punished for an earlier one",
+      "ex": "Prisoners who learn a trade while serving their sentence are less likely to reoffend after release.",
+      "col": [
+        "likely to reoffend",
+        "reduce the risk of reoffending",
+        "reoffending rates"
+      ],
+      "fam": "reoffending (n), offender (n)",
+      "ar": "يعاود ارتكاب الجريمة"
+    },
+    {
+      "w": "life-threatening",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "health",
+      "def": "so serious that it could cause death",
+      "ex": "Allergies that seem mild in childhood can sometimes develop into life-threatening conditions.",
+      "col": [
+        "a life-threatening illness",
+        "life-threatening injuries",
+        "potentially life-threatening"
+      ],
+      "fam": "threaten (v), threat (n)",
+      "ar": "مهدِّد للحياة"
+    },
+    {
+      "w": "learner autonomy",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the ability of students to take responsibility for their own learning, for example by setting goals and finding resources",
+      "ex": "University students who lack learner autonomy often struggle when no teacher is checking their progress every day.",
+      "col": [
+        "develop learner autonomy",
+        "encourage learner autonomy"
+      ],
+      "fam": "autonomous (adj), autonomously (adv)",
+      "ar": "استقلالية المتعلّم"
+    },
+    {
+      "w": "social norms",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the unwritten rules about how people are expected to behave in a particular society or group",
+      "ex": "Social norms around marriage have changed considerably, with many couples now choosing to marry later in life.",
+      "col": [
+        "challenge social norms",
+        "conform to social norms",
+        "changing social norms"
+      ],
+      "fam": "norm (n), normal (adj), normative (adj)",
+      "ar": "الأعراف الاجتماعية"
+    },
+    {
+      "w": "eating disorder",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "a mental illness in which a person has an unhealthy relationship with food, for example eating far too little or far too much",
+      "ex": "Images of unrealistically thin models in the media have been linked to eating disorders among teenagers.",
+      "col": [
+        "develop an eating disorder",
+        "suffer from an eating disorder",
+        "treatment for eating disorders"
+      ],
+      "fam": "disorder (n)",
+      "ar": "اضطراب الأكل"
+    },
+    {
+      "w": "academic integrity",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "honesty in academic work, such as not cheating and always acknowledging the sources you use",
+      "ex": "The spread of essay-writing websites poses a serious threat to academic integrity.",
+      "col": [
+        "uphold academic integrity",
+        "a breach of academic integrity"
+      ],
+      "fam": "academic (adj/n), academically (adv)",
+      "ar": "النزاهة الأكاديمية"
+    },
+    {
+      "w": "prejudice",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "an unfair opinion or feeling about a person or group, formed without knowledge or reason",
+      "ex": "Meeting people from other cultures is one of the most effective ways to break down prejudice.",
+      "col": [
+        "racial prejudice",
+        "overcome prejudice",
+        "prejudice against sb"
+      ],
+      "fam": "prejudiced (adj), prejudge (v)",
+      "ar": "التحيّز؛ الأحكام المسبقة"
+    },
+    {
+      "w": "hereditary",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "health",
+      "def": "passed from parents to their children through the genes",
+      "ex": "Although some heart conditions are hereditary, a healthy lifestyle can still greatly reduce the risk.",
+      "col": [
+        "a hereditary disease",
+        "hereditary factors"
+      ],
+      "fam": "heredity (n)",
+      "ar": "وراثي"
+    },
+    {
+      "w": "league table",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "a list that ranks schools, universities or other organisations according to their performance",
+      "ex": "Publishing school league tables may push teachers to focus on test results rather than genuine learning.",
+      "col": [
+        "top the league table",
+        "school league tables",
+        "university league tables"
+      ],
+      "fam": "rank (v), ranking (n)",
+      "ar": "جدول الترتيب (تصنيف المدارس أو الجامعات حسب الأداء)"
+    },
+    {
+      "w": "close-knit",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "describing a group of people who know each other well and support one another",
+      "ex": "In close-knit villages, neighbours often look after each other's children and elderly relatives.",
+      "col": [
+        "a close-knit community",
+        "a close-knit family"
+      ],
+      "fam": "knit (v)",
+      "ar": "مترابط؛ متماسك"
+    },
+    {
+      "w": "antibiotic resistance",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "the ability of bacteria to survive medicines that used to kill them, often caused by the overuse of antibiotics",
+      "ex": "Prescribing antibiotics for minor viral infections contributes to the growing problem of antibiotic resistance.",
+      "col": [
+        "growing antibiotic resistance",
+        "combat antibiotic resistance"
+      ],
+      "fam": "resist (v), resistant (adj), antibiotic (n)",
+      "ar": "مقاومة المضادات الحيوية"
+    },
+    {
+      "w": "private tutoring",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "extra lessons that parents pay for, usually given to one student or a small group outside school",
+      "ex": "The heavy reliance on private tutoring means that wealthier families can buy their children an advantage.",
+      "col": [
+        "pay for private tutoring",
+        "the private tutoring industry"
+      ],
+      "fam": "tutor (n/v), tutorial (n)",
+      "ar": "الدروس الخصوصية"
+    },
+    {
+      "w": "asylum seeker",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "a person who has left their own country because they are in danger and is asking another country for official protection",
+      "ex": "Asylum seekers are often unable to work while their applications are being processed, which can leave them isolated.",
+      "col": [
+        "seek asylum",
+        "grant asylum",
+        "process asylum claims"
+      ],
+      "fam": "asylum (n), refugee (n)",
+      "ar": "طالب اللجوء"
+    },
+    {
+      "w": "passive smoking",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "breathing in smoke from other people's cigarettes",
+      "ex": "Banning smoking in restaurants protects staff and customers from the dangers of passive smoking.",
+      "col": [
+        "exposure to passive smoking",
+        "the risks of passive smoking"
+      ],
+      "fam": "passive (adj), smoker (n)",
+      "ar": "التدخين السلبي"
+    },
+    {
+      "w": "proficiency",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "a high level of skill or ability in something, especially a language",
+      "ex": "Many universities require international applicants to prove their English proficiency before they can enrol.",
+      "col": [
+        "language proficiency",
+        "a high level of proficiency",
+        "proficiency in English"
+      ],
+      "fam": "proficient (adj)",
+      "ar": "الإتقان؛ الكفاءة"
+    },
+    {
+      "w": "intergenerational",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "involving or happening between people of different generations",
+      "ex": "Intergenerational projects, in which teenagers teach older people to use smartphones, benefit both groups.",
+      "col": [
+        "intergenerational projects",
+        "intergenerational contact",
+        "intergenerational fairness"
+      ],
+      "fam": "generation (n), generational (adj)",
+      "ar": "بين الأجيال"
+    },
+    {
+      "w": "sugar tax",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "a tax on drinks or foods that contain a lot of sugar, aimed at reducing how much people consume",
+      "ex": "Supporters of a sugar tax argue that it encourages manufacturers to reduce the sugar content of their products.",
+      "col": [
+        "introduce a sugar tax",
+        "impose a sugar tax on soft drinks"
+      ],
+      "fam": "tax (n/v), taxation (n)",
+      "ar": "ضريبة السكر"
+    },
+    {
+      "w": "impart",
+      "pos": "verb",
+      "lvl": 2,
+      "topic": "education",
+      "def": "to pass knowledge, skills or values on to someone",
+      "ex": "Good teachers do more than impart knowledge; they inspire students to keep learning.",
+      "col": [
+        "impart knowledge",
+        "impart skills",
+        "impart values to sb"
+      ],
+      "fam": "impart sth to sb (pattern)",
+      "ar": "ينقل (المعرفة أو المهارة)"
+    },
+    {
+      "w": "segregation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the separation of people into groups, for example by race, religion, income or sex, so that they live, study or work apart",
+      "ex": "Residential segregation by income can mean that rich and poor children rarely attend the same schools.",
+      "col": [
+        "racial segregation",
+        "residential segregation",
+        "social segregation"
+      ],
+      "fam": "segregate (v), segregated (adj)",
+      "ar": "الفصل؛ العزل (بين الفئات الاجتماعية)"
+    },
+    {
+      "w": "health-conscious",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "health",
+      "def": "careful about what you eat and how you live so that you stay healthy",
+      "ex": "As consumers become more health-conscious, supermarkets are offering a wider range of low-sugar products.",
+      "col": [
+        "health-conscious consumers",
+        "increasingly health-conscious"
+      ],
+      "fam": "conscious (adj), consciousness (n)",
+      "ar": "حريص على صحته؛ واعٍ صحياً"
+    },
+    {
+      "w": "instil",
+      "pos": "verb",
+      "lvl": 2,
+      "topic": "education",
+      "def": "to gradually make someone have a feeling, quality or habit",
+      "ex": "Parents and teachers share the responsibility to instil a sense of discipline and respect in children.",
+      "col": [
+        "instil values",
+        "instil confidence in sb",
+        "instil a love of reading"
+      ],
+      "fam": "instilled, instilling (verb forms)",
+      "ar": "يغرس (قيمة أو عادة)"
+    },
+    {
+      "w": "affluent",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "having a lot of money and a comfortable standard of living",
+      "ex": "In affluent societies, people often own more possessions but have no more free time than previous generations.",
+      "col": [
+        "affluent neighbourhoods",
+        "affluent families",
+        "an affluent society"
+      ],
+      "fam": "affluence (n)",
+      "ar": "ميسور الحال؛ ثري"
+    },
+    {
+      "w": "primary care",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "the first level of health services that people use, such as family doctors and local clinics",
+      "ex": "Strengthening primary care can reduce pressure on hospital emergency departments.",
+      "col": [
+        "primary care services",
+        "access to primary care",
+        "primary care doctors"
+      ],
+      "fam": "primary (adj), care (n/v)",
+      "ar": "الرعاية الصحية الأولية"
+    },
+    {
+      "w": "ability grouping",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the practice of putting students into separate classes or groups according to their level of ability",
+      "ex": "Supporters of ability grouping say it allows teachers to match the pace of each lesson to the class.",
+      "col": [
+        "ability grouping in schools",
+        "the effects of ability grouping"
+      ],
+      "fam": "stream (v) or set (v) pupils by ability; streaming (n, British)",
+      "ar": "تصنيف الطلاب في فصول أو مجموعات حسب مستوى قدراتهم"
+    },
+    {
+      "w": "breadwinner",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the member of a family who earns the money that the family needs to live",
+      "ex": "The traditional idea of the father as the sole breadwinner is becoming less common as more women work full-time.",
+      "col": [
+        "the main breadwinner",
+        "the sole breadwinner"
+      ],
+      "fam": "bread (n), win (v)",
+      "ar": "المعيل؛ عائل الأسرة"
+    },
+    {
+      "w": "substance abuse",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "the harmful use of alcohol or drugs",
+      "ex": "Young people who grow up in unstable homes are at greater risk of substance abuse.",
+      "col": [
+        "substance abuse problems",
+        "treatment for substance abuse"
+      ],
+      "fam": "abuse (v/n), abusive (adj)",
+      "ar": "تعاطي المخدرات والكحول؛ إساءة استخدام المواد"
+    },
+    {
+      "w": "corporal punishment",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "physical punishment, such as hitting, given to children by parents or teachers",
+      "ex": "Corporal punishment has been banned in schools in many countries because it can cause long-term emotional harm.",
+      "col": [
+        "ban corporal punishment",
+        "the use of corporal punishment"
+      ],
+      "fam": "punish (v), punitive (adj)",
+      "ar": "العقاب البدني"
+    },
+    {
+      "w": "materialistic",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "placing too much importance on money and possessions",
+      "ex": "Some argue that advertising has made young people more materialistic, so that they measure success by the brands they own.",
+      "col": [
+        "a materialistic society",
+        "materialistic values",
+        "become materialistic"
+      ],
+      "fam": "materialism (n), materialist (n)",
+      "ar": "مادّي (يعطي الأولوية للمال والممتلكات)"
+    },
+    {
+      "w": "dementia",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "health",
+      "def": "a serious illness of the brain, more common in old age, that affects memory and the ability to think clearly",
+      "ex": "As populations age, more families face the challenge of caring for a relative with dementia.",
+      "col": [
+        "suffer from dementia",
+        "dementia care",
+        "the onset of dementia"
+      ],
+      "fam": "dementia-friendly (adj)",
+      "ar": "الخَرَف"
+    },
+    {
+      "w": "pupil-teacher ratio",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the average number of students for each teacher in a school or education system",
+      "ex": "Reducing the pupil-teacher ratio allows teachers to give more individual attention to each child.",
+      "col": [
+        "a low pupil-teacher ratio",
+        "reduce the pupil-teacher ratio"
+      ],
+      "fam": "ratio (n), proportion (n)",
+      "ar": "نسبة عدد الطلاب إلى المعلّم"
+    },
+    {
+      "w": "fertility rate",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "the average number of children born to each woman in a country or group",
+      "ex": "As women gain greater access to education and careers, the fertility rate usually declines.",
+      "col": [
+        "a declining fertility rate",
+        "a below-replacement fertility rate"
+      ],
+      "fam": "fertile (adj), fertility (n)",
+      "ar": "معدل الخصوبة"
+    },
+    {
+      "w": "grade inflation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "a gradual rise in the marks given to students over time without a real improvement in the quality of their work",
+      "ex": "Grade inflation makes it difficult for employers to distinguish between excellent and average graduates.",
+      "col": [
+        "concerns about grade inflation",
+        "combat grade inflation"
+      ],
+      "fam": "inflate (v), inflated (adj)",
+      "ar": "تضخّم الدرجات"
+    },
+    {
+      "w": "safety net",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "society",
+      "def": "a system of help, such as government benefits, that protects people from falling into extreme poverty",
+      "ex": "Unemployment benefits provide a safety net for families who suddenly lose their main source of income.",
+      "col": [
+        "a social safety net",
+        "provide a safety net",
+        "fall through the safety net"
+      ],
+      "fam": "safe (adj), safety (n)",
+      "ar": "شبكة الأمان الاجتماعي"
+    },
+    {
+      "w": "intrinsic motivation",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "the desire to do something because you find it interesting or satisfying, not because of a reward",
+      "ex": "Students with strong intrinsic motivation tend to keep studying long after the exam is over.",
+      "col": [
+        "foster intrinsic motivation",
+        "a lack of intrinsic motivation"
+      ],
+      "fam": "intrinsically (adv), motivate (v), extrinsic (adj, opposite)",
+      "ar": "الدافع الذاتي؛ الدافعية الداخلية"
+    },
+    {
+      "w": "civic",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "society",
+      "def": "connected with the duties and activities of people as citizens of a town or country",
+      "ex": "Teaching civic responsibility at school may encourage young people to vote and take part in local decisions.",
+      "col": [
+        "civic engagement",
+        "civic duty",
+        "civic responsibility"
+      ],
+      "fam": "citizen (n), citizenship (n), civil (adj)",
+      "ar": "مدني؛ متعلق بواجبات المواطنة"
+    },
+    {
+      "w": "underachieve",
+      "pos": "verb",
+      "lvl": 2,
+      "topic": "education",
+      "def": "to perform less well than you are capable of, especially at school",
+      "ex": "Bright pupils may underachieve if they feel that their efforts go unnoticed.",
+      "col": [
+        "underachieving pupils",
+        "underachieve at school"
+      ],
+      "fam": "underachiever (n), underachievement (n)",
+      "ar": "يقصّر في التحصيل عن مستوى قدراته الحقيقية"
+    },
+    {
+      "w": "inquisitive",
+      "pos": "adjective",
+      "lvl": 2,
+      "topic": "education",
+      "def": "eager to learn about things and to ask questions",
+      "ex": "Young children are naturally inquisitive, but an overly rigid school system can discourage their curiosity.",
+      "col": [
+        "an inquisitive mind",
+        "naturally inquisitive"
+      ],
+      "fam": "enquire or inquire (v), enquiry (n)",
+      "ar": "فضولي؛ محبّ للمعرفة والسؤال"
+    },
+    {
+      "w": "mature student",
+      "pos": "noun",
+      "lvl": 2,
+      "topic": "education",
+      "def": "a person who starts a university or college course as an adult, usually some years after leaving school",
+      "ex": "Mature students often bring valuable life and work experience to classroom discussions.",
+      "col": [
+        "return to study as a mature student",
+        "support for mature students"
+      ],
+      "fam": "maturity (n), mature (v)",
+      "ar": "طالب يلتحق بالدراسة في سن متقدمة"
+    },
+    {
+      "w": "pedagogy",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "the methods and theory of teaching",
+      "ex": "Modern pedagogy places students at the centre of the learning process rather than treating them as passive listeners.",
+      "col": [
+        "modern pedagogy",
+        "learner-centred pedagogy",
+        "innovative pedagogy"
+      ],
+      "fam": "pedagogical (adj), pedagogue (n)",
+      "ar": "علم أصول التدريس؛ البيداغوجيا"
+    },
+    {
+      "w": "gentrification",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "the process by which a poorer area of a city changes as wealthier people move in, often pushing prices up so that original residents have to leave",
+      "ex": "While gentrification can revive run-down neighbourhoods, it often forces long-term residents out of the area.",
+      "col": [
+        "the effects of gentrification",
+        "undergo gentrification"
+      ],
+      "fam": "gentrify (v), gentrified (adj)",
+      "ar": "تحسين الأحياء الشعبية المصحوب بتهجير سكانها الأصليين (الجنترة)"
+    },
+    {
+      "w": "predisposition",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "a natural tendency to suffer from a particular illness or to behave in a particular way",
+      "ex": "Even people with a genetic predisposition to diabetes can lower their risk by staying active.",
+      "col": [
+        "a genetic predisposition to sth",
+        "a predisposition towards sth"
+      ],
+      "fam": "predispose (v), predisposed (adj)",
+      "ar": "استعداد وراثي؛ قابلية للإصابة"
+    },
+    {
+      "w": "meritocracy",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "a system in which people gain positions and rewards because of their ability and effort, not their wealth or family",
+      "ex": "A true meritocracy is impossible while children from wealthy families enjoy far better schools.",
+      "col": [
+        "a genuine meritocracy",
+        "the ideal of meritocracy"
+      ],
+      "fam": "merit (n), meritocratic (adj)",
+      "ar": "نظام الجدارة والاستحقاق (الميريتوقراطية)"
+    },
+    {
+      "w": "regurgitate",
+      "pos": "verb",
+      "lvl": 3,
+      "topic": "education",
+      "def": "to repeat information exactly as you learnt it, without thinking about it or understanding it",
+      "ex": "Exams that reward students for regurgitating textbook facts do little to develop independent thought.",
+      "col": [
+        "regurgitate facts",
+        "regurgitate information"
+      ],
+      "fam": "regurgitation (n)",
+      "ar": "يُعيد المعلومات كما حفظها دون فهم؛ يجترّ"
+    },
+    {
+      "w": "palliative care",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "medical care that aims to reduce pain and make life more comfortable for people with a serious illness that cannot be cured",
+      "ex": "Better funding for palliative care would allow more patients to spend their final weeks at home with dignity.",
+      "col": [
+        "receive palliative care",
+        "palliative care services"
+      ],
+      "fam": "palliate (v), palliative (adj)",
+      "ar": "الرعاية التلطيفية"
+    },
+    {
+      "w": "xenophobia",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "a strong dislike or fear of people from other countries",
+      "ex": "Economic hardship can fuel xenophobia, as some people blame migrants for the loss of jobs.",
+      "col": [
+        "rising xenophobia",
+        "combat xenophobia",
+        "fuel xenophobia"
+      ],
+      "fam": "xenophobic (adj)",
+      "ar": "كراهية الأجانب؛ رُهاب الأجانب"
+    },
+    {
+      "w": "formative assessment",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "assessment carried out during a course to give students feedback and help them improve, rather than to give a final grade",
+      "ex": "Regular formative assessment allows teachers to identify misunderstandings before they become serious problems.",
+      "col": [
+        "formative and summative assessment",
+        "use formative assessment"
+      ],
+      "fam": "form (v), formation (n), summative (adj, contrast)",
+      "ar": "التقويم التكويني (المستمر)"
+    },
+    {
+      "w": "herd immunity",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "protection of a whole population from an infectious disease because a large proportion of people are immune to it",
+      "ex": "Herd immunity protects babies and people with weak immune systems who cannot be vaccinated themselves.",
+      "col": [
+        "achieve herd immunity",
+        "maintain herd immunity"
+      ],
+      "fam": "immune (adj), immunity (n), immunise (v)",
+      "ar": "مناعة القطيع؛ المناعة المجتمعية"
+    },
+    {
+      "w": "dependency ratio",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "the number of people who are too young or too old to work compared with the number of people of working age",
+      "ex": "A rising dependency ratio means that each worker's taxes must support a larger number of retired people.",
+      "col": [
+        "a high dependency ratio",
+        "the old-age dependency ratio"
+      ],
+      "fam": "depend (v), dependant (n), dependent (adj)",
+      "ar": "نسبة الإعالة"
+    },
+    {
+      "w": "indoctrination",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "teaching someone to accept a set of beliefs without questioning them",
+      "ex": "There is a fine line between teaching national values and indoctrination.",
+      "col": [
+        "political indoctrination",
+        "a form of indoctrination"
+      ],
+      "fam": "indoctrinate (v), doctrine (n)",
+      "ar": "التلقين العقائدي أو الأيديولوجي"
+    },
+    {
+      "w": "vaccine hesitancy",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "a delay in accepting or a refusal to accept vaccines even when they are available, often because of fear or misinformation",
+      "ex": "Health authorities are working with community leaders to address vaccine hesitancy in areas where few people are vaccinated.",
+      "col": [
+        "tackle vaccine hesitancy",
+        "growing vaccine hesitancy"
+      ],
+      "fam": "hesitate (v), hesitant (adj)",
+      "ar": "التردّد في أخذ اللقاحات"
+    },
+    {
+      "w": "polarisation",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "the process by which a society divides into two groups with completely opposite opinions or very different living conditions",
+      "ex": "Online echo chambers may be contributing to the polarisation of public opinion on social issues.",
+      "col": [
+        "political polarisation",
+        "growing polarisation",
+        "the polarisation of society"
+      ],
+      "fam": "polarise (v), polarised (adj)",
+      "ar": "الاستقطاب"
+    },
+    {
+      "w": "elitist",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "education",
+      "def": "favouring a small group of privileged people and treating them as if they deserve special advantages",
+      "ex": "Critics claim that selective schools are elitist because they mostly benefit children whose parents can afford extra tuition.",
+      "col": [
+        "an elitist system",
+        "elitist institutions",
+        "be accused of being elitist"
+      ],
+      "fam": "elite (n/adj), elitism (n)",
+      "ar": "نخبوي"
+    },
+    {
+      "w": "non-communicable disease",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "a disease, such as heart disease, cancer or diabetes, that is not passed from person to person",
+      "ex": "Non-communicable diseases are now the leading cause of death worldwide, largely because of unhealthy diets and inactivity.",
+      "col": [
+        "the burden of non-communicable diseases",
+        "prevent non-communicable diseases"
+      ],
+      "fam": "communicable (adj), communicate (v)",
+      "ar": "الأمراض غير السارية (غير المعدية)"
+    },
+    {
+      "w": "means-tested",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "society",
+      "def": "given only to people whose income and savings are below a certain level",
+      "ex": "Some argue that benefits for pensioners should be means-tested so that wealthy retirees do not receive public money they do not need.",
+      "col": [
+        "means-tested benefits",
+        "means-tested support"
+      ],
+      "fam": "means test (n)",
+      "ar": "مشروط بالتحقق من الدخل"
+    },
+    {
+      "w": "remedial",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "education",
+      "def": "intended to help students who are below the expected level to improve their basic skills; also intended to correct a problem",
+      "ex": "Many universities now offer remedial classes in academic writing for first-year students.",
+      "col": [
+        "remedial classes",
+        "remedial teaching",
+        "remedial action"
+      ],
+      "fam": "remedy (n/v)",
+      "ar": "علاجي؛ تقويتي (دروس تقوية)"
+    },
+    {
+      "w": "debilitating",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "health",
+      "def": "making someone physically or mentally very weak, so that they cannot live normally",
+      "ex": "Chronic anxiety can be as debilitating as many physical illnesses, yet it often receives less attention.",
+      "col": [
+        "a debilitating illness",
+        "debilitating effects",
+        "debilitating pain"
+      ],
+      "fam": "debilitate (v), debility (n)",
+      "ar": "مُنهِك؛ مُضعِف"
+    },
+    {
+      "w": "individualism",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "the belief that the needs and freedom of each person are more important than those of the group",
+      "ex": "Growing individualism in modern cities may explain why many people no longer know their neighbours.",
+      "col": [
+        "rising individualism",
+        "a culture of individualism"
+      ],
+      "fam": "individual (n/adj), individualistic (adj)",
+      "ar": "الفردانية؛ النزعة الفردية"
+    },
+    {
+      "w": "pastoral care",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "the part of a school's work that looks after students' personal well-being and emotional needs, not only their studies",
+      "ex": "Effective pastoral care can help students cope with problems at home that might otherwise affect their grades.",
+      "col": [
+        "provide pastoral care",
+        "pastoral care staff",
+        "pastoral support"
+      ],
+      "fam": "pastoral (adj)",
+      "ar": "الرعاية الطلابية النفسية والاجتماعية"
+    },
+    {
+      "w": "euthanasia",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "the act of deliberately ending the life of a person who is very ill and in pain, usually at their request",
+      "ex": "Euthanasia remains one of the most controversial ethical issues, as it raises difficult questions about the value of life and personal choice.",
+      "col": [
+        "legalise euthanasia",
+        "voluntary euthanasia",
+        "the euthanasia debate"
+      ],
+      "fam": "assisted dying (n, related term)",
+      "ar": "القتل الرحيم"
+    },
+    {
+      "w": "philanthropy",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "the practice of giving money and time to help other people, especially through large donations to good causes",
+      "ex": "Private philanthropy can fund valuable projects, but it should not replace public spending on essential services.",
+      "col": [
+        "private philanthropy",
+        "corporate philanthropy"
+      ],
+      "fam": "philanthropist (n), philanthropic (adj)",
+      "ar": "العمل الخيري؛ الإحسان"
+    },
+    {
+      "w": "shadow education",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "private tutoring that runs alongside the official school system and closely follows its curriculum",
+      "ex": "In highly competitive societies, shadow education has become so widespread that many parents feel they cannot opt out.",
+      "col": [
+        "the growth of shadow education",
+        "spending on shadow education"
+      ],
+      "fam": "shadow (n/v), tutoring (n)",
+      "ar": "التعليم الموازي أو التعليم الظلّي (الدروس الخصوصية الموازية للمدرسة)"
+    },
+    {
+      "w": "terminally ill",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "health",
+      "def": "having an illness that cannot be cured and will cause death",
+      "ex": "Some argue that terminally ill patients should have the right to decide how and when their lives end.",
+      "col": [
+        "terminally ill patients",
+        "care for the terminally ill"
+      ],
+      "fam": "terminal (adj), terminally (adv)",
+      "ar": "مصاب بمرض عُضال في مراحله الأخيرة"
+    },
+    {
+      "w": "grassroots",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "society",
+      "def": "involving ordinary people in a community rather than leaders or official organisations",
+      "ex": "A grassroots campaign led by local parents persuaded the council to build safer crossings near the school.",
+      "col": [
+        "grassroots campaigns",
+        "grassroots organisations",
+        "at grassroots level"
+      ],
+      "fam": "the grass roots (n)",
+      "ar": "شعبي؛ قاعدي (نابع من عامة الناس)"
+    },
+    {
+      "w": "didactic",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "education",
+      "def": "intended to teach, especially in a formal way that tells people what to think",
+      "ex": "A purely didactic style of teaching, in which the teacher talks and pupils listen, leaves little room for creativity.",
+      "col": [
+        "a didactic approach",
+        "didactic teaching",
+        "overly didactic"
+      ],
+      "fam": "didactically (adv)",
+      "ar": "تلقيني؛ تعليمي وعظي"
+    },
+    {
+      "w": "obesogenic",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "health",
+      "def": "describing an environment or lifestyle that encourages people to eat too much and move too little, causing weight gain",
+      "ex": "Fast-food outlets on every corner and car-dependent suburbs combine to create an obesogenic environment.",
+      "col": [
+        "an obesogenic environment",
+        "obesogenic lifestyles"
+      ],
+      "fam": "obesity (n), obese (adj)",
+      "ar": "مُسبِّب للسمنة (بيئة تشجّع على زيادة الوزن)"
+    },
+    {
+      "w": "juvenile delinquency",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "crime and bad behaviour committed by young people who are not yet legally adults",
+      "ex": "After-school programmes that keep teenagers busy have been linked to a reduction in juvenile delinquency.",
+      "col": [
+        "prevent juvenile delinquency",
+        "the causes of juvenile delinquency"
+      ],
+      "fam": "juvenile (adj/n), delinquent (n/adj)",
+      "ar": "جنوح الأحداث"
+    },
+    {
+      "w": "credentialism",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "education",
+      "def": "the tendency to judge people mainly by their formal qualifications rather than by their actual skills",
+      "ex": "Credentialism forces young people to collect ever more certificates simply to compete for jobs that once required none.",
+      "col": [
+        "the rise of credentialism",
+        "critics of credentialism"
+      ],
+      "fam": "credential (n), credentials (n pl)",
+      "ar": "النزعة إلى تقديس الشهادات (الحكم على الناس بمؤهلاتهم الرسمية)"
+    },
+    {
+      "w": "nanny state",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "health",
+      "def": "a disapproving, informal term for a government that interferes too much in people's personal choices, for example about health",
+      "ex": "Opponents of bans on sugary drinks describe them as an example of the nanny state telling adults how to live.",
+      "col": [
+        "accuse the government of creating a nanny state",
+        "nanny state policies"
+      ],
+      "fam": "nanny (n)",
+      "ar": "دولة الوصاية (حكومة تتدخل بإفراط في خيارات الأفراد)"
+    },
+    {
+      "w": "custodial sentence",
+      "pos": "noun",
+      "lvl": 3,
+      "topic": "society",
+      "def": "a punishment in which a court sends someone to prison",
+      "ex": "For non-violent offenders, community-based punishments may be more effective than custodial sentences.",
+      "col": [
+        "receive a custodial sentence",
+        "a non-custodial sentence"
+      ],
+      "fam": "custody (n)",
+      "ar": "حكم بالسجن؛ عقوبة سالبة للحرية"
+    },
+    {
+      "w": "inculcate",
+      "pos": "verb",
+      "lvl": 3,
+      "topic": "education",
+      "def": "to fix ideas, principles or habits firmly in someone's mind by repeating them often",
+      "ex": "Schools that inculcate a respect for evidence prepare students well for life in a democratic society.",
+      "col": [
+        "inculcate values",
+        "inculcate a sense of responsibility in sb"
+      ],
+      "fam": "inculcation (n)",
+      "ar": "يغرس؛ يرسّخ (فكرة أو مبدأ بالتكرار)"
+    },
+    {
+      "w": "psychosomatic",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "health",
+      "def": "describing physical symptoms that are caused or made worse by mental factors such as stress or worry",
+      "ex": "Headaches and stomach pains before exams are often psychosomatic, reflecting the pressure that students feel.",
+      "col": [
+        "psychosomatic symptoms",
+        "a psychosomatic illness"
+      ],
+      "fam": "psychology (n), somatic (adj)",
+      "ar": "نفسي جسدي (أعراض جسدية ذات منشأ نفسي)"
+    },
+    {
+      "w": "unruly",
+      "pos": "adjective",
+      "lvl": 3,
+      "topic": "education",
+      "def": "difficult to control and behaving badly",
+      "ex": "Teachers in overcrowded classrooms may spend more time managing unruly pupils than actually teaching.",
+      "col": [
+        "unruly pupils",
+        "unruly behaviour",
+        "an unruly class"
+      ],
+      "fam": "unruliness (n)",
+      "ar": "مشاغب؛ جامح"
+    }
+  ]
+}

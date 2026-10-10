@@ -1,0 +1,896 @@
+{
+  "kind": "reading",
+  "items": [
+    {
+      "id": "r05",
+      "title": "The Return of the Night Train",
+      "level": 1,
+      "topic": "society",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "On a cold platform in the northern city of Esterholm, a little before ten o'clock at night, passengers carrying small suitcases and the occasional pillow wait for a train that many people assumed had vanished for good. The sleeper train, which offers beds instead of ordinary seats and carries travellers several hundred kilometres while they rest, was once a familiar way of crossing a continent. By the early years of this century, however, a large number of these services had been withdrawn. Today, some of the old routes are being revived and new ones are being planned, as both travellers and governments search for alternatives to short-haul flights."
+        },
+        {
+          "label": "B",
+          "text": "The decline of the sleeper was gradual rather than sudden. From the 1990s onwards, low-cost airlines made it possible to fly between major cities for less than the price of a rail ticket, and in a fraction of the time. Meanwhile, fast daytime rail lines were built between many large cities, attracting passengers who might previously have travelled overnight. Sleeper trains, which need staff on board throughout the night and carry relatively few people in each carriage, were expensive to run. Rail companies under pressure to cut costs found it easier to close unprofitable night services than to modernise them. Ageing carriages were not replaced, and as standards of comfort fell, so did passenger numbers, which in turn made further closures more likely."
+        },
+        {
+          "label": "C",
+          "text": "The present revival owes much to growing concern about the environmental impact of aviation. A short flight generally produces far more greenhouse gas per passenger than the equivalent journey on an electric train. Because a large proportion of an aircraft's fuel is consumed during take-off and the climb to cruising height, flights covering short distances are particularly wasteful. A growing number of travellers now try to avoid flying whenever a practical alternative exists, and several national governments have debated limiting domestic flights on routes that are well served by rail. Night trains benefit from this shift because they are suited to distances of roughly 800 to 1,500 kilometres: too far for a comfortable daytime rail journey, but ideal for a trip that takes place while passengers sleep."
+        },
+        {
+          "label": "D",
+          "text": "Environmental arguments alone, however, would probably not have been enough to bring passengers back. Helena Strand, who studies travel behaviour at the University of Carrova, argues that the night train's real advantage is the way it uses time. 'People compare a twelve-hour train journey with a ninety-minute flight and assume the plane is obviously quicker,' she says. 'But once you add the trip to the airport, the security checks and the journey into the city at the other end, the difference shrinks. And the hours on the train are hours you would have spent asleep anyway.' Strand also points out that a traveller who takes an evening flight usually has to pay for a hotel, whereas a sleeper passenger arrives in the city centre at breakfast time, often early enough for a morning meeting. Business travellers in particular have begun to recognise that a quiet compartment can also serve as a place to work."
+        },
+        {
+          "label": "E",
+          "text": "Running a successful sleeper service is nevertheless far from simple. Sleeping carriages are specialised and expensive; only a few manufacturers produce them, and new orders can take several years to arrive. International night trains must also cross borders, and each country has its own rail operator, safety regulations, electrical system and track-access charges, the fees an operator pays for using the railway infrastructure. On some routes, these charges account for a considerable part of the ticket price. Timetabling causes further difficulties. Because much of the repair work on railway lines is carried out at night, when fewer trains are running, maintenance engineers and sleeper operators are often competing for the same hours."
+        },
+        {
+          "label": "F",
+          "text": "Operators have responded in different ways. Nordline, a small company that runs services between Esterholm and the southern port of Valmont, has introduced 'capsule' compartments: private sleeping pods that cost less than a traditional cabin but offer more privacy than a couchette, in which up to six strangers share a compartment of bunk beds. Other operators have concentrated on food and service, presenting the journey as part of the holiday rather than simply a means of reaching it. Booking, however, remains a weak point. Passengers frequently complain that buying a ticket for a journey across several countries requires visiting more than one website, and some routes cannot be reserved until a few weeks before departure."
+        },
+        {
+          "label": "G",
+          "text": "Whether the revival will last remains uncertain. Critics argue that night trains will never carry as many people as aircraft and that, without financial support from governments, many routes would struggle to cover their costs. Supporters reply that aviation has itself enjoyed favourable treatment for decades, for example through fuel that in many places is taxed lightly or not at all. What seems clear is that, for a growing number of travellers, the slower journey has become part of the appeal. As one passenger waiting on the Esterholm platform put it, 'I give up a little speed, but I gain a whole day.'"
+        }
+      ],
+      "groups": [
+        {
+          "type": "matching_info",
+          "instructions": "The reading passage has seven paragraphs, A-G. Which paragraph contains the following information? Write the correct letter, A-G. You may use any letter more than once.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Paragraph A"
+            },
+            {
+              "key": "B",
+              "text": "Paragraph B"
+            },
+            {
+              "key": "C",
+              "text": "Paragraph C"
+            },
+            {
+              "key": "D",
+              "text": "Paragraph D"
+            },
+            {
+              "key": "E",
+              "text": "Paragraph E"
+            },
+            {
+              "key": "F",
+              "text": "Paragraph F"
+            },
+            {
+              "key": "G",
+              "text": "Paragraph G"
+            }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "an explanation of why flying short distances is especially inefficient",
+              "answer": "C",
+              "explanation": "Paragraph C says that a large proportion of an aircraft's fuel is used during take-off and the climb, so 'flights covering short distances are particularly wasteful'. Paragraph B also mentions flights, but only their low price and speed."
+            },
+            {
+              "n": 2,
+              "prompt": "a reference to a conflict over the use of railway lines at night",
+              "answer": "E",
+              "explanation": "Paragraph E explains that repair work on the lines is done at night, so 'maintenance engineers and sleeper operators are often competing for the same hours'."
+            },
+            {
+              "n": 3,
+              "prompt": "a response to the claim that night trains depend on public money",
+              "answer": "G",
+              "explanation": "In paragraph G critics say many routes need financial support from governments, and supporters reply that aviation has also enjoyed favourable treatment, such as lightly taxed fuel."
+            },
+            {
+              "n": 4,
+              "prompt": "a description of how a fall in quality led to a loss of passengers",
+              "answer": "B",
+              "explanation": "Paragraph B states that ageing carriages were not replaced, and 'as standards of comfort fell, so did passenger numbers'. This is a cause-and-effect link between quality and passenger numbers."
+            }
+          ]
+        },
+        {
+          "type": "tfng",
+          "instructions": "Do the following statements agree with the information given in the reading passage? Write TRUE if the statement agrees with the information, FALSE if the statement contradicts the information, NOT GIVEN if there is no information on this.",
+          "questions": [
+            {
+              "n": 5,
+              "prompt": "Sleeper services disappeared within a very short period of time.",
+              "answer": "FALSE",
+              "explanation": "Paragraph B opens with 'The decline of the sleeper was gradual rather than sudden', and then describes a process lasting from the 1990s into this century. This contradicts the idea of a very short period."
+            },
+            {
+              "n": 6,
+              "prompt": "Having to employ crew for the entire night was one factor that made sleeper trains costly to operate.",
+              "answer": "TRUE",
+              "explanation": "Paragraph B says sleeper trains 'need staff on board throughout the night' and were therefore 'expensive to run'. 'Crew for the entire night' paraphrases 'staff on board throughout the night'."
+            },
+            {
+              "n": 7,
+              "prompt": "Business travellers now make up the largest group of night-train passengers.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph D only says that business travellers 'in particular have begun to recognise' that a compartment can be used for work. The passage gives no information about what proportion of passengers they represent."
+            },
+            {
+              "n": 8,
+              "prompt": "On certain routes, the fees for using the rail network represent a substantial share of the fare.",
+              "answer": "TRUE",
+              "explanation": "Paragraph E defines track-access charges as the fees for using the railway infrastructure and says that 'on some routes, these charges account for a considerable part of the ticket price'."
+            },
+            {
+              "n": 9,
+              "prompt": "Buying a ticket for a night train that crosses several borders is usually a simple process.",
+              "answer": "FALSE",
+              "explanation": "Paragraph F calls booking 'a weak point' and says passengers frequently complain that such tickets require 'visiting more than one website'. This contradicts the statement."
+            },
+            {
+              "n": 10,
+              "prompt": "Nordline's capsule compartments are more expensive than a place in a couchette.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph F compares the capsules' price only with a traditional cabin (they cost less) and compares them with a couchette only in terms of privacy. The price of a couchette is never mentioned, so we cannot know."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the notes below. Choose ONE WORD ONLY from the passage for each answer.",
+          "title": "Night trains: advantages and difficulties",
+          "wordLimit": "ONE WORD ONLY",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Advantage: travellers save the cost of a night in a ____ and reach the city centre early in the day.",
+              "answer": [
+                "hotel"
+              ],
+              "explanation": "Paragraph D: an evening flight passenger 'usually has to pay for a hotel', whereas a sleeper passenger 'arrives in the city centre at breakfast time'."
+            },
+            {
+              "n": 12,
+              "prompt": "Difficulty: night-time track ____ reduces the hours available for sleeper services.",
+              "answer": [
+                "maintenance",
+                "repair",
+                "repairs"
+              ],
+              "explanation": "Paragraph E explains that repair work is done at night, so 'maintenance engineers and sleeper operators are often competing for the same hours'."
+            },
+            {
+              "n": 13,
+              "prompt": "Response: some operators focus on food and service so that the journey feels like part of the ____ itself.",
+              "answer": [
+                "holiday"
+              ],
+              "explanation": "Paragraph F: some operators have 'concentrated on food and service, presenting the journey as part of the holiday rather than simply a means of reaching it'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r06",
+      "title": "Designing for Everyone",
+      "level": 2,
+      "topic": "technology",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "When Tomas Reyner, a web developer in the town of Lindqvist, broke his right wrist in a cycling accident, he expected a few inconvenient weeks. What he did not expect was to discover how many of the websites he used every day, including several he had helped to build, were difficult or impossible to operate without a mouse. 'I had always thought of accessibility as something for a small group of users,' he admits. 'Suddenly I was one of them.' His experience illustrates a point campaigners have long made: disability is not a fixed category affecting a separate minority, but something almost everyone encounters at some stage, whether permanently, temporarily or simply because of circumstances such as bright sunlight or a noisy room. As banking, healthcare and job applications move online, an inaccessible website is no longer a minor nuisance; it can shut people out of essential services."
+        },
+        {
+          "label": "B",
+          "text": "Disabled people use a wide range of tools, known collectively as assistive technology, to interact with digital devices. Blind users and many people with low vision rely on screen readers, programs that convert the content of a page into synthesised speech or braille. Others enlarge the screen with magnification software, while people with limited movement may navigate using only a keyboard, a single switch or voice commands. Deaf users depend on captions and transcripts for audio and video content, and people with cognitive or learning disabilities may benefit from simple layouts, predictable navigation and plain language. None of these tools can work properly, however, unless the website or app has been built in a way that allows them to."
+        },
+        {
+          "label": "C",
+          "text": "Many of the most common barriers result from small technical decisions. An image without a text description is invisible to a screen reader user, who will hear nothing at all or, worse, a meaningless file name. Pale grey text on a white background may look elegant on a designer's expensive monitor but be unreadable for someone with weak eyesight. Forms that can only be completed with a mouse exclude keyboard users entirely. Developers sometimes create custom buttons and menus from generic page elements because they are easier to style; to a sighted user these look identical to standard controls, but a screen reader cannot identify what they are or do. Each of these problems takes only minutes to prevent, yet together they can make a service unusable."
+        },
+        {
+          "label": "D",
+          "text": "Why, then, are such barriers so widespread? Most specialists agree that the cause is rarely deliberate exclusion. One explanation is education: accessibility receives little attention on many design and computer science courses, so graduates often enter the industry without having learnt even the basics. Another is the way projects are organised. Accessibility is frequently treated as a final check, carried out just before launch, by which time fixing problems means rewriting work that has already been approved. Testing is also commonly done by people without disabilities, who may miss difficulties that would be obvious to a screen reader user. Automated checking tools help, but they can detect only certain kinds of fault; a program can confirm that an image has a description, for instance, but not whether that description is accurate."
+        },
+        {
+          "label": "E",
+          "text": "Advocates of accessible design often point out that its benefits extend far beyond the people it was intended for. Captions, originally provided for deaf viewers, are now widely used by people watching videos on public transport or in shared offices where they cannot play sound. Clear, simple wording, which helps users with cognitive disabilities, also helps people reading in a second language and anyone using a service under stress. Strong colour contrast makes a screen easier to read outdoors, and a site that works well with a keyboard is often faster for experienced users. Designers sometimes call this the 'kerb-cut effect', after the lowered sections of pavement first designed for wheelchair users, which turned out to be just as useful for people pushing prams or pulling suitcases."
+        },
+        {
+          "label": "F",
+          "text": "There are also financial and legal reasons to take accessibility seriously. In many countries public bodies are now required by law to make their websites accessible, and private companies have been taken to court by customers unable to use their services. Yet the strongest argument may be economic. A study by Quillmere Digital, a consultancy, compared projects in which accessibility was considered from the start with others in which problems were fixed after launch. It found that late repairs were consistently more expensive, sometimes several times so, because teams had to revisit work that could have been done correctly the first time. Building an accessible product, in other words, is rarely costly; rebuilding an inaccessible one often is."
+        },
+        {
+          "label": "G",
+          "text": "Recently, several firms have begun selling automatic 'overlay' tools, which add a small piece of code to a website and claim to make it accessible instantly. Many disabled users and specialists are critical of these products. They argue that the tools cannot repair the underlying structure of a page, that they sometimes interfere with the assistive technology people already use, and that they encourage organisations to believe the problem has been solved. Artificial intelligence may yet improve matters, since software that writes descriptions of images is becoming more reliable, but most experts believe there is no substitute for involving disabled people directly in design and testing. As Reyner puts it, 'You cannot know whether something works for someone without asking them.'"
+        }
+      ],
+      "groups": [
+        {
+          "type": "headings",
+          "instructions": "The reading passage has seven paragraphs, A-G. Choose the correct heading for paragraphs B-G from the list of headings below. Write the correct number, i-x.",
+          "options": [
+            {
+              "key": "i",
+              "text": "Why delay is more expensive"
+            },
+            {
+              "key": "ii",
+              "text": "A lack of disabled people in the technology industry"
+            },
+            {
+              "key": "iii",
+              "text": "Assistance that depends on how products are built"
+            },
+            {
+              "key": "iv",
+              "text": "The limits of quick fixes"
+            },
+            {
+              "key": "v",
+              "text": "Legal action as the main driver of change"
+            },
+            {
+              "key": "vi",
+              "text": "Small oversights with serious results"
+            },
+            {
+              "key": "vii",
+              "text": "How a familiar term got its name"
+            },
+            {
+              "key": "viii",
+              "text": "Advantages for people who were not the original target"
+            },
+            {
+              "key": "ix",
+              "text": "Falling prices for specialist equipment"
+            },
+            {
+              "key": "x",
+              "text": "Explaining a persistent failure"
+            }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Paragraph B",
+              "answer": "iii",
+              "explanation": "Paragraph B lists several kinds of assistive technology and ends with its main point: 'None of these tools can work properly, however, unless the website or app has been built in a way that allows them to.' No prices are mentioned, so ix is wrong."
+            },
+            {
+              "n": 2,
+              "prompt": "Paragraph C",
+              "answer": "vi",
+              "explanation": "Paragraph C says barriers 'result from small technical decisions', each taking 'only minutes to prevent', yet together they 'can make a service unusable'."
+            },
+            {
+              "n": 3,
+              "prompt": "Paragraph D",
+              "answer": "x",
+              "explanation": "Paragraph D asks 'Why, then, are such barriers so widespread?' and gives several explanations: poor education, late checks, testing by non-disabled people and limited automated tools."
+            },
+            {
+              "n": 4,
+              "prompt": "Paragraph E",
+              "answer": "viii",
+              "explanation": "Paragraph E argues that accessible design benefits people 'far beyond the people it was intended for', such as commuters and second-language readers. The origin of the term 'kerb-cut effect' (vii) is only a supporting detail."
+            },
+            {
+              "n": 5,
+              "prompt": "Paragraph F",
+              "answer": "i",
+              "explanation": "Paragraph F mentions the law but says 'the strongest argument may be economic': late repairs were 'consistently more expensive'. This is why v (legal action as the main driver) is wrong."
+            },
+            {
+              "n": 6,
+              "prompt": "Paragraph G",
+              "answer": "iv",
+              "explanation": "Paragraph G explains why overlay tools that 'claim to make it accessible instantly' are criticised, and says there is 'no substitute' for involving disabled people. It does not discuss how many disabled people work in technology, so ii is wrong."
+            }
+          ]
+        },
+        {
+          "type": "mcq_multi",
+          "instructions": "Choose TWO letters, A-E.",
+          "questions": [
+            {
+              "n": 7,
+              "count": 2,
+              "prompt": "Which TWO of the following are given as reasons why accessibility problems are so common?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Designers deliberately choose to exclude disabled users."
+                },
+                {
+                  "key": "B",
+                  "text": "Accessibility is often considered only when a project is almost finished."
+                },
+                {
+                  "key": "C",
+                  "text": "Assistive technology is too expensive for many people who need it."
+                },
+                {
+                  "key": "D",
+                  "text": "Many university courses give the subject very little attention."
+                },
+                {
+                  "key": "E",
+                  "text": "Automated testing tools often report faults that do not exist."
+                }
+              ],
+              "answers": [
+                "B",
+                "D"
+              ],
+              "explanation": "Paragraph D says accessibility is 'treated as a final check, carried out just before launch' (B) and 'receives little attention on many design and computer science courses' (D). A is contradicted ('rarely deliberate exclusion'); the problem with automated tools is that they miss faults, not that they invent them (E); the cost of assistive technology is never discussed (C)."
+            },
+            {
+              "n": 9,
+              "count": 2,
+              "prompt": "Which TWO groups of people, apart from disabled users, are mentioned as benefiting from accessible digital design?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "people who cannot play sound in a shared space"
+                },
+                {
+                  "key": "B",
+                  "text": "people with slow internet connections"
+                },
+                {
+                  "key": "C",
+                  "text": "people reading in a language that is not their first"
+                },
+                {
+                  "key": "D",
+                  "text": "parents travelling with young children"
+                },
+                {
+                  "key": "E",
+                  "text": "older people who are new to technology"
+                }
+              ],
+              "answers": [
+                "A",
+                "C"
+              ],
+              "explanation": "Paragraph E says captions help people 'in shared offices where they cannot play sound' (A) and clear wording helps 'people reading in a second language' (C). Parents with prams (D) are mentioned only in connection with lowered pavements, not digital design; B and E are not mentioned."
+            }
+          ]
+        },
+        {
+          "type": "gap",
+          "instructions": "Complete the sentences below. Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+          "wordLimit": "NO MORE THAN TWO WORDS",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "If a picture has no written description, a screen reader may read out an unhelpful ____ or nothing at all.",
+              "answer": [
+                "file name",
+                "filename"
+              ],
+              "explanation": "Paragraph C: a screen reader user 'will hear nothing at all or, worse, a meaningless file name'. 'Unhelpful' paraphrases 'meaningless'."
+            },
+            {
+              "n": 12,
+              "prompt": "Software that checks a website automatically is unable to tell whether the description of an image is ____.",
+              "answer": [
+                "accurate"
+              ],
+              "explanation": "Paragraph D: a program 'can confirm that an image has a description, for instance, but not whether that description is accurate'."
+            },
+            {
+              "n": 13,
+              "prompt": "Critics claim that overlay products may cause problems for the ____ on which disabled users already rely.",
+              "answer": [
+                "assistive technology"
+              ],
+              "explanation": "Paragraph G: critics argue that overlay tools 'sometimes interfere with the assistive technology people already use'. 'Cause problems for' paraphrases 'interfere with'."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r07",
+      "title": "The Psychology of the Performance Review",
+      "level": 2,
+      "topic": "work",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "Few events in the working year generate as much anxiety as the annual performance review. Employees worry about what they will hear; managers, surveys suggest, often dread the meeting almost as much. In recent years a number of large organisations have redesigned the process or abandoned it altogether. Yet behind these changes lies a puzzle that psychologists have been trying to solve for decades. When asked, most workers say they would like more feedback on their performance. When they actually receive it, however, many react with defensiveness, disappointment or disbelief, and their work does not necessarily improve as a result."
+        },
+        {
+          "label": "B",
+          "text": "Part of the explanation lies in how people respond to criticism. Annika Thorvald, a psychologist at the University of Hollinsbridge, has spent many years studying what employees remember after their reviews. In one series of studies, she interviewed staff a week after their annual meeting and again three months later. Critical comments were recalled in far greater detail than positive ones, and were remembered for longer, even when praise had made up most of the conversation. Thorvald argues that people experience criticism of their work as a threat to their sense of who they are. 'When we feel our status is under attack,' she says, 'our attention shifts from learning to self-protection. We spend the meeting preparing our defence rather than listening.'"
+        },
+        {
+          "label": "C",
+          "text": "The format of the review can make matters worse. Many organisations require managers to give each employee a numerical rating, often on a five-point scale, alongside spoken or written comments. Samuel Okonjo-Reeve of Corvale Business School tested the effect of these ratings by giving two groups of employees identical written feedback. One group also received a score; the other did not. Those who were given a score could later recall it precisely but remembered little of the comments, while the group without scores discussed the comments in more depth and were more likely to make changes as a result. Okonjo-Reeve also found that employees who received the middle score were often more dissatisfied than their results justified, because they interpreted 'average' as a polite form of failure."
+        },
+        {
+          "label": "D",
+          "text": "Timing is a further problem. An annual review may deal with events that took place many months earlier, when neither manager nor employee can remember them clearly and when it is too late to act on what has been learnt. The organisational researcher Priya Castellane followed a software company, Brightfold, as it replaced its yearly reviews with short conversations held every two weeks. Staff reported feeling less anxious about feedback, and some managers said they had a clearer picture of their team's progress. Others, however, complained that the meetings took up a great deal of time and soon became routine. Castellane's most striking conclusion was that how often the meetings took place mattered less than what they focused on: conversations about what an employee could do next proved far more useful than analyses of what had gone wrong in the past."
+        },
+        {
+          "label": "E",
+          "text": "Some organisations have tried to reduce the influence of a single manager by collecting feedback from colleagues as well. In principle, this provides a fuller and fairer picture. Rhys Mabbott, who has advised several companies on their review systems, is cautious. In his experience, anonymous comments from peers can damage relationships within a team, partly because some people use anonymity to criticise colleagues they dislike, and partly because recipients spend time trying to guess who wrote each remark. Mabbott does not oppose peer feedback, but he recommends that it be signed and specific, and that it concentrate on observable behaviour rather than on personality."
+        },
+        {
+          "label": "F",
+          "text": "A more recent line of research shifts attention from the person giving feedback to the person receiving it. In later work, Thorvald trained one group of employees to treat critical comments as information about a particular task rather than as a judgement on their ability, and to ask follow-up questions instead of defending themselves. A comparison group received no training. Six months later, the trained employees rated their reviews as more useful, and their managers reported greater improvements in their performance. Thorvald suggests that organisations have invested heavily in teaching managers to deliver feedback while largely ignoring the skills needed to receive it."
+        },
+        {
+          "label": "G",
+          "text": "None of these findings points to a single ideal system. What they share, however, is an emphasis on trust. Employees will accept even severe criticism from a manager they believe is genuinely interested in their development, while the most carefully designed process is likely to fail if staff suspect it is being used mainly to justify decisions about pay or job cuts. The challenge for organisations may therefore lie less in perfecting the form that feedback takes than in building working relationships in which it can actually be heard."
+        }
+      ],
+      "groups": [
+        {
+          "type": "matching_features",
+          "instructions": "Look at the following statements (Questions 1-5) and the list of people below. Match each statement with the correct person, A-D. You may use any letter more than once.",
+          "options": [
+            {
+              "key": "A",
+              "text": "Annika Thorvald"
+            },
+            {
+              "key": "B",
+              "text": "Samuel Okonjo-Reeve"
+            },
+            {
+              "key": "C",
+              "text": "Priya Castellane"
+            },
+            {
+              "key": "D",
+              "text": "Rhys Mabbott"
+            }
+          ],
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Employees tend to see a rating in the middle of a scale as a disguised criticism.",
+              "answer": "B",
+              "explanation": "Paragraph C: Okonjo-Reeve found that employees given the middle score were dissatisfied because they saw an average result as 'a polite form of failure'."
+            },
+            {
+              "n": 2,
+              "prompt": "The direction a discussion takes is more important than how frequently it happens.",
+              "answer": "C",
+              "explanation": "Paragraph D: Castellane concluded that 'how often the meetings took place mattered less than what they focused on', with future-oriented conversations proving most useful."
+            },
+            {
+              "n": 3,
+              "prompt": "Negative remarks leave a more lasting impression than positive ones, even when they form a small part of what is said.",
+              "answer": "A",
+              "explanation": "Paragraph B: in Thorvald's studies, critical comments were recalled in greater detail and for longer 'even when praise had made up most of the conversation'."
+            },
+            {
+              "n": 4,
+              "prompt": "People who receive unsigned comments may waste effort working out who wrote them.",
+              "answer": "D",
+              "explanation": "Paragraph E: Mabbott says that with anonymous peer comments, 'recipients spend time trying to guess who wrote each remark'."
+            },
+            {
+              "n": 5,
+              "prompt": "Developing the skills of the people who receive feedback can lead to better performance.",
+              "answer": "A",
+              "explanation": "Paragraph F: Thorvald trained employees to respond to criticism, and their managers later 'reported greater improvements in their performance'. Mabbott (D) also mentions focusing on behaviour, but his advice is aimed at those giving feedback."
+            }
+          ]
+        },
+        {
+          "type": "summary_bank",
+          "instructions": "Complete the summary using the list of words, A-K, below. Write the correct letter, A-K.",
+          "title": "Changing when and how feedback is given",
+          "options": [
+            {
+              "key": "A",
+              "text": "early"
+            },
+            {
+              "key": "B",
+              "text": "time"
+            },
+            {
+              "key": "C",
+              "text": "regularity"
+            },
+            {
+              "key": "D",
+              "text": "nervous"
+            },
+            {
+              "key": "E",
+              "text": "specific"
+            },
+            {
+              "key": "F",
+              "text": "late"
+            },
+            {
+              "key": "G",
+              "text": "money"
+            },
+            {
+              "key": "H",
+              "text": "anonymous"
+            },
+            {
+              "key": "I",
+              "text": "confident"
+            },
+            {
+              "key": "J",
+              "text": "focus"
+            },
+            {
+              "key": "K",
+              "text": "length"
+            }
+          ],
+          "questions": [
+            {
+              "n": 6,
+              "prompt": "Because annual reviews often deal with events from many months before, the feedback may arrive too ____ to be of practical use.",
+              "answer": "F",
+              "explanation": "Paragraph D says annual reviews cover events from months earlier, 'when it is too late to act on what has been learnt'."
+            },
+            {
+              "n": 7,
+              "prompt": "When the software company Brightfold replaced its yearly reviews with brief fortnightly conversations, employees said they felt less ____ about receiving feedback.",
+              "answer": "D",
+              "explanation": "Paragraph D: 'Staff reported feeling less anxious about feedback'. 'Nervous' is a synonym of 'anxious'; 'confident' (I) would reverse the meaning."
+            },
+            {
+              "n": 8,
+              "prompt": "Some managers, however, objected that the meetings demanded too much ____ and quickly became repetitive.",
+              "answer": "B",
+              "explanation": "Paragraph D: other managers 'complained that the meetings took up a great deal of time and soon became routine'. Cost (money) is not mentioned."
+            },
+            {
+              "n": 9,
+              "prompt": "The researcher who observed the change concluded that the ____ of the conversations mattered more than how often they were held.",
+              "answer": "J",
+              "explanation": "Paragraph D: Castellane found that 'how often the meetings took place mattered less than what they focused on'. 'Regularity' (C) is the factor that mattered less, and length is not discussed."
+            },
+            {
+              "n": 10,
+              "prompt": "Feedback from colleagues can give a fuller picture, but one adviser recommends that such comments should not be ____.",
+              "answer": "H",
+              "explanation": "Paragraph E: Mabbott warns that anonymous peer comments can damage relationships and recommends that feedback 'be signed'. He actually wants it to be specific, so E is wrong."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "What puzzle about feedback does the writer describe in the first paragraph?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Managers find reviews more stressful than the employees being reviewed."
+                },
+                {
+                  "key": "B",
+                  "text": "Employees say they want feedback but often respond badly when they get it."
+                },
+                {
+                  "key": "C",
+                  "text": "Organisations keep annual reviews despite evidence that they do not work."
+                },
+                {
+                  "key": "D",
+                  "text": "Feedback improves performance only when it is given frequently."
+                }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph A: most workers 'would like more feedback', but when they receive it 'many react with defensiveness, disappointment or disbelief'. A is wrong because managers dread reviews 'almost as much', not more; C is wrong because many organisations have changed or abandoned reviews."
+            },
+            {
+              "n": 12,
+              "prompt": "What did Okonjo-Reeve's experiment show about numerical ratings?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "They made employees more willing to change the way they worked."
+                },
+                {
+                  "key": "B",
+                  "text": "They were remembered less accurately than the written feedback."
+                },
+                {
+                  "key": "C",
+                  "text": "They were generally lower than employees had expected."
+                },
+                {
+                  "key": "D",
+                  "text": "They drew attention away from the comments that came with them."
+                }
+              ],
+              "answer": "D",
+              "explanation": "Paragraph C: employees given a score 'could later recall it precisely but remembered little of the comments'. A is the opposite of the finding (it was the group without scores that made more changes), and B reverses it (the score was remembered precisely)."
+            },
+            {
+              "n": 13,
+              "prompt": "Which of the following best summarises the writer's conclusion in the final paragraph?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Feedback from colleagues is more reliable than feedback from managers."
+                },
+                {
+                  "key": "B",
+                  "text": "Performance reviews should no longer be linked to decisions about pay."
+                },
+                {
+                  "key": "C",
+                  "text": "The relationship between the people involved matters more than the design of the review."
+                },
+                {
+                  "key": "D",
+                  "text": "Severe criticism should be avoided in performance reviews."
+                }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph G says the challenge lies 'less in perfecting the form that feedback takes than in building working relationships in which it can actually be heard'. Pay (B) is mentioned only as a reason staff may distrust a process, and D is contradicted: employees 'will accept even severe criticism' from a trusted manager."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "r08",
+      "title": "Do We Still Need to Learn Languages?",
+      "level": 3,
+      "topic": "education",
+      "placement": false,
+      "paragraphs": [
+        {
+          "label": "A",
+          "text": "A traveller points her phone at a restaurant menu and watches the unfamiliar words turn, almost instantly, into her own language. A businessman wears a small earpiece that whispers a translation of what his client is saying. Scenes like these, which would have seemed like science fiction a generation ago, have led some commentators to predict that learning a foreign language will soon be as unnecessary as learning to navigate by the stars. Why spend years memorising verb endings, they ask, when a device can do the work in seconds? The question deserves a serious answer, not least because it is already influencing decisions in schools and universities. My own view, however, is that it rests on a fundamental misunderstanding of what language learning is for."
+        },
+        {
+          "label": "B",
+          "text": "Let me begin with a concession. Machine translation has improved remarkably over the past decade, largely because modern systems learn patterns from enormous collections of text rather than following rules written by programmers. For many routine purposes, such as grasping the gist of a news article, asking for directions or checking the terms of a hotel booking, the results are now perfectly adequate, and it would be dishonest to pretend otherwise. It is also true that enrolments on language courses have fallen in a number of countries. Those who blame translation apps for this, however, overlook the fact that the decline began well before such tools were widely available, and that it owes more to crowded timetables and the reputation of languages as subjects in which high grades are hard to achieve."
+        },
+        {
+          "label": "C",
+          "text": "Defenders of language teaching often respond by listing the things machines still do badly. Translation software performs noticeably worse for languages with relatively little written material online. It struggles with humour, irony and regional dialects, and it can make errors that would be serious in a hospital or a courtroom. All of this is true, but I think it is a weak foundation on which to build an argument. Every one of these limitations is the kind of problem that engineers are working to solve, and I would be surprised if many of them were still obvious in ten years' time. If the only case for learning a language is that the machines are not yet good enough, then that case is already losing."
+        },
+        {
+          "label": "D",
+          "text": "The stronger argument is that a language is not merely a code for transmitting information. To learn one is to gain access, gradually and imperfectly, to the ways of thinking, joking and relating to others that belong to the people who speak it. Conversations conducted through a device tend to be slower, more formal and less spontaneous; it is difficult to interrupt, to tease or to share a private joke through an intermediary, however efficient. The sociolinguist Oona Vasquez-Lindt of the University of Pellham interviewed several hundred people who had moved to a new country as adults. Many reported that neighbours and colleagues had treated them quite differently once they began to speak the local language, even hesitantly and with frequent mistakes. Their efforts were taken as a sign of commitment and respect, something no translation, however accurate, could convey. Trust, it seems, cannot be outsourced."
+        },
+        {
+          "label": "E",
+          "text": "I am less persuaded by another argument often made in favour of language learning: that it brings significant cognitive benefits, sharpening the memory or delaying the effects of ageing on the brain. Popular articles repeat such claims with great confidence, but the research behind them is far more mixed than the headlines suggest, and some widely reported findings have proved difficult to repeat. Learning a language may well be good for the mind, as many demanding activities are, but I would not advise anyone to take up Portuguese purely to protect their memory. Overstating the case does teachers no favours; when exaggerated claims are questioned, the genuine reasons for learning risk being dismissed along with them."
+        },
+        {
+          "label": "F",
+          "text": "None of this means that language teaching can continue unchanged. If machines can handle routine transactions, there is little point in devoting lessons mainly to rehearsing them. Teachers would do better to concentrate on what technology cannot easily provide: extended spoken interaction, cultural understanding and the ability to judge the quality of a translation. At Kestrelmoor Secondary School, for example, students regularly translate a short text themselves, compare their version with one produced by software and discuss the differences. Their teachers report that the exercise makes students more aware of how meaning depends on context, and more sceptical of machine output. This seems to me far more sensible than banning translation tools from classrooms, a policy that is both unenforceable and out of touch with how students will use languages outside school."
+        },
+        {
+          "label": "G",
+          "text": "My greatest concern, however, is social rather than educational. If authorities conclude that machines have made language teaching unnecessary and cut it accordingly, languages will not disappear; they will simply become a privilege. Families who can afford private tutors, foreign travel and international schools will continue to give their children access to other languages and the opportunities that come with them, while everyone else relies on whatever their phone can provide. The real question raised by machine translation, then, is not whether computers can convert one language into another. It is what kind of relationships we want with people who speak differently from us, and who should be able to have them."
+        }
+      ],
+      "groups": [
+        {
+          "type": "ynng",
+          "instructions": "Do the following statements agree with the claims of the writer in the reading passage? Write YES if the statement agrees with the claims of the writer, NO if the statement contradicts the claims of the writer, NOT GIVEN if it is impossible to say what the writer thinks about this.",
+          "questions": [
+            {
+              "n": 1,
+              "prompt": "Present-day machine translation is good enough for a range of everyday tasks.",
+              "answer": "YES",
+              "explanation": "In paragraph B the writer concedes that for 'many routine purposes', such as asking for directions, 'the results are now perfectly adequate'."
+            },
+            {
+              "n": 2,
+              "prompt": "Translation technology is the main reason why fewer people are studying languages.",
+              "answer": "NO",
+              "explanation": "Paragraph B says the decline 'began well before such tools were widely available' and 'owes more to crowded timetables' and the reputation of languages as difficult subjects."
+            },
+            {
+              "n": 3,
+              "prompt": "The current weaknesses of translation software are unlikely to be overcome.",
+              "answer": "NO",
+              "explanation": "In paragraph C the writer says engineers are working on these limitations and 'I would be surprised if many of them were still obvious in ten years' time'."
+            },
+            {
+              "n": 4,
+              "prompt": "More money should be spent on improving translation software for languages with little written material online.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph C mentions that software performs worse for such languages, but the writer never says whether more money should be spent on them."
+            },
+            {
+              "n": 5,
+              "prompt": "The mental benefits of learning a language have been exaggerated in the popular media.",
+              "answer": "YES",
+              "explanation": "Paragraph E: popular articles repeat claims about cognitive benefits 'with great confidence', but the research is 'far more mixed than the headlines suggest', and the writer warns against 'overstating the case'."
+            },
+            {
+              "n": 6,
+              "prompt": "Students at Kestrelmoor Secondary School achieve higher examination results than students at other schools.",
+              "answer": "NOT GIVEN",
+              "explanation": "Paragraph F says only that teachers report greater awareness of context and more scepticism about machine output. Examination results are not mentioned."
+            }
+          ]
+        },
+        {
+          "type": "mcq",
+          "instructions": "Choose the correct letter, A, B, C or D.",
+          "questions": [
+            {
+              "n": 7,
+              "prompt": "The writer refers to navigating by the stars in the first paragraph in order to",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "illustrate a view that the writer goes on to challenge."
+                },
+                {
+                  "key": "B",
+                  "text": "show how quickly technology has changed daily life."
+                },
+                {
+                  "key": "C",
+                  "text": "suggest that traditional skills are still worth learning."
+                },
+                {
+                  "key": "D",
+                  "text": "compare language learning with other school subjects."
+                }
+              ],
+              "answer": "A",
+              "explanation": "In paragraph A the comparison belongs to 'some commentators' who predict that language learning will become unnecessary; the writer then says this view 'rests on a fundamental misunderstanding'. The writer does not argue about traditional skills in general (C)."
+            },
+            {
+              "n": 8,
+              "prompt": "What does the writer say about the argument based on what machines still do badly?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "It relies on information that is inaccurate."
+                },
+                {
+                  "key": "B",
+                  "text": "It is the most persuasive reason for learning a language."
+                },
+                {
+                  "key": "C",
+                  "text": "It applies only to languages that are rarely written."
+                },
+                {
+                  "key": "D",
+                  "text": "It is likely to become less convincing over time."
+                }
+              ],
+              "answer": "D",
+              "explanation": "Paragraph C: engineers are solving these limitations, so if this is 'the only case for learning a language', it 'is already losing'. A is wrong because the writer says 'All of this is true'; B is wrong because the writer calls it 'a weak foundation'."
+            },
+            {
+              "n": 9,
+              "prompt": "Vasquez-Lindt's research suggests that",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "adult migrants who make frequent mistakes are often misunderstood."
+                },
+                {
+                  "key": "B",
+                  "text": "trying to speak the local language can change how newcomers are treated."
+                },
+                {
+                  "key": "C",
+                  "text": "translation devices are rarely used by people who move abroad as adults."
+                },
+                {
+                  "key": "D",
+                  "text": "adults find it harder than children to learn a new language."
+                }
+              ],
+              "answer": "B",
+              "explanation": "Paragraph D: many interviewees said neighbours and colleagues 'treated them quite differently once they began to speak the local language, even hesitantly'. Mistakes are mentioned, but they did not prevent this positive reaction (A); C and D are not discussed."
+            },
+            {
+              "n": 10,
+              "prompt": "What is the writer's main concern in the final paragraph?",
+              "options": [
+                {
+                  "key": "A",
+                  "text": "Language teachers may lose their jobs to technology."
+                },
+                {
+                  "key": "B",
+                  "text": "People will depend too heavily on their mobile phones."
+                },
+                {
+                  "key": "C",
+                  "text": "The ability to learn languages may come to depend on wealth."
+                },
+                {
+                  "key": "D",
+                  "text": "Private tutors offer a lower standard of teaching than schools."
+                }
+              ],
+              "answer": "C",
+              "explanation": "Paragraph G warns that if authorities cut language teaching, languages will 'become a privilege' for families who can afford tutors, travel and international schools. Phones (B) are mentioned only as what everyone else would be left with."
+            }
+          ]
+        },
+        {
+          "type": "sentence_endings",
+          "instructions": "Complete each sentence with the correct ending, A-G, below.",
+          "options": [
+            {
+              "key": "A",
+              "text": "are popular because they make high grades easier to achieve."
+            },
+            {
+              "key": "B",
+              "text": "can make conversation slower and less natural."
+            },
+            {
+              "key": "C",
+              "text": "has been proven to protect the memory in old age."
+            },
+            {
+              "key": "D",
+              "text": "may be less valuable now that machines can handle such tasks."
+            },
+            {
+              "key": "E",
+              "text": "can help learners to see how meaning depends on context."
+            },
+            {
+              "key": "F",
+              "text": "may lead people to dismiss the genuine reasons for learning a language."
+            },
+            {
+              "key": "G",
+              "text": "may be the quickest way to build trust with neighbours."
+            }
+          ],
+          "questions": [
+            {
+              "n": 11,
+              "prompt": "Lessons that mainly practise everyday transactions",
+              "answer": "D",
+              "explanation": "Paragraph F: 'If machines can handle routine transactions, there is little point in devoting lessons mainly to rehearsing them.' Grades (A) are mentioned only in paragraph B, as one reason why fewer students choose languages."
+            },
+            {
+              "n": 12,
+              "prompt": "Exaggerating the mental benefits of language learning",
+              "answer": "F",
+              "explanation": "Paragraph E: 'when exaggerated claims are questioned, the genuine reasons for learning risk being dismissed along with them'. C is wrong because the writer says the research is 'far more mixed' than the headlines suggest."
+            },
+            {
+              "n": 13,
+              "prompt": "Communicating through an electronic intermediary",
+              "answer": "B",
+              "explanation": "Paragraph D: 'Conversations conducted through a device tend to be slower, more formal and less spontaneous'. Building trust (G) is linked to speaking the language oneself, not to using a device."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
