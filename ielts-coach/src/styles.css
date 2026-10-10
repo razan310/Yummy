@@ -583,3 +583,87 @@ ul.ticks { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
 .ar-inline { display: none; }
 .show-ar .ar-inline { display: block; }
 .ar-btn[aria-pressed="true"] { background: var(--accent-soft); }
+
+/* ---------- account identity in the header ---------- */
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.me-btn { position: relative; border: 0; background: none; padding: 2px; cursor: pointer; border-radius: 50%; }
+.avatar {
+  width: 34px; height: 34px; border-radius: 50%; display: inline-grid; place-items: center; flex: 0 0 auto;
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: .8125rem; letter-spacing: .02em;
+}
+.avatar.lg { width: 42px; height: 42px; font-size: .9375rem; }
+.avatar.xl { width: 64px; height: 64px; font-size: 1.375rem; }
+.me-dot { position: absolute; right: 0; bottom: 0; width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--paper); background: var(--good); }
+.me-dot.static { position: static; display: inline-block; border: 0; width: 8px; height: 8px; flex: 0 0 auto; }
+.me-dot.good { background: var(--good); } .me-dot.warn { background: var(--warn); } .me-dot.bad { background: var(--bad); }
+.me-menu {
+  position: fixed; z-index: 40; right: 16px; top: calc(env(safe-area-inset-top, 0px) + 60px);
+  width: min(300px, calc(100vw - 32px)); background: var(--sheet); border: 1px solid var(--rule);
+  border-radius: 12px; box-shadow: var(--shadow); padding: 8px; display: grid; gap: 2px;
+}
+.me-menu > button { text-align: left; border: 0; background: none; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-weight: 700; color: var(--ink); }
+.me-menu > button:hover, .me-menu > button:focus-visible { background: var(--sheet-2); }
+.me-head { display: flex; gap: 12px; align-items: center; padding: 8px 8px 10px; }
+.me-status { display: flex; gap: 8px; align-items: center; font-size: var(--t-sm); color: var(--ink-2); padding: 8px 12px; margin-bottom: 4px; border-radius: 8px; background: var(--sheet-2); }
+.me-status.inline { background: none; padding: 4px 0 0; margin: 0; }
+.danger-text { color: var(--bad) !important; }
+.ellipsis { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center { text-align: center; }
+.link { border: 0; background: none; padding: 0; color: var(--accent-text); font-weight: 700; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+/* the account screen comes first on the hosted site */
+.gated .tabs-top, .gated .tabs-bottom, .gated #exam-chip, .gated #sync, .gated #settings-btn, .gated #me-btn { display: none !important; }
+.gated main { padding-bottom: 40px; }
+.splash { min-height: 50vh; display: grid; place-items: center; align-content: center; gap: 16px; }
+.brand-cell.big { font-size: 1.5rem; padding: 4px 10px; border-width: 2px; }
+
+.welcome { display: grid; gap: 24px; align-items: start; }
+@media (min-width: 900px) { .welcome { grid-template-columns: 1.1fr .9fr; gap: 40px; padding-top: 24px; } }
+.welcome-intro { display: grid; gap: 14px; min-width: 0; }
+.welcome-intro h1 { font-family: var(--f-read); font-weight: 600; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -.015em; }
+.lead { font-size: var(--t-lg); color: var(--ink-2); }
+.welcome-scale { padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--sheet); }
+.welcome-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.welcome-points li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; }
+.wp-num { width: 28px; height: 28px; border: 1.5px solid var(--ink-2); border-radius: 3px; display: grid; place-items: center; font-size: var(--t-sm); }
+.welcome-form { align-self: start; }
+@media (min-width: 900px) { .welcome-form { position: sticky; top: 90px; } }
+@media (max-width: 899px) { .welcome-points { display: none; } .welcome-intro h1 { font-size: 1.875rem; } }
+.auth { display: grid; gap: 12px; }
+.auth-seg { justify-self: start; }
+.pw-wrap { position: relative; }
+.pw-wrap .input { padding-right: 44px; }
+.pw-toggle { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); border: 0; background: none; padding: 8px; color: var(--ink-3); cursor: pointer; border-radius: 6px; }
+.pw-toggle[aria-pressed="true"] { color: var(--accent-text); }
+.btn .spinner { border-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); border-top-color: var(--accent-ink); }
+
+/* first-run setup */
+.setup { display: grid; gap: 16px; max-width: 640px; width: 100%; justify-self: center; }
+.setup h1 { font-family: var(--f-read); font-weight: 600; font-size: var(--t-2xl); }
+.setup-top { display: flex; align-items: center; gap: 12px; }
+.setup-steps { width: 120px; }
+.setup-nav { position: sticky; bottom: calc(var(--nav-h) + 8px + env(safe-area-inset-bottom, 0px)); background: var(--paper); padding-block: 8px; }
+@media (min-width: 820px) { .setup-nav { bottom: 0; } }
+.choice-grid { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); }
+.choice-list { display: grid; gap: 8px; }
+.choice-card {
+  text-align: left; display: grid; gap: 2px; padding: 12px 14px; border-radius: 10px; cursor: pointer;
+  border: 1.5px solid var(--rule-strong); background: var(--sheet); color: var(--ink);
+}
+.choice-card b { font-size: var(--t-md); }
+.choice-card span { font-size: var(--t-sm); color: var(--ink-2); }
+.choice-card:hover { border-color: var(--accent); }
+.choice-card[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* Today: next task and progress ring */
+.today-head p { margin-top: 2px; }
+.next-up h2 { font-size: var(--t-xl); font-family: var(--f-read); font-weight: 600; }
+.next-title { display: flex; align-items: center; gap: 10px; }
+.next-title .skill-dot { width: 10px; height: 10px; }
+.ring { width: 52px; height: 52px; flex: 0 0 auto; }
+.ring-track { fill: none; stroke: var(--sheet-3); stroke-width: 5; }
+.ring-fill { fill: none; stroke: var(--good); stroke-width: 5; stroke-linecap: round; }
+.ring text { fill: var(--ink); font-family: var(--f-mono); font-size: 11px; font-weight: 500; }
+
+/* account page */
+.profile-top { display: flex; gap: 16px; align-items: center; min-width: 0; }

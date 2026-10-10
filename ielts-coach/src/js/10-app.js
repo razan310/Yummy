@@ -32,11 +32,15 @@ function shellHtml() {
       <button class="brand" data-act="nav" data-to="today" aria-label="Band Seven home"><span class="brand-cell">7.0</span><span class="brand-name">Band Seven</span></button>
       <nav class="tabs-top" aria-label="Main">${tabs()}</nav>
       <div class="topbar-spacer"></div>
-      <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
-      <span class="chip-exam" id="exam-chip"></span>
-      <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
-      <button class="icon-btn" data-act="nav" data-to="settings" aria-label="Settings">${ICONS.gear}</button>
+      <div class="topbar-actions">
+        <span class="chip-exam" id="exam-chip"></span>
+        <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
+        <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
+        <button class="icon-btn" data-act="nav" data-to="settings" id="settings-btn" aria-label="Settings">${ICONS.gear}</button>
+        <button class="me-btn" id="me-btn" data-act="meMenu" aria-haspopup="menu" aria-expanded="false" aria-controls="me-menu" hidden><span class="avatar" id="me-avatar"></span><i class="me-dot" id="me-dot"></i></button>
+      </div>
     </div></header>
+    <div class="me-menu" id="me-menu" role="menu" hidden></div>
     <main id="main" tabindex="-1"></main>
     <nav class="tabs-bottom" aria-label="Main">${tabs()}</nav>
     <div id="toast-root"></div><div id="modal-root"></div>`;
@@ -52,16 +56,76 @@ function updateChrome() {
   const tb = $('#theme-btn');
   if (tb) { tb.innerHTML = th === 'dark' ? ICONS.moon : th === 'light' ? ICONS.sun : ICONS.auto; tb.title = `Theme: ${th === 'system' ? 'match device' : th}`; }
   updateSyncBadge();
+  const signedIn = !!(Cloud.kind === 'server' && Cloud.user);
+  const me = $('#me-btn');
+  if (me) {
+    me.hidden = !signedIn;
+    $('#sync').hidden = signedIn;
+    $('#settings-btn').hidden = signedIn;
+    if (signedIn) {
+      $('#me-avatar').textContent = initials(displayName());
+      const st = syncState();
+      $('#me-dot').className = `me-dot ${st.tone}`;
+      me.setAttribute('aria-label', `${displayName() || 'Your account'}: ${st.text}`);
+    }
+  }
+  document.body.classList.toggle('gated', !!gateView());
 }
 
+/* ---------- who is signed in ---------- */
+const HOSTED = typeof window !== 'undefined' && !window.claude?.use && /^https?:$/.test(location.protocol);
+function displayName() { return (S.profile.name || Cloud.user?.name || (Cloud.user?.email || '').split('@')[0] || '').trim(); }
+function firstName() { return displayName().split(/\s+/)[0] || ''; }
+function initials(name) {
+  const parts = String(name || '').trim().split(/\s+/).filter(Boolean);
+  return ((parts[0]?.[0] || '?') + (parts[1]?.[0] || '')).toUpperCase();
+}
+function syncState() {
+  if (Cloud.error) return { tone: 'bad', text: Cloud.error };
+  if (Cloud.status === 'connecting') return { tone: 'warn', text: 'Loading your progress…' };
+  if (Object.values(writers).some((w) => w.busy || w.dirty)) return { tone: 'warn', text: 'Saving…' };
+  return { tone: 'good', text: 'All progress saved to your account' };
+}
+/* On the hosted site the app starts with the account screen until someone signs in. */
+function gateView() {
+  if (!HOSTED) return null;
+  if (Cloud.status === 'connecting' && !Cloud.kind) return 'splash';
+  if (Cloud.kind === 'server' && !Cloud.user) return 'welcome';
+  return null;
+}
+function meMenuHtml() {
+  const st = syncState();
+  return `<div class="me-head"><span class="avatar lg" aria-hidden="true">${esc(initials(displayName()))}</span><div style="min-width:0"><b class="ellipsis">${esc(displayName() || 'Your account')}</b><div class="xs muted ellipsis">${esc(Cloud.user?.email || '')}</div></div></div>
+    <div class="me-status"><i class="me-dot static ${st.tone}"></i><span>${esc(st.text)}</span></div>
+    <button role="menuitem" data-act="menuGo" data-to="account">Your account</button>
+    <button role="menuitem" data-act="menuGo" data-to="progress">Your progress</button>
+    <button role="menuitem" data-act="menuGo" data-to="settings">Settings</button>
+    <button role="menuitem" data-act="signOut" class="danger-text">Sign out</button>`;
+}
+function closeMeMenu() { const m = $('#me-menu'); if (m && !m.hidden) { m.hidden = true; $('#me-btn')?.setAttribute('aria-expanded', 'false'); } }
+ACT.meMenu = () => {
+  const m = $('#me-menu');
+  if (!m.hidden) { closeMeMenu(); return; }
+  m.innerHTML = meMenuHtml(); m.hidden = false;
+  $('#me-btn').setAttribute('aria-expanded', 'true');
+  m.querySelector('button')?.focus();
+};
+ACT.menuGo = (el) => { closeMeMenu(); go(el.dataset.to); };
+
 function render() {
-  const v = VIEWS[ROUTE.name] || VIEWS.today;
+  closeMeMenu();
+  const gate = gateView();
+  let name = gate || ROUTE.name;
+  if (!gate && name === 'today' && needsSetup()) name = 'setup';
+  const params = gate === 'welcome' ? (ROUTE.name === 'account' ? ROUTE.params : {}) : (ROUTE.params || {});
+  const v = VIEWS[name] || VIEWS.today;
   const main = $('#main');
-  main.innerHTML = v.html(ROUTE.params || {});
-  if (v.mount) v.mount(ROUTE.params || {});
+  main.innerHTML = v.html(params);
+  if (v.mount) v.mount(params);
   if (v.study) studyStart(); else studyStop();
   updateChrome();
 }
+VIEWS.splash = { html: () => '<div class="splash"><span class="brand-cell big">7.0</span><div class="ai-wait"><span class="spinner"></span>Loading your plan…</div></div>' };
 function go(name, params = {}, { force = false } = {}) {
   if (!force && RUN && RUN.dirty && RUN.dirty()) {
     confirmModal({
@@ -167,16 +231,17 @@ ACT.timer = () => { if (RUN && RUN.timer) RUN.timer.toggle(); };
 /* ---------- shared bits ---------- */
 const backBtn = (to, label, params) => `<button class="back" data-act="back" data-to="${to}" ${params ? `data-params='${esc(JSON.stringify(params))}'` : ''}>${ICONS.back}${esc(label)}</button>`;
 const skillDot = (s) => `<span class="skill-dot ${s}" aria-hidden="true"></span>`;
-function bandRuler(skill, est, { target = S.profile.target, minTarget = S.profile.minTarget } = {}) {
+function bandRuler(skill, est, { target = S.profile.target, minTarget = S.profile.minTarget, label = '', gapText = '' } = {}) {
   const lo = 4, hi = 9;
   const pct = (v) => `${((clamp(v, lo, hi) - lo) / (hi - lo)) * 100}%`;
   const ticks = [];
   for (let v = lo; v <= hi; v += 0.5) ticks.push(`<i class="ruler-tick ${Number.isInteger(v) ? 'major' : ''}" style="left:${pct(v)}"></i>`);
   const labels = [4, 5, 6, 7, 8, 9].map((v) => `<span style="left:${pct(v)}">${v}</span>`).join('');
   const val = est == null ? null : roundHalf(est);
-  const gap = val == null ? '' : val >= target ? '<span class="pill good">At target</span>' : `<span class="ruler-gap">${(target - val).toFixed(1)} below ${target.toFixed(1)}</span>`;
-  return `<div class="ruler" aria-label="${SKILL_NAME[skill]} ${val == null ? 'no estimate yet' : 'estimated band ' + fmtBand(val)}">
-    <div class="ruler-top"><span class="ruler-name">${skillDot(skill)} ${SKILL_NAME[skill]}</span><span class="row" style="gap:10px">${gap}<span class="ruler-val">${fmtBand(val)}</span></span></div>
+  const name = label || SKILL_NAME[skill];
+  const gap = gapText ? `<span class="ruler-gap">${esc(gapText)}</span>` : val == null ? '' : val >= target ? '<span class="pill good">At target</span>' : `<span class="ruler-gap">${(target - val).toFixed(1)} below ${target.toFixed(1)}</span>`;
+  return `<div class="ruler" aria-label="${esc(name)} ${val == null ? 'no estimate yet' : 'estimated band ' + fmtBand(val)}">
+    <div class="ruler-top"><span class="ruler-name">${label ? '' : skillDot(skill)} ${esc(name)}</span><span class="row" style="gap:10px">${gap}<span class="ruler-val">${fmtBand(val)}</span></span></div>
     <div class="ruler-track"><div class="ruler-line"></div>${ticks.join('')}
       ${val != null ? `<div class="ruler-fill" style="width:${pct(val)}"></div>` : ''}
       <i class="ruler-target min" style="left:${pct(minTarget)}" title="Minimum ${minTarget}"></i>
@@ -259,6 +324,7 @@ function bindEvents() {
   };
   document.addEventListener('input', onField);
   document.addEventListener('change', onField);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) closeModal('dismiss'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { if (MODAL) closeModal('dismiss'); else closeMeMenu(); } });
+  document.addEventListener('click', (e) => { if (!e.target.closest('#me-menu, #me-btn')) closeMeMenu(); }, true);
   window.addEventListener('beforeunload', () => { save(); });
 }

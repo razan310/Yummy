@@ -28,6 +28,7 @@ function defaultState() {
       ttsRate: 1,
       autoArabic: false,
       readQuestions: true,
+      name: '',
     },
     placement: null,           // {status, step, results:{R,L,W,S}, bands:{}, date}
     scores: [],                // {id, ts, date, skill, band, kind, ref, raw, label}
@@ -43,6 +44,7 @@ function defaultState() {
     mocks: {},                 // week -> mock record
     gen: [],                   // summaries of AI-generated practice items
     account: '',               // the hosted-site account this copy belongs to
+    onboarded: false,          // finished the first-run setup
   };
 }
 
@@ -206,13 +208,14 @@ async function cloudInit() {
   if (window.claude?.use) return claudeInit();
   if (/^https?:$/.test(location.protocol)) return serverInit();
   Cloud.status = 'local'; updateSyncBadge();
+  if (needsSetup()) rerenderIfIdle();
   return undefined;
 }
 async function claudeInit() {
   try {
     const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
     const id = user ? await user.id() : null;
-    if (!db || !id) { Cloud.status = 'local'; updateSyncBadge(); return; }
+    if (!db || !id) { Cloud.status = 'local'; updateSyncBadge(); if (needsSetup()) rerenderIfIdle(); return; }
     Cloud.kind = 'claude'; Cloud.db = db; Cloud.uid = id;
     const base = `data/users/${id}`;
     const [core, srs, gens] = await Promise.all([
@@ -224,7 +227,7 @@ async function claudeInit() {
     if (gens && !gens.empty) gens.docs.forEach((d) => { if (!DOCS[d.id]) { DOCS[d.id] = clone(d.data()); LS.set(LS_DOC + d.id, DOCS[d.id]); } });
     Cloud.status = 'cloud';
     updateSyncBadge();
-    if (changed) onDataReplaced();
+    if (changed || needsSetup()) onDataReplaced();
   } catch (e) {
     Cloud.kind = null; Cloud.ready = false;
     Cloud.status = 'local';
@@ -234,11 +237,12 @@ async function claudeInit() {
 }
 async function serverInit() {
   let r;
-  try { r = await api('/api/auth'); } catch { Cloud.status = 'local'; updateSyncBadge(); return; }
+  try { r = await api('/api/auth'); } catch { Cloud.status = 'local'; updateSyncBadge(); rerenderIfIdle(); return; }
   if (r.status === 401) { Cloud.kind = 'server'; Cloud.status = 'signed-out'; updateSyncBadge(); rerenderIfIdle(); return; }
   const data = r.ok ? await r.json().catch(() => null) : null;
-  if (!data || !data.user) { Cloud.status = 'local'; updateSyncBadge(); return; }   // no account API on this host
+  if (!data || !data.user) { Cloud.status = 'local'; updateSyncBadge(); rerenderIfIdle(); return; }   // no account API on this host
   await connectAccount(data.user);
+  rerenderIfIdle();
 }
 /* After sign-in or sign-up: load the account's progress and decide what to keep. */
 async function connectAccount(user, { interactive = false } = {}) {
@@ -253,6 +257,7 @@ async function connectAccount(user, { interactive = false } = {}) {
     const changed = reconcile(core, srs);
     LOADED_AT = { core: S.updatedAt || 0, srs: SRS.updatedAt || 0 };
     if (S.account !== user.email) { S.account = user.email; save(); }
+    if (!S.profile.name && user.name) { S.profile.name = user.name; save(); }
     if (useDevice) { save(); saveSrs(); }
     Cloud.status = 'cloud'; Cloud.error = '';
     updateSyncBadge();

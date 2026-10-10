@@ -589,6 +589,90 @@ ul.ticks { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
 .show-ar .ar-inline { display: block; }
 .ar-btn[aria-pressed="true"] { background: var(--accent-soft); }
 
+/* ---------- account identity in the header ---------- */
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.me-btn { position: relative; border: 0; background: none; padding: 2px; cursor: pointer; border-radius: 50%; }
+.avatar {
+  width: 34px; height: 34px; border-radius: 50%; display: inline-grid; place-items: center; flex: 0 0 auto;
+  background: var(--accent); color: var(--accent-ink); font-weight: 700; font-size: .8125rem; letter-spacing: .02em;
+}
+.avatar.lg { width: 42px; height: 42px; font-size: .9375rem; }
+.avatar.xl { width: 64px; height: 64px; font-size: 1.375rem; }
+.me-dot { position: absolute; right: 0; bottom: 0; width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--paper); background: var(--good); }
+.me-dot.static { position: static; display: inline-block; border: 0; width: 8px; height: 8px; flex: 0 0 auto; }
+.me-dot.good { background: var(--good); } .me-dot.warn { background: var(--warn); } .me-dot.bad { background: var(--bad); }
+.me-menu {
+  position: fixed; z-index: 40; right: 16px; top: calc(env(safe-area-inset-top, 0px) + 60px);
+  width: min(300px, calc(100vw - 32px)); background: var(--sheet); border: 1px solid var(--rule);
+  border-radius: 12px; box-shadow: var(--shadow); padding: 8px; display: grid; gap: 2px;
+}
+.me-menu > button { text-align: left; border: 0; background: none; padding: 10px 12px; border-radius: 8px; cursor: pointer; font-weight: 700; color: var(--ink); }
+.me-menu > button:hover, .me-menu > button:focus-visible { background: var(--sheet-2); }
+.me-head { display: flex; gap: 12px; align-items: center; padding: 8px 8px 10px; }
+.me-status { display: flex; gap: 8px; align-items: center; font-size: var(--t-sm); color: var(--ink-2); padding: 8px 12px; margin-bottom: 4px; border-radius: 8px; background: var(--sheet-2); }
+.me-status.inline { background: none; padding: 4px 0 0; margin: 0; }
+.danger-text { color: var(--bad) !important; }
+.ellipsis { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.center { text-align: center; }
+.link { border: 0; background: none; padding: 0; color: var(--accent-text); font-weight: 700; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+/* the account screen comes first on the hosted site */
+.gated .tabs-top, .gated .tabs-bottom, .gated #exam-chip, .gated #sync, .gated #settings-btn, .gated #me-btn { display: none !important; }
+.gated main { padding-bottom: 40px; }
+.splash { min-height: 50vh; display: grid; place-items: center; align-content: center; gap: 16px; }
+.brand-cell.big { font-size: 1.5rem; padding: 4px 10px; border-width: 2px; }
+
+.welcome { display: grid; gap: 24px; align-items: start; }
+@media (min-width: 900px) { .welcome { grid-template-columns: 1.1fr .9fr; gap: 40px; padding-top: 24px; } }
+.welcome-intro { display: grid; gap: 14px; min-width: 0; }
+.welcome-intro h1 { font-family: var(--f-read); font-weight: 600; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -.015em; }
+.lead { font-size: var(--t-lg); color: var(--ink-2); }
+.welcome-scale { padding: 12px 14px; border: 1px solid var(--rule); border-radius: var(--r); background: var(--sheet); }
+.welcome-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.welcome-points li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; align-items: start; }
+.wp-num { width: 28px; height: 28px; border: 1.5px solid var(--ink-2); border-radius: 3px; display: grid; place-items: center; font-size: var(--t-sm); }
+.welcome-form { align-self: start; }
+@media (min-width: 900px) { .welcome-form { position: sticky; top: 90px; } }
+@media (max-width: 899px) { .welcome-points { display: none; } .welcome-intro h1 { font-size: 1.875rem; } }
+.auth { display: grid; gap: 12px; }
+.auth-seg { justify-self: start; }
+.pw-wrap { position: relative; }
+.pw-wrap .input { padding-right: 44px; }
+.pw-toggle { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); border: 0; background: none; padding: 8px; color: var(--ink-3); cursor: pointer; border-radius: 6px; }
+.pw-toggle[aria-pressed="true"] { color: var(--accent-text); }
+.btn .spinner { border-color: color-mix(in srgb, var(--accent-ink) 40%, transparent); border-top-color: var(--accent-ink); }
+
+/* first-run setup */
+.setup { display: grid; gap: 16px; max-width: 640px; width: 100%; justify-self: center; }
+.setup h1 { font-family: var(--f-read); font-weight: 600; font-size: var(--t-2xl); }
+.setup-top { display: flex; align-items: center; gap: 12px; }
+.setup-steps { width: 120px; }
+.setup-nav { position: sticky; bottom: calc(var(--nav-h) + 8px + env(safe-area-inset-bottom, 0px)); background: var(--paper); padding-block: 8px; }
+@media (min-width: 820px) { .setup-nav { bottom: 0; } }
+.choice-grid { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); }
+.choice-list { display: grid; gap: 8px; }
+.choice-card {
+  text-align: left; display: grid; gap: 2px; padding: 12px 14px; border-radius: 10px; cursor: pointer;
+  border: 1.5px solid var(--rule-strong); background: var(--sheet); color: var(--ink);
+}
+.choice-card b { font-size: var(--t-md); }
+.choice-card span { font-size: var(--t-sm); color: var(--ink-2); }
+.choice-card:hover { border-color: var(--accent); }
+.choice-card[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+
+/* Today: next task and progress ring */
+.today-head p { margin-top: 2px; }
+.next-up h2 { font-size: var(--t-xl); font-family: var(--f-read); font-weight: 600; }
+.next-title { display: flex; align-items: center; gap: 10px; }
+.next-title .skill-dot { width: 10px; height: 10px; }
+.ring { width: 52px; height: 52px; flex: 0 0 auto; }
+.ring-track { fill: none; stroke: var(--sheet-3); stroke-width: 5; }
+.ring-fill { fill: none; stroke: var(--good); stroke-width: 5; stroke-linecap: round; }
+.ring text { fill: var(--ink); font-family: var(--f-mono); font-size: 11px; font-weight: 500; }
+
+/* account page */
+.profile-top { display: flex; gap: 16px; align-items: center; min-width: 0; }
+
 </style>
 <div id="app"><p style="padding:24px;font-family:system-ui,sans-serif">Loading Band Seven…</p></div>
 <script>
@@ -688,6 +772,7 @@ function defaultState() {
       ttsRate: 1,
       autoArabic: false,
       readQuestions: true,
+      name: '',
     },
     placement: null,           // {status, step, results:{R,L,W,S}, bands:{}, date}
     scores: [],                // {id, ts, date, skill, band, kind, ref, raw, label}
@@ -703,6 +788,7 @@ function defaultState() {
     mocks: {},                 // week -> mock record
     gen: [],                   // summaries of AI-generated practice items
     account: '',               // the hosted-site account this copy belongs to
+    onboarded: false,          // finished the first-run setup
   };
 }
 
@@ -866,13 +952,14 @@ async function cloudInit() {
   if (window.claude?.use) return claudeInit();
   if (/^https?:$/.test(location.protocol)) return serverInit();
   Cloud.status = 'local'; updateSyncBadge();
+  if (needsSetup()) rerenderIfIdle();
   return undefined;
 }
 async function claudeInit() {
   try {
     const [db, user] = await Promise.all([window.claude.use('db'), window.claude.use('user')]);
     const id = user ? await user.id() : null;
-    if (!db || !id) { Cloud.status = 'local'; updateSyncBadge(); return; }
+    if (!db || !id) { Cloud.status = 'local'; updateSyncBadge(); if (needsSetup()) rerenderIfIdle(); return; }
     Cloud.kind = 'claude'; Cloud.db = db; Cloud.uid = id;
     const base = `data/users/${id}`;
     const [core, srs, gens] = await Promise.all([
@@ -884,7 +971,7 @@ async function claudeInit() {
     if (gens && !gens.empty) gens.docs.forEach((d) => { if (!DOCS[d.id]) { DOCS[d.id] = clone(d.data()); LS.set(LS_DOC + d.id, DOCS[d.id]); } });
     Cloud.status = 'cloud';
     updateSyncBadge();
-    if (changed) onDataReplaced();
+    if (changed || needsSetup()) onDataReplaced();
   } catch (e) {
     Cloud.kind = null; Cloud.ready = false;
     Cloud.status = 'local';
@@ -894,11 +981,12 @@ async function claudeInit() {
 }
 async function serverInit() {
   let r;
-  try { r = await api('/api/auth'); } catch { Cloud.status = 'local'; updateSyncBadge(); return; }
+  try { r = await api('/api/auth'); } catch { Cloud.status = 'local'; updateSyncBadge(); rerenderIfIdle(); return; }
   if (r.status === 401) { Cloud.kind = 'server'; Cloud.status = 'signed-out'; updateSyncBadge(); rerenderIfIdle(); return; }
   const data = r.ok ? await r.json().catch(() => null) : null;
-  if (!data || !data.user) { Cloud.status = 'local'; updateSyncBadge(); return; }   // no account API on this host
+  if (!data || !data.user) { Cloud.status = 'local'; updateSyncBadge(); rerenderIfIdle(); return; }   // no account API on this host
   await connectAccount(data.user);
+  rerenderIfIdle();
 }
 /* After sign-in or sign-up: load the account's progress and decide what to keep. */
 async function connectAccount(user, { interactive = false } = {}) {
@@ -913,6 +1001,7 @@ async function connectAccount(user, { interactive = false } = {}) {
     const changed = reconcile(core, srs);
     LOADED_AT = { core: S.updatedAt || 0, srs: SRS.updatedAt || 0 };
     if (S.account !== user.email) { S.account = user.email; save(); }
+    if (!S.profile.name && user.name) { S.profile.name = user.name; save(); }
     if (useDevice) { save(); saveSrs(); }
     Cloud.status = 'cloud'; Cloud.error = '';
     updateSyncBadge();
@@ -2051,11 +2140,15 @@ function shellHtml() {
       <button class="brand" data-act="nav" data-to="today" aria-label="Band Seven home"><span class="brand-cell">7.0</span><span class="brand-name">Band Seven</span></button>
       <nav class="tabs-top" aria-label="Main">${tabs()}</nav>
       <div class="topbar-spacer"></div>
-      <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
-      <span class="chip-exam" id="exam-chip"></span>
-      <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
-      <button class="icon-btn" data-act="nav" data-to="settings" aria-label="Settings">${ICONS.gear}</button>
+      <div class="topbar-actions">
+        <span class="chip-exam" id="exam-chip"></span>
+        <button id="sync" class="sync" data-act="nav" data-to="account"><span>…</span></button>
+        <button class="icon-btn" data-act="theme" id="theme-btn" aria-label="Change theme"></button>
+        <button class="icon-btn" data-act="nav" data-to="settings" id="settings-btn" aria-label="Settings">${ICONS.gear}</button>
+        <button class="me-btn" id="me-btn" data-act="meMenu" aria-haspopup="menu" aria-expanded="false" aria-controls="me-menu" hidden><span class="avatar" id="me-avatar"></span><i class="me-dot" id="me-dot"></i></button>
+      </div>
     </div></header>
+    <div class="me-menu" id="me-menu" role="menu" hidden></div>
     <main id="main" tabindex="-1"></main>
     <nav class="tabs-bottom" aria-label="Main">${tabs()}</nav>
     <div id="toast-root"></div><div id="modal-root"></div>`;
@@ -2071,16 +2164,76 @@ function updateChrome() {
   const tb = $('#theme-btn');
   if (tb) { tb.innerHTML = th === 'dark' ? ICONS.moon : th === 'light' ? ICONS.sun : ICONS.auto; tb.title = `Theme: ${th === 'system' ? 'match device' : th}`; }
   updateSyncBadge();
+  const signedIn = !!(Cloud.kind === 'server' && Cloud.user);
+  const me = $('#me-btn');
+  if (me) {
+    me.hidden = !signedIn;
+    $('#sync').hidden = signedIn;
+    $('#settings-btn').hidden = signedIn;
+    if (signedIn) {
+      $('#me-avatar').textContent = initials(displayName());
+      const st = syncState();
+      $('#me-dot').className = `me-dot ${st.tone}`;
+      me.setAttribute('aria-label', `${displayName() || 'Your account'}: ${st.text}`);
+    }
+  }
+  document.body.classList.toggle('gated', !!gateView());
 }
 
+/* ---------- who is signed in ---------- */
+const HOSTED = typeof window !== 'undefined' && !window.claude?.use && /^https?:$/.test(location.protocol);
+function displayName() { return (S.profile.name || Cloud.user?.name || (Cloud.user?.email || '').split('@')[0] || '').trim(); }
+function firstName() { return displayName().split(/\s+/)[0] || ''; }
+function initials(name) {
+  const parts = String(name || '').trim().split(/\s+/).filter(Boolean);
+  return ((parts[0]?.[0] || '?') + (parts[1]?.[0] || '')).toUpperCase();
+}
+function syncState() {
+  if (Cloud.error) return { tone: 'bad', text: Cloud.error };
+  if (Cloud.status === 'connecting') return { tone: 'warn', text: 'Loading your progress…' };
+  if (Object.values(writers).some((w) => w.busy || w.dirty)) return { tone: 'warn', text: 'Saving…' };
+  return { tone: 'good', text: 'All progress saved to your account' };
+}
+/* On the hosted site the app starts with the account screen until someone signs in. */
+function gateView() {
+  if (!HOSTED) return null;
+  if (Cloud.status === 'connecting' && !Cloud.kind) return 'splash';
+  if (Cloud.kind === 'server' && !Cloud.user) return 'welcome';
+  return null;
+}
+function meMenuHtml() {
+  const st = syncState();
+  return `<div class="me-head"><span class="avatar lg" aria-hidden="true">${esc(initials(displayName()))}</span><div style="min-width:0"><b class="ellipsis">${esc(displayName() || 'Your account')}</b><div class="xs muted ellipsis">${esc(Cloud.user?.email || '')}</div></div></div>
+    <div class="me-status"><i class="me-dot static ${st.tone}"></i><span>${esc(st.text)}</span></div>
+    <button role="menuitem" data-act="menuGo" data-to="account">Your account</button>
+    <button role="menuitem" data-act="menuGo" data-to="progress">Your progress</button>
+    <button role="menuitem" data-act="menuGo" data-to="settings">Settings</button>
+    <button role="menuitem" data-act="signOut" class="danger-text">Sign out</button>`;
+}
+function closeMeMenu() { const m = $('#me-menu'); if (m && !m.hidden) { m.hidden = true; $('#me-btn')?.setAttribute('aria-expanded', 'false'); } }
+ACT.meMenu = () => {
+  const m = $('#me-menu');
+  if (!m.hidden) { closeMeMenu(); return; }
+  m.innerHTML = meMenuHtml(); m.hidden = false;
+  $('#me-btn').setAttribute('aria-expanded', 'true');
+  m.querySelector('button')?.focus();
+};
+ACT.menuGo = (el) => { closeMeMenu(); go(el.dataset.to); };
+
 function render() {
-  const v = VIEWS[ROUTE.name] || VIEWS.today;
+  closeMeMenu();
+  const gate = gateView();
+  let name = gate || ROUTE.name;
+  if (!gate && name === 'today' && needsSetup()) name = 'setup';
+  const params = gate === 'welcome' ? (ROUTE.name === 'account' ? ROUTE.params : {}) : (ROUTE.params || {});
+  const v = VIEWS[name] || VIEWS.today;
   const main = $('#main');
-  main.innerHTML = v.html(ROUTE.params || {});
-  if (v.mount) v.mount(ROUTE.params || {});
+  main.innerHTML = v.html(params);
+  if (v.mount) v.mount(params);
   if (v.study) studyStart(); else studyStop();
   updateChrome();
 }
+VIEWS.splash = { html: () => '<div class="splash"><span class="brand-cell big">7.0</span><div class="ai-wait"><span class="spinner"></span>Loading your plan…</div></div>' };
 function go(name, params = {}, { force = false } = {}) {
   if (!force && RUN && RUN.dirty && RUN.dirty()) {
     confirmModal({
@@ -2186,16 +2339,17 @@ ACT.timer = () => { if (RUN && RUN.timer) RUN.timer.toggle(); };
 /* ---------- shared bits ---------- */
 const backBtn = (to, label, params) => `<button class="back" data-act="back" data-to="${to}" ${params ? `data-params='${esc(JSON.stringify(params))}'` : ''}>${ICONS.back}${esc(label)}</button>`;
 const skillDot = (s) => `<span class="skill-dot ${s}" aria-hidden="true"></span>`;
-function bandRuler(skill, est, { target = S.profile.target, minTarget = S.profile.minTarget } = {}) {
+function bandRuler(skill, est, { target = S.profile.target, minTarget = S.profile.minTarget, label = '', gapText = '' } = {}) {
   const lo = 4, hi = 9;
   const pct = (v) => `${((clamp(v, lo, hi) - lo) / (hi - lo)) * 100}%`;
   const ticks = [];
   for (let v = lo; v <= hi; v += 0.5) ticks.push(`<i class="ruler-tick ${Number.isInteger(v) ? 'major' : ''}" style="left:${pct(v)}"></i>`);
   const labels = [4, 5, 6, 7, 8, 9].map((v) => `<span style="left:${pct(v)}">${v}</span>`).join('');
   const val = est == null ? null : roundHalf(est);
-  const gap = val == null ? '' : val >= target ? '<span class="pill good">At target</span>' : `<span class="ruler-gap">${(target - val).toFixed(1)} below ${target.toFixed(1)}</span>`;
-  return `<div class="ruler" aria-label="${SKILL_NAME[skill]} ${val == null ? 'no estimate yet' : 'estimated band ' + fmtBand(val)}">
-    <div class="ruler-top"><span class="ruler-name">${skillDot(skill)} ${SKILL_NAME[skill]}</span><span class="row" style="gap:10px">${gap}<span class="ruler-val">${fmtBand(val)}</span></span></div>
+  const name = label || SKILL_NAME[skill];
+  const gap = gapText ? `<span class="ruler-gap">${esc(gapText)}</span>` : val == null ? '' : val >= target ? '<span class="pill good">At target</span>' : `<span class="ruler-gap">${(target - val).toFixed(1)} below ${target.toFixed(1)}</span>`;
+  return `<div class="ruler" aria-label="${esc(name)} ${val == null ? 'no estimate yet' : 'estimated band ' + fmtBand(val)}">
+    <div class="ruler-top"><span class="ruler-name">${label ? '' : skillDot(skill)} ${esc(name)}</span><span class="row" style="gap:10px">${gap}<span class="ruler-val">${fmtBand(val)}</span></span></div>
     <div class="ruler-track"><div class="ruler-line"></div>${ticks.join('')}
       ${val != null ? `<div class="ruler-fill" style="width:${pct(val)}"></div>` : ''}
       <i class="ruler-target min" style="left:${pct(minTarget)}" title="Minimum ${minTarget}"></i>
@@ -2278,19 +2432,28 @@ function bindEvents() {
   };
   document.addEventListener('input', onField);
   document.addEventListener('change', onField);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && MODAL) closeModal('dismiss'); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { if (MODAL) closeModal('dismiss'); else closeMeMenu(); } });
+  document.addEventListener('click', (e) => { if (!e.target.closest('#me-menu, #me-btn')) closeMeMenu(); }, true);
   window.addEventListener('beforeunload', () => { save(); });
 }
 
 /* ---------- Today ---------- */
+function greetingWord() {
+  const h = new Date().getHours();
+  return h >= 5 && h < 12 ? 'Good morning' : h >= 12 && h < 18 ? 'Good afternoon' : 'Good evening';
+}
+function progressRing(done, total) {
+  const r = 20; const c = 2 * Math.PI * r; const f = total ? done / total : 0;
+  return `<svg class="ring" viewBox="0 0 48 48" role="img" aria-label="${done} of ${total} tasks done"><circle cx="24" cy="24" r="${r}" class="ring-track"/>${f > 0 ? `<circle cx="24" cy="24" r="${r}" class="ring-fill" stroke-dasharray="${(f * c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 24 24)"/>` : ''}<text x="24" y="24" text-anchor="middle" dominant-baseline="central">${done}/${total}</text></svg>`;
+}
 VIEWS.today = {
   html() {
     const t = today();
     const p = S.profile;
     const pos = planPos(t);
     const est = estimates();
-    const head = `<div class="today-head"><div class="eyebrow">${pos.idx >= 0 && pos.week <= PLAN_WEEKS ? `Week ${pos.week} of ${PLAN_WEEKS} · ${phaseOf(pos.week).name}` : 'Your plan'}</div><h1 class="date">${esc(fmtLong(t))}</h1></div>`;
-    let body = '';
+    const name = firstName();
+    let body = ''; let subline = ''; let hero = '';
     if (pos.idx < 0) {
       body = `<div class="card"><h2>Your plan starts on ${esc(fmtLong(p.startDate))}</h2><p class="muted">Change the start date in Settings if you want to begin today.</p><div><button class="btn" data-act="nav" data-to="settings">Open settings</button></div></div>`;
     } else if (pos.week > PLAN_WEEKS) {
@@ -2299,17 +2462,35 @@ VIEWS.today = {
       const tasks = dayTasks(t, { create: true });
       const done = tasks.filter((x) => x.done).length;
       const mins = sum(tasks.map((x) => x.min));
-      const doneMin = sum(tasks.filter((x) => x.done).map((x) => x.min));
+      const left = tasks.filter((x) => !x.done);
+      const leftMin = sum(left.map((x) => x.min));
+      subline = !tasks.length ? '' : !left.length ? 'Everything on today’s plan is done. Well done.'
+        : done ? `${plural(left.length, 'task')} left today, about ${fmtMins(leftMin)}.` : `Today’s plan has ${plural(tasks.length, 'task')}, about ${fmtMins(mins)}.`;
+      const next = left.find((x) => x.type !== 'exam');
+      if (S.placement?.done) {
+        hero = next ? `<div class="card hero next-up">
+            <div class="row-between"><div class="eyebrow">Next up</div>${progressRing(done, tasks.length)}</div>
+            <div class="next-title">${skillDot(next.skill)}<h2>${esc(next.title)}</h2></div>
+            ${next.sub ? `<p class="muted">${esc(next.sub)}</p>` : ''}
+            ${next.tip ? `<p class="small">${esc(next.tip)}</p>` : ''}
+            <div class="btn-row"><button class="btn" data-act="startTask" data-id="${next.id}">Start${next.min ? ` · ${fmtMins(next.min)}` : ''}</button><button class="btn quiet" data-act="toggleTask" data-id="${next.id}">Mark as done</button></div>
+          </div>`
+          : `<div class="card hero next-up done"><div class="row-between"><div class="eyebrow">Today</div>${progressRing(done, tasks.length)}</div>
+            <h2>All done for today</h2><p class="muted">Come back tomorrow for your next set. If you have time, review flashcards or try an extra task.</p>
+            <div class="btn-row"><button class="btn ghost" data-act="nav" data-to="words">Review flashcards</button><button class="btn quiet" data-act="nav" data-to="practice">Extra practice</button></div></div>`;
+      }
       body = `<section class="stack" aria-labelledby="today-t">
-        <div class="row-between"><h2 id="today-t">Today’s plan</h2><span class="small muted num">${done} of ${tasks.length} done · ${fmtMins(doneMin)} of ${fmtMins(mins)}</span></div>
-        <div class="progress" aria-hidden="true"><i style="width:${tasks.length ? (done / tasks.length) * 100 : 0}%"></i></div>
+        <div class="row-between"><h2 id="today-t">Today’s plan</h2><span class="small muted num">${done} of ${tasks.length} done · ${fmtMins(mins)}</span></div>
         <div class="task-list">${tasks.map(taskRow).join('')}</div>
       </section>`;
     }
+    const weekLabel = pos.idx >= 0 && pos.week <= PLAN_WEEKS ? `Week ${pos.week} of ${PLAN_WEEKS} · ${phaseOf(pos.week).name}` : 'Your plan';
+    const head = `<div class="today-head"><div class="eyebrow">${weekLabel} · ${esc(fmtDate(t, { weekday: 'long', day: 'numeric', month: 'long' }))}</div>
+      <h1 class="date">${greetingWord()}${name ? `, ${esc(name)}` : ''}</h1>${subline ? `<p class="muted">${esc(subline)}</p>` : ''}</div>`;
     const placementCard = !S.placement?.done ? `<div class="card hero tint">
         <div class="eyebrow">Start here</div>
         <h2>Take the placement test</h2>
-        <p>Four short parts: Reading (15 min), Listening (10 min), a full Task 2 essay (40 min) and a Speaking sample (6 min). It sets your starting band in each skill, and your plan gives the most time to the skills furthest from ${p.target.toFixed(1)}.</p>
+        <p>Four short parts: Reading (15 min), Listening (10 min), a full Task 2 essay (40 min) and a Speaking sample (6 min). It sets your starting band in each skill, and your plan gives the most time to the skills furthest from ${p.target.toFixed(1)}. You can do the parts on different days.</p>
         <div class="btn-row"><button class="btn" data-act="nav" data-to="placement">${S.placement?.results && Object.keys(S.placement.results).length ? 'Continue the placement test' : 'Start the placement test'}</button></div>
       </div>` : '';
     const due = dueWords().length; const fresh = newWordsToday().length;
@@ -2317,6 +2498,7 @@ VIEWS.today = {
     const nextMockWeek = Math.max(4, pos.week);
     const mockDate = nextMockWeek <= PLAN_WEEKS ? buildWeek(nextMockWeek, est).find((d) => d.tasks.includes('mockLR'))?.date : null;
     const overall = overallBand(displayEstimates());
+    const streak = streakNow();
     const side = `<div class="grid-2">
       <div class="card">
         <div class="row-between"><h2>Distance to ${p.target.toFixed(1)}</h2><span class="mono">${overall == null ? '' : `Overall ${fmtBand(overall)}`}</span></div>
@@ -2330,11 +2512,101 @@ VIEWS.today = {
           ${mockDate ? `<div class="row-between"><span>Next mock exam</span><b>${esc(fmtDate(mockDate))}</b></div>` : ''}
         </div>
         <div class="card"><div class="row-between"><div><div class="eyebrow">Flashcards</div><div><b class="mono">${due}</b> due · <b class="mono">${fresh}</b> new today</div></div><button class="btn ghost small" data-act="nav" data-to="words">Review</button></div></div>
-        <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streakNow()}</b> ${streakNow() === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
+        <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streak}</b> ${streak === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
       </div></div>`;
-    return `${head}${accountBanner()}${placementCard}${body}${side}`;
+    return `${head}${accountBanner()}${placementCard}${hero}${body}${side}`;
   },
 };
+
+/* ---------- First-run setup ---------- */
+function hasProgress() { return !!(S.placement?.done || S.scores.length || Object.keys(S.done).length || Object.keys(SRS.cards).length); }
+function needsSetup() { return !S.onboarded && Cloud.status !== 'connecting' && !hasProgress(); }
+let SETUP = null;
+const choice = (k, v, label, desc, on) => `<button class="choice-card" data-act="setupPick" data-k="${k}" data-v="${esc(String(v))}" aria-pressed="${on}"><b>${label}</b>${desc ? `<span>${desc}</span>` : ''}</button>`;
+VIEWS.setup = {
+  html() {
+    const p = S.profile;
+    if (!SETUP) SETUP = { step: 0, name: p.name || Cloud.user?.name || '', examDate: p.examDate, target: p.target, minutes: p.dailyMinutes, lightDay: p.lightDay, level: 'placement', bands: { L: 6, R: 6, W: 5.5, S: 5.5 } };
+    const st = SETUP;
+    const dots = [0, 1, 2].map((i) => `<i class="${i < st.step ? 'done' : i === st.step ? 'on' : ''}"></i>`).join('');
+    const first = (st.name || '').trim().split(/\s+/)[0];
+    let inner = '';
+    if (st.step === 0) {
+      inner = `<h1>Welcome${first ? `, ${esc(first)}` : ''}! Let’s build your plan.</h1>
+        <p class="muted">Three quick questions. You can change any answer later in Settings.</p>
+        <div class="card stack">
+          <div class="field"><label for="su-name">What should we call you?</label><input class="input" id="su-name" data-ch="setupField" data-k="name" value="${esc(st.name)}" autocomplete="given-name" maxlength="40"></div>
+          <div class="field"><label for="su-exam">When is your IELTS exam?</label><input class="input" type="date" id="su-exam" data-ch="setupField" data-k="examDate" value="${esc(st.examDate)}" min="${today()}"></div>
+          <div class="field"><span class="label">Which band are you aiming for?</span>
+            <div class="choice-grid">${[[6.5, 'Minimum for many programmes'], [7, 'A strong, common target'], [7.5, 'A stretch goal']].map(([v, d]) => choice('target', v, v.toFixed(1), d, st.target === v)).join('')}</div></div>
+        </div>`;
+    } else if (st.step === 1) {
+      const days = Math.max(0, diffDays(today(), st.examDate));
+      inner = `<h1>How much time can you study each day?</h1>
+        <p class="muted">Your plan fits each day’s tasks into this time. ${days ? `With ${days} days until your exam, that is about ${Math.round((days * 6 / 7) * st.minutes / 60)} hours of study.` : ''}</p>
+        <div class="card stack">
+          <div class="choice-grid">${[[75, '1 h 15 min', 'Light'], [90, '1 h 30 min', 'Steady'], [105, '1 h 45 min', 'Recommended for 7.0'], [120, '2 h', 'Fastest progress']].map(([v, l, d]) => choice('minutes', v, l, d, st.minutes === v)).join('')}</div>
+          <div class="field"><label for="su-light">Which day should be lighter?</label><select class="input" id="su-light" data-ch="setupField" data-k="lightDay">${DOW_NAMES.map((d, i) => `<option value="${i}" ${i === st.lightDay ? 'selected' : ''}>${d}</option>`).join('')}</select><span class="xs faint">About 45 minutes that day: flashcards, speaking and a quick review.</span></div>
+        </div>`;
+    } else {
+      inner = `<h1>Where should we start?</h1>
+        <p class="muted">Your starting band in each skill decides how your time is split.</p>
+        <div class="card stack">
+          <div class="choice-list">
+            ${choice('level', 'placement', 'Take the placement test', 'Recommended. Four parts, about 75 minutes in total. You can split it over several days.', st.level === 'placement')}
+            ${choice('level', 'official', 'I have a recent official IELTS score', 'Enter your band for each skill and start your plan straight away.', st.level === 'official')}
+            ${choice('level', 'later', 'Decide later', 'Start with today’s tasks. The plan assumes 6.0 in every skill until you test.', st.level === 'later')}
+          </div>
+          ${st.level === 'official' ? `<div class="grid-3">${SKILLS.map((k) => `<div class="field"><label for="su-b-${k}">${SKILL_NAME[k]}</label><select class="input" id="su-b-${k}" data-ch="setupBand" data-k="${k}">${bandOptions(st.bands[k])}</select></div>`).join('')}</div>` : ''}
+        </div>`;
+    }
+    return `<div class="setup">
+      <div class="setup-top"><div class="steps setup-steps" aria-hidden="true">${dots}</div><span class="xs faint">Step ${st.step + 1} of 3</span></div>
+      ${inner}
+      <div class="btn-row setup-nav">
+        ${st.step > 0 ? '<button class="btn ghost" data-act="setupBack">Back</button>' : '<button class="btn quiet" data-act="setupSkip">Skip setup</button>'}
+        <div class="grow"></div>
+        ${st.step < 2 ? '<button class="btn" data-act="setupNext">Continue</button>' : `<button class="btn" data-act="setupFinish">${st.level === 'placement' ? 'Start the placement test' : 'Start my plan'}</button>`}
+      </div></div>`;
+  },
+};
+CHG.setupField = (el) => {
+  if (!SETUP) return;
+  const k = el.dataset.k;
+  SETUP[k] = k === 'lightDay' ? +el.value : el.value;
+  if (k === 'name') { const h = $('.setup h1'); const f = el.value.trim().split(/\s+/)[0]; if (h) h.textContent = `Welcome${f ? `, ${f}` : ''}! Let’s build your plan.`; }
+};
+CHG.setupBand = (el) => { if (SETUP) SETUP.bands[el.dataset.k] = +el.value; };
+ACT.setupPick = (el) => {
+  const k = el.dataset.k; const v = el.dataset.v;
+  SETUP[k] = k === 'level' ? v : +v;
+  render();
+};
+ACT.setupNext = () => {
+  if (SETUP.step === 0 && !/^\d{4}-\d{2}-\d{2}$/.test(SETUP.examDate || '')) { toast('Choose your exam date.'); return; }
+  SETUP.step++; render(); window.scrollTo(0, 0);
+};
+ACT.setupBack = () => { SETUP.step = Math.max(0, SETUP.step - 1); render(); };
+ACT.setupSkip = () => { S.onboarded = true; SETUP = null; save(); go('today', {}, { force: true }); };
+ACT.setupFinish = () => {
+  const st = SETUP; const p = S.profile;
+  p.name = (st.name || '').trim().slice(0, 40);
+  p.examDate = st.examDate; p.target = st.target; p.minTarget = Math.min(p.minTarget, st.target);
+  p.dailyMinutes = st.minutes; p.lightDay = st.lightDay;
+  if (!hasProgress()) p.startDate = today();
+  S.onboarded = true;
+  delete S.days[today()]; S.weekEst = {};
+  SETUP = null;
+  if (st.level === 'official') {
+    SKILLS.forEach((k) => placementRecord(k, st.bands[k], 'official score'));
+    ACT.placeFinish();
+    return;
+  }
+  save();
+  toast(p.name ? `Your plan is ready, ${p.name.split(/\s+/)[0]}` : 'Your plan is ready');
+  go(st.level === 'placement' ? 'placement' : 'today', {}, { force: true });
+};
+
 function taskRow(t) {
   const startable = t.type !== 'exam';
   return `<div class="task ${t.done ? 'done' : ''}">
@@ -2505,6 +2777,9 @@ VIEWS.settings = {
       ? (Cloud.user ? `Saved to your account (${Cloud.user.email}). Sign in with it on any device.` : 'Saved in this browser only. Create an account or sign in to keep it on every device.')
       : Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only.';
     return `<div class="page-head">${backBtn('today', 'Today')}<h1>Settings</h1></div>
+      <div class="card"><h2>You</h2>
+        <div class="field"><label for="s-name">Your name</label><input class="input" id="s-name" data-ch="setting" data-k="name" value="${esc(p.name || '')}" maxlength="40" autocomplete="given-name"></div>
+      </div>
       <div class="card"><h2>Exam and plan</h2>
         <div class="grid-2">
           <div class="field"><label for="s-exam">First exam date</label><input class="input" type="date" id="s-exam" data-ch="setting" data-k="examDate" value="${esc(p.examDate)}"></div>
@@ -2537,13 +2812,15 @@ VIEWS.settings = {
       </div>`;
   },
 };
-CHG.setting = (el) => {
+CHG.setting = (el, e) => {
   const k = el.dataset.k; const p = S.profile;
+  if (k === 'name' && e && e.type === 'input') return;   // save the name once, when the field is left
   let v = el.value;
   if (['dailyMinutes', 'lightDay', 'mockDay', 'newWords'].includes(k)) v = +v;
   if (['target', 'minTarget', 'ttsRate'].includes(k)) v = +v;
   if (['readQuestions', 'autoArabic'].includes(k)) v = v === '1';
   if (['examDate', 'finalDate', 'startDate'].includes(k) && !/^\d{4}-\d{2}-\d{2}$/.test(v)) return;
+  if (k === 'name') v = v.trim().slice(0, 40);
   if (p[k] === v) return;
   p[k] = v;
   if (['startDate', 'dailyMinutes', 'lightDay', 'mockDay', 'examDate', 'target'].includes(k)) {
@@ -3821,74 +4098,131 @@ ACT.mockR = (el) => { const w = +el.dataset.w; go('readingRun', { ids: S.mocks[w
 ACT.mockW = (el) => { const w = +el.dataset.w; const c = S.mocks[w].content; go('writingRun', { ids: [c.T1, c.T2], mockWeek: w }); };
 ACT.mockS = (el) => { const w = +el.dataset.w; go('speakingRun', { mode: 'full', mockWeek: w }); };
 
-/* ---------- Account (hosted site) ---------- */
+/* ---------- Welcome (the hosted site's entry screen) and account ---------- */
+const EYE = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+
+function authFormHtml(mode) {
+  const signup = mode === 'signup';
+  return `<div class="auth">
+    <div class="seg auth-seg" role="tablist" aria-label="Account"><button role="tab" data-act="accMode" data-m="signup" aria-pressed="${signup}" aria-selected="${signup}">Create account</button><button role="tab" data-act="accMode" data-m="signin" aria-pressed="${!signup}" aria-selected="${!signup}">Sign in</button></div>
+    <h2>${signup ? 'Create your free account' : 'Welcome back'}</h2>
+    <p class="small muted">${signup ? 'Your plan, scores and flashcards are saved to your account, so you can study on your phone and your computer.' : 'Sign in to continue where you stopped.'}</p>
+    <form id="acc-form" class="stack" novalidate>
+      ${signup ? '<div class="field"><label for="acc-name">Your name</label><input class="input" id="acc-name" autocomplete="given-name" maxlength="40" required placeholder="For example, Razan"></div>' : ''}
+      <div class="field"><label for="acc-email">Email</label><input class="input" id="acc-email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required placeholder="you@example.com"></div>
+      <div class="field"><label for="acc-pass">Password</label>
+        <div class="pw-wrap"><input class="input" id="acc-pass" type="password" autocomplete="${signup ? 'new-password' : 'current-password'}" minlength="8" required><button type="button" class="pw-toggle" data-act="pwToggle" aria-label="Show password" aria-pressed="false">${EYE}</button></div>
+        ${signup ? '<span class="xs faint">At least 8 characters. There is no password reset yet, so keep it somewhere safe.</span>' : ''}</div>
+      <div id="acc-msg" aria-live="polite"></div>
+      <button class="btn block" type="submit" id="acc-submit">${signup ? 'Create my account' : 'Sign in'}</button>
+    </form>
+    <p class="small center">${signup ? 'Already have an account? <button class="link" data-act="accMode" data-m="signin">Sign in</button>' : 'New here? <button class="link" data-act="accMode" data-m="signup">Create an account</button>'}</p>
+  </div>`;
+}
+function bindAuthForm(mode) {
+  const form = $('#acc-form');
+  if (!form) return;
+  form.addEventListener('submit', (e) => { e.preventDefault(); submitAccount(mode === 'signup' ? 'register' : 'login'); });
+  const first = $(mode === 'signup' ? '#acc-name' : '#acc-email');
+  if (first && window.matchMedia('(pointer: fine)').matches) first.focus();
+}
+ACT.pwToggle = (el) => {
+  const input = $('#acc-pass'); const show = input.type === 'password';
+  input.type = show ? 'text' : 'password';
+  el.setAttribute('aria-pressed', String(show)); el.setAttribute('aria-label', show ? 'Hide password' : 'Show password');
+};
+
+VIEWS.welcome = {
+  html({ mode = 'signup' }) {
+    const points = [
+      ['A plan that adapts to you', 'A short placement test sets your starting band in each skill. Every week the plan gives more time to the skills furthest from your target.'],
+      ['Practice for all four skills', 'Timed reading and listening tests, Task 1 and Task 2 writing, speaking with a cue card, and daily academic vocabulary.'],
+      ['Honest progress', 'Band estimates per skill, your streak, your study time and a weekly mock exam from week 4.'],
+    ];
+    return `<section class="welcome">
+      <div class="welcome-intro">
+        <div class="eyebrow">IELTS Academic coach</div>
+        <h1>Reach band 7.0 with a plan built around you.</h1>
+        <p class="lead">Ninety minutes a day, a clear list of what to do, and scores you can trust.</p>
+        <div class="welcome-scale" aria-hidden="true">${bandRuler('W', 6, { target: 7, minTarget: 6.5, label: 'Where many learners start', gapText: 'goal 7.0' })}</div>
+        <ul class="welcome-points">${points.map(([t, d], i) => `<li><span class="wp-num mono">${i + 1}</span><div><b>${t}</b><p class="small muted">${d}</p></div></li>`).join('')}</ul>
+      </div>
+      <div class="card hero welcome-form">${authFormHtml(mode)}</div>
+    </section>`;
+  },
+  mount({ mode = 'signup' }) { bindAuthForm(mode); },
+};
+
 VIEWS.account = {
   html({ mode = 'signup' }) {
     const head = `<div class="page-head">${backBtn('today', 'Today')}<h1>Your account</h1></div>`;
     if (Cloud.kind === 'claude') {
-      return `${head}<div class="card"><h2>Saved to your Claude account</h2><p class="muted">Inside Claude your progress is saved privately to your Claude account automatically. There is nothing to set up.</p></div>`;
+      return `${head}<div class="card"><h2>Saved to your Claude account</h2><p class="muted">Inside Claude your progress is saved privately to your Claude account automatically. There is nothing to set up.</p>
+        <div class="field"><label for="s-name">Your name</label><input class="input" id="s-name" data-ch="setting" data-k="name" value="${esc(S.profile.name || '')}" maxlength="40"></div></div>`;
     }
     if (Cloud.kind === 'server' && Cloud.user) {
-      return `${head}<div class="card hero">
-          <div class="eyebrow">Signed in</div>
-          <h2>${esc(Cloud.user.name || Cloud.user.email)}</h2>
-          ${Cloud.user.name ? `<p class="muted">${esc(Cloud.user.email)}</p>` : ''}
-          <p>Your plan, scores, flashcards and study time are saved to this account. Sign in with the same email on your phone or computer to continue where you stopped.</p>
-          ${Cloud.error ? `<div class="note warn">${esc(Cloud.error)}</div>` : ''}
-          <div class="btn-row"><button class="btn ghost" data-act="signOut">Sign out</button></div>
-        </div>`;
+      const st = syncState();
+      const days = Object.keys(S.studySec).length;
+      return `${head}
+        <div class="card hero profile-card">
+          <div class="profile-top"><span class="avatar xl" aria-hidden="true">${esc(initials(displayName()))}</span>
+            <div style="min-width:0"><h2 class="ellipsis">${esc(displayName() || 'Your account')}</h2><div class="muted ellipsis">${esc(Cloud.user.email)}</div>
+              <div class="me-status inline"><i class="me-dot static ${st.tone}"></i><span>${esc(st.text)}</span></div></div></div>
+          <div class="stat-row">
+            <div class="stat"><span class="stat-label">Streak</span><span class="stat-value">${plural(streakNow(), 'day')}</span></div>
+            <div class="stat"><span class="stat-label">Days studied</span><span class="stat-value">${days}</span></div>
+            <div class="stat"><span class="stat-label">Overall estimate</span><span class="stat-value mono">${fmtBand(overallBand(displayEstimates()))}</span></div>
+          </div>
+        </div>
+        <div class="card"><h2>Profile</h2>
+          <div class="field"><label for="s-name">Your name</label><input class="input" id="s-name" data-ch="setting" data-k="name" value="${esc(S.profile.name || '')}" maxlength="40" autocomplete="given-name"><span class="xs faint">Shown in your greeting and on this page.</span></div>
+        </div>
+        <div class="card"><h2>Signing in on another device</h2><p class="small muted">Open this website on your phone or computer and sign in with <b>${esc(Cloud.user.email)}</b>. Your plan, scores, flashcards and study time are already there.</p></div>
+        <div class="btn-row"><button class="btn ghost" data-act="nav" data-to="settings">Settings</button><button class="btn quiet danger-text" data-act="signOut">Sign out</button></div>`;
     }
     if (Cloud.kind !== 'server') {
       return `${head}<div class="card"><h2>Accounts work on the online version</h2><p class="muted">This copy of the app is not connected to a server, so your progress is saved in this browser only. Open the app from its website address to create an account.</p></div>`;
     }
-    const signup = mode === 'signup';
-    const hasLocal = S.scores.length > 0 || Object.keys(SRS.cards).length > 0;
-    return `${head}
-      <div class="card hero">
-        <div class="seg" role="group" aria-label="Account"><button data-act="accMode" data-m="signup" aria-pressed="${signup}">Create account</button><button data-act="accMode" data-m="signin" aria-pressed="${!signup}">Sign in</button></div>
-        <p class="muted">${signup ? 'Create a free account to keep your plan, scores and flashcards on every device.' : 'Sign in to load your saved progress.'}${hasLocal && signup ? ' The progress already on this device is saved into your new account.' : ''}</p>
-        <form id="acc-form" class="stack" novalidate>
-          ${signup ? '<div class="field"><label for="acc-name">Name (optional)</label><input class="input" id="acc-name" autocomplete="name" maxlength="60"></div>' : ''}
-          <div class="field"><label for="acc-email">Email</label><input class="input" id="acc-email" type="email" autocomplete="email" inputmode="email" autocapitalize="off" spellcheck="false" required></div>
-          <div class="field"><label for="acc-pass">Password</label><input class="input" id="acc-pass" type="password" autocomplete="${signup ? 'new-password' : 'current-password'}" minlength="8" required>${signup ? '<span class="xs faint">At least 8 characters.</span>' : ''}</div>
-          <div id="acc-msg" aria-live="polite"></div>
-          <div class="btn-row"><button class="btn" type="submit" id="acc-submit">${signup ? 'Create account' : 'Sign in'}</button></div>
-        </form>
-      </div>
-      <p class="xs faint">Your password is stored only as a salted hash. Progress is stored privately and is visible only to you when signed in.</p>`;
+    return `${head}<div class="card hero">${authFormHtml(mode)}</div>`;
   },
-  mount({ mode = 'signup' }) {
-    const form = $('#acc-form');
-    if (!form) return;
-    form.addEventListener('submit', (e) => { e.preventDefault(); submitAccount(mode === 'signup' ? 'register' : 'login'); });
-  },
+  mount({ mode = 'signup' }) { bindAuthForm(mode); },
 };
 ACT.accMode = (el) => go('account', { mode: el.dataset.m });
+
 async function submitAccount(action) {
   const msg = $('#acc-msg'); const btn = $('#acc-submit');
   const email = $('#acc-email').value.trim();
   const password = $('#acc-pass').value;
   const name = $('#acc-name') ? $('#acc-name').value.trim() : '';
-  if (!/^\S+@\S+\.\S+$/.test(email)) { msg.innerHTML = '<div class="note bad">Enter a valid email address.</div>'; return; }
-  if (password.length < 8) { msg.innerHTML = '<div class="note bad">Use a password of at least 8 characters.</div>'; return; }
-  btn.disabled = true; msg.innerHTML = '<div class="ai-wait"><span class="spinner"></span>One moment…</div>';
+  const bad = (t, field) => { msg.innerHTML = `<div class="note bad">${esc(t)}</div>`; if (field) $(field).focus(); };
+  if (action === 'register' && !name) return bad('Tell us your name, so we know what to call you.', '#acc-name');
+  if (!/^\S+@\S+\.\S+$/.test(email)) return bad('Enter a valid email address.', '#acc-email');
+  if (password.length < 8) return bad('Use a password of at least 8 characters.', '#acc-pass');
+  btn.disabled = true; btn.innerHTML = '<span class="spinner"></span>' + (action === 'register' ? 'Creating your account…' : 'Signing in…');
+  msg.innerHTML = '';
   try {
     const r = await api('/api/auth', { method: 'POST', body: JSON.stringify({ action, email, password, name }) });
     const data = await r.json().catch(() => ({}));
-    if (!r.ok || !data.user) { msg.innerHTML = `<div class="note bad">${esc(data.error || 'Something went wrong. Try again.')}</div>`; btn.disabled = false; return; }
-    msg.innerHTML = '';
+    if (!r.ok || !data.user) {
+      btn.disabled = false; btn.textContent = action === 'register' ? 'Create my account' : 'Sign in';
+      return bad(data.error || 'Something went wrong. Try again.');
+    }
     await connectAccount(data.user, { interactive: true });
-    toast(action === 'register' ? 'Account created. Your progress is saved.' : 'Signed in');
+    if (name && !S.profile.name) { S.profile.name = name; save(); }
+    const first = firstName();
+    toast(action === 'register' ? `Welcome, ${first || 'and welcome'}! Your account is ready.` : `Welcome back${first ? `, ${first}` : ''}`);
     go('today', {}, { force: true });
   } catch {
-    msg.innerHTML = '<div class="note bad">Could not reach the server. Check your connection and try again.</div>';
-    btn.disabled = false;
+    btn.disabled = false; btn.textContent = action === 'register' ? 'Create my account' : 'Sign in';
+    bad('Could not reach the server. Check your connection and try again.');
   }
+  return undefined;
 }
 ACT.signOut = () => {
+  closeMeMenu();
   confirmModal({
     title: 'Sign out?', body: 'Your progress stays saved in your account. This device forgets it until you sign in again.', ok: 'Sign out',
-    onOk: async () => { await signOut(); toast('Signed out'); go('account', { mode: 'signin' }, { force: true }); },
+    onOk: async () => { await signOut(); SETUP = null; toast('Signed out'); go('account', { mode: 'signin' }, { force: true }); },
   });
 };
 function accountBanner() {

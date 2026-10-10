@@ -1,12 +1,20 @@
 /* ---------- Today ---------- */
+function greetingWord() {
+  const h = new Date().getHours();
+  return h >= 5 && h < 12 ? 'Good morning' : h >= 12 && h < 18 ? 'Good afternoon' : 'Good evening';
+}
+function progressRing(done, total) {
+  const r = 20; const c = 2 * Math.PI * r; const f = total ? done / total : 0;
+  return `<svg class="ring" viewBox="0 0 48 48" role="img" aria-label="${done} of ${total} tasks done"><circle cx="24" cy="24" r="${r}" class="ring-track"/>${f > 0 ? `<circle cx="24" cy="24" r="${r}" class="ring-fill" stroke-dasharray="${(f * c).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 24 24)"/>` : ''}<text x="24" y="24" text-anchor="middle" dominant-baseline="central">${done}/${total}</text></svg>`;
+}
 VIEWS.today = {
   html() {
     const t = today();
     const p = S.profile;
     const pos = planPos(t);
     const est = estimates();
-    const head = `<div class="today-head"><div class="eyebrow">${pos.idx >= 0 && pos.week <= PLAN_WEEKS ? `Week ${pos.week} of ${PLAN_WEEKS} · ${phaseOf(pos.week).name}` : 'Your plan'}</div><h1 class="date">${esc(fmtLong(t))}</h1></div>`;
-    let body = '';
+    const name = firstName();
+    let body = ''; let subline = ''; let hero = '';
     if (pos.idx < 0) {
       body = `<div class="card"><h2>Your plan starts on ${esc(fmtLong(p.startDate))}</h2><p class="muted">Change the start date in Settings if you want to begin today.</p><div><button class="btn" data-act="nav" data-to="settings">Open settings</button></div></div>`;
     } else if (pos.week > PLAN_WEEKS) {
@@ -15,17 +23,35 @@ VIEWS.today = {
       const tasks = dayTasks(t, { create: true });
       const done = tasks.filter((x) => x.done).length;
       const mins = sum(tasks.map((x) => x.min));
-      const doneMin = sum(tasks.filter((x) => x.done).map((x) => x.min));
+      const left = tasks.filter((x) => !x.done);
+      const leftMin = sum(left.map((x) => x.min));
+      subline = !tasks.length ? '' : !left.length ? 'Everything on today’s plan is done. Well done.'
+        : done ? `${plural(left.length, 'task')} left today, about ${fmtMins(leftMin)}.` : `Today’s plan has ${plural(tasks.length, 'task')}, about ${fmtMins(mins)}.`;
+      const next = left.find((x) => x.type !== 'exam');
+      if (S.placement?.done) {
+        hero = next ? `<div class="card hero next-up">
+            <div class="row-between"><div class="eyebrow">Next up</div>${progressRing(done, tasks.length)}</div>
+            <div class="next-title">${skillDot(next.skill)}<h2>${esc(next.title)}</h2></div>
+            ${next.sub ? `<p class="muted">${esc(next.sub)}</p>` : ''}
+            ${next.tip ? `<p class="small">${esc(next.tip)}</p>` : ''}
+            <div class="btn-row"><button class="btn" data-act="startTask" data-id="${next.id}">Start${next.min ? ` · ${fmtMins(next.min)}` : ''}</button><button class="btn quiet" data-act="toggleTask" data-id="${next.id}">Mark as done</button></div>
+          </div>`
+          : `<div class="card hero next-up done"><div class="row-between"><div class="eyebrow">Today</div>${progressRing(done, tasks.length)}</div>
+            <h2>All done for today</h2><p class="muted">Come back tomorrow for your next set. If you have time, review flashcards or try an extra task.</p>
+            <div class="btn-row"><button class="btn ghost" data-act="nav" data-to="words">Review flashcards</button><button class="btn quiet" data-act="nav" data-to="practice">Extra practice</button></div></div>`;
+      }
       body = `<section class="stack" aria-labelledby="today-t">
-        <div class="row-between"><h2 id="today-t">Today’s plan</h2><span class="small muted num">${done} of ${tasks.length} done · ${fmtMins(doneMin)} of ${fmtMins(mins)}</span></div>
-        <div class="progress" aria-hidden="true"><i style="width:${tasks.length ? (done / tasks.length) * 100 : 0}%"></i></div>
+        <div class="row-between"><h2 id="today-t">Today’s plan</h2><span class="small muted num">${done} of ${tasks.length} done · ${fmtMins(mins)}</span></div>
         <div class="task-list">${tasks.map(taskRow).join('')}</div>
       </section>`;
     }
+    const weekLabel = pos.idx >= 0 && pos.week <= PLAN_WEEKS ? `Week ${pos.week} of ${PLAN_WEEKS} · ${phaseOf(pos.week).name}` : 'Your plan';
+    const head = `<div class="today-head"><div class="eyebrow">${weekLabel} · ${esc(fmtDate(t, { weekday: 'long', day: 'numeric', month: 'long' }))}</div>
+      <h1 class="date">${greetingWord()}${name ? `, ${esc(name)}` : ''}</h1>${subline ? `<p class="muted">${esc(subline)}</p>` : ''}</div>`;
     const placementCard = !S.placement?.done ? `<div class="card hero tint">
         <div class="eyebrow">Start here</div>
         <h2>Take the placement test</h2>
-        <p>Four short parts: Reading (15 min), Listening (10 min), a full Task 2 essay (40 min) and a Speaking sample (6 min). It sets your starting band in each skill, and your plan gives the most time to the skills furthest from ${p.target.toFixed(1)}.</p>
+        <p>Four short parts: Reading (15 min), Listening (10 min), a full Task 2 essay (40 min) and a Speaking sample (6 min). It sets your starting band in each skill, and your plan gives the most time to the skills furthest from ${p.target.toFixed(1)}. You can do the parts on different days.</p>
         <div class="btn-row"><button class="btn" data-act="nav" data-to="placement">${S.placement?.results && Object.keys(S.placement.results).length ? 'Continue the placement test' : 'Start the placement test'}</button></div>
       </div>` : '';
     const due = dueWords().length; const fresh = newWordsToday().length;
@@ -33,6 +59,7 @@ VIEWS.today = {
     const nextMockWeek = Math.max(4, pos.week);
     const mockDate = nextMockWeek <= PLAN_WEEKS ? buildWeek(nextMockWeek, est).find((d) => d.tasks.includes('mockLR'))?.date : null;
     const overall = overallBand(displayEstimates());
+    const streak = streakNow();
     const side = `<div class="grid-2">
       <div class="card">
         <div class="row-between"><h2>Distance to ${p.target.toFixed(1)}</h2><span class="mono">${overall == null ? '' : `Overall ${fmtBand(overall)}`}</span></div>
@@ -46,11 +73,101 @@ VIEWS.today = {
           ${mockDate ? `<div class="row-between"><span>Next mock exam</span><b>${esc(fmtDate(mockDate))}</b></div>` : ''}
         </div>
         <div class="card"><div class="row-between"><div><div class="eyebrow">Flashcards</div><div><b class="mono">${due}</b> due · <b class="mono">${fresh}</b> new today</div></div><button class="btn ghost small" data-act="nav" data-to="words">Review</button></div></div>
-        <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streakNow()}</b> ${streakNow() === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
+        <div class="card"><div class="row-between"><div><div class="eyebrow">Streak</div><div><b class="mono">${streak}</b> ${streak === 1 ? 'day' : 'days'}${dayActive(t) ? '' : ' · study 20 min or finish a task to keep it going'}</div></div><span class="mono faint">${fmtMins((S.studySec[t] || 0) / 60)} today</span></div></div>
       </div></div>`;
-    return `${head}${accountBanner()}${placementCard}${body}${side}`;
+    return `${head}${accountBanner()}${placementCard}${hero}${body}${side}`;
   },
 };
+
+/* ---------- First-run setup ---------- */
+function hasProgress() { return !!(S.placement?.done || S.scores.length || Object.keys(S.done).length || Object.keys(SRS.cards).length); }
+function needsSetup() { return !S.onboarded && Cloud.status !== 'connecting' && !hasProgress(); }
+let SETUP = null;
+const choice = (k, v, label, desc, on) => `<button class="choice-card" data-act="setupPick" data-k="${k}" data-v="${esc(String(v))}" aria-pressed="${on}"><b>${label}</b>${desc ? `<span>${desc}</span>` : ''}</button>`;
+VIEWS.setup = {
+  html() {
+    const p = S.profile;
+    if (!SETUP) SETUP = { step: 0, name: p.name || Cloud.user?.name || '', examDate: p.examDate, target: p.target, minutes: p.dailyMinutes, lightDay: p.lightDay, level: 'placement', bands: { L: 6, R: 6, W: 5.5, S: 5.5 } };
+    const st = SETUP;
+    const dots = [0, 1, 2].map((i) => `<i class="${i < st.step ? 'done' : i === st.step ? 'on' : ''}"></i>`).join('');
+    const first = (st.name || '').trim().split(/\s+/)[0];
+    let inner = '';
+    if (st.step === 0) {
+      inner = `<h1>Welcome${first ? `, ${esc(first)}` : ''}! Let’s build your plan.</h1>
+        <p class="muted">Three quick questions. You can change any answer later in Settings.</p>
+        <div class="card stack">
+          <div class="field"><label for="su-name">What should we call you?</label><input class="input" id="su-name" data-ch="setupField" data-k="name" value="${esc(st.name)}" autocomplete="given-name" maxlength="40"></div>
+          <div class="field"><label for="su-exam">When is your IELTS exam?</label><input class="input" type="date" id="su-exam" data-ch="setupField" data-k="examDate" value="${esc(st.examDate)}" min="${today()}"></div>
+          <div class="field"><span class="label">Which band are you aiming for?</span>
+            <div class="choice-grid">${[[6.5, 'Minimum for many programmes'], [7, 'A strong, common target'], [7.5, 'A stretch goal']].map(([v, d]) => choice('target', v, v.toFixed(1), d, st.target === v)).join('')}</div></div>
+        </div>`;
+    } else if (st.step === 1) {
+      const days = Math.max(0, diffDays(today(), st.examDate));
+      inner = `<h1>How much time can you study each day?</h1>
+        <p class="muted">Your plan fits each day’s tasks into this time. ${days ? `With ${days} days until your exam, that is about ${Math.round((days * 6 / 7) * st.minutes / 60)} hours of study.` : ''}</p>
+        <div class="card stack">
+          <div class="choice-grid">${[[75, '1 h 15 min', 'Light'], [90, '1 h 30 min', 'Steady'], [105, '1 h 45 min', 'Recommended for 7.0'], [120, '2 h', 'Fastest progress']].map(([v, l, d]) => choice('minutes', v, l, d, st.minutes === v)).join('')}</div>
+          <div class="field"><label for="su-light">Which day should be lighter?</label><select class="input" id="su-light" data-ch="setupField" data-k="lightDay">${DOW_NAMES.map((d, i) => `<option value="${i}" ${i === st.lightDay ? 'selected' : ''}>${d}</option>`).join('')}</select><span class="xs faint">About 45 minutes that day: flashcards, speaking and a quick review.</span></div>
+        </div>`;
+    } else {
+      inner = `<h1>Where should we start?</h1>
+        <p class="muted">Your starting band in each skill decides how your time is split.</p>
+        <div class="card stack">
+          <div class="choice-list">
+            ${choice('level', 'placement', 'Take the placement test', 'Recommended. Four parts, about 75 minutes in total. You can split it over several days.', st.level === 'placement')}
+            ${choice('level', 'official', 'I have a recent official IELTS score', 'Enter your band for each skill and start your plan straight away.', st.level === 'official')}
+            ${choice('level', 'later', 'Decide later', 'Start with today’s tasks. The plan assumes 6.0 in every skill until you test.', st.level === 'later')}
+          </div>
+          ${st.level === 'official' ? `<div class="grid-3">${SKILLS.map((k) => `<div class="field"><label for="su-b-${k}">${SKILL_NAME[k]}</label><select class="input" id="su-b-${k}" data-ch="setupBand" data-k="${k}">${bandOptions(st.bands[k])}</select></div>`).join('')}</div>` : ''}
+        </div>`;
+    }
+    return `<div class="setup">
+      <div class="setup-top"><div class="steps setup-steps" aria-hidden="true">${dots}</div><span class="xs faint">Step ${st.step + 1} of 3</span></div>
+      ${inner}
+      <div class="btn-row setup-nav">
+        ${st.step > 0 ? '<button class="btn ghost" data-act="setupBack">Back</button>' : '<button class="btn quiet" data-act="setupSkip">Skip setup</button>'}
+        <div class="grow"></div>
+        ${st.step < 2 ? '<button class="btn" data-act="setupNext">Continue</button>' : `<button class="btn" data-act="setupFinish">${st.level === 'placement' ? 'Start the placement test' : 'Start my plan'}</button>`}
+      </div></div>`;
+  },
+};
+CHG.setupField = (el) => {
+  if (!SETUP) return;
+  const k = el.dataset.k;
+  SETUP[k] = k === 'lightDay' ? +el.value : el.value;
+  if (k === 'name') { const h = $('.setup h1'); const f = el.value.trim().split(/\s+/)[0]; if (h) h.textContent = `Welcome${f ? `, ${f}` : ''}! Let’s build your plan.`; }
+};
+CHG.setupBand = (el) => { if (SETUP) SETUP.bands[el.dataset.k] = +el.value; };
+ACT.setupPick = (el) => {
+  const k = el.dataset.k; const v = el.dataset.v;
+  SETUP[k] = k === 'level' ? v : +v;
+  render();
+};
+ACT.setupNext = () => {
+  if (SETUP.step === 0 && !/^\d{4}-\d{2}-\d{2}$/.test(SETUP.examDate || '')) { toast('Choose your exam date.'); return; }
+  SETUP.step++; render(); window.scrollTo(0, 0);
+};
+ACT.setupBack = () => { SETUP.step = Math.max(0, SETUP.step - 1); render(); };
+ACT.setupSkip = () => { S.onboarded = true; SETUP = null; save(); go('today', {}, { force: true }); };
+ACT.setupFinish = () => {
+  const st = SETUP; const p = S.profile;
+  p.name = (st.name || '').trim().slice(0, 40);
+  p.examDate = st.examDate; p.target = st.target; p.minTarget = Math.min(p.minTarget, st.target);
+  p.dailyMinutes = st.minutes; p.lightDay = st.lightDay;
+  if (!hasProgress()) p.startDate = today();
+  S.onboarded = true;
+  delete S.days[today()]; S.weekEst = {};
+  SETUP = null;
+  if (st.level === 'official') {
+    SKILLS.forEach((k) => placementRecord(k, st.bands[k], 'official score'));
+    ACT.placeFinish();
+    return;
+  }
+  save();
+  toast(p.name ? `Your plan is ready, ${p.name.split(/\s+/)[0]}` : 'Your plan is ready');
+  go(st.level === 'placement' ? 'placement' : 'today', {}, { force: true });
+};
+
 function taskRow(t) {
   const startable = t.type !== 'exam';
   return `<div class="task ${t.done ? 'done' : ''}">
@@ -221,6 +338,9 @@ VIEWS.settings = {
       ? (Cloud.user ? `Saved to your account (${Cloud.user.email}). Sign in with it on any device.` : 'Saved in this browser only. Create an account or sign in to keep it on every device.')
       : Cloud.status === 'cloud' ? 'Saved privately to your Claude account. Only you can see it, on any device where you open this page.' : Cloud.status === 'connecting' ? 'Connecting…' : 'Saved in this browser only.';
     return `<div class="page-head">${backBtn('today', 'Today')}<h1>Settings</h1></div>
+      <div class="card"><h2>You</h2>
+        <div class="field"><label for="s-name">Your name</label><input class="input" id="s-name" data-ch="setting" data-k="name" value="${esc(p.name || '')}" maxlength="40" autocomplete="given-name"></div>
+      </div>
       <div class="card"><h2>Exam and plan</h2>
         <div class="grid-2">
           <div class="field"><label for="s-exam">First exam date</label><input class="input" type="date" id="s-exam" data-ch="setting" data-k="examDate" value="${esc(p.examDate)}"></div>
@@ -253,13 +373,15 @@ VIEWS.settings = {
       </div>`;
   },
 };
-CHG.setting = (el) => {
+CHG.setting = (el, e) => {
   const k = el.dataset.k; const p = S.profile;
+  if (k === 'name' && e && e.type === 'input') return;   // save the name once, when the field is left
   let v = el.value;
   if (['dailyMinutes', 'lightDay', 'mockDay', 'newWords'].includes(k)) v = +v;
   if (['target', 'minTarget', 'ttsRate'].includes(k)) v = +v;
   if (['readQuestions', 'autoArabic'].includes(k)) v = v === '1';
   if (['examDate', 'finalDate', 'startDate'].includes(k) && !/^\d{4}-\d{2}-\d{2}$/.test(v)) return;
+  if (k === 'name') v = v.trim().slice(0, 40);
   if (p[k] === v) return;
   p[k] = v;
   if (['startDate', 'dailyMinutes', 'lightDay', 'mockDay', 'examDate', 'target'].includes(k)) {
